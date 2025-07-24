@@ -3,6 +3,7 @@ library("tidyverse")
 theme_set(theme_bw())
 source("functions/custom_mosaic_plot_function.R")
 source("functions/ggplot_box_legend.R")
+source("scripts/plot_elements.R")
 
 # Functions for nice plotting ==================================================
 
@@ -26,76 +27,6 @@ boxplot_custom <- function(x) {
   names(r) <- c("ymin", "lower", "middle", "upper", "ymax")
   r
 }
-
-# Define the labels, colors and themes used in the plots =======================
-
-primary_category_labels <- c(
-  "Anthropogenic pollution" = "Anthropogen. \npollution",
-  "API" = "API",
-  "Industrial chemical" = "Industrial chemical",
-  "PAH" = "PAH",
-  "PCP" = "PCP",
-  "Pesticide" = "Pesticide",
-  "POP" = "POP",
-  "Plasticizer" = "Plasticizer"
-)
-
-park_labels <- c(
-  "Bay_Wald" = "Bayerischer \nWald",
-  "Hainich" = "Hainich",
-  "Hunsrueck" = "Hunsrück\nHochwald",
-  "Saechs_Schw" = "Sächsische \nSchweiz",
-  "Jasmund" = "Jasmund",
-  "Kellerwald" = "Kellerwald\nEdersee",
-  "Eiffel" = "Eiffel",
-  "Vorpomm" = "Vorpomm. \nBoddenlandschaft"
-)
-
-park_colors <- c(
-  "Bay_Wald" = "deepskyblue4",
-  "Hainich" = "firebrick3",
-  "Saechs_Schw" = "darkgreen",
-  "Hunsrueck" = "purple3",
-  "Jasmund" = "lightblue3",
-  "Kellerwald" = "palegreen",
-  "Eiffel" = "goldenrod1",
-  "Vorpomm" = "magenta3"
-)
-
-barplot_colors <- list(
-  Sex = c("Male" = "royalblue2", "Female" = "firebrick3"),
-  Age = c("Calf" = "palevioletred2", "Subadult" = "#46CD8A", 
-          "Adult" = "darkorange3"),
-  Species = c("C. elaphus" = "orangered4", "D. dama" = "goldenrod2"),
-  Season = c("Summer 2024" = "coral", "Winter 2024/25" = "skyblue2",
-             "Winter 2023/24" = "steelblue4")
-)
-
-barplot_theme <- theme(
-  legend.position = "top",
-  panel.grid.major.x = element_blank(),
-  plot.title = element_text(hjust = 0.5, size = 12),
-  legend.title = element_blank(),
-  legend.key.width = unit(0.3, "cm"),
-  legend.key.height = unit(0.3, "cm"),
-  panel.grid.minor.x = element_blank(),
-  strip.background = element_blank(),
-  axis.text = element_text(size = 6),
-  axis.title = element_text(size = 8),
-  legend.text = element_text(size = 8)
-)
-
-mosaicplot_theme <- theme(
-  plot.title = element_text(hjust = 0.5),
-  legend.key.width = unit(0.3, "cm"),
-  legend.key.height = unit(0.3, "cm"),
-  axis.text = element_text(size = 6),
-  axis.title = element_text(size = 8),
-  legend.text = element_text(size = 8),
-  panel.grid.major = element_blank(),
-  panel.grid.minor = element_blank(),
-  strip.background = element_blank()
-)
 
 # Read the cleaned data and convert categories to factors ======================
 
@@ -175,7 +106,10 @@ for (covariate in names(df_rectangles)) {
   ) %>%
     mutate(
       bar = factor(bar, levels = levels(dat$Park)),
-      primary_category = factor(primary_category, labels = names(primary_category_labels)),
+      primary_category = factor(
+        primary_category, 
+        labels = names(primary_category_labels)
+        ),
       sec_split = factor(
         sec_split,
         levels = c("Not detected", "Detected", "Quantified"),
@@ -201,14 +135,14 @@ for (covariate in names(barplots_covariates)) {
       ) +
     scale_x_discrete(labels = park_labels) +
     labs(y = "", title = covariate) +
-    barplot_theme
+    barplot_desciptive_theme
 }
 barplot_season <- ggplot(dat, aes(x = Park, fill = Season)) +
   geom_bar(position = position_stack(), width = 0.90) +
   scale_fill_manual(values = barplot_colors$Season) +
   scale_x_discrete(labels = park_labels) +
   labs(y = "", title = "Season of sample collection") +
-  barplot_theme
+  barplot_desciptive_theme
 
 barplots <- barplot_season + barplots_covariates$Sex + 
   barplots_covariates$Age + barplots_covariates$Species +
@@ -218,39 +152,80 @@ ggsave("figure/descriptive_barplots.pdf", barplots, width = 10, height = 6.5)
 
 # Mosaic plots =================================================================
 
-# Set the positions of the breaks on the x axis to be in the centre of the bar
-x_axis_breaks <- seq(0, 1, length = length(park_labels) + 1)[-1] - 1 / (length(park_labels) * 2)
+# Set the positions of the breaks on the x axis to be in the center of the bar
+x_axis_breaks <- seq(0, 1, length = length(park_labels) + 1)[-1] - 
+  1 / (length(park_labels) * 2)
+
+# Mosaic plot by sex
+mosaic_sex <- ggplot(
+  df_mosaic$Sex,
+  aes(
+    xmin = xmin,
+    xmax = xmax, 
+    ymin = ymin, 
+    ymax = ymax, 
+    fill = interaction(split, sec_split), 
+    alpha = sec_split
+  )
+) +
+  geom_rect() +
+  scale_x_continuous(breaks = x_axis_breaks, labels = park_labels) +
+  scale_y_continuous(
+    breaks = seq(0, 1, by = 0.2), 
+    labels = paste0(seq(0, 100, by = 20), "%")
+  ) +
+  scale_alpha_manual(values = c(1, 1, 1)) +
+  scale_fill_manual(
+    name = "Male",
+    values = unlist(sex_mosaic_colors),
+    breaks = names(unlist(sex_mosaic_colors["Male"])),
+    labels = names(sex_mosaic_colors$Male)
+  ) +
+  facet_wrap(~primary_category, nrow = 4, ncol = 2) +
+  labs(x = "Park", title = "Pollutant detection by sex") +
+  guides(
+    fill = guide_legend(order = 1),
+    alpha = guide_legend(
+      order = 2,
+      title = "Female",
+      override.aes = list(fill = sex_mosaic_colors$Female)
+    )
+  ) +
+  mosaicplot_theme
+ggsave("figure/mosaic_sex.pdf", mosaic_sex, width = 12, height = 8)
+
 
 # Mosaic plot by species
 mosaic_species <- ggplot(
   df_mosaic$Species,
-  aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax, fill = interaction(split, sec_split), alpha = sec_split)
+  aes(
+    xmin = xmin, 
+    xmax = xmax, 
+    ymin = ymin, 
+    ymax = ymax, 
+    fill = interaction(split, sec_split), 
+    alpha = sec_split
+  )
 ) +
   geom_rect() +
   scale_x_continuous(breaks = x_axis_breaks, labels = park_labels) +
-  scale_y_continuous(breaks = seq(0, 1, by = 0.2), labels = paste0(seq(0, 100, by = 20), "%")) +
+  scale_y_continuous(
+    breaks = seq(0, 1, by = 0.2), 
+    labels = paste0(seq(0, 100, by = 20), "%")
+  ) +
   scale_alpha_manual(values = c(1, 1, 1)) +
   scale_fill_manual(
     name = "C. elaphus",
-    values = c(
-      "C. elaphus.Not detected" = "lightcoral",
-      "C. elaphus.Detected" = "brown3",
-      "C. elaphus.Quantified" = "orangered4",
-      "D. dama.Not detected" = "khaki2",
-      "D. dama.Detected" = "goldenrod2",
-      "D. dama.Quantified"  = "darkgoldenrod4"
-    ),
-    breaks = c("C. elaphus.Not detected", "C. elaphus.Detected", "C. elaphus.Quantified"),
-    labels = c("Not detected", "Detected", "Quantified")
+    values = unlist(species_mosaic_colors),
+    breaks = names(unlist(species_mosaic_colors["C. elaphus"])),
+    labels = names(species_mosaic_colors$`C. elaphus`)
   ) +
   facet_wrap(~primary_category, nrow = 4, ncol = 2) +
   labs(x = "Park", y = "Species", title = "Pollutant detection by species") +
   guides(
     alpha = guide_legend(
       title = "D. dama",
-      override.aes = list(
-        fill = c("Not detected" = "khaki2", "Detected" = "goldenrod2", "Quantified" = "darkgoldenrod4")
-      )
+      override.aes = list(fill = species_mosaic_colors$`D. dama`)
     )
   ) +
   mosaicplot_theme
@@ -271,24 +246,17 @@ mosaic_age <- ggplot(
 ) +
   geom_rect() +
   scale_x_continuous(breaks = x_axis_breaks, labels = park_labels) +
-  scale_y_continuous(breaks = seq(0, 1, by = 0.2), labels = paste0(seq(0, 100, by = 20), "%")) +
+  scale_y_continuous(
+    breaks = seq(0, 1, by = 0.2), 
+    labels = paste0(seq(0, 100, by = 20), "%")
+  ) +
   scale_alpha_manual(values = c(1, 1, 1)) +
   scale_linetype_manual(values = c(1, 1, 1)) +
   scale_fill_manual(
     name = "Calf",
-    values = c(
-      "Calf.Not detected" = "pink",
-      "Calf.Detected" = "palevioletred2",
-      "Calf.Quantified"  = "hotpink4",
-      "Subadult.Not detected" = "palegreen",
-      "Subadult.Detected" = "#46CD8A",
-      "Subadult.Quantified" = "darkgreen",
-      "Adult.Not detected" = "#FFBA80",
-      "Adult.Detected" = "darkorange2",
-      "Adult.Quantified" = "sienna4"
-      ),
-    breaks = c("Calf.Not detected", "Calf.Detected", "Calf.Quantified"),
-    labels = c("Not detected", "Detected", "Quantified")
+    values = unlist(age_mosaic_colors),
+    breaks = names(unlist(age_mosaic_colors["Calf"])),
+    labels = names(age_mosaic_colors$Calf)
   ) +
   facet_wrap(~primary_category, nrow = 4, ncol = 2) +
   labs(x = "Park", title = "Pollutant detection by age") +
@@ -297,59 +265,18 @@ mosaic_age <- ggplot(
     alpha = guide_legend(
       order = 2,
       title = "Subadult",
-      override.aes = list(
-        fill = c("Not detected" = "palegreen", "Detected" = "#46CD8A", "Quantified" = "darkgreen")
-      )
+      override.aes = list(fill = age_mosaic_colors$Subadult)
     ),
     linetype = guide_legend(
       order = 3,
       title = "Adult",
-      override.aes = list(
-        fill = c("Not detected" = "#FFBA80", "Detected" = "#FF8830", "Quantified" = "sienna4")
-      )
+      override.aes = list(fill = age_mosaic_colors$Adult)
     )
   ) +
   mosaicplot_theme
 ggsave("figure/mosaic_age.pdf", mosaic_age, width = 12, height = 8)
 
-# Mosaic plot by sex
-mosaic_sex <- ggplot(
-  df_mosaic$Sex,
-  aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax, fill = interaction(split, sec_split), alpha = sec_split)
-  ) +
-  geom_rect() +
-  scale_x_continuous(breaks = x_axis_breaks, labels = park_labels) +
-  scale_y_continuous(breaks = seq(0, 1, by = 0.2), labels = paste0(seq(0, 100, by = 20), "%")) +
-  scale_alpha_manual(values = c(1, 1, 1)) +
-  scale_fill_manual(
-    name = "Male",
-    values = c(
-      "Male.Not detected" = "skyblue1",
-      "Female.Not detected" = "#FF9999",
-      "Male.Detected" = "royalblue2",
-      "Female.Detected" = "firebrick2",
-      "Male.Quantified"  = "navyblue",
-      "Female.Quantified" = "firebrick4"
-      ),
-    breaks = c("Male.Not detected", "Male.Detected", "Male.Quantified"),
-    labels = c("Not detected", "Detected", "Quantified")
-  ) +
-  facet_wrap(~primary_category, nrow = 4, ncol = 2) +
-  labs(x = "Park", title = "Pollutant detection by sex") +
-  guides(
-    fill = guide_legend(order = 1),
-    alpha = guide_legend(
-      order = 2,
-      title = "Female",
-      override.aes = list(
-        fill = c("Not detected" = "#FF9999", "Detected" = "firebrick2", "Quantified" = "firebrick4")
-      )
-    )
-  ) +
-  mosaicplot_theme
-ggsave("figure/mosaic_sex.pdf", mosaic_sex, width = 12, height = 8)
-
-# Detectection box- and barplots =============================================
+# Detection box- and barplots ==================================================
 
 barplot_quantified <- ggplot(
   df_detected_by_category,
@@ -384,7 +311,7 @@ barplot_quantified <- ggplot(
     fill = guide_legend(order = 1),  # National parks first
     alpha = guide_legend(
       order = 2,
-      title = "Occurence \n of pollutants\n(left panel):",
+      title = "Occurence\nof pollutants\n(left panel):",
       override.aes = list(
         fill = c("Quantified" = "gray20", "Detected" = "gray60"),
         alpha = c("Quantified" = 1, "Detected" = 1),
@@ -393,24 +320,7 @@ barplot_quantified <- ggplot(
       )
     )
   ) +
-  theme(plot.background = element_blank(),
-    strip.placement = "outside",
-    strip.text.y.left = element_text(angle = 0),
-    panel.spacing = unit(.1,"cm"),
-    panel.grid.major.x = element_blank(),
-    plot.title = element_text(hjust = 0, size = 12),
-    legend.key.width = unit(0.6, "cm"),
-    legend.key.height = unit(0.6, "cm"),
-    legend.background = element_blank(),
-    panel.grid = element_blank(),
-    strip.background = element_blank(),
-    axis.text = element_text(size = 6),
-    axis.title = element_text(size = 8),
-    legend.text = element_text(size = 8),
-    axis.ticks.y = element_blank(),
-    axis.text.y = element_blank(),
-    plot.margin = margin(0.1, 0.1, 0.1, -0.1, "cm")
-  )
+  barplot_detection_theme
 
 boxplot_quantified <- ggplot(
   df_quantified_by_category,
@@ -418,62 +328,37 @@ boxplot_quantified <- ggplot(
     x = Value_sum_by_category, 
     y = Park, 
     fill = Park, 
-    color = Park, 
-    shape = placeholder
-    )
-  ) +
+    color = Park
+  )
+) +
   geom_point(  # Points for n < 5
     data =  ~ subset(., !Boxplot),
-    size = 1
+    size = 1,
+    shape = 1
   ) +
   stat_summary(  # Boxplot for nobs >= 5
     data = ~ subset(., Boxplot),
     fun.data = boxplot_custom,
     linewidth = 0.2,
     geom = "boxplot",
-    key_glyph = "point",
     staplewidth = 1,
     width = 0.8
   ) +
   scale_x_continuous(trans = "log10") +
   scale_y_discrete(limits = rev(levels(df_detected_by_category$Park))) +
-  facet_grid(primary_category~., switch = "y", labeller = as_labeller(primary_category_labels)) +
-  scale_shape_manual(values = 1, breaks = "placeholder", labels = "Individual values \nif n < 5",
-                     guide = "none") +  # Uncomment if needed
-  scale_color_manual(
-    values = park_colors,
-    guide = "none"
-  ) +
-  scale_fill_manual(
-    values = alpha(park_colors, 0.5),
-    guide = "none"
-  ) +
+  facet_grid(
+    primary_category~., 
+    switch = "y", 
+    labeller = as_labeller(primary_category_labels)
+    ) +
+  scale_color_manual(values = park_colors, guide = "none") +
+  scale_fill_manual(values = alpha(park_colors, 0.5), guide = "none") +
   labs(
     y = "",
     title = "Distribution of quantifiable concentrations",
     x = bquote("concentration in"~mu*"g"~kg^-1)
   ) +
-  guides(
-    # shape = guide_legend(
-    #   title = "Concentration\n(right panel):",
-    #   override.aes = list(color = c("placeholder" = "gray20"), shape = 1, size = 1.5)
-    # )
-  ) +
-  theme(
-    strip.text.y.left = element_blank(),
-    panel.spacing = unit(.1,"cm"),
-    legend.position = "none",
-    panel.grid.major.x = element_blank(),
-    plot.title = element_text(hjust = 0, size = 12),
-    panel.grid = element_blank(),
-    strip.background = element_blank(),
-    axis.text = element_text(size = 6),
-    axis.title = element_text(size = 8),
-    legend.text = element_text(size = 8),
-    axis.text.y = element_blank(),
-    axis.ticks.y = element_blank(),
-    plot.margin = margin(0.1, 0.1, 0.1, -0.1, "cm")
-  )
+  boxplot_quantification_theme 
 
 boxplot_legend <- ggplot_box_legend()
 
