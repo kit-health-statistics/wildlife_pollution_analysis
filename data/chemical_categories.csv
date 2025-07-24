@@ -1,0 +1,62 @@
+Chemical,primary_category,Detection_threshold
+(-)-Cotinine,Anthropogenic pollution,2
+"1,3-Dinitrobenzene",Anthropogenic pollution,10
+17α-Ethinylestradiol,API,1
+"2,2',3,4,4',5,5'-Heptachlorobiphenyl (PCB #180)",POP,1
+"2,2',3,4,4',5'-Hexachlorobiphenyl (PCB #138)",POP,1
+"2,2',4,4',5,5'-Hexachlorobiphenyl (PCB #153)",POP,2
+"2,2',4,4',5-pentabromodiphenyl ether (BDE-99)",POP,2
+"2,2',4,4'-tetrabromodiphenyl ether (BDE-47)",POP,1
+"2,2',4,5,5'-Pentachlorobiphenyl (PCB #101)",POP,1
+"2,2',5,5'-Tetrachlorobiphenyl (PCB #52)",POP,2
+"2,4,4'-Trichlorobiphenyl (PCB #28)",POP,1
+Acenaphthene,PAH,4
+Atrazine,Pesticide,1
+Avobenzone,PCP,10
+Azoxystrobin,Pesticide,1
+Benzophenone-1,PCP,20
+BHC-beta,POP,1
+Boscalid,Pesticide,1
+Caffeine,Anthropogenic pollution,2
+oxy-Chlordane,POP,2
+trans-Chlordane,POP,1
+Clopidogrel,API,1
+Codeine,API,2
+Cypermethrin,Pesticide,1
+"DDE-p,p'",POP,1
+DEHA (Di(2-ethylhexyl) adipate),Plasticizer,20
+Diazepam,API,1
+Dieldrin,POP,2
+Difenoconazole,Pesticide,1
+Dimethomorph,Pesticide,2
+DINCH (Diisononyl hexahydrophthalate),Plasticizer,4
+Diphenylamine,Industrial chemical,10
+DPHP (Bis(2-propylheptyl) phthalate),Plasticizer,10
+EHS (2-Ethylhexyl salicylate),PCP,4
+Epoxiconazole,Pesticide,1
+Estrone,API,2
+Fenpropidin,Pesticide,2
+Fipronil,Pesticide,1
+Fipronil sulfone,Pesticide,1
+Fludioxonil,Pesticide,1
+Fluopyram,Pesticide,1
+Fluorene,PAH,4
+Galaxolide,PCP,2
+Heptachlor,POP,1
+Lenacil,Pesticide,2
+Myclobutanil,Pesticide,1
+OC (Octocrylene),PCP,10
+Oxybenzone,PCP,1
+Phenanthrene,PAH,10
+Picolinafen,Pesticide,2
+Propiconazole,Pesticide,1
+TDCPP,Industrial chemical,2
+Tebuconazole,Pesticide,2
+Terbuthylazine,Pesticide,1
+Terbuthylazine-desethyl,Pesticide,1
+Tetraconazole,Pesticide,1
+Tonalid,PCP,1
+Triclosan,API,1
+Triphenyl phosphate,Industrial chemical,1
+UV 328,POP,4
+Uvinul A Plus,PCP,10
