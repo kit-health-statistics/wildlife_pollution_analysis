@@ -17,7 +17,6 @@ data_positions <- list(
     summer = "E - SächsSchweiz!A1:AP58"
   ),
   Jasmund = c(winter = "G - Jasmund!A1:AP51",  summer = NA),
-  Harz = c(winter = "H - Harz!A1:AI6",  summer = NA),
   Kellerwald = c(winter = NA,  summer = "L - Kellerwald Edersee!A1:AS51"),
   Eiffel = c(winter = "Z - Eiffel!A1:AL51",  summer = "Z - Eiffel!A1:AZ31"),
   Vorpomm = c(winter = "F - VorpommBoddenlandschaft!A1:AK53",  summer = NA)
@@ -90,10 +89,6 @@ clean_data[clean_data$Sample_number == "Z73", "Date_of_sample_collection"] <-
 clean_data[clean_data$Sample_number == "F15", "Season"] <- "Winter 2023/24"
 clean_data[clean_data$Sample_number == "F37", "Season"] <- "Winter 2023/24"
 clean_data[clean_data$Sample_number == "Z73", "Season"] <- "Summer 2024"
-
-# Impute the season for the data from Harz. This is Winter 2023/24, as this data
-# is in the first data batch.
-clean_data[clean_data$Park == "Harz", "Season"] <- "Winter 2023/24"
 
 # Change the seasons manually for Bay Wald, which had some early winter samples 
 # in 2024/25, which got classified as from the summer.

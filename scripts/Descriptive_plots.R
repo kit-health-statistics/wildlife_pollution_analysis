@@ -46,7 +46,6 @@ park_labels <- c(
   "Hunsrueck" = "Hunsrück\nHochwald",
   "Saechs_Schw" = "Sächsische \nSchweiz",
   "Jasmund" = "Jasmund",
-  "Harz" = "Harz",
   "Kellerwald" = "Kellerwald\nEdersee",
   "Eiffel" = "Eiffel",
   "Vorpomm" = "Vorpomm. \nBoddenlandschaft"
@@ -58,7 +57,6 @@ park_colors <- c(
   "Saechs_Schw" = "darkgreen",
   "Hunsrueck" = "purple3",
   "Jasmund" = "lightblue3",
-  "Harz" = "salmon4",
   "Kellerwald" = "palegreen",
   "Eiffel" = "goldenrod1",
   "Vorpomm" = "magenta3"
@@ -113,7 +111,7 @@ df_detected_by_category <- read_csv("data/data_by_pollutant_category.csv") %>%
     Park = factor(
       Park, 
       levels = c("Bay_Wald", "Hainich", "Hunsrueck", "Saechs_Schw", "Jasmund", 
-                 "Harz", "Kellerwald", "Eiffel", "Vorpomm"), 
+                 "Kellerwald", "Eiffel", "Vorpomm"), 
       ordered = TRUE  # TRUE for displaying in a correct order in the mosaic plots
     ),
     Sex = factor(Sex, levels = c("Male", "Female")),
@@ -126,7 +124,7 @@ dat <- read_csv("data/clean_data.csv") %>%
      Park = factor(
        Park, 
        levels = c("Bay_Wald", "Hainich", "Hunsrueck", "Saechs_Schw", 
-                  "Jasmund", "Harz", "Kellerwald", "Eiffel", "Vorpomm"),
+                  "Jasmund", "Kellerwald", "Eiffel", "Vorpomm"),
        ordered = TRUE  # TRUE for displaying in a correct order in the boxplots
        ),
      Sex = factor(Sex, levels = c("Male", "Female")),

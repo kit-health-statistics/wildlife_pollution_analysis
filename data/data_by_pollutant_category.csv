@@ -172,11 +172,6 @@ API,Hainich,C87,Female,Summer 2024,C. elaphus,Calf,2024-10-02,0,True zero,1e-06,
 API,Hainich,C91,Male,Summer 2024,D. dama,Calf,2024-09-18,0,True zero,1e-06,1e-06,Not detected
 API,Hainich,C94,Male,Summer 2024,C. elaphus,Calf,2024-09-25,0,True zero,1e-06,1e-06,Not detected
 API,Hainich,C96,Female,Summer 2024,D. dama,Adult,2024-09-18,0,True zero,1e-06,1e-06,Not detected
-API,Harz,H01,Female,Winter 2023/24,C. elaphus,Calf,NA,0,True zero,1e-06,1e-06,Not detected
-API,Harz,H06,Female,Winter 2023/24,C. elaphus,Subadult,NA,0,Left censored,1e-06,2,Detected
-API,Harz,H07,Female,Winter 2023/24,C. elaphus,Adult,NA,0,True zero,1e-06,1e-06,Not detected
-API,Harz,H08,Female,Winter 2023/24,C. elaphus,Calf,NA,0,True zero,1e-06,1e-06,Not detected
-API,Harz,H32,Female,Winter 2023/24,C. elaphus,Adult,NA,0,True zero,1e-06,1e-06,Not detected
 API,Hunsrueck,D01,Female,Summer 2024,C. elaphus,Subadult,2024-08-22,0,True zero,1e-06,1e-06,Not detected
 API,Hunsrueck,D02,Female,Summer 2024,C. elaphus,Adult,2024-08-13,0,True zero,1e-06,1e-06,Not detected
 API,Hunsrueck,D03,Male,Summer 2024,C. elaphus,Calf,2024-08-19,0,True zero,1e-06,1e-06,Not detected
@@ -620,11 +615,6 @@ Anthropogenic pollution,Hainich,C87,Female,Summer 2024,C. elaphus,Calf,2024-10-0
 Anthropogenic pollution,Hainich,C91,Male,Summer 2024,D. dama,Calf,2024-09-18,0,Left censored,1e-06,2,Detected
 Anthropogenic pollution,Hainich,C94,Male,Summer 2024,C. elaphus,Calf,2024-09-25,0,Left censored,1e-06,2,Detected
 Anthropogenic pollution,Hainich,C96,Female,Summer 2024,D. dama,Adult,2024-09-18,0,Left censored,1e-06,2,Detected
-Anthropogenic pollution,Harz,H01,Female,Winter 2023/24,C. elaphus,Calf,NA,7.4208,Left censored,7.4208,9.4208,Quantified
-Anthropogenic pollution,Harz,H06,Female,Winter 2023/24,C. elaphus,Subadult,NA,8.67,Fully quantified,8.67,8.67,Quantified
-Anthropogenic pollution,Harz,H07,Female,Winter 2023/24,C. elaphus,Adult,NA,21.6296,Fully quantified,21.6296,21.6296,Quantified
-Anthropogenic pollution,Harz,H08,Female,Winter 2023/24,C. elaphus,Calf,NA,0,Left censored,1e-06,2,Detected
-Anthropogenic pollution,Harz,H32,Female,Winter 2023/24,C. elaphus,Adult,NA,0,Left censored,1e-06,2,Detected
 Anthropogenic pollution,Hunsrueck,D01,Female,Summer 2024,C. elaphus,Subadult,2024-08-22,7.67864672181641,Fully quantified,7.67864672181641,7.67864672181641,Quantified
 Anthropogenic pollution,Hunsrueck,D02,Female,Summer 2024,C. elaphus,Adult,2024-08-13,0,Left censored,1e-06,2,Detected
 Anthropogenic pollution,Hunsrueck,D03,Male,Summer 2024,C. elaphus,Calf,2024-08-19,0,Left censored,1e-06,2,Detected
@@ -1068,11 +1058,6 @@ Industrial chemical,Hainich,C87,Female,Summer 2024,C. elaphus,Calf,2024-10-02,0,
 Industrial chemical,Hainich,C91,Male,Summer 2024,D. dama,Calf,2024-09-18,0,Left censored,1e-06,11,Detected
 Industrial chemical,Hainich,C94,Male,Summer 2024,C. elaphus,Calf,2024-09-25,0,Left censored,1e-06,1,Detected
 Industrial chemical,Hainich,C96,Female,Summer 2024,D. dama,Adult,2024-09-18,0,Left censored,1e-06,1,Detected
-Industrial chemical,Harz,H01,Female,Winter 2023/24,C. elaphus,Calf,NA,0,Left censored,1e-06,11,Detected
-Industrial chemical,Harz,H06,Female,Winter 2023/24,C. elaphus,Subadult,NA,0,Left censored,1e-06,11,Detected
-Industrial chemical,Harz,H07,Female,Winter 2023/24,C. elaphus,Adult,NA,0,Left censored,1e-06,13,Detected
-Industrial chemical,Harz,H08,Female,Winter 2023/24,C. elaphus,Calf,NA,0,Left censored,1e-06,11,Detected
-Industrial chemical,Harz,H32,Female,Winter 2023/24,C. elaphus,Adult,NA,0,Left censored,1e-06,11,Detected
 Industrial chemical,Hunsrueck,D01,Female,Summer 2024,C. elaphus,Subadult,2024-08-22,0,Left censored,1e-06,13,Detected
 Industrial chemical,Hunsrueck,D02,Female,Summer 2024,C. elaphus,Adult,2024-08-13,0,Left censored,1e-06,13,Detected
 Industrial chemical,Hunsrueck,D03,Male,Summer 2024,C. elaphus,Calf,2024-08-19,0,Left censored,1e-06,13,Detected
@@ -1516,11 +1501,6 @@ PAH,Hainich,C87,Female,Summer 2024,C. elaphus,Calf,2024-10-02,0,Left censored,1e
 PAH,Hainich,C91,Male,Summer 2024,D. dama,Calf,2024-09-18,0,Left censored,1e-06,18,Detected
 PAH,Hainich,C94,Male,Summer 2024,C. elaphus,Calf,2024-09-25,0,Left censored,1e-06,18,Detected
 PAH,Hainich,C96,Female,Summer 2024,D. dama,Adult,2024-09-18,0,Left censored,1e-06,18,Detected
-PAH,Harz,H01,Female,Winter 2023/24,C. elaphus,Calf,NA,0,Left censored,1e-06,18,Detected
-PAH,Harz,H06,Female,Winter 2023/24,C. elaphus,Subadult,NA,0,Left censored,1e-06,18,Detected
-PAH,Harz,H07,Female,Winter 2023/24,C. elaphus,Adult,NA,10.5038,Left censored,10.5038,18.5038,Quantified
-PAH,Harz,H08,Female,Winter 2023/24,C. elaphus,Calf,NA,0,Left censored,1e-06,18,Detected
-PAH,Harz,H32,Female,Winter 2023/24,C. elaphus,Adult,NA,0,Left censored,1e-06,18,Detected
 PAH,Hunsrueck,D01,Female,Summer 2024,C. elaphus,Subadult,2024-08-22,11.7099718340451,Left censored,11.7099718340451,19.7099718340451,Quantified
 PAH,Hunsrueck,D02,Female,Summer 2024,C. elaphus,Adult,2024-08-13,10.6185482345119,Left censored,10.6185482345119,18.6185482345119,Quantified
 PAH,Hunsrueck,D03,Male,Summer 2024,C. elaphus,Calf,2024-08-19,0,Left censored,1e-06,18,Detected
@@ -1964,11 +1944,6 @@ PCP,Hainich,C87,Female,Summer 2024,C. elaphus,Calf,2024-10-02,0,Left censored,1e
 PCP,Hainich,C91,Male,Summer 2024,D. dama,Calf,2024-09-18,0,Left censored,1e-06,28,Detected
 PCP,Hainich,C94,Male,Summer 2024,C. elaphus,Calf,2024-09-25,17.7832753466039,Left censored,17.7832753466039,54.7832753466039,Quantified
 PCP,Hainich,C96,Female,Summer 2024,D. dama,Adult,2024-09-18,10.4921128113934,Left censored,10.4921128113934,37.4921128113934,Quantified
-PCP,Harz,H01,Female,Winter 2023/24,C. elaphus,Calf,NA,0,Left censored,1e-06,27,Detected
-PCP,Harz,H06,Female,Winter 2023/24,C. elaphus,Subadult,NA,0,Left censored,1e-06,27,Detected
-PCP,Harz,H07,Female,Winter 2023/24,C. elaphus,Adult,NA,63.0328,Left censored,63.0328,90.0328,Quantified
-PCP,Harz,H08,Female,Winter 2023/24,C. elaphus,Calf,NA,0,Left censored,1e-06,27,Detected
-PCP,Harz,H32,Female,Winter 2023/24,C. elaphus,Adult,NA,12.884,Left censored,12.884,39.884,Quantified
 PCP,Hunsrueck,D01,Female,Summer 2024,C. elaphus,Subadult,2024-08-22,6.46668667688789,Left censored,6.46668667688789,39.4666866768879,Quantified
 PCP,Hunsrueck,D02,Female,Summer 2024,C. elaphus,Adult,2024-08-13,0,Left censored,1e-06,27,Detected
 PCP,Hunsrueck,D03,Male,Summer 2024,C. elaphus,Calf,2024-08-19,0,Left censored,1e-06,27,Detected
@@ -2412,11 +2387,6 @@ POP,Hainich,C87,Female,Summer 2024,C. elaphus,Calf,2024-10-02,4.55781303922678,L
 POP,Hainich,C91,Male,Summer 2024,D. dama,Calf,2024-09-18,3.840053604855,Left censored,3.840053604855,10.840053604855,Quantified
 POP,Hainich,C94,Male,Summer 2024,C. elaphus,Calf,2024-09-25,0,Left censored,1e-06,4,Detected
 POP,Hainich,C96,Female,Summer 2024,D. dama,Adult,2024-09-18,0,Left censored,1e-06,8,Detected
-POP,Harz,H01,Female,Winter 2023/24,C. elaphus,Calf,NA,2.5438,Left censored,2.5438,12.5438,Quantified
-POP,Harz,H06,Female,Winter 2023/24,C. elaphus,Subadult,NA,0,Left censored,1e-06,11,Detected
-POP,Harz,H07,Female,Winter 2023/24,C. elaphus,Adult,NA,0,Left censored,1e-06,8,Detected
-POP,Harz,H08,Female,Winter 2023/24,C. elaphus,Calf,NA,0,Left censored,1e-06,11,Detected
-POP,Harz,H32,Female,Winter 2023/24,C. elaphus,Adult,NA,3.1586,Left censored,3.1586,10.1586,Quantified
 POP,Hunsrueck,D01,Female,Summer 2024,C. elaphus,Subadult,2024-08-22,1.01056796828937,Left censored,1.01056796828937,5.01056796828937,Quantified
 POP,Hunsrueck,D02,Female,Summer 2024,C. elaphus,Adult,2024-08-13,0,Left censored,1e-06,5,Detected
 POP,Hunsrueck,D03,Male,Summer 2024,C. elaphus,Calf,2024-08-19,7.940983382946239,Left censored,7.94098338294624,10.9409833829462,Quantified
@@ -2860,11 +2830,6 @@ Pesticide,Hainich,C87,Female,Summer 2024,C. elaphus,Calf,2024-10-02,0,Left censo
 Pesticide,Hainich,C91,Male,Summer 2024,D. dama,Calf,2024-09-18,0,Left censored,1e-06,1,Detected
 Pesticide,Hainich,C94,Male,Summer 2024,C. elaphus,Calf,2024-09-25,0,True zero,1e-06,1e-06,Not detected
 Pesticide,Hainich,C96,Female,Summer 2024,D. dama,Adult,2024-09-18,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Harz,H01,Female,Winter 2023/24,C. elaphus,Calf,NA,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Harz,H06,Female,Winter 2023/24,C. elaphus,Subadult,NA,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Harz,H07,Female,Winter 2023/24,C. elaphus,Adult,NA,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Harz,H08,Female,Winter 2023/24,C. elaphus,Calf,NA,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Harz,H32,Female,Winter 2023/24,C. elaphus,Adult,NA,0,True zero,1e-06,1e-06,Not detected
 Pesticide,Hunsrueck,D01,Female,Summer 2024,C. elaphus,Subadult,2024-08-22,0,Left censored,1e-06,1,Detected
 Pesticide,Hunsrueck,D02,Female,Summer 2024,C. elaphus,Adult,2024-08-13,0,Left censored,1e-06,1,Detected
 Pesticide,Hunsrueck,D03,Male,Summer 2024,C. elaphus,Calf,2024-08-19,0,True zero,1e-06,1e-06,Not detected
@@ -3308,11 +3273,6 @@ Plasticizer,Hainich,C87,Female,Summer 2024,C. elaphus,Calf,2024-10-02,16.4457247
 Plasticizer,Hainich,C91,Male,Summer 2024,D. dama,Calf,2024-09-18,7.74786721280139,Left censored,7.74786721280139,37.7478672128014,Quantified
 Plasticizer,Hainich,C94,Male,Summer 2024,C. elaphus,Calf,2024-09-25,13.2258086511959,Left censored,13.2258086511959,43.2258086511959,Quantified
 Plasticizer,Hainich,C96,Female,Summer 2024,D. dama,Adult,2024-09-18,12.2289498253276,Left censored,12.2289498253276,42.2289498253276,Quantified
-Plasticizer,Harz,H01,Female,Winter 2023/24,C. elaphus,Calf,NA,0,Left censored,1e-06,34,Detected
-Plasticizer,Harz,H06,Female,Winter 2023/24,C. elaphus,Subadult,NA,8.146,Left censored,8.146,38.146,Quantified
-Plasticizer,Harz,H07,Female,Winter 2023/24,C. elaphus,Adult,NA,13.732,Left censored,13.732,37.732,Quantified
-Plasticizer,Harz,H08,Female,Winter 2023/24,C. elaphus,Calf,NA,4.719,Left censored,4.719,34.719,Quantified
-Plasticizer,Harz,H32,Female,Winter 2023/24,C. elaphus,Adult,NA,6.6434,Left censored,6.6434,36.6434,Quantified
 Plasticizer,Hunsrueck,D01,Female,Summer 2024,C. elaphus,Subadult,2024-08-22,0,Left censored,1e-06,30,Detected
 Plasticizer,Hunsrueck,D02,Female,Summer 2024,C. elaphus,Adult,2024-08-13,0,Left censored,1e-06,30,Detected
 Plasticizer,Hunsrueck,D03,Male,Summer 2024,C. elaphus,Calf,2024-08-19,0,Left censored,1e-06,30,Detected
