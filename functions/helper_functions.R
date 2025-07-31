@@ -121,7 +121,7 @@ summarise_detection <- function(x) {
     # qualitatively detected and no chemicals from the category were quantified
     ret <- "Detected"
   }
-  return(ret)
+  ret
 }
 
 # This function creates a range per a chemical category, where the sum of all
@@ -161,12 +161,12 @@ summarise_censoring <- function(detected, value, threshold) {
       Value_max = vals_sum + sum(threshold[detected == "Detected"])
     )
   }
-  return(ret)
+  ret
 }
 
 # Functions for plotting the regression results ================================
 
-# Function for creating the tiles displaying the age and park regression 
+# Function for creating the tiles displaying the age and park regression
 # coefficients.
 plot_reg_coeffs <- function(
   covariate,
