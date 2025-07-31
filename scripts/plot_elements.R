@@ -164,3 +164,11 @@ boxplot_quantification_theme <- theme(
   plot.margin = margin(0.1, 0.1, 0.1, -0.1, "cm")
 )
 
+# Define linewidth for the result-plotting from the model fit ==================
+p_val_cat_linewidth <- c(
+  "reference" = 0.2, 
+  "(0,0.01]" = 1.4, 
+  "(0.01,0.05]" = 1, 
+  "(0.05,0.1]" = 0.6, 
+  "(0.1,1]" = 0.2
+)
