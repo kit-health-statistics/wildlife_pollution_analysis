@@ -8,6 +8,7 @@ theme_set(theme_bw())
 
 # Load the cleaned data
 df_detected_by_category <- read_csv("data/data_by_pollutant_category.csv") |>
+  # Filter out an observation, where we have no date
   filter(!is.na(Date_of_sample_collection)) |>
   mutate(
     # Convert the categorical variables to factors to keep the levels in the
@@ -17,6 +18,15 @@ df_detected_by_category <- read_csv("data/data_by_pollutant_category.csv") |>
     Detected_by_category = factor(
       Detected_by_category,
       levels = c("Quantified", "Detected", "Not detected")
+    ),
+    # Push the later dates one year back to close the gap between the data
+    # points. 1. April seems to be a good cutoff point
+    Date_of_sample_collection = as.Date(
+      ifelse(
+        Date_of_sample_collection > as.Date("2024-04-01"),
+        Date_of_sample_collection - 366,  # 2024 was a leap year
+        Date_of_sample_collection
+      )
     ),
     # Convert dates to numeric values
     Date_numeric = as.numeric(Date_of_sample_collection) -

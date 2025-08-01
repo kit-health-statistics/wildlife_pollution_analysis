@@ -1,4 +1,3 @@
-
 # A snippet defining graphical elements of the descriptive plots
 
 # Define text labels ===========================================================
@@ -44,23 +43,29 @@ park_colors <- c(
 # Color coding of the covariate catgories in desriptive barplots
 barplot_colors <- list(
   Sex = c("Male" = "royalblue2", "Female" = "firebrick3"),
-  Age = c("Calf" = "palevioletred2", "Subadult" = "#46CD8A", 
-          "Adult" = "darkorange3"),
+  Age = c(
+    "Calf" = "palevioletred2",
+    "Subadult" = "#46CD8A",
+    "Adult" = "darkorange3"
+  ),
   Species = c("C. elaphus" = "orangered4", "D. dama" = "goldenrod2"),
-  Season = c("Summer 2024" = "coral", "Winter 2024/25" = "skyblue2",
-             "Winter 2023/24" = "steelblue4")
+  Season = c(
+    "Summer 2024" = "coral",
+    "Winter 2024/25" = "skyblue2",
+    "Winter 2023/24" = "steelblue4"
+  )
 )
 
 # Color coding for the mosaic plot by sex
 sex_mosaic_colors <- list(
   Male = c(
-    "Not detected" = "skyblue1", 
-    "Detected" = "royalblue2", 
-    "Quantified"  = "navyblue"
+    "Not detected" = "skyblue1",
+    "Detected" = "royalblue2",
+    "Quantified" = "navyblue"
   ),
   Female = c(
-    "Not detected" = "#FF9999", 
-    "Detected" = "firebrick2", 
+    "Not detected" = "#FF9999",
+    "Detected" = "firebrick2",
     "Quantified" = "firebrick4"
   )
 )
@@ -75,7 +80,7 @@ species_mosaic_colors <- list(
   `D. dama` = c(
     "Not detected" = "khaki2",
     "Detected" = "goldenrod2",
-    "Quantified"  = "darkgoldenrod4"
+    "Quantified" = "darkgoldenrod4"
   )
 )
 
@@ -84,7 +89,8 @@ age_mosaic_colors <- list(
   Calf = c(
     "Not detected" = "pink",
     "Detected" = "palevioletred2",
-    "Quantified"  = "hotpink4"),
+    "Quantified" = "hotpink4"
+  ),
   Subadult = c(
     "Not detected" = "palegreen",
     "Detected" = "#46CD8A",
@@ -132,7 +138,7 @@ barplot_detection_theme <- theme(
   plot.background = element_blank(),
   strip.placement = "outside",
   strip.text.y.left = element_text(angle = 0),
-  panel.spacing = unit(.1,"cm"),
+  panel.spacing = unit(.1, "cm"),
   panel.grid.major.x = element_blank(),
   plot.title = element_text(hjust = 0, size = 12),
   legend.key.width = unit(0.6, "cm"),
@@ -150,7 +156,7 @@ barplot_detection_theme <- theme(
 
 boxplot_quantification_theme <- theme(
   strip.text.y.left = element_blank(),
-  panel.spacing = unit(.1,"cm"),
+  panel.spacing = unit(.1, "cm"),
   legend.position = "none",
   panel.grid.major.x = element_blank(),
   plot.title = element_text(hjust = 0, size = 12),
@@ -166,9 +172,9 @@ boxplot_quantification_theme <- theme(
 
 # Define linewidth for the result-plotting from the model fit ==================
 p_val_cat_linewidth <- c(
-  "reference" = 0.2, 
-  "(0,0.01]" = 1.4, 
-  "(0.01,0.05]" = 1, 
-  "(0.05,0.1]" = 0.6, 
+  "reference" = 0.2,
+  "(0,0.01]" = 1.4,
+  "(0.01,0.05]" = 1,
+  "(0.05,0.1]" = 0.6,
   "(0.1,1]" = 0.2
 )

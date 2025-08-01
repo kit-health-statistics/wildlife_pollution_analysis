@@ -38,12 +38,21 @@ plot_results <- function(
     )
 
   # Plot results
-  plt$spline <- ggplot(
-    spline_curve,
-    aes(x = Date_of_sample_collection, y = fit, ymin = lower, ymax = upper)
-  ) +
-    geom_line() +
-    geom_ribbon(alpha = 0.5) +
+  plt$spline <- ggplot() +
+    geom_line(
+      data = spline_curve,
+      aes(x = Date_of_sample_collection, y = fit)
+    ) +
+    geom_ribbon(
+      data = spline_curve,
+      aes(x = Date_of_sample_collection, ymin = lower, ymax = upper),
+      alpha = 0.5
+    ) +
+    geom_point(
+      data = df_filtered,
+      aes(x = df_filtered$Date_of_sample_collection, y  = 0),
+      shape = 1
+    ) +
     labs(
       x = "Date",
       title = "Penalized spline for the date variable (intercept included)",

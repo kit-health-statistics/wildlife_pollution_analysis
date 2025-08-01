@@ -12,7 +12,15 @@ dat <- read_csv("data/clean_data.csv") %>%
 
 dat_long <- dat %>%
   pivot_longer(
-    -c(Park, Sample_number, Species, Sex, Age, Date_of_sample_collection, Season),
+    -c(
+      Park,
+      Sample_number,
+      Species,
+      Sex,
+      Age,
+      Date_of_sample_collection,
+      Season
+    ),
     names_to = "Chemical",
     values_to = "Value"
   ) %>%
@@ -35,15 +43,24 @@ dat_long <- left_join(dat_long, chem_categories, by = "Chemical")
 
 # Handle the detection of chemicals by category
 df_detected_by_category <- dat_long %>%
-  group_by(primary_category, Park, Sample_number, Sex, Season, Species, Age, 
-           Date_of_sample_collection) %>%
+  group_by(
+    primary_category,
+    Park,
+    Sample_number,
+    Sex,
+    Season,
+    Species,
+    Age,
+    Date_of_sample_collection
+  ) %>%
   summarise(
     Value_sum_by_category = sum(Value, na.rm = TRUE),  # Redundant column
     Value_sum_by_category_left_censored = list(
       summarise_censoring(Detected, Value, Detection_threshold)
-      ),
+    ),
     Detected_by_category = summarise_detection(Detected)
-  ) %>% ungroup() %>% 
+  ) %>%
+  ungroup() %>%
   unnest_wider(Value_sum_by_category_left_censored)
 
 # Save the processed data ======================================================
