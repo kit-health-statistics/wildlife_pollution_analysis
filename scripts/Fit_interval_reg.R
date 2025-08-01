@@ -10,6 +10,9 @@ theme_set(theme_bw())
 df_detected_by_category <- read_csv("data/data_by_pollutant_category.csv") |>
   # Filter out an observation, where we have no date
   filter(!is.na(Date_of_sample_collection)) |>
+  # Filter out the first observation in time, which is too far away from the
+  # others
+  filter(Date_of_sample_collection != as.Date("2024-05-29")) |>
   mutate(
     # Convert the categorical variables to factors to keep the levels in the
     # correct order everywhere
@@ -66,7 +69,8 @@ for (k in seq_along(category_names)) {
     control = list(iter = 500)
   )
 
-  # Plot results
+  # Plot results (If throws one warning
+  # "Removed 1 row containing missing values"), everything is fine.
   plt_by_category[[k]] <- plot_results(
     df_filtered,
     mods_by_category[[k]],
@@ -79,8 +83,8 @@ for (k in seq_along(category_names)) {
       ".pdf"
     ),
     plt_by_category[[k]],
-    width = 9,
-    height = 8
+    width = 10,
+    height = 9
   )
 }
 

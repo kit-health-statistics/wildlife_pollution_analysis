@@ -138,7 +138,7 @@ barplot_detection_theme <- theme(
   plot.background = element_blank(),
   strip.placement = "outside",
   strip.text.y.left = element_text(angle = 0),
-  panel.spacing = unit(.1,"cm"),
+  panel.spacing = unit(.1, "cm"),
   legend.position = "none",
   panel.grid.major.x = element_blank(),
   plot.title = element_text(hjust = 0, size = 12),
@@ -172,5 +172,6 @@ p_val_cat_linewidth <- c(
   "(0,0.01]" = 1.4,
   "(0.01,0.05]" = 1,
   "(0.05,0.1]" = 0.6,
-  "(0.1,1]" = 0.2
+  "(0.1,1]" = 0.2,
+  "-1" = 0
 )

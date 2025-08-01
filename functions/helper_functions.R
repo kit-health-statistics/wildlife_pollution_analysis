@@ -167,13 +167,12 @@ summarise_censoring <- function(detected, value, threshold) {
 # Functions for plotting the regression results ================================
 
 # Function for creating the tiles displaying the age and park regression
-# coefficients.
-plot_reg_coeffs <- function(
+# coefficients. It creates a data frame for plotting the tiles
+extract_reg_coeffs <- function(
   covariate,
   covariate_levels,
   coeffs,
-  summ,
-  category_on_x = TRUE
+  summ
 ) {
   where_coeffs <- grep(covariate, names(coeffs))
   df_coeffs <- data.frame(
@@ -181,10 +180,16 @@ plot_reg_coeffs <- function(
     p_val = c(NA, summ$table[where_coeffs, "p"]),
     coeff = factor(covariate_levels, levels = covariate_levels),
     # an x, or y value to plot the tiles in the ggplot coordinates
-    dummy_value = 1
+    dummy_value = 1,
+    # Indicate, whether the tile contains a value, or is used as spacing
+    empty = "non-empty"
   ) |>
     mutate(
-      formatted_label = format(round(Vals, 2), nsmall = 2),
+      formatted_label = paste0(
+        format(round(Vals, 2), nsmall = 2),
+        "\np = ",
+        format(round(p_val, 2), nsmall = 2)
+      ),
       # Categorize the p-value to display different levels of significance
       p_val_cat = factor(
         ifelse(
@@ -196,61 +201,4 @@ plot_reg_coeffs <- function(
         levels = names(p_val_cat_linewidth)
       )
     )
-
-  if (category_on_x) {
-    df_coeffs <- df_coeffs |>
-      rename(
-        "x" = "coeff",
-        "y" = "dummy_value"
-      )
-  } else {
-    df_coeffs <- df_coeffs |>
-      rename(
-        "x" = "dummy_value",
-        "y" = "coeff"
-      )
-  }
-
-  p <- ggplot(
-    df_coeffs,
-    aes(
-      x = x,
-      y = y,
-      fill = Vals,
-      label = formatted_label,
-      linewidth = p_val_cat
-    )
-  ) +
-    geom_tile(color = "gray10") +
-    geom_text() +
-    labs(
-      x = NULL,
-      y = NULL,
-      fill = covariate,
-      title = paste0(covariate, " coefficients")
-    ) +
-    scale_fill_gradient2(low = "firebrick2", high = "royalblue") +
-    # `p_val_cat_linewidth` from the "plot_elements.R" file
-    scale_linewidth_manual(values = p_val_cat_linewidth) +
-    coord_equal() +
-    theme(
-      panel.grid.major = element_blank(),
-      panel.grid.minor = element_blank(),
-      panel.border = element_blank()
-    )
-  if (category_on_x) {
-    p <- p +
-      theme(
-        axis.text.y = element_blank(),
-        axis.ticks.y = element_blank()
-      )
-  } else {
-    p <- p +
-      theme(
-        axis.text.x = element_blank(),
-        axis.ticks.x = element_blank()
-      )
-  }
-
-  p
 }

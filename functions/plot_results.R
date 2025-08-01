@@ -7,7 +7,7 @@ plot_results <- function(
 ) {
   # List to store the plots
   plt <- vector("list", 6)
-  names(plt) <- c("spline", "age", "park", "boxplot", "barplot", "composite")
+  names(plt) <- c("spline", "reg_coeffs", "boxplot", "barplot", "composite")
 
   # Extract the coefficients and standard errors
   coeffs <- coefficients(fitted_survreg_model)
@@ -37,7 +37,42 @@ plot_results <- function(
       upper = fit + se.fit
     )
 
-  # Plot results
+  # Number of empty tiles between the times for parks and age categories
+  empty_tiles <- 1
+  df_park <- extract_reg_coeffs(
+    "Park",
+    levels(df_filtered$Park),
+    coeffs,
+    summ
+  )
+  df_age <- extract_reg_coeffs(
+    "Age",
+    levels(df_filtered$Age),
+    coeffs,
+    summ
+  )
+  df_empty <- data.frame(
+    Vals = NA,
+    p_val = NA,
+    p_val_cat = -1,
+    formatted_label = NA,
+    coeff = paste0("Empty_", 1:empty_tiles),
+    # a y value to plot the tiles in the ggplot coordinates
+    dummy_value = 1,
+    empty = "empty"
+  )
+  df_coeffs <- rbind(df_park, df_empty, df_age)
+
+  x_labels_coeffs <- c(
+    park_labels,
+    levels(df_filtered$Age)
+  )
+  names(x_labels_coeffs) <- c(
+    names(park_labels),
+    levels(df_filtered$Age)
+  )
+
+  # Plot results ===============================================================
   plt$spline <- ggplot() +
     geom_line(
       data = spline_curve,
@@ -48,29 +83,57 @@ plot_results <- function(
       aes(x = Date_of_sample_collection, ymin = lower, ymax = upper),
       alpha = 0.5
     ) +
-    geom_point(
-      data = df_filtered,
-      aes(x = df_filtered$Date_of_sample_collection, y  = 0),
-      shape = 1
-    ) +
+    scale_x_date(date_breaks = "1 month", date_labels = "%d %b") +
     labs(
       x = "Date",
       title = "Penalized spline for the date variable (intercept included)",
-      y = NULL  # Maybe add label "Concentration [correct unit]"?
+      y = bquote("Concentration in" ~ mu * "g" ~ kg^-1)
     )
 
-  plt$age <- plot_reg_coeffs(
-    "Age",
-    levels(df_filtered$Age),
-    coeffs,
-    summ,
-    category_on_x = FALSE
+  plt$reg_coeffs <- ggplot(
+    df_coeffs,
+    aes(
+      x = coeff,
+      y = dummy_value,
+      fill = Vals,
+      label = formatted_label,
+      linewidth = p_val_cat,
+      color = empty
+    )
   ) +
-    scale_y_discrete(labels = levels(df_filtered$Age))
-
-  plt$park <- plot_reg_coeffs("Park", levels(df_filtered$Park), coeffs, summ) +
-    # `park_labels` from the "plot_elements.R" file
-    scale_x_discrete(labels = park_labels)
+    geom_tile() +
+    geom_text(size = 3) +
+    labs(
+      x = NULL,
+      y = NULL,
+      fill = "Coefficient values\n(higher = more polluted)",
+      title = "Park and age regression coefficients"
+    ) +
+    scale_fill_gradient2(
+      low = "firebrick2",
+      high = "royalblue",
+      na.value = alpha("white", 0),
+      limits = c(-5.5, 4.5)
+    ) +
+    scale_x_discrete(
+      breaks = names(x_labels_coeffs),
+      labels = x_labels_coeffs
+    ) +
+    # `p_val_cat_linewidth` from the "plot_elements.R" file
+    scale_linewidth_manual(values = p_val_cat_linewidth, guide = "none") +
+    scale_color_manual(
+      values = c("non-empty" = "black", "empty" = alpha("white", 0)),
+      guide = "none"
+    ) +
+    coord_equal() +
+    theme(
+      panel.grid.major = element_blank(),
+      panel.grid.minor = element_blank(),
+      panel.border = element_blank(),
+      axis.ticks.y = element_blank(),
+      axis.text.y = element_blank(),
+      axis.text.x = element_text(size = 8)
+    )
 
   plt$boxplot <- df_filtered |>
     filter(
@@ -98,10 +161,14 @@ plot_results <- function(
       alpha = 0.5,
       outlier.shape = 2
     ) +
-    scale_color_manual(values = park_colors) +
+    scale_color_manual(values = park_colors, guide = "none") +
     scale_x_discrete(labels = park_labels, drop = FALSE) +
-    scale_fill_manual(values = park_colors) +
-    labs(x = "Park", y = "Concentration", title = "Quantified concentrations")
+    scale_fill_manual(values = park_colors, guide = "none") +
+    labs(
+      x = NULL,
+      y = bquote("Concentration in" ~ mu * "g" ~ kg^-1),
+      title = "Quantified concentrations"
+    )
 
   plt$barplot <- ggplot(
     df_filtered,
@@ -120,27 +187,28 @@ plot_results <- function(
         "Quantified" = "gray10",
         "Detected" = "gray10",
         "Not detected" = alpha("white", 0)
-      )
+      ),
+      guide = "none"
     ) +
     scale_fill_manual(
       values = park_colors,
-      labels = park_labels
+      labels = park_labels,
+      guide = "none"
     ) +
     scale_alpha_manual(
       breaks = c("Quantified", "Detected"),
-      values = c("Quantified" = 1, "Detected" = 0.5, "Not detected" = 0)
+      values = c("Quantified" = 1, "Detected" = 0.5, "Not detected" = 0),
+      name = "Occurence\nof pollutants"
     ) +
-    labs(title = "Detections")
+    labs(title = "Proportion quantified or qualitatively detected", y = NULL)
 
   # Compose the figures using patchwork
   plt$composite <-
-    (plt$spline + plt$age + plt$park + plt$boxplot + plt$barplot) +
+    (plt$spline / plt$reg_coeffs / plt$boxplot / plt$barplot) +
     plot_layout(
-      design = c("ab \n cc \n dd \n ee"),
-      heights = c(2, 1, 2),
-      widths = c(4, 1)
+      guides = "collect"
     ) &
-    theme(legend.position = "none") &  # Add legend later
+    theme(legend.position = "right") &
     plot_annotation(
       title = pollutant_category,
       theme = theme(
