@@ -1,140 +1,167 @@
-ggplot_box_legend <- function(family = "sans"){
-  
-  # Create data to use in the boxplot legend:
+# Function for creating a visual definition/explanation of a boxplot.
+# Adapted from a blogpost:
+# "Exploring ggplot2 boxplots - Defining limits and adjusting style"
+# by Laura DeCicco
+# https://waterdata.usgs.gov/blog/boxplots/
+ggplot_box_legend <- function(family = "sans") {
+  # Set up the parameters guiding the size, position and distance ==============
+
+  # The text label positions need some fiddling to get them just right.
+  # Must be adjusted, when the aspect ratio of the final figure changes.
+
+  # Where items should be on the x axis
+  labels_position_x <- 1  # Legend items
+  titles_position_x <- 0.85  # Legend titles
+  glyphs_position_x <- 0.9  # Key glyphs (squares and the boxplot)
+
+  # Where the legend titles should be on the y axis
+  labels_position_y <- list("Park" = 3500, "Detection" = 1800, "Boxplot" = 1000)
+
+  # The legend for parks and the detection types is represented by colored
+  # squares. This value specifies, how far away are the square centers from each
+  # other on the vertical axis.
+  square_distance <- 150
+
+  # Prepare the data for plotting  =============================================
+
+  # Create data to draw the boxplot
   set.seed(100)
-  
-  sample_df <- data.frame(parameter = "test",
-                          values = sample(500))
-  
+  sample_data <- sample.int(500)
   # Extend the top whisker a bit:
-  sample_df$values[1:100] <- 701:800
-  # Make sure there's only 1 lower outlier:
-  sample_df$values[1] <- -350
-  
-  # Function to calculate important values:
-  ggplot2_boxplot <- function(x){
-    
-    quartiles <- as.numeric(quantile(x, probs = c(0.25, 0.5, 0.75)))
-    
-    names(quartiles) <- c("25th percentile", "median", "75th percentile")
-    
-    IQR <- diff(quartiles[c(1, 3)])
-    
-    upper_whisker <- max(x[x < (quartiles[3] + 1.5 * IQR)])
-    lower_whisker <- min(x[x > (quartiles[1] - 1.5 * IQR)])
-    
-    upper_dots <- x[x > (quartiles[3] + 1.5*IQR)]
-    lower_dots <- x[x < (quartiles[1] - 1.5*IQR)]
-    
-    return(
-      list(
-        "quartiles" = quartiles,
-        "25th percentile" = as.numeric(quartiles[1]),
-        "median" = as.numeric(quartiles[2]),
-        "75th percentile" = as.numeric(quartiles[3]),
-        "IQR" = IQR,
-        "upper_whisker" = upper_whisker,
-        "lower_whisker" = lower_whisker,
-        "upper_dots" = upper_dots,
-        "lower_dots" = lower_dots
-      )
-    )
-  }
-  
-  # Get those values:
-  ggplot_output <- ggplot2_boxplot(sample_df$values)
-  
-  # Lots of text in the legend, make it smaller and consistent font:
-  update_geom_defaults("text", list(size = 3, hjust = 0, family = family))
-  
-  # Labels don't inherit text:
-  update_geom_defaults("label", list(size = 3, hjust = 0, family = family))
-  
-  # Create the legend:
-  # The main elements of the plot (the boxplot, error bars, and count)
-  # are the easy part.
-  # The text describing each of those takes a lot of fiddling to
-  # get the location and style just right:
+  sample_data[1:100] <- 701:800
+  # There will be 2 lower outliers
+  outliers <- data.frame(
+    x = glyphs_position_x,
+    y = c(-310, -460),
+    Point_type = c("outlier", "individual_val")
+  )
+
+  # Segments to mark the interquartile range (IQR). 2 horizontal segments,
+  # 1 vertical.
+  quartiles <- quantile(sample_data, c(0.25, 0.5, 0.75))
+  IQR <- quartiles[3] - quartiles[1]  # nolint
+  df_IQR_segment <- data.frame(  # nolint
+    x = c(1.3, 1.3, 1.45),
+    y = quartiles[c(1, 3, 1)],
+    xend = rep(1.45, 3),
+    yend = quartiles[c(1, 3, 3)]
+  )
+
+  # Where to draw the squares representing the fill colors of parks and
+  # the type of detection. The squares will be drawn using
+  # `geom_point(shape = 2)` with a large size instead of `geom_rect()`.
+  df_rect <- data.frame(
+    x = glyphs_position_x,
+    y = c(
+      # Draw from the title downwards
+      labels_position_y$Park - (seq(1:length(park_labels)) * square_distance),
+      # Draw from the title downwards and add some space between the title and
+      # the legend items, as the title for the detection has multiple lines
+      labels_position_y$Detection -
+        (seq(1:2) * square_distance) -
+        0.5 * square_distance
+    ),
+    fill_color = c(names(park_colors), c("Quantified", "Detected"))
+  )
+
+  # Set the coordinates of the text labels =====================================
+
+  # Calculate coordinates, where to place text labels of the boxplot
+  df_boxplot_labels <- data.frame(
+    x = c(
+      rep(labels_position_x, 7),
+      1.35,  # IQR label
+      titles_position_x  # Title
+    ),
+    y = c(
+      quartiles,
+      # Upper whisker. Shift the label a little bit below
+      max(sample_data[sample_data < (quartiles[3] + 1.5 * IQR)]) - 50,
+      # Lower whisker. Shift the label a little bit below
+      min(sample_data[sample_data > (quartiles[1] - 1.5 * IQR)]) - 50,
+      outliers$y,
+      quartiles[2],  # IQR label
+      labels_position_y$Boxplot  # Title
+    ),
+    Labels = c(
+      "25th percentile",
+      "Median",
+      "75th percentile",
+      "Largest value within\n1.5 x IQR above\n75th percentile",  # Whisker
+      "Smallest value within\n1.5 x IQR below\n25th percentile",  # Whisker
+      "Outliers",
+      "Individual values\nif n < 5",
+      "IQR",
+      "Concentration \n(right panel):"  # Title
+    ),
+    Size = c(rep("Label_text", 8), "Title")
+  )
+
+  # Retrieve coordinates, where to place text labels of the parks and detection
+  # categories
+  df_rect_labels <- data.frame(
+    x = c(
+      # Legend item labels: 8 for parks, 2 for detection category
+      rep(labels_position_x, length(park_labels) + 2),
+      # 2 titles
+      rep(titles_position_x, 2)
+    ),
+    # y labels match the centers of the squares, the last 2 are for the titles
+    y = c(df_rect$y, labels_position_y$Park, labels_position_y$Detection),
+    Labels = c(
+      unname(park_labels),
+      "Quantified",
+      "Detected only\nqualitatively",
+      "National park",  # Title
+      "Occurence\nof pollutants\n(left panel):"  # Title
+    ),
+    Size = c(rep("Label_text", length(park_labels) + 2), rep("Title", 2))
+  )
+
+  df_labels <- rbind(df_boxplot_labels, df_rect_labels)
+
+  # Create the legend ==========================================================
   explain_plot <- ggplot() +
-    stat_boxplot(
-      data = sample_df,
-      aes(x = parameter, y = values),
-      geom ='errorbar', 
-      width = 0.3
-    ) +
     geom_boxplot(
-      data = sample_df,
-      aes(x = parameter, y = values),
-      width = 0.3, 
+      aes(x = glyphs_position_x, y = sample_data),
+      width = 0.1,
       fill = "lightgrey",
-      outlier.shape = 1
+      outlier.shape = 1,
+      staplewidth = 1
     ) +
-    geom_text(aes(x = 0.8, y = 1000, label = "Concentration \n(right panel):"), vjust = 0.4,
-              size = 3.8) +
-    theme_minimal(base_size = 5, base_family = family) +
-    # geom_segment(
-    #   aes(
-    #     x = 2.5, 
-    #     xend = 2.5,
-    #     y = ggplot_output[["25th percentile"]],
-    #     yend = ggplot_output[["75th percentile"]]
-    #   )
-    # ) +
-    # geom_segment(
-    #   aes(
-    #     x = 1.2,
-  #     xend = 2.5,
-  #     y = ggplot_output[["25th percentile"]],
-  #     yend = ggplot_output[["25th percentile"]])
-  # ) +
-  # geom_segment(
-  #   aes(
-  #     x = 1.2, 
-  #     xend = 2.5,
-  #     y = ggplot_output[["75th percentile"]],
-  #     yend = ggplot_output[["75th percentile"]]
-  #   )
-  # ) +
-  # geom_text(
-  #   aes(x = 2.55, y = ggplot_output[["median"]]),
-  #   label = "Interquartile\nrange", 
-  #   vjust = 0.4
-  # ) +
-  geom_text(
-    aes(
-      x = c(1.17, 1.17),
-      y = c(ggplot_output[["upper_whisker"]], 
-            ggplot_output[["lower_whisker"]]),
-      label = c("Maximum", "Minimum")),
-    vjust = 0.4
-  ) +
+    geom_point(
+      data = outliers,
+      mapping = aes(x = x, y = y, shape = Point_type),
+      size = 1.5
+    ) +
+    geom_segment(
+      data = df_IQR_segment,
+      mapping = aes(x = x, xend = xend, y = y, yend = yend)
+    ) +
+    # Square legend items
+    geom_point(
+      data = df_rect,
+      aes(x = x, y = y, fill = fill_color),
+      size = 8,
+      shape = 22
+    ) +
     geom_text(
-      aes(
-        x = c(1.17), 
-        y =  ggplot_output[["lower_dots"]],
-        label = "Individual values\nif n < 5"
-      ),
-      vjust = 0.4
+      data = df_labels,
+      mapping = aes(x = x, y = y, label = Labels, size = Size),
+      vjust = 0.4,
+      hjust = 0,
+      lineheight = 0.9
     ) +
-    geom_label(
-      aes(
-        x = 1.17, 
-        y = ggplot_output[["quartiles"]],
-        label = names(ggplot_output[["quartiles"]])
-      ),
-      vjust = c(0.4, 0.4, 0.4),
-      fill = "white", 
-      label.size = 0
+    scale_shape_manual(values = c("outlier" = 2, "individual_val" = 1)) +
+    scale_size_manual(values = c("Label_text" = 2.8, "Title" = 3.8)) +
+    # Fill colors for the square legend items
+    scale_fill_manual(
+      values = c(park_colors, "Quantified" = "gray10", "Detected" = "gray60")
     ) +
-    ylab("") + xlab("") +
+    theme_void(base_family = family) +
     theme(
-      axis.text = element_blank(),
-      axis.ticks = element_blank(),
-      panel.grid = element_blank(),
-      aspect.ratio = 4/3,
-      plot.title = element_text(hjust = 0.5, size = 8)
-    ) +
-    coord_cartesian(xlim = c(0.8, 3.1), ylim = c(-400, 1050))
-  
-  return(explain_plot)
+      legend.position = "none"
+    )
+
+  explain_plot
 }

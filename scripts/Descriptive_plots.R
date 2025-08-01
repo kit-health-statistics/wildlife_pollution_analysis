@@ -9,28 +9,18 @@ source("scripts/plot_elements.R")
 
 # Function converting the rgb color codes to hex for the color choice
 # Can be deleted as soon as all colors are determined
-rgb2hex <- function(rgbmat){
+rgb2hex <- function(rgbmat) {
   # function to apply to each column of input rgbmat
-  ProcessColumn = function(col){
-    rgb(rgbmat[1, col],
-        rgbmat[2, col],
-        rgbmat[3, col],
-        maxColorValue = 255)
+  process_column <- function(col) {
+    rgb(rgbmat[1, col], rgbmat[2, col], rgbmat[3, col], maxColorValue = 255)
   }
   # Apply the function
-  sapply(1:ncol(rgbmat), ProcessColumn)
-}
-
-# Plot the boxes with whiskers
-boxplot_custom <- function(x) {
-  r <- quantile(x, probs = c(0.00, 0.25, 0.5, 0.75, 1))
-  names(r) <- c("ymin", "lower", "middle", "upper", "ymax")
-  r
+  sapply(1:ncol(rgbmat), process_column)
 }
 
 # Read the cleaned data and convert categories to factors ======================
 
-df_detected_by_category <- read_csv("data/data_by_pollutant_category.csv") %>% 
+df_detected_by_category <- read_csv("data/data_by_pollutant_category.csv") %>%
   mutate(
     # It will be ordered as Quantified < Detected < Not detected, to display
     # correctly in the mosaic plot
@@ -40,29 +30,39 @@ df_detected_by_category <- read_csv("data/data_by_pollutant_category.csv") %>%
       ordered = TRUE
     ),
     Park = factor(
-      Park, 
-      levels = c("Bay_Wald", "Hainich", "Hunsrueck", "Saechs_Schw", "Jasmund", 
-                 "Kellerwald", "Eiffel", "Vorpomm"), 
-      ordered = TRUE  # TRUE for displaying in a correct order in the mosaic plots
+      Park,
+      levels = names(park_labels),
+      # ordered = TRUE for displaying in a correct order in the mosaic plots
+      ordered = TRUE
     ),
     Sex = factor(Sex, levels = c("Male", "Female")),
     Age = factor(Age, levels = c("Adult", "Subadult", "Calf"), ordered = TRUE),
     Species = factor(Species, levels = c("D. dama", "C. elaphus")),
-    Season = factor(Season, levels = c("Summer 2024", "Winter 2024/25", "Winter 2023/24"))
+    Season = factor(
+      Season,
+      levels = c("Summer 2024", "Winter 2024/25", "Winter 2023/24")
+    )
   )
 dat <- read_csv("data/clean_data.csv") %>%
-   mutate(
-     Park = factor(
-       Park, 
-       levels = c("Bay_Wald", "Hainich", "Hunsrueck", "Saechs_Schw", 
-                  "Jasmund", "Kellerwald", "Eiffel", "Vorpomm"),
-       ordered = TRUE  # TRUE for displaying in a correct order in the boxplots
-       ),
-     Sex = factor(Sex, levels = c("Male", "Female")),
-     Age = factor(Age, levels = c("Adult", "Subadult", "Calf"), ordered = TRUE),
-     Species = factor(Species, levels = c("C. capreolus", "D. dama", "C. elaphus")),
-     Season = factor(Season, levels = c("Summer 2024", "Winter 2024/25", "Winter 2023/24"))
-   ) %>% # Convert the measurements to character to avoid problems when pivoting
+  mutate(
+    Park = factor(
+      Park,
+      levels = names(park_labels),
+      # ordered = TRUE for displaying in a correct order in the boxplots
+      ordered = TRUE
+    ),
+    Sex = factor(Sex, levels = c("Male", "Female")),
+    Age = factor(Age, levels = c("Adult", "Subadult", "Calf"), ordered = TRUE),
+    Species = factor(
+      Species,
+      levels = c("D. dama", "C. elaphus")
+    ),
+    Season = factor(
+      Season,
+      levels = c("Summer 2024", "Winter 2024/25", "Winter 2023/24")
+    )
+  ) %>%
+  # Convert the measurements to character to avoid problems when pivoting
   mutate_at(vars(-Age, -Species, -Sex, -Season, -Park), as.character)
 
 # Prepare the data frame for the boxplots ======================================
@@ -71,7 +71,8 @@ dat <- read_csv("data/clean_data.csv") %>%
 df_quantified_by_category <- filter(
   df_detected_by_category,
   Detected_by_category == "Quantified"
-) %>% group_by(Park, primary_category) %>%
+) %>%
+  group_by(Park, primary_category) %>%
   mutate(nobs = n()) %>%
   ungroup() %>%
   mutate(Boxplot = nobs >= 5, placeholder = "placeholder")
@@ -101,15 +102,15 @@ for (k in seq_along(primary_category_labels)) {
 
 for (covariate in names(df_rectangles)) {
   df_mosaic[[covariate]] <- bind_rows(
-    df_rectangles[[covariate]], 
+    df_rectangles[[covariate]],
     .id = "primary_category"
   ) %>%
     mutate(
       bar = factor(bar, levels = levels(dat$Park)),
       primary_category = factor(
-        primary_category, 
+        primary_category,
         labels = names(primary_category_labels)
-        ),
+      ),
       sec_split = factor(
         sec_split,
         levels = c("Not detected", "Detected", "Quantified"),
@@ -124,15 +125,15 @@ barplots_covariates <- vector("list", 3)
 names(barplots_covariates) <- c("Sex", "Age", "Species")
 for (covariate in names(barplots_covariates)) {
   barplots_covariates[[covariate]] <- ggplot(
-    dat, 
+    dat,
     aes(x = Park, fill = .data[[covariate]])
-    ) +
+  ) +
     geom_bar(position = "fill", width = 0.90) +
     scale_fill_manual(values = barplot_colors[[covariate]]) +
     scale_y_continuous(
-      breaks = seq(0, 1, by = 0.2), 
+      breaks = seq(0, 1, by = 0.2),
       labels = paste0(seq(0, 100, by = 20), "%")
-      ) +
+    ) +
     scale_x_discrete(labels = park_labels) +
     labs(y = "", title = covariate) +
     barplot_desciptive_theme
@@ -144,8 +145,10 @@ barplot_season <- ggplot(dat, aes(x = Park, fill = Season)) +
   labs(y = "", title = "Season of sample collection") +
   barplot_desciptive_theme
 
-barplots <- barplot_season + barplots_covariates$Sex + 
-  barplots_covariates$Age + barplots_covariates$Species +
+barplots <- barplot_season +
+  barplots_covariates$Sex +
+  barplots_covariates$Age +
+  barplots_covariates$Species +
   plot_layout(nrow = 2, ncol = 2)
 
 ggsave("figure/descriptive_barplots.pdf", barplots, width = 10, height = 6.5)
@@ -153,7 +156,7 @@ ggsave("figure/descriptive_barplots.pdf", barplots, width = 10, height = 6.5)
 # Mosaic plots =================================================================
 
 # Set the positions of the breaks on the x axis to be in the center of the bar
-x_axis_breaks <- seq(0, 1, length = length(park_labels) + 1)[-1] - 
+x_axis_breaks <- seq(0, 1, length = length(park_labels) + 1)[-1] -
   1 / (length(park_labels) * 2)
 
 # Mosaic plot by sex
@@ -161,17 +164,17 @@ mosaic_sex <- ggplot(
   df_mosaic$Sex,
   aes(
     xmin = xmin,
-    xmax = xmax, 
-    ymin = ymin, 
-    ymax = ymax, 
-    fill = interaction(split, sec_split), 
+    xmax = xmax,
+    ymin = ymin,
+    ymax = ymax,
+    fill = interaction(split, sec_split),
     alpha = sec_split
   )
 ) +
   geom_rect() +
   scale_x_continuous(breaks = x_axis_breaks, labels = park_labels) +
   scale_y_continuous(
-    breaks = seq(0, 1, by = 0.2), 
+    breaks = seq(0, 1, by = 0.2),
     labels = paste0(seq(0, 100, by = 20), "%")
   ) +
   scale_alpha_manual(values = c(1, 1, 1)) +
@@ -199,18 +202,18 @@ ggsave("figure/mosaic_sex.pdf", mosaic_sex, width = 12, height = 8)
 mosaic_species <- ggplot(
   df_mosaic$Species,
   aes(
-    xmin = xmin, 
-    xmax = xmax, 
-    ymin = ymin, 
-    ymax = ymax, 
-    fill = interaction(split, sec_split), 
+    xmin = xmin,
+    xmax = xmax,
+    ymin = ymin,
+    ymax = ymax,
+    fill = interaction(split, sec_split),
     alpha = sec_split
   )
 ) +
   geom_rect() +
   scale_x_continuous(breaks = x_axis_breaks, labels = park_labels) +
   scale_y_continuous(
-    breaks = seq(0, 1, by = 0.2), 
+    breaks = seq(0, 1, by = 0.2),
     labels = paste0(seq(0, 100, by = 20), "%")
   ) +
   scale_alpha_manual(values = c(1, 1, 1)) +
@@ -242,12 +245,12 @@ mosaic_age <- ggplot(
     fill = interaction(split, sec_split),
     alpha = sec_split,
     linetype = sec_split  # Placeholder aestetic to create the legend
-    )
+  )
 ) +
   geom_rect() +
   scale_x_continuous(breaks = x_axis_breaks, labels = park_labels) +
   scale_y_continuous(
-    breaks = seq(0, 1, by = 0.2), 
+    breaks = seq(0, 1, by = 0.2),
     labels = paste0(seq(0, 100, by = 20), "%")
   ) +
   scale_alpha_manual(values = c(1, 1, 1)) +
@@ -285,94 +288,91 @@ barplot_quantified <- ggplot(
     fill = Park,
     alpha = fct_relevel(Detected_by_category, rev),
     color = Detected_by_category
-    )
-  ) +
+  )
+) +
   geom_bar(position = "fill", width = 1, linewidth = 0.2) +
   scale_x_continuous(breaks = c(0, 0.5, 1)) +
   scale_y_discrete(limits = rev(levels(df_detected_by_category$Park))) +
-  facet_grid(primary_category~., switch = "y", labeller = as_labeller(primary_category_labels)) +
+  facet_grid(
+    primary_category ~ .,
+    switch = "y",
+    labeller = as_labeller(primary_category_labels)
+  ) +
   scale_color_manual(
-    values = c("Quantified" = "gray10", "Detected" = "gray10", "Not detected" = alpha("white", 0)),
-    guide = "none"
-  ) +
-  scale_fill_manual(
-    name = "National park",
-    values = park_colors,
-    labels = park_labels
-  ) +
-  scale_alpha_manual(
-    name = "Left panel:",
-    breaks = c("Quantified", "Detected"),
-    values = c("Quantified" = 1, "Detected" = 0.5, "Not detected" = 0),
-    labels = c("Quantified" = "Quantified", "Detected" = "Detected only \nQualitatively")
-  ) +
-  labs(y = "", title = "Occurence", x = "proportion exactly quantified \n or qualitatively detected") +
-  guides(
-    fill = guide_legend(order = 1),  # National parks first
-    alpha = guide_legend(
-      order = 2,
-      title = "Occurence\nof pollutants\n(left panel):",
-      override.aes = list(
-        fill = c("Quantified" = "gray20", "Detected" = "gray60"),
-        alpha = c("Quantified" = 1, "Detected" = 1),
-        color = c("Quantified" = "gray10", "Detected" = "gray10"),
-        linewidth = c("Quantified" = 0.2, "Detected" = 0.2)
-      )
+    values = c(
+      "Quantified" = "gray10",
+      "Detected" = "gray10",
+      "Not detected" = alpha("white", 0)
     )
+  ) +
+  scale_fill_manual(values = park_colors) +
+  scale_alpha_manual(
+    values = c("Quantified" = 1, "Detected" = 0.5, "Not detected" = 0)
+  ) +
+  labs(
+    y = "",
+    title = "Occurence",
+    x = "\nProportion exactly quantified\nor qualitatively detected"
   ) +
   barplot_detection_theme
 
 boxplot_quantified <- ggplot(
   df_quantified_by_category,
   aes(
-    x = Value_sum_by_category, 
-    y = Park, 
-    fill = Park, 
+    x = Value_sum_by_category,
+    y = Park,
+    fill = Park,
     color = Park
   )
 ) +
-  geom_point(  # Points for n < 5
-    data =  ~ subset(., !Boxplot),
+  geom_point(
+    # Points for n < 5
+    data = ~ subset(., !Boxplot),
     size = 1,
     shape = 1
   ) +
-  stat_summary(  # Boxplot for nobs >= 5
+  # Standard boxplots with the whiskers extending to 1.5 times the interquartile
+  # range
+  geom_boxplot(
     data = ~ subset(., Boxplot),
-    fun.data = boxplot_custom,
     linewidth = 0.2,
-    geom = "boxplot",
     staplewidth = 1,
-    width = 0.8
+    width = 0.8,
+    outlier.shape = 2,
+    outlier.size = 1
   ) +
   scale_x_continuous(trans = "log10") +
   scale_y_discrete(limits = rev(levels(df_detected_by_category$Park))) +
   facet_grid(
-    primary_category~., 
-    switch = "y", 
+    primary_category ~ .,
+    switch = "y",
     labeller = as_labeller(primary_category_labels)
-    ) +
-  scale_color_manual(values = park_colors, guide = "none") +
-  scale_fill_manual(values = alpha(park_colors, 0.5), guide = "none") +
+  ) +
+  scale_color_manual(values = park_colors) +
+  scale_fill_manual(values = alpha(park_colors, 0.5)) +
   labs(
     y = "",
     title = "Distribution of quantifiable concentrations",
-    x = bquote("concentration in"~mu*"g"~kg^-1)
+    x = bquote("Concentration in" ~ mu * "g" ~ kg^-1)
   ) +
-  boxplot_quantification_theme 
+  boxplot_quantification_theme
 
+source("functions/ggplot_box_legend.R")
 boxplot_legend <- ggplot_box_legend()
 
-part <- barplot_quantified + boxplot_quantified
-
-design <- "abc \n abd"
-
-concentrations <- part + guide_area() + boxplot_legend +
+concentrations <- barplot_quantified +
+  boxplot_quantified +
+  boxplot_legend +
   plot_layout(
-    design = design,
+    design = "abc",
     guides = "collect",
-    widths = c(1.2, 4, 2.5),
-    heights = c(2, 1.4)
+    widths = c(1.2, 4, 2.5)
   ) &
-  theme(plot.background = element_blank())
+  theme(plot.background = element_blank(), legend.position = "none")
 
-ggsave("figure/substances_quantified.pdf", concentrations, width = 8, height = 8)
+ggsave(
+  "figure/substances_quantified.pdf",
+  concentrations,
+  width = 8,
+  height = 8
+)
