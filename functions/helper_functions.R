@@ -176,7 +176,8 @@ extract_reg_coeffs <- function(
 ) {
   where_coeffs <- grep(covariate, names(coeffs))
   df_coeffs <- data.frame(
-    Vals = c(0, coeffs[where_coeffs]),
+    # Transform the coefficients to the response scale
+    Vals = exp(c(0, coeffs[where_coeffs])),
     p_val = c(NA, summ$table[where_coeffs, "p"]),
     coeff = factor(covariate_levels, levels = covariate_levels),
     # an x, or y value to plot the tiles in the ggplot coordinates

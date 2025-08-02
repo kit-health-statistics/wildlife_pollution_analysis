@@ -90,6 +90,7 @@ plot_results <- function(
       y = bquote("Concentration in" ~ mu * "g" ~ kg^-1)
     )
 
+  colorbar_breaks <- c(0.005, 0.07, 1, 9, 80)
   plt$reg_coeffs <- ggplot(
     df_coeffs,
     aes(
@@ -111,9 +112,13 @@ plot_results <- function(
     ) +
     scale_fill_gradient2(
       low = "firebrick2",
+      midpoint = 1,
       high = "royalblue",
       na.value = alpha("white", 0),
-      limits = c(-5.5, 4.5)
+      breaks = colorbar_breaks,
+      labels = colorbar_breaks,
+      limits = range(colorbar_breaks),
+      transform = "log"
     ) +
     scale_x_discrete(
       breaks = names(x_labels_coeffs),
