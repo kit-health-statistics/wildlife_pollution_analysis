@@ -203,3 +203,20 @@ extract_reg_coeffs <- function(
       )
     )
 }
+
+# Functions for saving the regression results ==================================
+
+save_results_as_xls <- function(fitted_model_list) {
+  # Create a new workbook
+  wb <- openxlsx::createWorkbook()
+  # Loop through models and add each summary to a sheet
+  for (k in seq_along(fitted_model_list)) {
+    model_summary <- summary(fitted_model_list[[k]])
+    coef_table <- as.data.frame(model_summary$table) |> select(-z)
+    # Calculate p-values
+    sheet_name <- names(fitted_model_list)[k]
+    openxlsx::addWorksheet(wb, sheet_name)
+    openxlsx::writeData(wb, sheet = sheet_name, coef_table, rowNames = TRUE)
+  }
+  wb
+}

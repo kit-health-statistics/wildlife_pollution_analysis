@@ -88,6 +88,10 @@ for (k in seq_along(category_names)) {
   )
 }
 
+# Save the results into an Excel file
+wb <- save_results_as_xls(mods_by_category)
+openxlsx::saveWorkbook(wb, "tables/model_summaries.xlsx", overwrite = TRUE)
+
 # Diagnostics
 fits_vs_residuals <- mods_by_category |>
   lapply(function(x) {
