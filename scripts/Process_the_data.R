@@ -54,7 +54,9 @@ df_detected_by_category <- dat_long %>%
     Date_of_sample_collection
   ) %>%
   summarise(
-    Value_sum_by_category = sum(Value, na.rm = TRUE),  # Redundant column
+    # For plotting the descriptive concentration plot
+    Value_sum_by_category = sum(Value, na.rm = TRUE),
+    # For the regression model fitting
     Value_sum_by_category_left_censored = list(
       summarise_censoring(Detected, Value, Detection_threshold)
     ),

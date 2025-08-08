@@ -1,461 +1,461 @@
 primary_category,Park,Sample_number,Sex,Season,Species,Age,Date_of_sample_collection,Value_sum_by_category,censored,Value_min,Value_max,Detected_by_category
-API,Bay_Wald,A01,Male,Winter 2023/24,C. elaphus,Adult,2023-12-11,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A03,Male,Winter 2023/24,C. elaphus,Subadult,2024-01-30,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A05,Male,Winter 2023/24,C. elaphus,Subadult,2024-01-31,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A06,Male,Winter 2023/24,C. elaphus,Subadult,2023-12-27,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A07,Female,Winter 2023/24,C. elaphus,Adult,2024-01-25,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A08,Male,Winter 2023/24,C. elaphus,Adult,2024-01-30,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A09,Male,Winter 2023/24,C. elaphus,Adult,2023-12-05,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A100,Male,Winter 2024/25,C. elaphus,Adult,2024-12-09,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A13,Female,Winter 2023/24,C. elaphus,Subadult,2024-01-25,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A19,Male,Winter 2023/24,C. elaphus,Subadult,2024-01-30,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A20,Male,Winter 2023/24,C. elaphus,Adult,2023-12-29,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A23,Male,Winter 2023/24,C. elaphus,Adult,2024-01-28,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A39,Male,Winter 2023/24,C. elaphus,Subadult,2024-01-31,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A40,Male,Winter 2023/24,C. elaphus,Adult,2024-01-30,0,True zero,1e-06,1e-06,Not detected
+API,Bay_Wald,A01,Male,Winter 2023/24,C. elaphus,Adult,2023-12-11,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A03,Male,Winter 2023/24,C. elaphus,Subadult,2024-01-30,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A05,Male,Winter 2023/24,C. elaphus,Subadult,2024-01-31,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A06,Male,Winter 2023/24,C. elaphus,Subadult,2023-12-27,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A07,Female,Winter 2023/24,C. elaphus,Adult,2024-01-25,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A08,Male,Winter 2023/24,C. elaphus,Adult,2024-01-30,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A09,Male,Winter 2023/24,C. elaphus,Adult,2023-12-05,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A100,Male,Winter 2024/25,C. elaphus,Adult,2024-12-09,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A13,Female,Winter 2023/24,C. elaphus,Subadult,2024-01-25,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A19,Male,Winter 2023/24,C. elaphus,Subadult,2024-01-30,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A20,Male,Winter 2023/24,C. elaphus,Adult,2023-12-29,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A23,Male,Winter 2023/24,C. elaphus,Adult,2024-01-28,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A39,Male,Winter 2023/24,C. elaphus,Subadult,2024-01-31,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A40,Male,Winter 2023/24,C. elaphus,Adult,2024-01-30,0,True zero,1e-06,8,Not detected
 API,Bay_Wald,A54,Female,Winter 2024/25,C. elaphus,Adult,2024-12-02,0,Left censored,1e-06,2,Detected
-API,Bay_Wald,A55,Male,Winter 2024/25,C. elaphus,Subadult,2025-01-04,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A59,Male,Winter 2024/25,C. elaphus,Adult,2024-10-16,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A60,Male,Winter 2024/25,C. elaphus,Adult,NA,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A62,Male,Winter 2024/25,C. elaphus,Adult,2024-11-13,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A63,Male,Winter 2024/25,C. elaphus,Adult,2024-11-19,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A64,Male,Winter 2024/25,C. elaphus,Subadult,2024-10-22,0,True zero,1e-06,1e-06,Not detected
+API,Bay_Wald,A55,Male,Winter 2024/25,C. elaphus,Subadult,2025-01-04,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A59,Male,Winter 2024/25,C. elaphus,Adult,2024-10-16,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A60,Male,Winter 2024/25,C. elaphus,Adult,NA,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A62,Male,Winter 2024/25,C. elaphus,Adult,2024-11-13,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A63,Male,Winter 2024/25,C. elaphus,Adult,2024-11-19,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A64,Male,Winter 2024/25,C. elaphus,Subadult,2024-10-22,0,True zero,1e-06,8,Not detected
 API,Bay_Wald,A65,Female,Winter 2024/25,C. elaphus,Adult,2024-11-24,0,Left censored,1e-06,2,Detected
-API,Bay_Wald,A67,Male,Winter 2024/25,C. elaphus,Adult,2024-10-31,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A68,Male,Winter 2024/25,C. elaphus,Subadult,2024-10-13,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A72,Female,Winter 2024/25,C. elaphus,Adult,2024-12-29,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A73,Male,Winter 2024/25,C. elaphus,Adult,2024-10-27,0,True zero,1e-06,1e-06,Not detected
+API,Bay_Wald,A67,Male,Winter 2024/25,C. elaphus,Adult,2024-10-31,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A68,Male,Winter 2024/25,C. elaphus,Subadult,2024-10-13,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A72,Female,Winter 2024/25,C. elaphus,Adult,2024-12-29,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A73,Male,Winter 2024/25,C. elaphus,Adult,2024-10-27,0,True zero,1e-06,8,Not detected
 API,Bay_Wald,A76,Female,Winter 2024/25,C. elaphus,Adult,2024-12-19,0,Left censored,1e-06,2,Detected
-API,Bay_Wald,A77,Male,Winter 2024/25,C. elaphus,Calf,2024-11-25,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A80,Male,Winter 2024/25,C. elaphus,Calf,2025-01-27,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A83,Male,Winter 2024/25,C. elaphus,Adult,2025-01-14,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A85,Female,Winter 2024/25,C. elaphus,Adult,2024-11-25,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A89,Male,Winter 2024/25,C. elaphus,Calf,2024-12-19,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A91,Male,Winter 2024/25,C. elaphus,Adult,2024-09-27,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A92,Male,Winter 2024/25,C. elaphus,Adult,2024-12-18,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A94,Male,Winter 2024/25,C. elaphus,Calf,2024-12-19,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A95,Male,Winter 2024/25,C. elaphus,Adult,2024-12-18,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A96,Male,Winter 2024/25,C. elaphus,Adult,2024-12-13,0,True zero,1e-06,1e-06,Not detected
-API,Bay_Wald,A99,Female,Winter 2024/25,C. elaphus,Calf,2024-12-19,0,True zero,1e-06,1e-06,Not detected
+API,Bay_Wald,A77,Male,Winter 2024/25,C. elaphus,Calf,2024-11-25,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A80,Male,Winter 2024/25,C. elaphus,Calf,2025-01-27,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A83,Male,Winter 2024/25,C. elaphus,Adult,2025-01-14,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A85,Female,Winter 2024/25,C. elaphus,Adult,2024-11-25,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A89,Male,Winter 2024/25,C. elaphus,Calf,2024-12-19,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A91,Male,Winter 2024/25,C. elaphus,Adult,2024-09-27,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A92,Male,Winter 2024/25,C. elaphus,Adult,2024-12-18,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A94,Male,Winter 2024/25,C. elaphus,Calf,2024-12-19,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A95,Male,Winter 2024/25,C. elaphus,Adult,2024-12-18,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A96,Male,Winter 2024/25,C. elaphus,Adult,2024-12-13,0,True zero,1e-06,8,Not detected
+API,Bay_Wald,A99,Female,Winter 2024/25,C. elaphus,Calf,2024-12-19,0,True zero,1e-06,8,Not detected
 API,Eiffel,Z01,Female,Winter 2023/24,C. elaphus,Adult,2023-11-29,2.3593803435648,Fully quantified,2.3593803435648,2.3593803435648,Quantified
 API,Eiffel,Z02,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-21,2.26052931668518,Fully quantified,2.26052931668518,2.26052931668518,Quantified
-API,Eiffel,Z03,Female,Winter 2023/24,C. elaphus,Calf,2023-11-21,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z04,Male,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,1e-06,Not detected
+API,Eiffel,Z03,Female,Winter 2023/24,C. elaphus,Calf,2023-11-21,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z04,Male,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,8,Not detected
 API,Eiffel,Z05,Female,Winter 2023/24,C. elaphus,Adult,2023-11-29,2.41603657089252,Fully quantified,2.41603657089252,2.41603657089252,Quantified
-API,Eiffel,Z06,Female,Winter 2023/24,C. elaphus,Adult,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z07,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-21,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z08,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z09,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-23,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z10,Male,Winter 2023/24,C. elaphus,Calf,2023-11-23,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z100,Male,Summer 2024,C. elaphus,Calf,2024-09-04,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z11,Female,Winter 2023/24,C. elaphus,Calf,2023-11-23,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z12,Female,Winter 2023/24,C. elaphus,Adult,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z13,Male,Winter 2023/24,C. elaphus,Calf,2023-11-21,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z14,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z15,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z16,Female,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z17,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z18,Male,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z19,Female,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z20,Female,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z21,Female,Winter 2023/24,C. elaphus,Subadult,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z22,Female,Winter 2023/24,C. elaphus,Adult,2023-12-07,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z23,Male,Winter 2023/24,C. elaphus,Calf,2023-11-23,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z24,Female,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z25,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z26,Female,Winter 2023/24,C. elaphus,Adult,2023-12-07,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z27,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,1e-06,Not detected
+API,Eiffel,Z06,Female,Winter 2023/24,C. elaphus,Adult,2023-11-29,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z07,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-21,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z08,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-29,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z09,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-23,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z10,Male,Winter 2023/24,C. elaphus,Calf,2023-11-23,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z100,Male,Summer 2024,C. elaphus,Calf,2024-09-04,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z11,Female,Winter 2023/24,C. elaphus,Calf,2023-11-23,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z12,Female,Winter 2023/24,C. elaphus,Adult,2023-11-29,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z13,Male,Winter 2023/24,C. elaphus,Calf,2023-11-21,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z14,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-29,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z15,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-29,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z16,Female,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z17,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-29,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z18,Male,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z19,Female,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z20,Female,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z21,Female,Winter 2023/24,C. elaphus,Subadult,2023-11-29,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z22,Female,Winter 2023/24,C. elaphus,Adult,2023-12-07,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z23,Male,Winter 2023/24,C. elaphus,Calf,2023-11-23,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z24,Female,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z25,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z26,Female,Winter 2023/24,C. elaphus,Adult,2023-12-07,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z27,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,8,Not detected
 API,Eiffel,Z28,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,3.55565219363494,Fully quantified,3.55565219363494,3.55565219363494,Quantified
-API,Eiffel,Z29,Female,Winter 2023/24,C. elaphus,Calf,2023-12-16,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z30,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z31,Male,Winter 2023/24,C. elaphus,Calf,2023-10-26,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z32,Male,Winter 2023/24,C. elaphus,Calf,2023-10-26,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z33,Female,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z34,Female,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z35,Male,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z36,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z37,Male,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z38,Female,Winter 2023/24,C. elaphus,Adult,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z39,Female,Winter 2023/24,C. elaphus,Adult,2023-11-23,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z40,Male,Winter 2023/24,C. elaphus,Calf,2023-11-23,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z41,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-23,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z42,Female,Winter 2023/24,C. elaphus,Calf,2023-11-23,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z43,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-23,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z44,Female,Winter 2023/24,C. elaphus,Calf,2023-11-23,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z45,Female,Winter 2023/24,C. elaphus,Calf,2023-10-26,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z46,Male,Winter 2023/24,C. elaphus,Calf,2023-10-26,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z47,Female,Winter 2023/24,C. elaphus,Calf,2023-10-26,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z48,Female,Winter 2023/24,C. elaphus,Adult,2023-10-26,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z49,Female,Winter 2023/24,C. elaphus,Calf,2023-10-26,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z50,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-23,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z51,Female,Summer 2024,C. elaphus,Calf,2024-09-07,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z52,Female,Summer 2024,C. elaphus,Calf,2024-08-29,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z53,Male,Summer 2024,C. elaphus,Adult,2024-08-27,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z54,Female,Summer 2024,C. elaphus,Calf,2024-09-10,0,True zero,1e-06,1e-06,Not detected
+API,Eiffel,Z29,Female,Winter 2023/24,C. elaphus,Calf,2023-12-16,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z30,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z31,Male,Winter 2023/24,C. elaphus,Calf,2023-10-26,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z32,Male,Winter 2023/24,C. elaphus,Calf,2023-10-26,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z33,Female,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z34,Female,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z35,Male,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z36,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z37,Male,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z38,Female,Winter 2023/24,C. elaphus,Adult,2023-11-29,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z39,Female,Winter 2023/24,C. elaphus,Adult,2023-11-23,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z40,Male,Winter 2023/24,C. elaphus,Calf,2023-11-23,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z41,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-23,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z42,Female,Winter 2023/24,C. elaphus,Calf,2023-11-23,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z43,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-23,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z44,Female,Winter 2023/24,C. elaphus,Calf,2023-11-23,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z45,Female,Winter 2023/24,C. elaphus,Calf,2023-10-26,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z46,Male,Winter 2023/24,C. elaphus,Calf,2023-10-26,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z47,Female,Winter 2023/24,C. elaphus,Calf,2023-10-26,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z48,Female,Winter 2023/24,C. elaphus,Adult,2023-10-26,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z49,Female,Winter 2023/24,C. elaphus,Calf,2023-10-26,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z50,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-23,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z51,Female,Summer 2024,C. elaphus,Calf,2024-09-07,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z52,Female,Summer 2024,C. elaphus,Calf,2024-08-29,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z53,Male,Summer 2024,C. elaphus,Adult,2024-08-27,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z54,Female,Summer 2024,C. elaphus,Calf,2024-09-10,0,True zero,1e-06,8,Not detected
 API,Eiffel,Z55,Male,Summer 2024,C. elaphus,Calf,2024-08-23,0,Left censored,1e-06,2,Detected
-API,Eiffel,Z56,Female,Summer 2024,C. elaphus,Subadult,2024-08-28,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z57,Male,Summer 2024,C. elaphus,Adult,2024-09-12,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z59,Male,Summer 2024,C. elaphus,Calf,2024-09-13,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z61,Male,Summer 2024,C. elaphus,Adult,2024-08-19,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z62,Female,Summer 2024,C. elaphus,Calf,2024-08-18,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z63,Male,Summer 2024,C. elaphus,Adult,2024-08-22,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z64,Female,Summer 2024,C. elaphus,Calf,2024-08-09,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z65,Female,Summer 2024,C. elaphus,Subadult,2024-08-20,0,True zero,1e-06,1e-06,Not detected
+API,Eiffel,Z56,Female,Summer 2024,C. elaphus,Subadult,2024-08-28,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z57,Male,Summer 2024,C. elaphus,Adult,2024-09-12,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z59,Male,Summer 2024,C. elaphus,Calf,2024-09-13,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z61,Male,Summer 2024,C. elaphus,Adult,2024-08-19,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z62,Female,Summer 2024,C. elaphus,Calf,2024-08-18,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z63,Male,Summer 2024,C. elaphus,Adult,2024-08-22,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z64,Female,Summer 2024,C. elaphus,Calf,2024-08-09,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z65,Female,Summer 2024,C. elaphus,Subadult,2024-08-20,0,True zero,1e-06,8,Not detected
 API,Eiffel,Z66,Female,Summer 2024,C. elaphus,Calf,2024-08-05,0,Left censored,1e-06,1,Detected
-API,Eiffel,Z67,Male,Summer 2024,C. elaphus,Adult,2024-08-09,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z68,Female,Summer 2024,C. elaphus,Adult,2024-08-18,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z69,Female,Summer 2024,C. elaphus,Subadult,2024-08-09,0,True zero,1e-06,1e-06,Not detected
+API,Eiffel,Z67,Male,Summer 2024,C. elaphus,Adult,2024-08-09,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z68,Female,Summer 2024,C. elaphus,Adult,2024-08-18,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z69,Female,Summer 2024,C. elaphus,Subadult,2024-08-09,0,True zero,1e-06,8,Not detected
 API,Eiffel,Z70,Male,Summer 2024,C. elaphus,Calf,2024-08-06,0,Left censored,1e-06,1,Detected
 API,Eiffel,Z71,Female,Summer 2024,C. elaphus,Calf,2024-08-03,7.10985170380467,Fully quantified,7.10985170380467,7.10985170380467,Quantified
 API,Eiffel,Z73,Female,Summer 2024,C. elaphus,Calf,2024-08-03,0,Left censored,1e-06,1,Detected
-API,Eiffel,Z76,Female,Summer 2024,C. elaphus,Adult,2024-08-07,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z78,Female,Summer 2024,C. elaphus,Calf,2024-08-02,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z79,Female,Summer 2024,C. elaphus,Adult,2024-08-03,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z80,Female,Summer 2024,C. elaphus,Calf,2024-08-07,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z91,Male,Summer 2024,C. elaphus,Subadult,2024-05-29,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z92,Female,Summer 2024,C. elaphus,Calf,2024-08-19,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z96,Female,Summer 2024,C. elaphus,Adult,2024-09-04,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z97,Female,Summer 2024,C. elaphus,Calf,2024-09-11,0,True zero,1e-06,1e-06,Not detected
-API,Eiffel,Z99,Female,Summer 2024,C. elaphus,Calf,2024-08-08,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C01,Female,Winter 2023/24,D. dama,Subadult,2023-12-09,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C02,Male,Winter 2023/24,C. elaphus,Subadult,2023-12-12,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C03,Female,Winter 2023/24,C. elaphus,Calf,2023-12-05,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C04,Male,Winter 2023/24,C. elaphus,Calf,2023-11-28,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C05,Male,Winter 2023/24,D. dama,Calf,2024-01-15,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C06,Female,Winter 2023/24,C. elaphus,Calf,2023-12-05,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C07,Female,Winter 2023/24,D. dama,Adult,2023-12-12,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C08,Female,Winter 2023/24,D. dama,Subadult,2023-11-18,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C09,Female,Winter 2023/24,D. dama,Subadult,2024-01-13,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C10,Male,Winter 2023/24,C. elaphus,Calf,2023-12-05,0,True zero,1e-06,1e-06,Not detected
+API,Eiffel,Z76,Female,Summer 2024,C. elaphus,Adult,2024-08-07,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z78,Female,Summer 2024,C. elaphus,Calf,2024-08-02,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z79,Female,Summer 2024,C. elaphus,Adult,2024-08-03,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z80,Female,Summer 2024,C. elaphus,Calf,2024-08-07,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z91,Male,Summer 2024,C. elaphus,Subadult,2024-05-29,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z92,Female,Summer 2024,C. elaphus,Calf,2024-08-19,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z96,Female,Summer 2024,C. elaphus,Adult,2024-09-04,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z97,Female,Summer 2024,C. elaphus,Calf,2024-09-11,0,True zero,1e-06,8,Not detected
+API,Eiffel,Z99,Female,Summer 2024,C. elaphus,Calf,2024-08-08,0,True zero,1e-06,8,Not detected
+API,Hainich,C01,Female,Winter 2023/24,D. dama,Subadult,2023-12-09,0,True zero,1e-06,8,Not detected
+API,Hainich,C02,Male,Winter 2023/24,C. elaphus,Subadult,2023-12-12,0,True zero,1e-06,8,Not detected
+API,Hainich,C03,Female,Winter 2023/24,C. elaphus,Calf,2023-12-05,0,True zero,1e-06,8,Not detected
+API,Hainich,C04,Male,Winter 2023/24,C. elaphus,Calf,2023-11-28,0,True zero,1e-06,8,Not detected
+API,Hainich,C05,Male,Winter 2023/24,D. dama,Calf,2024-01-15,0,True zero,1e-06,8,Not detected
+API,Hainich,C06,Female,Winter 2023/24,C. elaphus,Calf,2023-12-05,0,True zero,1e-06,8,Not detected
+API,Hainich,C07,Female,Winter 2023/24,D. dama,Adult,2023-12-12,0,True zero,1e-06,8,Not detected
+API,Hainich,C08,Female,Winter 2023/24,D. dama,Subadult,2023-11-18,0,True zero,1e-06,8,Not detected
+API,Hainich,C09,Female,Winter 2023/24,D. dama,Subadult,2024-01-13,0,True zero,1e-06,8,Not detected
+API,Hainich,C10,Male,Winter 2023/24,C. elaphus,Calf,2023-12-05,0,True zero,1e-06,8,Not detected
 API,Hainich,C100,Female,Summer 2024,D. dama,Calf,2024-09-25,1.8,Fully quantified,1.8,1.8,Quantified
 API,Hainich,C11,Female,Winter 2023/24,C. elaphus,Subadult,2023-12-05,0,Left censored,1e-06,2,Detected
-API,Hainich,C12,Female,Winter 2023/24,D. dama,Subadult,2023-11-28,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C13,Female,Winter 2023/24,C. elaphus,Calf,2023-12-05,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C14,Male,Winter 2023/24,C. elaphus,Subadult,2023-12-05,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C15,Male,Winter 2023/24,D. dama,Calf,2023-11-14,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C16,Female,Winter 2023/24,D. dama,Calf,2023-11-14,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C17,Male,Winter 2023/24,D. dama,Subadult,2023-11-28,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C18,Male,Winter 2023/24,D. dama,Subadult,2023-12-05,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C19,Female,Winter 2023/24,C. elaphus,Adult,2023-11-14,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C20,Female,Winter 2023/24,C. elaphus,Adult,2023-12-05,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C21,Male,Winter 2023/24,D. dama,Calf,2023-12-12,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C22,Male,Winter 2023/24,C. elaphus,Calf,2023-11-28,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C23,Female,Winter 2023/24,D. dama,Calf,2023-11-28,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C24,Male,Winter 2023/24,C. elaphus,Subadult,2023-12-12,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C25,Male,Winter 2023/24,C. elaphus,Calf,2023-12-12,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C26,Male,Winter 2023/24,D. dama,Calf,2023-12-12,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C27,Female,Winter 2023/24,C. elaphus,Calf,2023-12-05,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C28,Female,Winter 2023/24,D. dama,Adult,2023-11-28,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C29,Male,Winter 2023/24,C. elaphus,Calf,2023-11-18,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C30,Male,Winter 2023/24,C. elaphus,Subadult,2023-12-05,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C31,Male,Winter 2023/24,D. dama,Calf,2023-11-04,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C32,Female,Winter 2023/24,C. elaphus,Subadult,2023-11-28,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C33,Female,Winter 2023/24,C. elaphus,Adult,2023-12-05,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C34,Female,Winter 2023/24,D. dama,Adult,2023-11-04,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C35,Male,Winter 2023/24,D. dama,Calf,2023-12-09,0,True zero,1e-06,1e-06,Not detected
+API,Hainich,C12,Female,Winter 2023/24,D. dama,Subadult,2023-11-28,0,True zero,1e-06,8,Not detected
+API,Hainich,C13,Female,Winter 2023/24,C. elaphus,Calf,2023-12-05,0,True zero,1e-06,8,Not detected
+API,Hainich,C14,Male,Winter 2023/24,C. elaphus,Subadult,2023-12-05,0,True zero,1e-06,8,Not detected
+API,Hainich,C15,Male,Winter 2023/24,D. dama,Calf,2023-11-14,0,True zero,1e-06,8,Not detected
+API,Hainich,C16,Female,Winter 2023/24,D. dama,Calf,2023-11-14,0,True zero,1e-06,8,Not detected
+API,Hainich,C17,Male,Winter 2023/24,D. dama,Subadult,2023-11-28,0,True zero,1e-06,8,Not detected
+API,Hainich,C18,Male,Winter 2023/24,D. dama,Subadult,2023-12-05,0,True zero,1e-06,8,Not detected
+API,Hainich,C19,Female,Winter 2023/24,C. elaphus,Adult,2023-11-14,0,True zero,1e-06,8,Not detected
+API,Hainich,C20,Female,Winter 2023/24,C. elaphus,Adult,2023-12-05,0,True zero,1e-06,8,Not detected
+API,Hainich,C21,Male,Winter 2023/24,D. dama,Calf,2023-12-12,0,True zero,1e-06,8,Not detected
+API,Hainich,C22,Male,Winter 2023/24,C. elaphus,Calf,2023-11-28,0,True zero,1e-06,8,Not detected
+API,Hainich,C23,Female,Winter 2023/24,D. dama,Calf,2023-11-28,0,True zero,1e-06,8,Not detected
+API,Hainich,C24,Male,Winter 2023/24,C. elaphus,Subadult,2023-12-12,0,True zero,1e-06,8,Not detected
+API,Hainich,C25,Male,Winter 2023/24,C. elaphus,Calf,2023-12-12,0,True zero,1e-06,8,Not detected
+API,Hainich,C26,Male,Winter 2023/24,D. dama,Calf,2023-12-12,0,True zero,1e-06,8,Not detected
+API,Hainich,C27,Female,Winter 2023/24,C. elaphus,Calf,2023-12-05,0,True zero,1e-06,8,Not detected
+API,Hainich,C28,Female,Winter 2023/24,D. dama,Adult,2023-11-28,0,True zero,1e-06,8,Not detected
+API,Hainich,C29,Male,Winter 2023/24,C. elaphus,Calf,2023-11-18,0,True zero,1e-06,8,Not detected
+API,Hainich,C30,Male,Winter 2023/24,C. elaphus,Subadult,2023-12-05,0,True zero,1e-06,8,Not detected
+API,Hainich,C31,Male,Winter 2023/24,D. dama,Calf,2023-11-04,0,True zero,1e-06,8,Not detected
+API,Hainich,C32,Female,Winter 2023/24,C. elaphus,Subadult,2023-11-28,0,True zero,1e-06,8,Not detected
+API,Hainich,C33,Female,Winter 2023/24,C. elaphus,Adult,2023-12-05,0,True zero,1e-06,8,Not detected
+API,Hainich,C34,Female,Winter 2023/24,D. dama,Adult,2023-11-04,0,True zero,1e-06,8,Not detected
+API,Hainich,C35,Male,Winter 2023/24,D. dama,Calf,2023-12-09,0,True zero,1e-06,8,Not detected
 API,Hainich,C36,Female,Winter 2023/24,D. dama,Adult,2024-01-15,1.4,Fully quantified,1.4,1.4,Quantified
-API,Hainich,C37,Female,Winter 2023/24,C. elaphus,Subadult,2023-12-09,0,True zero,1e-06,1e-06,Not detected
+API,Hainich,C37,Female,Winter 2023/24,C. elaphus,Subadult,2023-12-09,0,True zero,1e-06,8,Not detected
 API,Hainich,C38,Female,Winter 2023/24,C. elaphus,Calf,2023-11-14,9.3,Fully quantified,9.3,9.3,Quantified
-API,Hainich,C39,Female,Winter 2023/24,D. dama,Calf,2023-11-18,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C40,Female,Winter 2023/24,C. elaphus,Adult,2023-12-12,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C41,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-28,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C42,Male,Winter 2023/24,C. elaphus,Calf,2023-12-09,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C43,Female,Winter 2023/24,D. dama,Subadult,2023-11-18,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C44,Female,Winter 2023/24,D. dama,Subadult,2023-12-09,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C45,Male,Winter 2023/24,D. dama,Calf,2023-11-07,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C46,Female,Winter 2023/24,D. dama,Subadult,2023-11-18,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C47,Female,Winter 2023/24,D. dama,Adult,2023-12-12,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C48,Male,Winter 2023/24,D. dama,Calf,2023-11-18,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C49,Female,Winter 2023/24,D. dama,Adult,2023-11-07,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C50,Male,Winter 2023/24,D. dama,Subadult,2023-12-12,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C87,Female,Summer 2024,C. elaphus,Calf,2024-10-02,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C91,Male,Summer 2024,D. dama,Calf,2024-09-18,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C94,Male,Summer 2024,C. elaphus,Calf,2024-09-25,0,True zero,1e-06,1e-06,Not detected
-API,Hainich,C96,Female,Summer 2024,D. dama,Adult,2024-09-18,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D01,Female,Summer 2024,C. elaphus,Subadult,2024-08-22,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D02,Female,Summer 2024,C. elaphus,Adult,2024-08-13,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D03,Male,Summer 2024,C. elaphus,Calf,2024-08-19,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D04,Female,Summer 2024,C. elaphus,Calf,2024-08-14,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D05,Female,Summer 2024,C. elaphus,Adult,2024-08-14,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D06,Male,Summer 2024,C. elaphus,Calf,2024-08-22,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D07,Female,Summer 2024,C. elaphus,Adult,2024-08-08,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D08,Male,Summer 2024,C. elaphus,Subadult,2024-08-14,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D09,Female,Summer 2024,C. elaphus,Calf,2024-08-23,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D10,Female,Summer 2024,C. elaphus,Calf,2024-08-13,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D11,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-17,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D13,Female,Winter 2023/24,C. elaphus,Subadult,2023-11-17,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D14,Male,Winter 2023/24,C. elaphus,Subadult,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D18,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-17,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D19,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-17,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D20,Female,Winter 2023/24,C. elaphus,Adult,2023-11-25,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D21,Male,Winter 2024/25,C. elaphus,Adult,2024-12-05,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D22,Male,Winter 2024/25,C. elaphus,Adult,2024-12-12,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D24,Male,Winter 2024/25,C. elaphus,Adult,2024-12-05,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D25,Male,Winter 2024/25,C. elaphus,Subadult,2024-12-12,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D27,Female,Winter 2024/25,C. elaphus,Calf,2024-11-21,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D28,Female,Winter 2024/25,C. elaphus,Calf,2024-12-05,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D29,Male,Winter 2024/25,C. elaphus,Calf,2024-12-05,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D41,Female,Summer 2024,C. elaphus,Calf,2024-08-03,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D42,Female,Summer 2024,C. elaphus,Subadult,2024-08-03,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D43,Female,Summer 2024,C. elaphus,Calf,2024-08-11,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D45,Female,Summer 2024,C. elaphus,Calf,2024-08-04,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D46,Male,Summer 2024,C. elaphus,Calf,2024-08-05,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D47,Male,Summer 2024,C. elaphus,Calf,2024-08-11,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D48,Female,Summer 2024,C. elaphus,Adult,2024-08-04,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D49,Female,Summer 2024,C. elaphus,Calf,2024-08-08,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D50,Male,Summer 2024,C. elaphus,Calf,2024-08-13,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D51,Male,Winter 2024/25,C. elaphus,Adult,2024-12-05,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D52,Male,Winter 2024/25,C. elaphus,Calf,2024-12-05,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D53,Male,Winter 2024/25,C. elaphus,Adult,2024-12-12,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D54,Female,Winter 2024/25,C. elaphus,Calf,2024-10-17,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D55,Male,Winter 2024/25,C. elaphus,Subadult,2024-12-05,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D58,Male,Winter 2024/25,C. elaphus,Subadult,2024-10-17,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D59,Female,Winter 2024/25,C. elaphus,Subadult,2024-10-17,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D62,Male,Winter 2024/25,C. elaphus,Subadult,2024-10-23,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D63,Female,Winter 2024/25,C. elaphus,Calf,2024-10-23,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D64,Female,Winter 2024/25,C. elaphus,Calf,2024-10-17,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D67,Male,Winter 2024/25,C. elaphus,Subadult,2024-10-23,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D68,Male,Winter 2024/25,C. elaphus,Adult,2024-10-17,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D70,Male,Winter 2024/25,C. elaphus,Subadult,2024-12-05,0,True zero,1e-06,1e-06,Not detected
+API,Hainich,C39,Female,Winter 2023/24,D. dama,Calf,2023-11-18,0,True zero,1e-06,8,Not detected
+API,Hainich,C40,Female,Winter 2023/24,C. elaphus,Adult,2023-12-12,0,True zero,1e-06,8,Not detected
+API,Hainich,C41,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-28,0,True zero,1e-06,8,Not detected
+API,Hainich,C42,Male,Winter 2023/24,C. elaphus,Calf,2023-12-09,0,True zero,1e-06,8,Not detected
+API,Hainich,C43,Female,Winter 2023/24,D. dama,Subadult,2023-11-18,0,True zero,1e-06,8,Not detected
+API,Hainich,C44,Female,Winter 2023/24,D. dama,Subadult,2023-12-09,0,True zero,1e-06,8,Not detected
+API,Hainich,C45,Male,Winter 2023/24,D. dama,Calf,2023-11-07,0,True zero,1e-06,8,Not detected
+API,Hainich,C46,Female,Winter 2023/24,D. dama,Subadult,2023-11-18,0,True zero,1e-06,8,Not detected
+API,Hainich,C47,Female,Winter 2023/24,D. dama,Adult,2023-12-12,0,True zero,1e-06,8,Not detected
+API,Hainich,C48,Male,Winter 2023/24,D. dama,Calf,2023-11-18,0,True zero,1e-06,8,Not detected
+API,Hainich,C49,Female,Winter 2023/24,D. dama,Adult,2023-11-07,0,True zero,1e-06,8,Not detected
+API,Hainich,C50,Male,Winter 2023/24,D. dama,Subadult,2023-12-12,0,True zero,1e-06,8,Not detected
+API,Hainich,C87,Female,Summer 2024,C. elaphus,Calf,2024-10-02,0,True zero,1e-06,8,Not detected
+API,Hainich,C91,Male,Summer 2024,D. dama,Calf,2024-09-18,0,True zero,1e-06,8,Not detected
+API,Hainich,C94,Male,Summer 2024,C. elaphus,Calf,2024-09-25,0,True zero,1e-06,8,Not detected
+API,Hainich,C96,Female,Summer 2024,D. dama,Adult,2024-09-18,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D01,Female,Summer 2024,C. elaphus,Subadult,2024-08-22,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D02,Female,Summer 2024,C. elaphus,Adult,2024-08-13,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D03,Male,Summer 2024,C. elaphus,Calf,2024-08-19,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D04,Female,Summer 2024,C. elaphus,Calf,2024-08-14,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D05,Female,Summer 2024,C. elaphus,Adult,2024-08-14,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D06,Male,Summer 2024,C. elaphus,Calf,2024-08-22,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D07,Female,Summer 2024,C. elaphus,Adult,2024-08-08,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D08,Male,Summer 2024,C. elaphus,Subadult,2024-08-14,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D09,Female,Summer 2024,C. elaphus,Calf,2024-08-23,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D10,Female,Summer 2024,C. elaphus,Calf,2024-08-13,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D11,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-17,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D13,Female,Winter 2023/24,C. elaphus,Subadult,2023-11-17,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D14,Male,Winter 2023/24,C. elaphus,Subadult,2023-12-08,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D18,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-17,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D19,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-17,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D20,Female,Winter 2023/24,C. elaphus,Adult,2023-11-25,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D21,Male,Winter 2024/25,C. elaphus,Adult,2024-12-05,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D22,Male,Winter 2024/25,C. elaphus,Adult,2024-12-12,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D24,Male,Winter 2024/25,C. elaphus,Adult,2024-12-05,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D25,Male,Winter 2024/25,C. elaphus,Subadult,2024-12-12,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D27,Female,Winter 2024/25,C. elaphus,Calf,2024-11-21,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D28,Female,Winter 2024/25,C. elaphus,Calf,2024-12-05,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D29,Male,Winter 2024/25,C. elaphus,Calf,2024-12-05,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D41,Female,Summer 2024,C. elaphus,Calf,2024-08-03,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D42,Female,Summer 2024,C. elaphus,Subadult,2024-08-03,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D43,Female,Summer 2024,C. elaphus,Calf,2024-08-11,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D45,Female,Summer 2024,C. elaphus,Calf,2024-08-04,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D46,Male,Summer 2024,C. elaphus,Calf,2024-08-05,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D47,Male,Summer 2024,C. elaphus,Calf,2024-08-11,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D48,Female,Summer 2024,C. elaphus,Adult,2024-08-04,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D49,Female,Summer 2024,C. elaphus,Calf,2024-08-08,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D50,Male,Summer 2024,C. elaphus,Calf,2024-08-13,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D51,Male,Winter 2024/25,C. elaphus,Adult,2024-12-05,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D52,Male,Winter 2024/25,C. elaphus,Calf,2024-12-05,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D53,Male,Winter 2024/25,C. elaphus,Adult,2024-12-12,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D54,Female,Winter 2024/25,C. elaphus,Calf,2024-10-17,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D55,Male,Winter 2024/25,C. elaphus,Subadult,2024-12-05,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D58,Male,Winter 2024/25,C. elaphus,Subadult,2024-10-17,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D59,Female,Winter 2024/25,C. elaphus,Subadult,2024-10-17,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D62,Male,Winter 2024/25,C. elaphus,Subadult,2024-10-23,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D63,Female,Winter 2024/25,C. elaphus,Calf,2024-10-23,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D64,Female,Winter 2024/25,C. elaphus,Calf,2024-10-17,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D67,Male,Winter 2024/25,C. elaphus,Subadult,2024-10-23,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D68,Male,Winter 2024/25,C. elaphus,Adult,2024-10-17,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D70,Male,Winter 2024/25,C. elaphus,Subadult,2024-12-05,0,True zero,1e-06,8,Not detected
 API,Hunsrueck,D71,Male,Winter 2024/25,C. elaphus,Adult,2024-12-12,0,Left censored,1e-06,2,Detected
-API,Hunsrueck,D72,Female,Winter 2024/25,C. elaphus,Subadult,2024-10-23,0,True zero,1e-06,1e-06,Not detected
+API,Hunsrueck,D72,Female,Winter 2024/25,C. elaphus,Subadult,2024-10-23,0,True zero,1e-06,8,Not detected
 API,Hunsrueck,D73,Female,Winter 2024/25,C. elaphus,Adult,2024-10-17,0,Left censored,1e-06,1,Detected
-API,Hunsrueck,D74,Male,Winter 2024/25,C. elaphus,Subadult,2024-12-12,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D76,Male,Winter 2024/25,C. elaphus,Calf,2024-10-23,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D77,Male,Winter 2024/25,C. elaphus,Calf,2024-10-17,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D78,Female,Winter 2024/25,C. elaphus,Calf,2024-10-17,0,True zero,1e-06,1e-06,Not detected
-API,Hunsrueck,D80,Male,Winter 2024/25,C. elaphus,Calf,2024-10-17,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G01,Female,Winter 2023/24,C. elaphus,Adult,2024-01-08,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G02,Male,Winter 2023/24,C. elaphus,Calf,2023-11-25,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G03,Female,Winter 2023/24,D. dama,Adult,2023-11-14,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G04,Male,Winter 2023/24,C. elaphus,Calf,2023-11-18,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G05,Female,Winter 2023/24,D. dama,Calf,2023-11-18,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G06,Male,Winter 2023/24,D. dama,Calf,2023-12-05,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G07,Male,Winter 2023/24,D. dama,Adult,2024-01-08,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G08,Female,Winter 2023/24,D. dama,Adult,2023-11-18,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G09,Female,Winter 2023/24,C. elaphus,Calf,2023-11-25,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G10,Male,Winter 2023/24,D. dama,Calf,2023-12-19,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G11,Male,Winter 2023/24,D. dama,Calf,2023-12-11,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G12,Female,Winter 2023/24,D. dama,Subadult,2023-11-17,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G13,Female,Winter 2023/24,D. dama,Adult,2023-12-19,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G14,Female,Winter 2023/24,C. elaphus,Adult,2023-11-18,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G15,Male,Winter 2023/24,D. dama,Subadult,2023-11-18,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G16,Female,Winter 2023/24,D. dama,Calf,2023-11-18,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G17,Male,Winter 2023/24,D. dama,Calf,2024-01-26,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G18,Female,Winter 2023/24,D. dama,Calf,2023-11-18,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G19,Female,Winter 2023/24,C. elaphus,Adult,2023-11-18,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G20,Female,Winter 2023/24,D. dama,Adult,2024-01-02,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G22,Female,Winter 2023/24,D. dama,Calf,2023-11-17,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G23,Female,Winter 2023/24,D. dama,Adult,2023-11-17,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G24,Female,Winter 2023/24,D. dama,Adult,2023-12-19,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G25,Female,Winter 2023/24,D. dama,Calf,2023-11-17,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G26,Female,Winter 2023/24,D. dama,Subadult,2023-11-17,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G27,Female,Winter 2023/24,D. dama,Calf,2023-11-17,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G28,Male,Winter 2023/24,D. dama,Calf,2023-11-17,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G29,Female,Winter 2023/24,D. dama,Adult,2023-11-17,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G30,Female,Winter 2023/24,D. dama,Calf,2023-11-17,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G31,Female,Winter 2023/24,D. dama,Adult,2023-11-18,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G32,Female,Winter 2023/24,D. dama,Adult,2023-11-18,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G33,Male,Winter 2023/24,D. dama,Subadult,2024-01-28,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G34,Female,Winter 2023/24,D. dama,Calf,2023-11-17,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G35,Female,Winter 2023/24,D. dama,Adult,2023-11-18,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G36,Female,Winter 2023/24,D. dama,Calf,2023-11-22,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G37,Female,Winter 2023/24,D. dama,Adult,2024-01-31,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G38,Female,Winter 2023/24,D. dama,Adult,2023-11-17,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G39,Male,Winter 2023/24,D. dama,Calf,2023-11-17,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G40,Female,Winter 2023/24,D. dama,Adult,2023-11-17,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G41,Male,Winter 2023/24,D. dama,Calf,2023-12-02,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G42,Female,Winter 2023/24,D. dama,Subadult,2024-01-31,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G43,Male,Winter 2023/24,C. elaphus,Calf,2023-11-25,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G44,Female,Winter 2023/24,D. dama,Subadult,2023-12-19,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G45,Female,Winter 2023/24,D. dama,Calf,2023-12-19,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G46,Female,Winter 2023/24,D. dama,Adult,2023-11-18,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G47,Female,Winter 2023/24,D. dama,Adult,2023-11-17,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G48,Male,Winter 2023/24,D. dama,Calf,2023-12-19,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G49,Male,Winter 2023/24,D. dama,Calf,2024-01-31,0,True zero,1e-06,1e-06,Not detected
-API,Jasmund,G50,Male,Winter 2023/24,D. dama,Calf,2023-11-17,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L100,Male,Summer 2024,C. elaphus,Subadult,2024-08-09,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L51,Female,Summer 2024,C. elaphus,Adult,2024-08-05,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L52,Male,Summer 2024,C. elaphus,Calf,2024-09-01,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L53,Female,Summer 2024,C. elaphus,Calf,2024-08-02,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L54,Male,Summer 2024,C. elaphus,Subadult,2024-08-16,0,True zero,1e-06,1e-06,Not detected
+API,Hunsrueck,D74,Male,Winter 2024/25,C. elaphus,Subadult,2024-12-12,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D76,Male,Winter 2024/25,C. elaphus,Calf,2024-10-23,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D77,Male,Winter 2024/25,C. elaphus,Calf,2024-10-17,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D78,Female,Winter 2024/25,C. elaphus,Calf,2024-10-17,0,True zero,1e-06,8,Not detected
+API,Hunsrueck,D80,Male,Winter 2024/25,C. elaphus,Calf,2024-10-17,0,True zero,1e-06,8,Not detected
+API,Jasmund,G01,Female,Winter 2023/24,C. elaphus,Adult,2024-01-08,0,True zero,1e-06,8,Not detected
+API,Jasmund,G02,Male,Winter 2023/24,C. elaphus,Calf,2023-11-25,0,True zero,1e-06,8,Not detected
+API,Jasmund,G03,Female,Winter 2023/24,D. dama,Adult,2023-11-14,0,True zero,1e-06,8,Not detected
+API,Jasmund,G04,Male,Winter 2023/24,C. elaphus,Calf,2023-11-18,0,True zero,1e-06,8,Not detected
+API,Jasmund,G05,Female,Winter 2023/24,D. dama,Calf,2023-11-18,0,True zero,1e-06,8,Not detected
+API,Jasmund,G06,Male,Winter 2023/24,D. dama,Calf,2023-12-05,0,True zero,1e-06,8,Not detected
+API,Jasmund,G07,Male,Winter 2023/24,D. dama,Adult,2024-01-08,0,True zero,1e-06,8,Not detected
+API,Jasmund,G08,Female,Winter 2023/24,D. dama,Adult,2023-11-18,0,True zero,1e-06,8,Not detected
+API,Jasmund,G09,Female,Winter 2023/24,C. elaphus,Calf,2023-11-25,0,True zero,1e-06,8,Not detected
+API,Jasmund,G10,Male,Winter 2023/24,D. dama,Calf,2023-12-19,0,True zero,1e-06,8,Not detected
+API,Jasmund,G11,Male,Winter 2023/24,D. dama,Calf,2023-12-11,0,True zero,1e-06,8,Not detected
+API,Jasmund,G12,Female,Winter 2023/24,D. dama,Subadult,2023-11-17,0,True zero,1e-06,8,Not detected
+API,Jasmund,G13,Female,Winter 2023/24,D. dama,Adult,2023-12-19,0,True zero,1e-06,8,Not detected
+API,Jasmund,G14,Female,Winter 2023/24,C. elaphus,Adult,2023-11-18,0,True zero,1e-06,8,Not detected
+API,Jasmund,G15,Male,Winter 2023/24,D. dama,Subadult,2023-11-18,0,True zero,1e-06,8,Not detected
+API,Jasmund,G16,Female,Winter 2023/24,D. dama,Calf,2023-11-18,0,True zero,1e-06,8,Not detected
+API,Jasmund,G17,Male,Winter 2023/24,D. dama,Calf,2024-01-26,0,True zero,1e-06,8,Not detected
+API,Jasmund,G18,Female,Winter 2023/24,D. dama,Calf,2023-11-18,0,True zero,1e-06,8,Not detected
+API,Jasmund,G19,Female,Winter 2023/24,C. elaphus,Adult,2023-11-18,0,True zero,1e-06,8,Not detected
+API,Jasmund,G20,Female,Winter 2023/24,D. dama,Adult,2024-01-02,0,True zero,1e-06,8,Not detected
+API,Jasmund,G22,Female,Winter 2023/24,D. dama,Calf,2023-11-17,0,True zero,1e-06,8,Not detected
+API,Jasmund,G23,Female,Winter 2023/24,D. dama,Adult,2023-11-17,0,True zero,1e-06,8,Not detected
+API,Jasmund,G24,Female,Winter 2023/24,D. dama,Adult,2023-12-19,0,True zero,1e-06,8,Not detected
+API,Jasmund,G25,Female,Winter 2023/24,D. dama,Calf,2023-11-17,0,True zero,1e-06,8,Not detected
+API,Jasmund,G26,Female,Winter 2023/24,D. dama,Subadult,2023-11-17,0,True zero,1e-06,8,Not detected
+API,Jasmund,G27,Female,Winter 2023/24,D. dama,Calf,2023-11-17,0,True zero,1e-06,8,Not detected
+API,Jasmund,G28,Male,Winter 2023/24,D. dama,Calf,2023-11-17,0,True zero,1e-06,8,Not detected
+API,Jasmund,G29,Female,Winter 2023/24,D. dama,Adult,2023-11-17,0,True zero,1e-06,8,Not detected
+API,Jasmund,G30,Female,Winter 2023/24,D. dama,Calf,2023-11-17,0,True zero,1e-06,8,Not detected
+API,Jasmund,G31,Female,Winter 2023/24,D. dama,Adult,2023-11-18,0,True zero,1e-06,8,Not detected
+API,Jasmund,G32,Female,Winter 2023/24,D. dama,Adult,2023-11-18,0,True zero,1e-06,8,Not detected
+API,Jasmund,G33,Male,Winter 2023/24,D. dama,Subadult,2024-01-28,0,True zero,1e-06,8,Not detected
+API,Jasmund,G34,Female,Winter 2023/24,D. dama,Calf,2023-11-17,0,True zero,1e-06,8,Not detected
+API,Jasmund,G35,Female,Winter 2023/24,D. dama,Adult,2023-11-18,0,True zero,1e-06,8,Not detected
+API,Jasmund,G36,Female,Winter 2023/24,D. dama,Calf,2023-11-22,0,True zero,1e-06,8,Not detected
+API,Jasmund,G37,Female,Winter 2023/24,D. dama,Adult,2024-01-31,0,True zero,1e-06,8,Not detected
+API,Jasmund,G38,Female,Winter 2023/24,D. dama,Adult,2023-11-17,0,True zero,1e-06,8,Not detected
+API,Jasmund,G39,Male,Winter 2023/24,D. dama,Calf,2023-11-17,0,True zero,1e-06,8,Not detected
+API,Jasmund,G40,Female,Winter 2023/24,D. dama,Adult,2023-11-17,0,True zero,1e-06,8,Not detected
+API,Jasmund,G41,Male,Winter 2023/24,D. dama,Calf,2023-12-02,0,True zero,1e-06,8,Not detected
+API,Jasmund,G42,Female,Winter 2023/24,D. dama,Subadult,2024-01-31,0,True zero,1e-06,8,Not detected
+API,Jasmund,G43,Male,Winter 2023/24,C. elaphus,Calf,2023-11-25,0,True zero,1e-06,8,Not detected
+API,Jasmund,G44,Female,Winter 2023/24,D. dama,Subadult,2023-12-19,0,True zero,1e-06,8,Not detected
+API,Jasmund,G45,Female,Winter 2023/24,D. dama,Calf,2023-12-19,0,True zero,1e-06,8,Not detected
+API,Jasmund,G46,Female,Winter 2023/24,D. dama,Adult,2023-11-18,0,True zero,1e-06,8,Not detected
+API,Jasmund,G47,Female,Winter 2023/24,D. dama,Adult,2023-11-17,0,True zero,1e-06,8,Not detected
+API,Jasmund,G48,Male,Winter 2023/24,D. dama,Calf,2023-12-19,0,True zero,1e-06,8,Not detected
+API,Jasmund,G49,Male,Winter 2023/24,D. dama,Calf,2024-01-31,0,True zero,1e-06,8,Not detected
+API,Jasmund,G50,Male,Winter 2023/24,D. dama,Calf,2023-11-17,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L100,Male,Summer 2024,C. elaphus,Subadult,2024-08-09,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L51,Female,Summer 2024,C. elaphus,Adult,2024-08-05,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L52,Male,Summer 2024,C. elaphus,Calf,2024-09-01,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L53,Female,Summer 2024,C. elaphus,Calf,2024-08-02,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L54,Male,Summer 2024,C. elaphus,Subadult,2024-08-16,0,True zero,1e-06,8,Not detected
 API,Kellerwald,L55,Female,Summer 2024,C. elaphus,Calf,2024-08-05,2.13328638683073,Left censored,2.13328638683073,3.13328638683073,Quantified
-API,Kellerwald,L56,Female,Summer 2024,C. elaphus,Adult,2024-08-02,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L57,Male,Summer 2024,C. elaphus,Calf,2024-08-16,0,True zero,1e-06,1e-06,Not detected
+API,Kellerwald,L56,Female,Summer 2024,C. elaphus,Adult,2024-08-02,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L57,Male,Summer 2024,C. elaphus,Calf,2024-08-16,0,True zero,1e-06,8,Not detected
 API,Kellerwald,L58,Female,Summer 2024,C. elaphus,Calf,2024-08-17,0,Left censored,1e-06,2,Detected
-API,Kellerwald,L59,Female,Summer 2024,C. elaphus,Calf,2024-08-16,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L60,Female,Summer 2024,C. elaphus,Adult,2024-09-01,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L61,Male,Summer 2024,C. elaphus,Subadult,2024-09-01,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L62,Female,Summer 2024,C. elaphus,Adult,2024-09-02,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L63,Male,Summer 2024,C. elaphus,Subadult,2024-08-17,0,True zero,1e-06,1e-06,Not detected
+API,Kellerwald,L59,Female,Summer 2024,C. elaphus,Calf,2024-08-16,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L60,Female,Summer 2024,C. elaphus,Adult,2024-09-01,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L61,Male,Summer 2024,C. elaphus,Subadult,2024-09-01,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L62,Female,Summer 2024,C. elaphus,Adult,2024-09-02,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L63,Male,Summer 2024,C. elaphus,Subadult,2024-08-17,0,True zero,1e-06,8,Not detected
 API,Kellerwald,L64,Female,Summer 2024,C. elaphus,Calf,2024-09-01,0,Left censored,1e-06,2,Detected
-API,Kellerwald,L65,Female,Summer 2024,C. elaphus,Adult,2024-09-01,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L66,Female,Summer 2024,C. elaphus,Calf,2024-09-01,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L67,Female,Summer 2024,C. elaphus,Adult,2024-08-05,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L68,Male,Summer 2024,C. elaphus,Calf,2024-08-05,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L69,Female,Summer 2024,C. elaphus,Adult,2024-08-06,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L70,Male,Summer 2024,C. elaphus,Subadult,2024-08-08,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L71,Female,Summer 2024,C. elaphus,Adult,2024-08-04,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L72,Female,Summer 2024,C. elaphus,Adult,2024-08-15,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L73,Female,Summer 2024,C. elaphus,Calf,2024-08-02,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L74,Male,Summer 2024,C. elaphus,Calf,2024-08-06,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L75,Male,Summer 2024,C. elaphus,Calf,2024-08-05,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L76,Female,Summer 2024,C. elaphus,Calf,2024-08-07,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L77,Female,Summer 2024,C. elaphus,Subadult,2024-09-01,0,True zero,1e-06,1e-06,Not detected
+API,Kellerwald,L65,Female,Summer 2024,C. elaphus,Adult,2024-09-01,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L66,Female,Summer 2024,C. elaphus,Calf,2024-09-01,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L67,Female,Summer 2024,C. elaphus,Adult,2024-08-05,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L68,Male,Summer 2024,C. elaphus,Calf,2024-08-05,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L69,Female,Summer 2024,C. elaphus,Adult,2024-08-06,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L70,Male,Summer 2024,C. elaphus,Subadult,2024-08-08,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L71,Female,Summer 2024,C. elaphus,Adult,2024-08-04,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L72,Female,Summer 2024,C. elaphus,Adult,2024-08-15,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L73,Female,Summer 2024,C. elaphus,Calf,2024-08-02,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L74,Male,Summer 2024,C. elaphus,Calf,2024-08-06,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L75,Male,Summer 2024,C. elaphus,Calf,2024-08-05,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L76,Female,Summer 2024,C. elaphus,Calf,2024-08-07,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L77,Female,Summer 2024,C. elaphus,Subadult,2024-09-01,0,True zero,1e-06,8,Not detected
 API,Kellerwald,L78,Male,Summer 2024,C. elaphus,Calf,2024-08-15,0,Left censored,1e-06,3,Detected
-API,Kellerwald,L79,Male,Summer 2024,C. elaphus,Subadult,2024-08-09,0,True zero,1e-06,1e-06,Not detected
+API,Kellerwald,L79,Male,Summer 2024,C. elaphus,Subadult,2024-08-09,0,True zero,1e-06,8,Not detected
 API,Kellerwald,L80,Female,Summer 2024,C. elaphus,Calf,2024-08-14,0,Left censored,1e-06,2,Detected
-API,Kellerwald,L81,Male,Summer 2024,C. elaphus,Calf,2024-08-04,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L82,Female,Summer 2024,C. elaphus,Adult,2024-08-10,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L83,Male,Summer 2024,C. elaphus,Subadult,2024-08-14,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L84,Female,Summer 2024,C. elaphus,Calf,2024-08-04,0,True zero,1e-06,1e-06,Not detected
+API,Kellerwald,L81,Male,Summer 2024,C. elaphus,Calf,2024-08-04,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L82,Female,Summer 2024,C. elaphus,Adult,2024-08-10,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L83,Male,Summer 2024,C. elaphus,Subadult,2024-08-14,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L84,Female,Summer 2024,C. elaphus,Calf,2024-08-04,0,True zero,1e-06,8,Not detected
 API,Kellerwald,L85,Female,Summer 2024,C. elaphus,Adult,2024-08-09,0,Left censored,1e-06,1,Detected
-API,Kellerwald,L86,Male,Summer 2024,C. elaphus,Calf,2024-08-10,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L87,Male,Summer 2024,C. elaphus,Calf,2024-08-09,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L88,Male,Summer 2024,C. elaphus,Subadult,2024-08-17,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L89,Male,Summer 2024,C. elaphus,Subadult,2024-08-02,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L90,Female,Summer 2024,C. elaphus,Calf,2024-08-04,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L91,Male,Summer 2024,C. elaphus,Subadult,2024-08-10,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L92,Female,Summer 2024,C. elaphus,Calf,2024-08-03,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L93,Female,Summer 2024,C. elaphus,Calf,2024-08-13,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L94,Male,Summer 2024,C. elaphus,Subadult,2024-08-01,0,True zero,1e-06,1e-06,Not detected
+API,Kellerwald,L86,Male,Summer 2024,C. elaphus,Calf,2024-08-10,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L87,Male,Summer 2024,C. elaphus,Calf,2024-08-09,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L88,Male,Summer 2024,C. elaphus,Subadult,2024-08-17,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L89,Male,Summer 2024,C. elaphus,Subadult,2024-08-02,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L90,Female,Summer 2024,C. elaphus,Calf,2024-08-04,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L91,Male,Summer 2024,C. elaphus,Subadult,2024-08-10,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L92,Female,Summer 2024,C. elaphus,Calf,2024-08-03,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L93,Female,Summer 2024,C. elaphus,Calf,2024-08-13,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L94,Male,Summer 2024,C. elaphus,Subadult,2024-08-01,0,True zero,1e-06,8,Not detected
 API,Kellerwald,L95,Female,Summer 2024,C. elaphus,Calf,2024-08-05,0,Left censored,1e-06,3,Detected
-API,Kellerwald,L96,Female,Summer 2024,C. elaphus,Subadult,2024-08-14,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L97,Female,Summer 2024,C. elaphus,Calf,2024-08-12,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L98,Male,Summer 2024,C. elaphus,Subadult,2024-08-09,0,True zero,1e-06,1e-06,Not detected
-API,Kellerwald,L99,Female,Summer 2024,C. elaphus,Calf,2024-08-10,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 11,Female,Summer 2024,C. elaphus,Adult,2024-08-02,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 12,Female,Winter 2024/25,C. elaphus,Adult,2024-12-17,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 13,Male,Summer 2024,C. elaphus,Subadult,2024-09-05,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 14,Female,Summer 2024,C. elaphus,Adult,2024-08-07,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 16,Male,Summer 2024,C. elaphus,Calf,2024-08-02,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 17,Female,Winter 2024/25,C. elaphus,Adult,2025-01-24,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 20,Female,Winter 2024/25,C. elaphus,Calf,2025-01-18,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 32,Female,Summer 2024,C. elaphus,Subadult,2024-08-18,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 33,Male,Summer 2024,C. elaphus,Subadult,2024-08-21,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 34,Male,Summer 2024,C. elaphus,Calf,2024-08-12,0,True zero,1e-06,1e-06,Not detected
+API,Kellerwald,L96,Female,Summer 2024,C. elaphus,Subadult,2024-08-14,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L97,Female,Summer 2024,C. elaphus,Calf,2024-08-12,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L98,Male,Summer 2024,C. elaphus,Subadult,2024-08-09,0,True zero,1e-06,8,Not detected
+API,Kellerwald,L99,Female,Summer 2024,C. elaphus,Calf,2024-08-10,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 11,Female,Summer 2024,C. elaphus,Adult,2024-08-02,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 12,Female,Winter 2024/25,C. elaphus,Adult,2024-12-17,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 13,Male,Summer 2024,C. elaphus,Subadult,2024-09-05,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 14,Female,Summer 2024,C. elaphus,Adult,2024-08-07,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 16,Male,Summer 2024,C. elaphus,Calf,2024-08-02,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 17,Female,Winter 2024/25,C. elaphus,Adult,2025-01-24,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 20,Female,Winter 2024/25,C. elaphus,Calf,2025-01-18,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 32,Female,Summer 2024,C. elaphus,Subadult,2024-08-18,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 33,Male,Summer 2024,C. elaphus,Subadult,2024-08-21,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 34,Male,Summer 2024,C. elaphus,Calf,2024-08-12,0,True zero,1e-06,8,Not detected
 API,Saechs_Schw,E 35,Male,Summer 2024,C. elaphus,Calf,2024-08-13,0,Left censored,1e-06,1,Detected
-API,Saechs_Schw,E 36,Male,Summer 2024,C. elaphus,Calf,2024-08-15,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 37,Male,Summer 2024,C. elaphus,Adult,2024-08-02,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 38,Male,Summer 2024,C. elaphus,Subadult,2024-08-07,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 39,Male,Summer 2024,C. elaphus,Adult,2024-08-15,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 40,Female,Summer 2024,C. elaphus,Adult,2024-08-26,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 41,Female,Summer 2024,C. elaphus,Subadult,2024-09-09,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 42,Male,Summer 2024,C. elaphus,Subadult,2024-09-24,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 43,Male,Summer 2024,C. elaphus,Adult,2024-09-20,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 45,Male,Summer 2024,C. elaphus,Calf,2024-09-17,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 46,Male,Winter 2024/25,C. elaphus,Subadult,2024-10-24,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 47,Male,Winter 2024/25,C. elaphus,Calf,2024-10-15,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 49,Female,Summer 2024,C. elaphus,Calf,2024-09-20,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 50,Male,Summer 2024,C. elaphus,Adult,2024-09-28,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 51,Male,Winter 2024/25,C. elaphus,Calf,2024-10-24,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 52,Female,Winter 2024/25,C. elaphus,Subadult,2024-11-19,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 53,Male,Winter 2024/25,C. elaphus,Subadult,2024-11-30,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 54,Female,Winter 2024/25,C. elaphus,Adult,2024-12-11,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 55,Female,Winter 2024/25,C. elaphus,Calf,2024-11-06,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 56,Male,Winter 2024/25,C. elaphus,Subadult,2024-11-20,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 57,Male,Winter 2024/25,C. elaphus,Adult,2024-10-29,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 58,Female,Winter 2024/25,C. elaphus,Calf,2024-11-08,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 59,Female,Winter 2024/25,C. elaphus,Subadult,2024-11-21,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 60,Male,Winter 2024/25,C. elaphus,Subadult,2024-12-18,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 61,Female,Winter 2024/25,C. elaphus,Subadult,2024-12-11,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 62,Male,Winter 2024/25,C. elaphus,Calf,2024-12-11,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 63,Male,Winter 2024/25,C. elaphus,Calf,2024-12-17,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 64,Male,Winter 2024/25,C. elaphus,Calf,2024-12-18,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 65,Male,Winter 2024/25,C. elaphus,Subadult,2024-12-18,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 66,Male,Winter 2024/25,C. elaphus,Subadult,2025-01-16,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 67,Male,Winter 2024/25,C. elaphus,Subadult,2025-01-29,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 68,Male,Winter 2024/25,C. elaphus,Adult,2025-01-30,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 69,Male,Winter 2024/25,C. elaphus,Adult,2025-01-21,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 70,Male,Winter 2024/25,C. elaphus,Subadult,2025-01-27,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 71,Female,Winter 2024/25,C. elaphus,Adult,2025-01-30,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 72,Female,Winter 2024/25,C. elaphus,Calf,2025-01-30,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 73,Female,Winter 2024/25,C. elaphus,Adult,2025-01-30,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 74,Female,Winter 2024/25,C. elaphus,Subadult,2025-01-30,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 75,Female,Winter 2024/25,C. elaphus,Subadult,2025-01-30,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 76,Female,Winter 2024/25,C. elaphus,Adult,2025-01-30,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 77,Female,Winter 2024/25,C. elaphus,Subadult,2025-01-30,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 78,Female,Winter 2024/25,C. elaphus,Calf,2025-01-30,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 79,Male,Winter 2024/25,C. elaphus,Subadult,2025-01-30,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 80,Female,Winter 2024/25,C. elaphus,Subadult,2025-01-30,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 81,Female,Winter 2024/25,C. elaphus,Adult,2025-01-30,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 82,Female,Winter 2024/25,C. elaphus,Subadult,2025-01-30,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E 83,Female,Winter 2024/25,C. elaphus,Calf,2025-01-30,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E1,Male,Winter 2023/24,C. elaphus,Adult,2024-01-15,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E15,Female,Winter 2023/24,C. elaphus,Subadult,2023-11-22,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E21,Female,Winter 2023/24,C. elaphus,Adult,2023-12-09,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E22,Female,Winter 2023/24,C. elaphus,Adult,2024-01-16,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E23,Female,Winter 2023/24,C. elaphus,Calf,2023-12-19,0,True zero,1e-06,1e-06,Not detected
+API,Saechs_Schw,E 36,Male,Summer 2024,C. elaphus,Calf,2024-08-15,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 37,Male,Summer 2024,C. elaphus,Adult,2024-08-02,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 38,Male,Summer 2024,C. elaphus,Subadult,2024-08-07,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 39,Male,Summer 2024,C. elaphus,Adult,2024-08-15,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 40,Female,Summer 2024,C. elaphus,Adult,2024-08-26,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 41,Female,Summer 2024,C. elaphus,Subadult,2024-09-09,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 42,Male,Summer 2024,C. elaphus,Subadult,2024-09-24,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 43,Male,Summer 2024,C. elaphus,Adult,2024-09-20,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 45,Male,Summer 2024,C. elaphus,Calf,2024-09-17,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 46,Male,Winter 2024/25,C. elaphus,Subadult,2024-10-24,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 47,Male,Winter 2024/25,C. elaphus,Calf,2024-10-15,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 49,Female,Summer 2024,C. elaphus,Calf,2024-09-20,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 50,Male,Summer 2024,C. elaphus,Adult,2024-09-28,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 51,Male,Winter 2024/25,C. elaphus,Calf,2024-10-24,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 52,Female,Winter 2024/25,C. elaphus,Subadult,2024-11-19,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 53,Male,Winter 2024/25,C. elaphus,Subadult,2024-11-30,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 54,Female,Winter 2024/25,C. elaphus,Adult,2024-12-11,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 55,Female,Winter 2024/25,C. elaphus,Calf,2024-11-06,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 56,Male,Winter 2024/25,C. elaphus,Subadult,2024-11-20,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 57,Male,Winter 2024/25,C. elaphus,Adult,2024-10-29,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 58,Female,Winter 2024/25,C. elaphus,Calf,2024-11-08,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 59,Female,Winter 2024/25,C. elaphus,Subadult,2024-11-21,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 60,Male,Winter 2024/25,C. elaphus,Subadult,2024-12-18,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 61,Female,Winter 2024/25,C. elaphus,Subadult,2024-12-11,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 62,Male,Winter 2024/25,C. elaphus,Calf,2024-12-11,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 63,Male,Winter 2024/25,C. elaphus,Calf,2024-12-17,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 64,Male,Winter 2024/25,C. elaphus,Calf,2024-12-18,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 65,Male,Winter 2024/25,C. elaphus,Subadult,2024-12-18,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 66,Male,Winter 2024/25,C. elaphus,Subadult,2025-01-16,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 67,Male,Winter 2024/25,C. elaphus,Subadult,2025-01-29,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 68,Male,Winter 2024/25,C. elaphus,Adult,2025-01-30,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 69,Male,Winter 2024/25,C. elaphus,Adult,2025-01-21,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 70,Male,Winter 2024/25,C. elaphus,Subadult,2025-01-27,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 71,Female,Winter 2024/25,C. elaphus,Adult,2025-01-30,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 72,Female,Winter 2024/25,C. elaphus,Calf,2025-01-30,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 73,Female,Winter 2024/25,C. elaphus,Adult,2025-01-30,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 74,Female,Winter 2024/25,C. elaphus,Subadult,2025-01-30,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 75,Female,Winter 2024/25,C. elaphus,Subadult,2025-01-30,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 76,Female,Winter 2024/25,C. elaphus,Adult,2025-01-30,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 77,Female,Winter 2024/25,C. elaphus,Subadult,2025-01-30,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 78,Female,Winter 2024/25,C. elaphus,Calf,2025-01-30,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 79,Male,Winter 2024/25,C. elaphus,Subadult,2025-01-30,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 80,Female,Winter 2024/25,C. elaphus,Subadult,2025-01-30,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 81,Female,Winter 2024/25,C. elaphus,Adult,2025-01-30,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 82,Female,Winter 2024/25,C. elaphus,Subadult,2025-01-30,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E 83,Female,Winter 2024/25,C. elaphus,Calf,2025-01-30,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E1,Male,Winter 2023/24,C. elaphus,Adult,2024-01-15,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E15,Female,Winter 2023/24,C. elaphus,Subadult,2023-11-22,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E21,Female,Winter 2023/24,C. elaphus,Adult,2023-12-09,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E22,Female,Winter 2023/24,C. elaphus,Adult,2024-01-16,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E23,Female,Winter 2023/24,C. elaphus,Calf,2023-12-19,0,True zero,1e-06,8,Not detected
 API,Saechs_Schw,E24,Female,Winter 2023/24,C. elaphus,Adult,2024-01-30,0,Left censored,1e-06,1,Detected
-API,Saechs_Schw,E26,Female,Winter 2023/24,C. elaphus,Subadult,2024-01-19,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E28,Female,Winter 2023/24,C. elaphus,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E29,Female,Winter 2023/24,C. elaphus,Adult,2024-01-29,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E30,Male,Winter 2023/24,C. elaphus,Adult,2024-01-19,0,True zero,1e-06,1e-06,Not detected
-API,Saechs_Schw,E31,Male,Winter 2023/24,C. elaphus,Adult,2023-12-06,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F01,Female,Winter 2023/24,C. elaphus,Adult,2023-12-28,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F02,Male,Winter 2023/24,C. elaphus,Calf,2023-12-28,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F03,Female,Winter 2023/24,D. dama,Adult,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F04,Female,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F05,Male,Winter 2023/24,C. elaphus,Calf,2023-12-28,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F06,Female,Winter 2023/24,C. elaphus,Adult,2023-12-28,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F07,Male,Winter 2023/24,C. elaphus,Calf,2024-01-11,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F08,Male,Winter 2023/24,C. elaphus,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F09,Male,Winter 2023/24,C. elaphus,Calf,2023-11-24,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F10,Male,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F11,Female,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F12,Female,Winter 2023/24,C. elaphus,Subadult,2024-01-11,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F13,Female,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F14,Female,Winter 2023/24,C. elaphus,Adult,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F15,Female,Winter 2023/24,C. elaphus,Calf,2023-11-30,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F16,Male,Winter 2023/24,C. elaphus,Calf,2023-11-30,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F17,Male,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F18,Female,Winter 2023/24,C. elaphus,Calf,2023-12-01,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F19a,Male,Winter 2023/24,C. elaphus,Subadult,2024-01-11,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F20a,Female,Winter 2023/24,C. elaphus,Calf,2023-12-28,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F21,Male,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F22,Female,Winter 2023/24,D. dama,Adult,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F23,Female,Winter 2023/24,C. elaphus,Subadult,2024-01-11,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F24,Female,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F25,Female,Winter 2023/24,C. elaphus,Adult,2024-01-11,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F26,Female,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F27,Female,Winter 2023/24,C. elaphus,Adult,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F28,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,1e-06,Not detected
+API,Saechs_Schw,E26,Female,Winter 2023/24,C. elaphus,Subadult,2024-01-19,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E28,Female,Winter 2023/24,C. elaphus,Calf,2023-12-08,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E29,Female,Winter 2023/24,C. elaphus,Adult,2024-01-29,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E30,Male,Winter 2023/24,C. elaphus,Adult,2024-01-19,0,True zero,1e-06,8,Not detected
+API,Saechs_Schw,E31,Male,Winter 2023/24,C. elaphus,Adult,2023-12-06,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F01,Female,Winter 2023/24,C. elaphus,Adult,2023-12-28,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F02,Male,Winter 2023/24,C. elaphus,Calf,2023-12-28,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F03,Female,Winter 2023/24,D. dama,Adult,2023-12-08,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F04,Female,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F05,Male,Winter 2023/24,C. elaphus,Calf,2023-12-28,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F06,Female,Winter 2023/24,C. elaphus,Adult,2023-12-28,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F07,Male,Winter 2023/24,C. elaphus,Calf,2024-01-11,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F08,Male,Winter 2023/24,C. elaphus,Calf,2023-12-08,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F09,Male,Winter 2023/24,C. elaphus,Calf,2023-11-24,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F10,Male,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F11,Female,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F12,Female,Winter 2023/24,C. elaphus,Subadult,2024-01-11,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F13,Female,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F14,Female,Winter 2023/24,C. elaphus,Adult,2023-12-08,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F15,Female,Winter 2023/24,C. elaphus,Calf,2023-11-30,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F16,Male,Winter 2023/24,C. elaphus,Calf,2023-11-30,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F17,Male,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F18,Female,Winter 2023/24,C. elaphus,Calf,2023-12-01,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F19a,Male,Winter 2023/24,C. elaphus,Subadult,2024-01-11,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F20a,Female,Winter 2023/24,C. elaphus,Calf,2023-12-28,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F21,Male,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F22,Female,Winter 2023/24,D. dama,Adult,2023-12-08,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F23,Female,Winter 2023/24,C. elaphus,Subadult,2024-01-11,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F24,Female,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F25,Female,Winter 2023/24,C. elaphus,Adult,2024-01-11,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F26,Female,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F27,Female,Winter 2023/24,C. elaphus,Adult,2023-12-08,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F28,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,8,Not detected
 API,Vorpomm,F29,Female,Winter 2023/24,C. elaphus,Subadult,2023-11-24,0,Left censored,1e-06,2,Detected
-API,Vorpomm,F30,Female,Winter 2023/24,C. elaphus,Calf,2023-11-24,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F31,Female,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F32,Male,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F33,Female,Winter 2023/24,D. dama,Subadult,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F34,Female,Winter 2023/24,C. elaphus,Adult,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F35,Female,Winter 2023/24,C. elaphus,Adult,2023-12-28,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F36,Female,Winter 2023/24,C. elaphus,Subadult,2023-12-28,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F37,Male,Winter 2023/24,C. elaphus,Calf,2023-11-24,0,True zero,1e-06,1e-06,Not detected
+API,Vorpomm,F30,Female,Winter 2023/24,C. elaphus,Calf,2023-11-24,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F31,Female,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F32,Male,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F33,Female,Winter 2023/24,D. dama,Subadult,2023-12-08,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F34,Female,Winter 2023/24,C. elaphus,Adult,2023-12-08,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F35,Female,Winter 2023/24,C. elaphus,Adult,2023-12-28,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F36,Female,Winter 2023/24,C. elaphus,Subadult,2023-12-28,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F37,Male,Winter 2023/24,C. elaphus,Calf,2023-11-24,0,True zero,1e-06,8,Not detected
 API,Vorpomm,F38,Female,Winter 2023/24,C. elaphus,Adult,2023-11-24,0,Left censored,1e-06,2,Detected
-API,Vorpomm,F39,Male,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F40,Female,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F41,Female,Winter 2023/24,C. elaphus,Calf,2023-11-24,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F42,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F43,Female,Winter 2023/24,C. elaphus,Calf,2023-12-01,0,True zero,1e-06,1e-06,Not detected
+API,Vorpomm,F39,Male,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F40,Female,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F41,Female,Winter 2023/24,C. elaphus,Calf,2023-11-24,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F42,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F43,Female,Winter 2023/24,C. elaphus,Calf,2023-12-01,0,True zero,1e-06,8,Not detected
 API,Vorpomm,F44,Female,Winter 2023/24,C. elaphus,Calf,2023-11-24,0,Left censored,1e-06,2,Detected
-API,Vorpomm,F45,Female,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F46,Male,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F47,Female,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F48,Female,Winter 2023/24,D. dama,Adult,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F49,Female,Winter 2023/24,D. dama,Adult,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-API,Vorpomm,F50,Female,Winter 2023/24,C. elaphus,Adult,2023-11-24,0,True zero,1e-06,1e-06,Not detected
-Anthropogenic pollution,Bay_Wald,A01,Male,Winter 2023/24,C. elaphus,Adult,2023-12-11,0,True zero,1e-06,1e-06,Not detected
-Anthropogenic pollution,Bay_Wald,A03,Male,Winter 2023/24,C. elaphus,Subadult,2024-01-30,0,True zero,1e-06,1e-06,Not detected
+API,Vorpomm,F45,Female,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F46,Male,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F47,Female,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F48,Female,Winter 2023/24,D. dama,Adult,2023-12-08,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F49,Female,Winter 2023/24,D. dama,Adult,2023-12-08,0,True zero,1e-06,8,Not detected
+API,Vorpomm,F50,Female,Winter 2023/24,C. elaphus,Adult,2023-11-24,0,True zero,1e-06,8,Not detected
+Anthropogenic pollution,Bay_Wald,A01,Male,Winter 2023/24,C. elaphus,Adult,2023-12-11,0,True zero,1e-06,14,Not detected
+Anthropogenic pollution,Bay_Wald,A03,Male,Winter 2023/24,C. elaphus,Subadult,2024-01-30,0,True zero,1e-06,14,Not detected
 Anthropogenic pollution,Bay_Wald,A05,Male,Winter 2023/24,C. elaphus,Subadult,2024-01-31,0,Left censored,1e-06,2,Detected
-Anthropogenic pollution,Bay_Wald,A06,Male,Winter 2023/24,C. elaphus,Subadult,2023-12-27,0,True zero,1e-06,1e-06,Not detected
+Anthropogenic pollution,Bay_Wald,A06,Male,Winter 2023/24,C. elaphus,Subadult,2023-12-27,0,True zero,1e-06,14,Not detected
 Anthropogenic pollution,Bay_Wald,A07,Female,Winter 2023/24,C. elaphus,Adult,2024-01-25,0,Left censored,1e-06,2,Detected
-Anthropogenic pollution,Bay_Wald,A08,Male,Winter 2023/24,C. elaphus,Adult,2024-01-30,0,True zero,1e-06,1e-06,Not detected
+Anthropogenic pollution,Bay_Wald,A08,Male,Winter 2023/24,C. elaphus,Adult,2024-01-30,0,True zero,1e-06,14,Not detected
 Anthropogenic pollution,Bay_Wald,A09,Male,Winter 2023/24,C. elaphus,Adult,2023-12-05,9.8,Fully quantified,9.8,9.8,Quantified
 Anthropogenic pollution,Bay_Wald,A100,Male,Winter 2024/25,C. elaphus,Adult,2024-12-09,16.44826610046232,Fully quantified,16.4482661004623,16.4482661004623,Quantified
-Anthropogenic pollution,Bay_Wald,A13,Female,Winter 2023/24,C. elaphus,Subadult,2024-01-25,0,True zero,1e-06,1e-06,Not detected
-Anthropogenic pollution,Bay_Wald,A19,Male,Winter 2023/24,C. elaphus,Subadult,2024-01-30,0,True zero,1e-06,1e-06,Not detected
+Anthropogenic pollution,Bay_Wald,A13,Female,Winter 2023/24,C. elaphus,Subadult,2024-01-25,0,True zero,1e-06,14,Not detected
+Anthropogenic pollution,Bay_Wald,A19,Male,Winter 2023/24,C. elaphus,Subadult,2024-01-30,0,True zero,1e-06,14,Not detected
 Anthropogenic pollution,Bay_Wald,A20,Male,Winter 2023/24,C. elaphus,Adult,2023-12-29,7.7,Fully quantified,7.7,7.7,Quantified
-Anthropogenic pollution,Bay_Wald,A23,Male,Winter 2023/24,C. elaphus,Adult,2024-01-28,0,True zero,1e-06,1e-06,Not detected
+Anthropogenic pollution,Bay_Wald,A23,Male,Winter 2023/24,C. elaphus,Adult,2024-01-28,0,True zero,1e-06,14,Not detected
 Anthropogenic pollution,Bay_Wald,A39,Male,Winter 2023/24,C. elaphus,Subadult,2024-01-31,0,Left censored,1e-06,2,Detected
-Anthropogenic pollution,Bay_Wald,A40,Male,Winter 2023/24,C. elaphus,Adult,2024-01-30,0,True zero,1e-06,1e-06,Not detected
+Anthropogenic pollution,Bay_Wald,A40,Male,Winter 2023/24,C. elaphus,Adult,2024-01-30,0,True zero,1e-06,14,Not detected
 Anthropogenic pollution,Bay_Wald,A54,Female,Winter 2024/25,C. elaphus,Adult,2024-12-02,0,Left censored,1e-06,2,Detected
 Anthropogenic pollution,Bay_Wald,A55,Male,Winter 2024/25,C. elaphus,Subadult,2025-01-04,26.338168927771058,Fully quantified,26.3381689277711,26.3381689277711,Quantified
 Anthropogenic pollution,Bay_Wald,A59,Male,Winter 2024/25,C. elaphus,Adult,2024-10-16,0,Left censored,1e-06,2,Detected
@@ -501,7 +501,7 @@ Anthropogenic pollution,Eiffel,Z17,Male,Winter 2023/24,C. elaphus,Subadult,2023-
 Anthropogenic pollution,Eiffel,Z18,Male,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,Left censored,1e-06,2,Detected
 Anthropogenic pollution,Eiffel,Z19,Female,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,Left censored,1e-06,2,Detected
 Anthropogenic pollution,Eiffel,Z20,Female,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,Left censored,1e-06,2,Detected
-Anthropogenic pollution,Eiffel,Z21,Female,Winter 2023/24,C. elaphus,Subadult,2023-11-29,0,True zero,1e-06,1e-06,Not detected
+Anthropogenic pollution,Eiffel,Z21,Female,Winter 2023/24,C. elaphus,Subadult,2023-11-29,0,True zero,1e-06,14,Not detected
 Anthropogenic pollution,Eiffel,Z22,Female,Winter 2023/24,C. elaphus,Adult,2023-12-07,0,Left censored,1e-06,2,Detected
 Anthropogenic pollution,Eiffel,Z23,Male,Winter 2023/24,C. elaphus,Calf,2023-11-23,0,Left censored,1e-06,2,Detected
 Anthropogenic pollution,Eiffel,Z24,Female,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,Left censored,1e-06,2,Detected
@@ -1270,7 +1270,7 @@ Industrial chemical,Saechs_Schw,E 83,Female,Winter 2024/25,C. elaphus,Calf,2025-
 Industrial chemical,Saechs_Schw,E1,Male,Winter 2023/24,C. elaphus,Adult,2024-01-15,0,Left censored,1e-06,1,Detected
 Industrial chemical,Saechs_Schw,E15,Female,Winter 2023/24,C. elaphus,Subadult,2023-11-22,1.127,Fully quantified,1.127,1.127,Quantified
 Industrial chemical,Saechs_Schw,E21,Female,Winter 2023/24,C. elaphus,Adult,2023-12-09,0,Left censored,1e-06,1,Detected
-Industrial chemical,Saechs_Schw,E22,Female,Winter 2023/24,C. elaphus,Adult,2024-01-16,0,True zero,1e-06,1e-06,Not detected
+Industrial chemical,Saechs_Schw,E22,Female,Winter 2023/24,C. elaphus,Adult,2024-01-16,0,True zero,1e-06,13,Not detected
 Industrial chemical,Saechs_Schw,E23,Female,Winter 2023/24,C. elaphus,Calf,2023-12-19,1.077,Fully quantified,1.077,1.077,Quantified
 Industrial chemical,Saechs_Schw,E24,Female,Winter 2023/24,C. elaphus,Adult,2024-01-30,0,Left censored,1e-06,1,Detected
 Industrial chemical,Saechs_Schw,E26,Female,Winter 2023/24,C. elaphus,Subadult,2024-01-19,0,Left censored,1e-06,1,Detected
@@ -2657,99 +2657,99 @@ POP,Vorpomm,F47,Female,Winter 2023/24,D. dama,Calf,2023-12-08,0,Left censored,1e
 POP,Vorpomm,F48,Female,Winter 2023/24,D. dama,Adult,2023-12-08,0,Left censored,1e-06,5,Detected
 POP,Vorpomm,F49,Female,Winter 2023/24,D. dama,Adult,2023-12-08,0,Left censored,1e-06,8,Detected
 POP,Vorpomm,F50,Female,Winter 2023/24,C. elaphus,Adult,2023-11-24,2.3738,Left censored,2.3738,12.3738,Quantified
-Pesticide,Bay_Wald,A01,Male,Winter 2023/24,C. elaphus,Adult,2023-12-11,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Bay_Wald,A01,Male,Winter 2023/24,C. elaphus,Adult,2023-12-11,0,True zero,1e-06,25,Not detected
 Pesticide,Bay_Wald,A03,Male,Winter 2023/24,C. elaphus,Subadult,2024-01-30,1.5,Left censored,1.5,2.5,Quantified
 Pesticide,Bay_Wald,A05,Male,Winter 2023/24,C. elaphus,Subadult,2024-01-31,0,Left censored,1e-06,1,Detected
-Pesticide,Bay_Wald,A06,Male,Winter 2023/24,C. elaphus,Subadult,2023-12-27,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Bay_Wald,A07,Female,Winter 2023/24,C. elaphus,Adult,2024-01-25,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Bay_Wald,A06,Male,Winter 2023/24,C. elaphus,Subadult,2023-12-27,0,True zero,1e-06,25,Not detected
+Pesticide,Bay_Wald,A07,Female,Winter 2023/24,C. elaphus,Adult,2024-01-25,0,True zero,1e-06,25,Not detected
 Pesticide,Bay_Wald,A08,Male,Winter 2023/24,C. elaphus,Adult,2024-01-30,1.3,Left censored,1.3,3.3,Quantified
 Pesticide,Bay_Wald,A09,Male,Winter 2023/24,C. elaphus,Adult,2023-12-05,0,Left censored,1e-06,1,Detected
 Pesticide,Bay_Wald,A100,Male,Winter 2024/25,C. elaphus,Adult,2024-12-09,0,Left censored,1e-06,1,Detected
 Pesticide,Bay_Wald,A13,Female,Winter 2023/24,C. elaphus,Subadult,2024-01-25,2,Left censored,2,4,Quantified
 Pesticide,Bay_Wald,A19,Male,Winter 2023/24,C. elaphus,Subadult,2024-01-30,1.9,Left censored,1.9,2.9,Quantified
-Pesticide,Bay_Wald,A20,Male,Winter 2023/24,C. elaphus,Adult,2023-12-29,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Bay_Wald,A23,Male,Winter 2023/24,C. elaphus,Adult,2024-01-28,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Bay_Wald,A39,Male,Winter 2023/24,C. elaphus,Subadult,2024-01-31,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Bay_Wald,A20,Male,Winter 2023/24,C. elaphus,Adult,2023-12-29,0,True zero,1e-06,25,Not detected
+Pesticide,Bay_Wald,A23,Male,Winter 2023/24,C. elaphus,Adult,2024-01-28,0,True zero,1e-06,25,Not detected
+Pesticide,Bay_Wald,A39,Male,Winter 2023/24,C. elaphus,Subadult,2024-01-31,0,True zero,1e-06,25,Not detected
 Pesticide,Bay_Wald,A40,Male,Winter 2023/24,C. elaphus,Adult,2024-01-30,0,Left censored,1e-06,3,Detected
 Pesticide,Bay_Wald,A54,Female,Winter 2024/25,C. elaphus,Adult,2024-12-02,0,Left censored,1e-06,1,Detected
 Pesticide,Bay_Wald,A55,Male,Winter 2024/25,C. elaphus,Subadult,2025-01-04,0,Left censored,1e-06,1,Detected
-Pesticide,Bay_Wald,A59,Male,Winter 2024/25,C. elaphus,Adult,2024-10-16,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Bay_Wald,A59,Male,Winter 2024/25,C. elaphus,Adult,2024-10-16,0,True zero,1e-06,25,Not detected
 Pesticide,Bay_Wald,A60,Male,Winter 2024/25,C. elaphus,Adult,NA,0,Left censored,1e-06,2,Detected
-Pesticide,Bay_Wald,A62,Male,Winter 2024/25,C. elaphus,Adult,2024-11-13,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Bay_Wald,A62,Male,Winter 2024/25,C. elaphus,Adult,2024-11-13,0,True zero,1e-06,25,Not detected
 Pesticide,Bay_Wald,A63,Male,Winter 2024/25,C. elaphus,Adult,2024-11-19,0,Left censored,1e-06,2,Detected
 Pesticide,Bay_Wald,A64,Male,Winter 2024/25,C. elaphus,Subadult,2024-10-22,1.02718441344343,Left censored,1.02718441344343,3.02718441344343,Quantified
-Pesticide,Bay_Wald,A65,Female,Winter 2024/25,C. elaphus,Adult,2024-11-24,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Bay_Wald,A67,Male,Winter 2024/25,C. elaphus,Adult,2024-10-31,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Bay_Wald,A65,Female,Winter 2024/25,C. elaphus,Adult,2024-11-24,0,True zero,1e-06,25,Not detected
+Pesticide,Bay_Wald,A67,Male,Winter 2024/25,C. elaphus,Adult,2024-10-31,0,True zero,1e-06,25,Not detected
 Pesticide,Bay_Wald,A68,Male,Winter 2024/25,C. elaphus,Subadult,2024-10-13,0,Left censored,1e-06,7,Detected
 Pesticide,Bay_Wald,A72,Female,Winter 2024/25,C. elaphus,Adult,2024-12-29,0,Left censored,1e-06,2,Detected
 Pesticide,Bay_Wald,A73,Male,Winter 2024/25,C. elaphus,Adult,2024-10-27,0,Left censored,1e-06,1,Detected
 Pesticide,Bay_Wald,A76,Female,Winter 2024/25,C. elaphus,Adult,2024-12-19,0,Left censored,1e-06,2,Detected
-Pesticide,Bay_Wald,A77,Male,Winter 2024/25,C. elaphus,Calf,2024-11-25,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Bay_Wald,A77,Male,Winter 2024/25,C. elaphus,Calf,2024-11-25,0,True zero,1e-06,25,Not detected
 Pesticide,Bay_Wald,A80,Male,Winter 2024/25,C. elaphus,Calf,2025-01-27,0,Left censored,1e-06,1,Detected
 Pesticide,Bay_Wald,A83,Male,Winter 2024/25,C. elaphus,Adult,2025-01-14,0,Left censored,1e-06,1,Detected
-Pesticide,Bay_Wald,A85,Female,Winter 2024/25,C. elaphus,Adult,2024-11-25,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Bay_Wald,A85,Female,Winter 2024/25,C. elaphus,Adult,2024-11-25,0,True zero,1e-06,25,Not detected
 Pesticide,Bay_Wald,A89,Male,Winter 2024/25,C. elaphus,Calf,2024-12-19,0,Left censored,1e-06,1,Detected
-Pesticide,Bay_Wald,A91,Male,Winter 2024/25,C. elaphus,Adult,2024-09-27,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Bay_Wald,A91,Male,Winter 2024/25,C. elaphus,Adult,2024-09-27,0,True zero,1e-06,25,Not detected
 Pesticide,Bay_Wald,A92,Male,Winter 2024/25,C. elaphus,Adult,2024-12-18,0,Left censored,1e-06,1,Detected
 Pesticide,Bay_Wald,A94,Male,Winter 2024/25,C. elaphus,Calf,2024-12-19,0,Left censored,1e-06,3,Detected
 Pesticide,Bay_Wald,A95,Male,Winter 2024/25,C. elaphus,Adult,2024-12-18,1.23683430399488,Left censored,1.23683430399488,3.23683430399488,Quantified
 Pesticide,Bay_Wald,A96,Male,Winter 2024/25,C. elaphus,Adult,2024-12-13,0,Left censored,1e-06,4,Detected
 Pesticide,Bay_Wald,A99,Female,Winter 2024/25,C. elaphus,Calf,2024-12-19,0,Left censored,1e-06,1,Detected
-Pesticide,Eiffel,Z01,Female,Winter 2023/24,C. elaphus,Adult,2023-11-29,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Eiffel,Z01,Female,Winter 2023/24,C. elaphus,Adult,2023-11-29,0,True zero,1e-06,25,Not detected
 Pesticide,Eiffel,Z02,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-21,0,Left censored,1e-06,1,Detected
-Pesticide,Eiffel,Z03,Female,Winter 2023/24,C. elaphus,Calf,2023-11-21,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z04,Male,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z05,Female,Winter 2023/24,C. elaphus,Adult,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z06,Female,Winter 2023/24,C. elaphus,Adult,2023-11-29,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Eiffel,Z03,Female,Winter 2023/24,C. elaphus,Calf,2023-11-21,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z04,Male,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z05,Female,Winter 2023/24,C. elaphus,Adult,2023-11-29,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z06,Female,Winter 2023/24,C. elaphus,Adult,2023-11-29,0,True zero,1e-06,25,Not detected
 Pesticide,Eiffel,Z07,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-21,0,Left censored,1e-06,1,Detected
-Pesticide,Eiffel,Z08,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-29,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Eiffel,Z08,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-29,0,True zero,1e-06,25,Not detected
 Pesticide,Eiffel,Z09,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-23,0,Left censored,1e-06,1,Detected
-Pesticide,Eiffel,Z10,Male,Winter 2023/24,C. elaphus,Calf,2023-11-23,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Eiffel,Z10,Male,Winter 2023/24,C. elaphus,Calf,2023-11-23,0,True zero,1e-06,25,Not detected
 Pesticide,Eiffel,Z100,Male,Summer 2024,C. elaphus,Calf,2024-09-04,0,Left censored,1e-06,2,Detected
-Pesticide,Eiffel,Z11,Female,Winter 2023/24,C. elaphus,Calf,2023-11-23,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z12,Female,Winter 2023/24,C. elaphus,Adult,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z13,Male,Winter 2023/24,C. elaphus,Calf,2023-11-21,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z14,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z15,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z16,Female,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z17,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z18,Male,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z19,Female,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z20,Female,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z21,Female,Winter 2023/24,C. elaphus,Subadult,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z22,Female,Winter 2023/24,C. elaphus,Adult,2023-12-07,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z23,Male,Winter 2023/24,C. elaphus,Calf,2023-11-23,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z24,Female,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z25,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z26,Female,Winter 2023/24,C. elaphus,Adult,2023-12-07,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z27,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z28,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z29,Female,Winter 2023/24,C. elaphus,Calf,2023-12-16,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z30,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Eiffel,Z11,Female,Winter 2023/24,C. elaphus,Calf,2023-11-23,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z12,Female,Winter 2023/24,C. elaphus,Adult,2023-11-29,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z13,Male,Winter 2023/24,C. elaphus,Calf,2023-11-21,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z14,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-29,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z15,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-29,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z16,Female,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z17,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-29,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z18,Male,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z19,Female,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z20,Female,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z21,Female,Winter 2023/24,C. elaphus,Subadult,2023-11-29,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z22,Female,Winter 2023/24,C. elaphus,Adult,2023-12-07,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z23,Male,Winter 2023/24,C. elaphus,Calf,2023-11-23,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z24,Female,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z25,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z26,Female,Winter 2023/24,C. elaphus,Adult,2023-12-07,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z27,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z28,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z29,Female,Winter 2023/24,C. elaphus,Calf,2023-12-16,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z30,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,25,Not detected
 Pesticide,Eiffel,Z31,Male,Winter 2023/24,C. elaphus,Calf,2023-10-26,0,Left censored,1e-06,1,Detected
-Pesticide,Eiffel,Z32,Male,Winter 2023/24,C. elaphus,Calf,2023-10-26,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z33,Female,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z34,Female,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z35,Male,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z36,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z37,Male,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z38,Female,Winter 2023/24,C. elaphus,Adult,2023-11-29,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z39,Female,Winter 2023/24,C. elaphus,Adult,2023-11-23,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z40,Male,Winter 2023/24,C. elaphus,Calf,2023-11-23,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z41,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-23,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z42,Female,Winter 2023/24,C. elaphus,Calf,2023-11-23,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z43,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-23,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z44,Female,Winter 2023/24,C. elaphus,Calf,2023-11-23,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z45,Female,Winter 2023/24,C. elaphus,Calf,2023-10-26,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z46,Male,Winter 2023/24,C. elaphus,Calf,2023-10-26,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z47,Female,Winter 2023/24,C. elaphus,Calf,2023-10-26,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Eiffel,Z32,Male,Winter 2023/24,C. elaphus,Calf,2023-10-26,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z33,Female,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z34,Female,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z35,Male,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z36,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z37,Male,Winter 2023/24,C. elaphus,Calf,2023-11-29,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z38,Female,Winter 2023/24,C. elaphus,Adult,2023-11-29,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z39,Female,Winter 2023/24,C. elaphus,Adult,2023-11-23,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z40,Male,Winter 2023/24,C. elaphus,Calf,2023-11-23,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z41,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-23,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z42,Female,Winter 2023/24,C. elaphus,Calf,2023-11-23,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z43,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-23,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z44,Female,Winter 2023/24,C. elaphus,Calf,2023-11-23,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z45,Female,Winter 2023/24,C. elaphus,Calf,2023-10-26,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z46,Male,Winter 2023/24,C. elaphus,Calf,2023-10-26,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z47,Female,Winter 2023/24,C. elaphus,Calf,2023-10-26,0,True zero,1e-06,25,Not detected
 Pesticide,Eiffel,Z48,Female,Winter 2023/24,C. elaphus,Adult,2023-10-26,0,Left censored,1e-06,1,Detected
-Pesticide,Eiffel,Z49,Female,Winter 2023/24,C. elaphus,Calf,2023-10-26,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Eiffel,Z50,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-23,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Eiffel,Z49,Female,Winter 2023/24,C. elaphus,Calf,2023-10-26,0,True zero,1e-06,25,Not detected
+Pesticide,Eiffel,Z50,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-23,0,True zero,1e-06,25,Not detected
 Pesticide,Eiffel,Z51,Female,Summer 2024,C. elaphus,Calf,2024-09-07,0,Left censored,1e-06,2,Detected
 Pesticide,Eiffel,Z52,Female,Summer 2024,C. elaphus,Calf,2024-08-29,0,Left censored,1e-06,1,Detected
 Pesticide,Eiffel,Z53,Male,Summer 2024,C. elaphus,Adult,2024-08-27,0,Left censored,1e-06,1,Detected
-Pesticide,Eiffel,Z54,Female,Summer 2024,C. elaphus,Calf,2024-09-10,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Eiffel,Z54,Female,Summer 2024,C. elaphus,Calf,2024-09-10,0,True zero,1e-06,25,Not detected
 Pesticide,Eiffel,Z55,Male,Summer 2024,C. elaphus,Calf,2024-08-23,0,Left censored,1e-06,2,Detected
 Pesticide,Eiffel,Z56,Female,Summer 2024,C. elaphus,Subadult,2024-08-28,0,Left censored,1e-06,1,Detected
 Pesticide,Eiffel,Z57,Male,Summer 2024,C. elaphus,Adult,2024-09-12,0,Left censored,1e-06,1,Detected
@@ -2767,81 +2767,81 @@ Pesticide,Eiffel,Z70,Male,Summer 2024,C. elaphus,Calf,2024-08-06,0,Left censored
 Pesticide,Eiffel,Z71,Female,Summer 2024,C. elaphus,Calf,2024-08-03,0,Left censored,1e-06,5,Detected
 Pesticide,Eiffel,Z73,Female,Summer 2024,C. elaphus,Calf,2024-08-03,3.1,Left censored,3.1,5.1,Quantified
 Pesticide,Eiffel,Z76,Female,Summer 2024,C. elaphus,Adult,2024-08-07,0,Left censored,1e-06,5,Detected
-Pesticide,Eiffel,Z78,Female,Summer 2024,C. elaphus,Calf,2024-08-02,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Eiffel,Z78,Female,Summer 2024,C. elaphus,Calf,2024-08-02,0,True zero,1e-06,25,Not detected
 Pesticide,Eiffel,Z79,Female,Summer 2024,C. elaphus,Adult,2024-08-03,16.963865414261,Left censored,16.963865414261,19.963865414261,Quantified
-Pesticide,Eiffel,Z80,Female,Summer 2024,C. elaphus,Calf,2024-08-07,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Eiffel,Z80,Female,Summer 2024,C. elaphus,Calf,2024-08-07,0,True zero,1e-06,25,Not detected
 Pesticide,Eiffel,Z91,Male,Summer 2024,C. elaphus,Subadult,2024-05-29,0,Left censored,1e-06,1,Detected
-Pesticide,Eiffel,Z92,Female,Summer 2024,C. elaphus,Calf,2024-08-19,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Eiffel,Z92,Female,Summer 2024,C. elaphus,Calf,2024-08-19,0,True zero,1e-06,25,Not detected
 Pesticide,Eiffel,Z96,Female,Summer 2024,C. elaphus,Adult,2024-09-04,0,Left censored,1e-06,2,Detected
 Pesticide,Eiffel,Z97,Female,Summer 2024,C. elaphus,Calf,2024-09-11,0,Left censored,1e-06,6,Detected
 Pesticide,Eiffel,Z99,Female,Summer 2024,C. elaphus,Calf,2024-08-08,0,Left censored,1e-06,3,Detected
-Pesticide,Hainich,C01,Female,Winter 2023/24,D. dama,Subadult,2023-12-09,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Hainich,C01,Female,Winter 2023/24,D. dama,Subadult,2023-12-09,0,True zero,1e-06,25,Not detected
 Pesticide,Hainich,C02,Male,Winter 2023/24,C. elaphus,Subadult,2023-12-12,0,Left censored,1e-06,1,Detected
 Pesticide,Hainich,C03,Female,Winter 2023/24,C. elaphus,Calf,2023-12-05,0,Left censored,1e-06,1,Detected
 Pesticide,Hainich,C04,Male,Winter 2023/24,C. elaphus,Calf,2023-11-28,0,Left censored,1e-06,1,Detected
-Pesticide,Hainich,C05,Male,Winter 2023/24,D. dama,Calf,2024-01-15,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Hainich,C05,Male,Winter 2023/24,D. dama,Calf,2024-01-15,0,True zero,1e-06,25,Not detected
 Pesticide,Hainich,C06,Female,Winter 2023/24,C. elaphus,Calf,2023-12-05,0,Left censored,1e-06,2,Detected
-Pesticide,Hainich,C07,Female,Winter 2023/24,D. dama,Adult,2023-12-12,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hainich,C08,Female,Winter 2023/24,D. dama,Subadult,2023-11-18,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hainich,C09,Female,Winter 2023/24,D. dama,Subadult,2024-01-13,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Hainich,C07,Female,Winter 2023/24,D. dama,Adult,2023-12-12,0,True zero,1e-06,25,Not detected
+Pesticide,Hainich,C08,Female,Winter 2023/24,D. dama,Subadult,2023-11-18,0,True zero,1e-06,25,Not detected
+Pesticide,Hainich,C09,Female,Winter 2023/24,D. dama,Subadult,2024-01-13,0,True zero,1e-06,25,Not detected
 Pesticide,Hainich,C10,Male,Winter 2023/24,C. elaphus,Calf,2023-12-05,0,Left censored,1e-06,2,Detected
-Pesticide,Hainich,C100,Female,Summer 2024,D. dama,Calf,2024-09-25,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Hainich,C100,Female,Summer 2024,D. dama,Calf,2024-09-25,0,True zero,1e-06,25,Not detected
 Pesticide,Hainich,C11,Female,Winter 2023/24,C. elaphus,Subadult,2023-12-05,2.4893,Left censored,2.4893,3.4893,Quantified
-Pesticide,Hainich,C12,Female,Winter 2023/24,D. dama,Subadult,2023-11-28,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Hainich,C12,Female,Winter 2023/24,D. dama,Subadult,2023-11-28,0,True zero,1e-06,25,Not detected
 Pesticide,Hainich,C13,Female,Winter 2023/24,C. elaphus,Calf,2023-12-05,0,Left censored,1e-06,2,Detected
-Pesticide,Hainich,C14,Male,Winter 2023/24,C. elaphus,Subadult,2023-12-05,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hainich,C15,Male,Winter 2023/24,D. dama,Calf,2023-11-14,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hainich,C16,Female,Winter 2023/24,D. dama,Calf,2023-11-14,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Hainich,C14,Male,Winter 2023/24,C. elaphus,Subadult,2023-12-05,0,True zero,1e-06,25,Not detected
+Pesticide,Hainich,C15,Male,Winter 2023/24,D. dama,Calf,2023-11-14,0,True zero,1e-06,25,Not detected
+Pesticide,Hainich,C16,Female,Winter 2023/24,D. dama,Calf,2023-11-14,0,True zero,1e-06,25,Not detected
 Pesticide,Hainich,C17,Male,Winter 2023/24,D. dama,Subadult,2023-11-28,32.5948,Fully quantified,32.5948,32.5948,Quantified
 Pesticide,Hainich,C18,Male,Winter 2023/24,D. dama,Subadult,2023-12-05,14.6398,Fully quantified,14.6398,14.6398,Quantified
 Pesticide,Hainich,C19,Female,Winter 2023/24,C. elaphus,Adult,2023-11-14,0,Left censored,1e-06,1,Detected
 Pesticide,Hainich,C20,Female,Winter 2023/24,C. elaphus,Adult,2023-12-05,0,Left censored,1e-06,2,Detected
-Pesticide,Hainich,C21,Male,Winter 2023/24,D. dama,Calf,2023-12-12,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hainich,C22,Male,Winter 2023/24,C. elaphus,Calf,2023-11-28,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hainich,C23,Female,Winter 2023/24,D. dama,Calf,2023-11-28,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hainich,C24,Male,Winter 2023/24,C. elaphus,Subadult,2023-12-12,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hainich,C25,Male,Winter 2023/24,C. elaphus,Calf,2023-12-12,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hainich,C26,Male,Winter 2023/24,D. dama,Calf,2023-12-12,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Hainich,C21,Male,Winter 2023/24,D. dama,Calf,2023-12-12,0,True zero,1e-06,25,Not detected
+Pesticide,Hainich,C22,Male,Winter 2023/24,C. elaphus,Calf,2023-11-28,0,True zero,1e-06,25,Not detected
+Pesticide,Hainich,C23,Female,Winter 2023/24,D. dama,Calf,2023-11-28,0,True zero,1e-06,25,Not detected
+Pesticide,Hainich,C24,Male,Winter 2023/24,C. elaphus,Subadult,2023-12-12,0,True zero,1e-06,25,Not detected
+Pesticide,Hainich,C25,Male,Winter 2023/24,C. elaphus,Calf,2023-12-12,0,True zero,1e-06,25,Not detected
+Pesticide,Hainich,C26,Male,Winter 2023/24,D. dama,Calf,2023-12-12,0,True zero,1e-06,25,Not detected
 Pesticide,Hainich,C27,Female,Winter 2023/24,C. elaphus,Calf,2023-12-05,0,Left censored,1e-06,2,Detected
-Pesticide,Hainich,C28,Female,Winter 2023/24,D. dama,Adult,2023-11-28,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hainich,C29,Male,Winter 2023/24,C. elaphus,Calf,2023-11-18,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Hainich,C28,Female,Winter 2023/24,D. dama,Adult,2023-11-28,0,True zero,1e-06,25,Not detected
+Pesticide,Hainich,C29,Male,Winter 2023/24,C. elaphus,Calf,2023-11-18,0,True zero,1e-06,25,Not detected
 Pesticide,Hainich,C30,Male,Winter 2023/24,C. elaphus,Subadult,2023-12-05,0,Left censored,1e-06,3,Detected
-Pesticide,Hainich,C31,Male,Winter 2023/24,D. dama,Calf,2023-11-04,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hainich,C32,Female,Winter 2023/24,C. elaphus,Subadult,2023-11-28,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Hainich,C31,Male,Winter 2023/24,D. dama,Calf,2023-11-04,0,True zero,1e-06,25,Not detected
+Pesticide,Hainich,C32,Female,Winter 2023/24,C. elaphus,Subadult,2023-11-28,0,True zero,1e-06,25,Not detected
 Pesticide,Hainich,C33,Female,Winter 2023/24,C. elaphus,Adult,2023-12-05,0,Left censored,1e-06,2,Detected
-Pesticide,Hainich,C34,Female,Winter 2023/24,D. dama,Adult,2023-11-04,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hainich,C35,Male,Winter 2023/24,D. dama,Calf,2023-12-09,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hainich,C36,Female,Winter 2023/24,D. dama,Adult,2024-01-15,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hainich,C37,Female,Winter 2023/24,C. elaphus,Subadult,2023-12-09,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hainich,C38,Female,Winter 2023/24,C. elaphus,Calf,2023-11-14,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hainich,C39,Female,Winter 2023/24,D. dama,Calf,2023-11-18,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hainich,C40,Female,Winter 2023/24,C. elaphus,Adult,2023-12-12,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Hainich,C34,Female,Winter 2023/24,D. dama,Adult,2023-11-04,0,True zero,1e-06,25,Not detected
+Pesticide,Hainich,C35,Male,Winter 2023/24,D. dama,Calf,2023-12-09,0,True zero,1e-06,25,Not detected
+Pesticide,Hainich,C36,Female,Winter 2023/24,D. dama,Adult,2024-01-15,0,True zero,1e-06,25,Not detected
+Pesticide,Hainich,C37,Female,Winter 2023/24,C. elaphus,Subadult,2023-12-09,0,True zero,1e-06,25,Not detected
+Pesticide,Hainich,C38,Female,Winter 2023/24,C. elaphus,Calf,2023-11-14,0,True zero,1e-06,25,Not detected
+Pesticide,Hainich,C39,Female,Winter 2023/24,D. dama,Calf,2023-11-18,0,True zero,1e-06,25,Not detected
+Pesticide,Hainich,C40,Female,Winter 2023/24,C. elaphus,Adult,2023-12-12,0,True zero,1e-06,25,Not detected
 Pesticide,Hainich,C41,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-28,0,Left censored,1e-06,2,Detected
-Pesticide,Hainich,C42,Male,Winter 2023/24,C. elaphus,Calf,2023-12-09,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hainich,C43,Female,Winter 2023/24,D. dama,Subadult,2023-11-18,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hainich,C44,Female,Winter 2023/24,D. dama,Subadult,2023-12-09,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hainich,C45,Male,Winter 2023/24,D. dama,Calf,2023-11-07,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Hainich,C42,Male,Winter 2023/24,C. elaphus,Calf,2023-12-09,0,True zero,1e-06,25,Not detected
+Pesticide,Hainich,C43,Female,Winter 2023/24,D. dama,Subadult,2023-11-18,0,True zero,1e-06,25,Not detected
+Pesticide,Hainich,C44,Female,Winter 2023/24,D. dama,Subadult,2023-12-09,0,True zero,1e-06,25,Not detected
+Pesticide,Hainich,C45,Male,Winter 2023/24,D. dama,Calf,2023-11-07,0,True zero,1e-06,25,Not detected
 Pesticide,Hainich,C46,Female,Winter 2023/24,D. dama,Subadult,2023-11-18,0,Left censored,1e-06,2,Detected
-Pesticide,Hainich,C47,Female,Winter 2023/24,D. dama,Adult,2023-12-12,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hainich,C48,Male,Winter 2023/24,D. dama,Calf,2023-11-18,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Hainich,C47,Female,Winter 2023/24,D. dama,Adult,2023-12-12,0,True zero,1e-06,25,Not detected
+Pesticide,Hainich,C48,Male,Winter 2023/24,D. dama,Calf,2023-11-18,0,True zero,1e-06,25,Not detected
 Pesticide,Hainich,C49,Female,Winter 2023/24,D. dama,Adult,2023-11-07,1.54965850145873,Fully quantified,1.54965850145873,1.54965850145873,Quantified
-Pesticide,Hainich,C50,Male,Winter 2023/24,D. dama,Subadult,2023-12-12,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Hainich,C50,Male,Winter 2023/24,D. dama,Subadult,2023-12-12,0,True zero,1e-06,25,Not detected
 Pesticide,Hainich,C87,Female,Summer 2024,C. elaphus,Calf,2024-10-02,0,Left censored,1e-06,1,Detected
 Pesticide,Hainich,C91,Male,Summer 2024,D. dama,Calf,2024-09-18,0,Left censored,1e-06,1,Detected
-Pesticide,Hainich,C94,Male,Summer 2024,C. elaphus,Calf,2024-09-25,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hainich,C96,Female,Summer 2024,D. dama,Adult,2024-09-18,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Hainich,C94,Male,Summer 2024,C. elaphus,Calf,2024-09-25,0,True zero,1e-06,25,Not detected
+Pesticide,Hainich,C96,Female,Summer 2024,D. dama,Adult,2024-09-18,0,True zero,1e-06,25,Not detected
 Pesticide,Hunsrueck,D01,Female,Summer 2024,C. elaphus,Subadult,2024-08-22,0,Left censored,1e-06,1,Detected
 Pesticide,Hunsrueck,D02,Female,Summer 2024,C. elaphus,Adult,2024-08-13,0,Left censored,1e-06,1,Detected
-Pesticide,Hunsrueck,D03,Male,Summer 2024,C. elaphus,Calf,2024-08-19,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hunsrueck,D04,Female,Summer 2024,C. elaphus,Calf,2024-08-14,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Hunsrueck,D03,Male,Summer 2024,C. elaphus,Calf,2024-08-19,0,True zero,1e-06,25,Not detected
+Pesticide,Hunsrueck,D04,Female,Summer 2024,C. elaphus,Calf,2024-08-14,0,True zero,1e-06,25,Not detected
 Pesticide,Hunsrueck,D05,Female,Summer 2024,C. elaphus,Adult,2024-08-14,0,Left censored,1e-06,3,Detected
 Pesticide,Hunsrueck,D06,Male,Summer 2024,C. elaphus,Calf,2024-08-22,0,Left censored,1e-06,3,Detected
 Pesticide,Hunsrueck,D07,Female,Summer 2024,C. elaphus,Adult,2024-08-08,0,Left censored,1e-06,3,Detected
 Pesticide,Hunsrueck,D08,Male,Summer 2024,C. elaphus,Subadult,2024-08-14,0,Left censored,1e-06,1,Detected
 Pesticide,Hunsrueck,D09,Female,Summer 2024,C. elaphus,Calf,2024-08-23,0,Left censored,1e-06,1,Detected
-Pesticide,Hunsrueck,D10,Female,Summer 2024,C. elaphus,Calf,2024-08-13,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Hunsrueck,D10,Female,Summer 2024,C. elaphus,Calf,2024-08-13,0,True zero,1e-06,25,Not detected
 Pesticide,Hunsrueck,D11,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-17,0,Left censored,1e-06,2,Detected
-Pesticide,Hunsrueck,D13,Female,Winter 2023/24,C. elaphus,Subadult,2023-11-17,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Hunsrueck,D13,Female,Winter 2023/24,C. elaphus,Subadult,2023-11-17,0,True zero,1e-06,25,Not detected
 Pesticide,Hunsrueck,D14,Male,Winter 2023/24,C. elaphus,Subadult,2023-12-08,0,Left censored,1e-06,1,Detected
 Pesticide,Hunsrueck,D18,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-17,0,Left censored,1e-06,2,Detected
 Pesticide,Hunsrueck,D19,Male,Winter 2023/24,C. elaphus,Subadult,2023-11-17,0,Left censored,1e-06,3,Detected
@@ -2850,256 +2850,256 @@ Pesticide,Hunsrueck,D21,Male,Winter 2024/25,C. elaphus,Adult,2024-12-05,0,Left c
 Pesticide,Hunsrueck,D22,Male,Winter 2024/25,C. elaphus,Adult,2024-12-12,0,Left censored,1e-06,2,Detected
 Pesticide,Hunsrueck,D24,Male,Winter 2024/25,C. elaphus,Adult,2024-12-05,0,Left censored,1e-06,1,Detected
 Pesticide,Hunsrueck,D25,Male,Winter 2024/25,C. elaphus,Subadult,2024-12-12,0,Left censored,1e-06,2,Detected
-Pesticide,Hunsrueck,D27,Female,Winter 2024/25,C. elaphus,Calf,2024-11-21,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hunsrueck,D28,Female,Winter 2024/25,C. elaphus,Calf,2024-12-05,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hunsrueck,D29,Male,Winter 2024/25,C. elaphus,Calf,2024-12-05,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hunsrueck,D41,Female,Summer 2024,C. elaphus,Calf,2024-08-03,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Hunsrueck,D27,Female,Winter 2024/25,C. elaphus,Calf,2024-11-21,0,True zero,1e-06,25,Not detected
+Pesticide,Hunsrueck,D28,Female,Winter 2024/25,C. elaphus,Calf,2024-12-05,0,True zero,1e-06,25,Not detected
+Pesticide,Hunsrueck,D29,Male,Winter 2024/25,C. elaphus,Calf,2024-12-05,0,True zero,1e-06,25,Not detected
+Pesticide,Hunsrueck,D41,Female,Summer 2024,C. elaphus,Calf,2024-08-03,0,True zero,1e-06,25,Not detected
 Pesticide,Hunsrueck,D42,Female,Summer 2024,C. elaphus,Subadult,2024-08-03,0,Left censored,1e-06,2,Detected
-Pesticide,Hunsrueck,D43,Female,Summer 2024,C. elaphus,Calf,2024-08-11,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hunsrueck,D45,Female,Summer 2024,C. elaphus,Calf,2024-08-04,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hunsrueck,D46,Male,Summer 2024,C. elaphus,Calf,2024-08-05,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hunsrueck,D47,Male,Summer 2024,C. elaphus,Calf,2024-08-11,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Hunsrueck,D43,Female,Summer 2024,C. elaphus,Calf,2024-08-11,0,True zero,1e-06,25,Not detected
+Pesticide,Hunsrueck,D45,Female,Summer 2024,C. elaphus,Calf,2024-08-04,0,True zero,1e-06,25,Not detected
+Pesticide,Hunsrueck,D46,Male,Summer 2024,C. elaphus,Calf,2024-08-05,0,True zero,1e-06,25,Not detected
+Pesticide,Hunsrueck,D47,Male,Summer 2024,C. elaphus,Calf,2024-08-11,0,True zero,1e-06,25,Not detected
 Pesticide,Hunsrueck,D48,Female,Summer 2024,C. elaphus,Adult,2024-08-04,0,Left censored,1e-06,2,Detected
-Pesticide,Hunsrueck,D49,Female,Summer 2024,C. elaphus,Calf,2024-08-08,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hunsrueck,D50,Male,Summer 2024,C. elaphus,Calf,2024-08-13,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Hunsrueck,D49,Female,Summer 2024,C. elaphus,Calf,2024-08-08,0,True zero,1e-06,25,Not detected
+Pesticide,Hunsrueck,D50,Male,Summer 2024,C. elaphus,Calf,2024-08-13,0,True zero,1e-06,25,Not detected
 Pesticide,Hunsrueck,D51,Male,Winter 2024/25,C. elaphus,Adult,2024-12-05,0,Left censored,1e-06,1,Detected
-Pesticide,Hunsrueck,D52,Male,Winter 2024/25,C. elaphus,Calf,2024-12-05,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Hunsrueck,D52,Male,Winter 2024/25,C. elaphus,Calf,2024-12-05,0,True zero,1e-06,25,Not detected
 Pesticide,Hunsrueck,D53,Male,Winter 2024/25,C. elaphus,Adult,2024-12-12,0,Left censored,1e-06,1,Detected
-Pesticide,Hunsrueck,D54,Female,Winter 2024/25,C. elaphus,Calf,2024-10-17,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hunsrueck,D55,Male,Winter 2024/25,C. elaphus,Subadult,2024-12-05,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hunsrueck,D58,Male,Winter 2024/25,C. elaphus,Subadult,2024-10-17,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hunsrueck,D59,Female,Winter 2024/25,C. elaphus,Subadult,2024-10-17,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hunsrueck,D62,Male,Winter 2024/25,C. elaphus,Subadult,2024-10-23,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hunsrueck,D63,Female,Winter 2024/25,C. elaphus,Calf,2024-10-23,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hunsrueck,D64,Female,Winter 2024/25,C. elaphus,Calf,2024-10-17,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hunsrueck,D67,Male,Winter 2024/25,C. elaphus,Subadult,2024-10-23,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Hunsrueck,D54,Female,Winter 2024/25,C. elaphus,Calf,2024-10-17,0,True zero,1e-06,25,Not detected
+Pesticide,Hunsrueck,D55,Male,Winter 2024/25,C. elaphus,Subadult,2024-12-05,0,True zero,1e-06,25,Not detected
+Pesticide,Hunsrueck,D58,Male,Winter 2024/25,C. elaphus,Subadult,2024-10-17,0,True zero,1e-06,25,Not detected
+Pesticide,Hunsrueck,D59,Female,Winter 2024/25,C. elaphus,Subadult,2024-10-17,0,True zero,1e-06,25,Not detected
+Pesticide,Hunsrueck,D62,Male,Winter 2024/25,C. elaphus,Subadult,2024-10-23,0,True zero,1e-06,25,Not detected
+Pesticide,Hunsrueck,D63,Female,Winter 2024/25,C. elaphus,Calf,2024-10-23,0,True zero,1e-06,25,Not detected
+Pesticide,Hunsrueck,D64,Female,Winter 2024/25,C. elaphus,Calf,2024-10-17,0,True zero,1e-06,25,Not detected
+Pesticide,Hunsrueck,D67,Male,Winter 2024/25,C. elaphus,Subadult,2024-10-23,0,True zero,1e-06,25,Not detected
 Pesticide,Hunsrueck,D68,Male,Winter 2024/25,C. elaphus,Adult,2024-10-17,0,Left censored,1e-06,1,Detected
-Pesticide,Hunsrueck,D70,Male,Winter 2024/25,C. elaphus,Subadult,2024-12-05,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Hunsrueck,D70,Male,Winter 2024/25,C. elaphus,Subadult,2024-12-05,0,True zero,1e-06,25,Not detected
 Pesticide,Hunsrueck,D71,Male,Winter 2024/25,C. elaphus,Adult,2024-12-12,2.35452962581555,Left censored,2.35452962581555,10.3545296258155,Quantified
-Pesticide,Hunsrueck,D72,Female,Winter 2024/25,C. elaphus,Subadult,2024-10-23,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hunsrueck,D73,Female,Winter 2024/25,C. elaphus,Adult,2024-10-17,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hunsrueck,D74,Male,Winter 2024/25,C. elaphus,Subadult,2024-12-12,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Hunsrueck,D72,Female,Winter 2024/25,C. elaphus,Subadult,2024-10-23,0,True zero,1e-06,25,Not detected
+Pesticide,Hunsrueck,D73,Female,Winter 2024/25,C. elaphus,Adult,2024-10-17,0,True zero,1e-06,25,Not detected
+Pesticide,Hunsrueck,D74,Male,Winter 2024/25,C. elaphus,Subadult,2024-12-12,0,True zero,1e-06,25,Not detected
 Pesticide,Hunsrueck,D76,Male,Winter 2024/25,C. elaphus,Calf,2024-10-23,0,Left censored,1e-06,2,Detected
-Pesticide,Hunsrueck,D77,Male,Winter 2024/25,C. elaphus,Calf,2024-10-17,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Hunsrueck,D78,Female,Winter 2024/25,C. elaphus,Calf,2024-10-17,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Hunsrueck,D77,Male,Winter 2024/25,C. elaphus,Calf,2024-10-17,0,True zero,1e-06,25,Not detected
+Pesticide,Hunsrueck,D78,Female,Winter 2024/25,C. elaphus,Calf,2024-10-17,0,True zero,1e-06,25,Not detected
 Pesticide,Hunsrueck,D80,Male,Winter 2024/25,C. elaphus,Calf,2024-10-17,0,Left censored,1e-06,2,Detected
 Pesticide,Jasmund,G01,Female,Winter 2023/24,C. elaphus,Adult,2024-01-08,0,Left censored,1e-06,2,Detected
 Pesticide,Jasmund,G02,Male,Winter 2023/24,C. elaphus,Calf,2023-11-25,0,Left censored,1e-06,3,Detected
-Pesticide,Jasmund,G03,Female,Winter 2023/24,D. dama,Adult,2023-11-14,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Jasmund,G04,Male,Winter 2023/24,C. elaphus,Calf,2023-11-18,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Jasmund,G03,Female,Winter 2023/24,D. dama,Adult,2023-11-14,0,True zero,1e-06,25,Not detected
+Pesticide,Jasmund,G04,Male,Winter 2023/24,C. elaphus,Calf,2023-11-18,0,True zero,1e-06,25,Not detected
 Pesticide,Jasmund,G05,Female,Winter 2023/24,D. dama,Calf,2023-11-18,0,Left censored,1e-06,2,Detected
 Pesticide,Jasmund,G06,Male,Winter 2023/24,D. dama,Calf,2023-12-05,0,Left censored,1e-06,4,Detected
 Pesticide,Jasmund,G07,Male,Winter 2023/24,D. dama,Adult,2024-01-08,14.8162,Fully quantified,14.8162,14.8162,Quantified
 Pesticide,Jasmund,G08,Female,Winter 2023/24,D. dama,Adult,2023-11-18,0,Left censored,1e-06,2,Detected
 Pesticide,Jasmund,G09,Female,Winter 2023/24,C. elaphus,Calf,2023-11-25,0,Left censored,1e-06,1,Detected
-Pesticide,Jasmund,G10,Male,Winter 2023/24,D. dama,Calf,2023-12-19,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Jasmund,G11,Male,Winter 2023/24,D. dama,Calf,2023-12-11,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Jasmund,G10,Male,Winter 2023/24,D. dama,Calf,2023-12-19,0,True zero,1e-06,25,Not detected
+Pesticide,Jasmund,G11,Male,Winter 2023/24,D. dama,Calf,2023-12-11,0,True zero,1e-06,25,Not detected
 Pesticide,Jasmund,G12,Female,Winter 2023/24,D. dama,Subadult,2023-11-17,2.3188,Left censored,2.3188,4.3188,Quantified
-Pesticide,Jasmund,G13,Female,Winter 2023/24,D. dama,Adult,2023-12-19,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Jasmund,G13,Female,Winter 2023/24,D. dama,Adult,2023-12-19,0,True zero,1e-06,25,Not detected
 Pesticide,Jasmund,G14,Female,Winter 2023/24,C. elaphus,Adult,2023-11-18,0,Left censored,1e-06,2,Detected
-Pesticide,Jasmund,G15,Male,Winter 2023/24,D. dama,Subadult,2023-11-18,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Jasmund,G16,Female,Winter 2023/24,D. dama,Calf,2023-11-18,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Jasmund,G17,Male,Winter 2023/24,D. dama,Calf,2024-01-26,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Jasmund,G18,Female,Winter 2023/24,D. dama,Calf,2023-11-18,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Jasmund,G15,Male,Winter 2023/24,D. dama,Subadult,2023-11-18,0,True zero,1e-06,25,Not detected
+Pesticide,Jasmund,G16,Female,Winter 2023/24,D. dama,Calf,2023-11-18,0,True zero,1e-06,25,Not detected
+Pesticide,Jasmund,G17,Male,Winter 2023/24,D. dama,Calf,2024-01-26,0,True zero,1e-06,25,Not detected
+Pesticide,Jasmund,G18,Female,Winter 2023/24,D. dama,Calf,2023-11-18,0,True zero,1e-06,25,Not detected
 Pesticide,Jasmund,G19,Female,Winter 2023/24,C. elaphus,Adult,2023-11-18,0,Left censored,1e-06,2,Detected
-Pesticide,Jasmund,G20,Female,Winter 2023/24,D. dama,Adult,2024-01-02,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Jasmund,G22,Female,Winter 2023/24,D. dama,Calf,2023-11-17,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Jasmund,G20,Female,Winter 2023/24,D. dama,Adult,2024-01-02,0,True zero,1e-06,25,Not detected
+Pesticide,Jasmund,G22,Female,Winter 2023/24,D. dama,Calf,2023-11-17,0,True zero,1e-06,25,Not detected
 Pesticide,Jasmund,G23,Female,Winter 2023/24,D. dama,Adult,2023-11-17,0,Left censored,1e-06,3,Detected
-Pesticide,Jasmund,G24,Female,Winter 2023/24,D. dama,Adult,2023-12-19,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Jasmund,G24,Female,Winter 2023/24,D. dama,Adult,2023-12-19,0,True zero,1e-06,25,Not detected
 Pesticide,Jasmund,G25,Female,Winter 2023/24,D. dama,Calf,2023-11-17,0,Left censored,1e-06,1,Detected
-Pesticide,Jasmund,G26,Female,Winter 2023/24,D. dama,Subadult,2023-11-17,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Jasmund,G26,Female,Winter 2023/24,D. dama,Subadult,2023-11-17,0,True zero,1e-06,25,Not detected
 Pesticide,Jasmund,G27,Female,Winter 2023/24,D. dama,Calf,2023-11-17,3.694,Fully quantified,3.694,3.694,Quantified
 Pesticide,Jasmund,G28,Male,Winter 2023/24,D. dama,Calf,2023-11-17,0,Left censored,1e-06,1,Detected
 Pesticide,Jasmund,G29,Female,Winter 2023/24,D. dama,Adult,2023-11-17,0,Left censored,1e-06,3,Detected
-Pesticide,Jasmund,G30,Female,Winter 2023/24,D. dama,Calf,2023-11-17,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Jasmund,G30,Female,Winter 2023/24,D. dama,Calf,2023-11-17,0,True zero,1e-06,25,Not detected
 Pesticide,Jasmund,G31,Female,Winter 2023/24,D. dama,Adult,2023-11-18,0,Left censored,1e-06,4,Detected
-Pesticide,Jasmund,G32,Female,Winter 2023/24,D. dama,Adult,2023-11-18,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Jasmund,G32,Female,Winter 2023/24,D. dama,Adult,2023-11-18,0,True zero,1e-06,25,Not detected
 Pesticide,Jasmund,G33,Male,Winter 2023/24,D. dama,Subadult,2024-01-28,5.644,Fully quantified,5.644,5.644,Quantified
-Pesticide,Jasmund,G34,Female,Winter 2023/24,D. dama,Calf,2023-11-17,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Jasmund,G35,Female,Winter 2023/24,D. dama,Adult,2023-11-18,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Jasmund,G36,Female,Winter 2023/24,D. dama,Calf,2023-11-22,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Jasmund,G37,Female,Winter 2023/24,D. dama,Adult,2024-01-31,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Jasmund,G38,Female,Winter 2023/24,D. dama,Adult,2023-11-17,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Jasmund,G39,Male,Winter 2023/24,D. dama,Calf,2023-11-17,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Jasmund,G34,Female,Winter 2023/24,D. dama,Calf,2023-11-17,0,True zero,1e-06,25,Not detected
+Pesticide,Jasmund,G35,Female,Winter 2023/24,D. dama,Adult,2023-11-18,0,True zero,1e-06,25,Not detected
+Pesticide,Jasmund,G36,Female,Winter 2023/24,D. dama,Calf,2023-11-22,0,True zero,1e-06,25,Not detected
+Pesticide,Jasmund,G37,Female,Winter 2023/24,D. dama,Adult,2024-01-31,0,True zero,1e-06,25,Not detected
+Pesticide,Jasmund,G38,Female,Winter 2023/24,D. dama,Adult,2023-11-17,0,True zero,1e-06,25,Not detected
+Pesticide,Jasmund,G39,Male,Winter 2023/24,D. dama,Calf,2023-11-17,0,True zero,1e-06,25,Not detected
 Pesticide,Jasmund,G40,Female,Winter 2023/24,D. dama,Adult,2023-11-17,0,Left censored,1e-06,2,Detected
-Pesticide,Jasmund,G41,Male,Winter 2023/24,D. dama,Calf,2023-12-02,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Jasmund,G42,Female,Winter 2023/24,D. dama,Subadult,2024-01-31,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Jasmund,G41,Male,Winter 2023/24,D. dama,Calf,2023-12-02,0,True zero,1e-06,25,Not detected
+Pesticide,Jasmund,G42,Female,Winter 2023/24,D. dama,Subadult,2024-01-31,0,True zero,1e-06,25,Not detected
 Pesticide,Jasmund,G43,Male,Winter 2023/24,C. elaphus,Calf,2023-11-25,6.221,Left censored,6.221,7.221,Quantified
-Pesticide,Jasmund,G44,Female,Winter 2023/24,D. dama,Subadult,2023-12-19,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Jasmund,G45,Female,Winter 2023/24,D. dama,Calf,2023-12-19,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Jasmund,G46,Female,Winter 2023/24,D. dama,Adult,2023-11-18,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Jasmund,G47,Female,Winter 2023/24,D. dama,Adult,2023-11-17,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Jasmund,G48,Male,Winter 2023/24,D. dama,Calf,2023-12-19,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Jasmund,G49,Male,Winter 2023/24,D. dama,Calf,2024-01-31,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Jasmund,G50,Male,Winter 2023/24,D. dama,Calf,2023-11-17,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Jasmund,G44,Female,Winter 2023/24,D. dama,Subadult,2023-12-19,0,True zero,1e-06,25,Not detected
+Pesticide,Jasmund,G45,Female,Winter 2023/24,D. dama,Calf,2023-12-19,0,True zero,1e-06,25,Not detected
+Pesticide,Jasmund,G46,Female,Winter 2023/24,D. dama,Adult,2023-11-18,0,True zero,1e-06,25,Not detected
+Pesticide,Jasmund,G47,Female,Winter 2023/24,D. dama,Adult,2023-11-17,0,True zero,1e-06,25,Not detected
+Pesticide,Jasmund,G48,Male,Winter 2023/24,D. dama,Calf,2023-12-19,0,True zero,1e-06,25,Not detected
+Pesticide,Jasmund,G49,Male,Winter 2023/24,D. dama,Calf,2024-01-31,0,True zero,1e-06,25,Not detected
+Pesticide,Jasmund,G50,Male,Winter 2023/24,D. dama,Calf,2023-11-17,0,True zero,1e-06,25,Not detected
 Pesticide,Kellerwald,L100,Male,Summer 2024,C. elaphus,Subadult,2024-08-09,0,Left censored,1e-06,1,Detected
-Pesticide,Kellerwald,L51,Female,Summer 2024,C. elaphus,Adult,2024-08-05,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Kellerwald,L51,Female,Summer 2024,C. elaphus,Adult,2024-08-05,0,True zero,1e-06,25,Not detected
 Pesticide,Kellerwald,L52,Male,Summer 2024,C. elaphus,Calf,2024-09-01,0,Left censored,1e-06,1,Detected
 Pesticide,Kellerwald,L53,Female,Summer 2024,C. elaphus,Calf,2024-08-02,0,Left censored,1e-06,1,Detected
-Pesticide,Kellerwald,L54,Male,Summer 2024,C. elaphus,Subadult,2024-08-16,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Kellerwald,L54,Male,Summer 2024,C. elaphus,Subadult,2024-08-16,0,True zero,1e-06,25,Not detected
 Pesticide,Kellerwald,L55,Female,Summer 2024,C. elaphus,Calf,2024-08-05,0,Left censored,1e-06,1,Detected
 Pesticide,Kellerwald,L56,Female,Summer 2024,C. elaphus,Adult,2024-08-02,0,Left censored,1e-06,1,Detected
-Pesticide,Kellerwald,L57,Male,Summer 2024,C. elaphus,Calf,2024-08-16,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Kellerwald,L58,Female,Summer 2024,C. elaphus,Calf,2024-08-17,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Kellerwald,L59,Female,Summer 2024,C. elaphus,Calf,2024-08-16,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Kellerwald,L57,Male,Summer 2024,C. elaphus,Calf,2024-08-16,0,True zero,1e-06,25,Not detected
+Pesticide,Kellerwald,L58,Female,Summer 2024,C. elaphus,Calf,2024-08-17,0,True zero,1e-06,25,Not detected
+Pesticide,Kellerwald,L59,Female,Summer 2024,C. elaphus,Calf,2024-08-16,0,True zero,1e-06,25,Not detected
 Pesticide,Kellerwald,L60,Female,Summer 2024,C. elaphus,Adult,2024-09-01,0,Left censored,1e-06,3,Detected
 Pesticide,Kellerwald,L61,Male,Summer 2024,C. elaphus,Subadult,2024-09-01,0,Left censored,1e-06,2,Detected
-Pesticide,Kellerwald,L62,Female,Summer 2024,C. elaphus,Adult,2024-09-02,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Kellerwald,L63,Male,Summer 2024,C. elaphus,Subadult,2024-08-17,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Kellerwald,L62,Female,Summer 2024,C. elaphus,Adult,2024-09-02,0,True zero,1e-06,25,Not detected
+Pesticide,Kellerwald,L63,Male,Summer 2024,C. elaphus,Subadult,2024-08-17,0,True zero,1e-06,25,Not detected
 Pesticide,Kellerwald,L64,Female,Summer 2024,C. elaphus,Calf,2024-09-01,0,Left censored,1e-06,1,Detected
-Pesticide,Kellerwald,L65,Female,Summer 2024,C. elaphus,Adult,2024-09-01,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Kellerwald,L66,Female,Summer 2024,C. elaphus,Calf,2024-09-01,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Kellerwald,L67,Female,Summer 2024,C. elaphus,Adult,2024-08-05,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Kellerwald,L68,Male,Summer 2024,C. elaphus,Calf,2024-08-05,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Kellerwald,L69,Female,Summer 2024,C. elaphus,Adult,2024-08-06,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Kellerwald,L70,Male,Summer 2024,C. elaphus,Subadult,2024-08-08,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Kellerwald,L71,Female,Summer 2024,C. elaphus,Adult,2024-08-04,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Kellerwald,L65,Female,Summer 2024,C. elaphus,Adult,2024-09-01,0,True zero,1e-06,25,Not detected
+Pesticide,Kellerwald,L66,Female,Summer 2024,C. elaphus,Calf,2024-09-01,0,True zero,1e-06,25,Not detected
+Pesticide,Kellerwald,L67,Female,Summer 2024,C. elaphus,Adult,2024-08-05,0,True zero,1e-06,25,Not detected
+Pesticide,Kellerwald,L68,Male,Summer 2024,C. elaphus,Calf,2024-08-05,0,True zero,1e-06,25,Not detected
+Pesticide,Kellerwald,L69,Female,Summer 2024,C. elaphus,Adult,2024-08-06,0,True zero,1e-06,25,Not detected
+Pesticide,Kellerwald,L70,Male,Summer 2024,C. elaphus,Subadult,2024-08-08,0,True zero,1e-06,25,Not detected
+Pesticide,Kellerwald,L71,Female,Summer 2024,C. elaphus,Adult,2024-08-04,0,True zero,1e-06,25,Not detected
 Pesticide,Kellerwald,L72,Female,Summer 2024,C. elaphus,Adult,2024-08-15,0,Left censored,1e-06,1,Detected
-Pesticide,Kellerwald,L73,Female,Summer 2024,C. elaphus,Calf,2024-08-02,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Kellerwald,L73,Female,Summer 2024,C. elaphus,Calf,2024-08-02,0,True zero,1e-06,25,Not detected
 Pesticide,Kellerwald,L74,Male,Summer 2024,C. elaphus,Calf,2024-08-06,0,Left censored,1e-06,1,Detected
-Pesticide,Kellerwald,L75,Male,Summer 2024,C. elaphus,Calf,2024-08-05,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Kellerwald,L76,Female,Summer 2024,C. elaphus,Calf,2024-08-07,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Kellerwald,L75,Male,Summer 2024,C. elaphus,Calf,2024-08-05,0,True zero,1e-06,25,Not detected
+Pesticide,Kellerwald,L76,Female,Summer 2024,C. elaphus,Calf,2024-08-07,0,True zero,1e-06,25,Not detected
 Pesticide,Kellerwald,L77,Female,Summer 2024,C. elaphus,Subadult,2024-09-01,0,Left censored,1e-06,1,Detected
 Pesticide,Kellerwald,L78,Male,Summer 2024,C. elaphus,Calf,2024-08-15,0,Left censored,1e-06,1,Detected
-Pesticide,Kellerwald,L79,Male,Summer 2024,C. elaphus,Subadult,2024-08-09,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Kellerwald,L80,Female,Summer 2024,C. elaphus,Calf,2024-08-14,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Kellerwald,L81,Male,Summer 2024,C. elaphus,Calf,2024-08-04,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Kellerwald,L82,Female,Summer 2024,C. elaphus,Adult,2024-08-10,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Kellerwald,L83,Male,Summer 2024,C. elaphus,Subadult,2024-08-14,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Kellerwald,L84,Female,Summer 2024,C. elaphus,Calf,2024-08-04,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Kellerwald,L79,Male,Summer 2024,C. elaphus,Subadult,2024-08-09,0,True zero,1e-06,25,Not detected
+Pesticide,Kellerwald,L80,Female,Summer 2024,C. elaphus,Calf,2024-08-14,0,True zero,1e-06,25,Not detected
+Pesticide,Kellerwald,L81,Male,Summer 2024,C. elaphus,Calf,2024-08-04,0,True zero,1e-06,25,Not detected
+Pesticide,Kellerwald,L82,Female,Summer 2024,C. elaphus,Adult,2024-08-10,0,True zero,1e-06,25,Not detected
+Pesticide,Kellerwald,L83,Male,Summer 2024,C. elaphus,Subadult,2024-08-14,0,True zero,1e-06,25,Not detected
+Pesticide,Kellerwald,L84,Female,Summer 2024,C. elaphus,Calf,2024-08-04,0,True zero,1e-06,25,Not detected
 Pesticide,Kellerwald,L85,Female,Summer 2024,C. elaphus,Adult,2024-08-09,0,Left censored,1e-06,2,Detected
-Pesticide,Kellerwald,L86,Male,Summer 2024,C. elaphus,Calf,2024-08-10,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Kellerwald,L87,Male,Summer 2024,C. elaphus,Calf,2024-08-09,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Kellerwald,L88,Male,Summer 2024,C. elaphus,Subadult,2024-08-17,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Kellerwald,L89,Male,Summer 2024,C. elaphus,Subadult,2024-08-02,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Kellerwald,L90,Female,Summer 2024,C. elaphus,Calf,2024-08-04,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Kellerwald,L91,Male,Summer 2024,C. elaphus,Subadult,2024-08-10,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Kellerwald,L86,Male,Summer 2024,C. elaphus,Calf,2024-08-10,0,True zero,1e-06,25,Not detected
+Pesticide,Kellerwald,L87,Male,Summer 2024,C. elaphus,Calf,2024-08-09,0,True zero,1e-06,25,Not detected
+Pesticide,Kellerwald,L88,Male,Summer 2024,C. elaphus,Subadult,2024-08-17,0,True zero,1e-06,25,Not detected
+Pesticide,Kellerwald,L89,Male,Summer 2024,C. elaphus,Subadult,2024-08-02,0,True zero,1e-06,25,Not detected
+Pesticide,Kellerwald,L90,Female,Summer 2024,C. elaphus,Calf,2024-08-04,0,True zero,1e-06,25,Not detected
+Pesticide,Kellerwald,L91,Male,Summer 2024,C. elaphus,Subadult,2024-08-10,0,True zero,1e-06,25,Not detected
 Pesticide,Kellerwald,L92,Female,Summer 2024,C. elaphus,Calf,2024-08-03,0,Left censored,1e-06,1,Detected
-Pesticide,Kellerwald,L93,Female,Summer 2024,C. elaphus,Calf,2024-08-13,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Kellerwald,L93,Female,Summer 2024,C. elaphus,Calf,2024-08-13,0,True zero,1e-06,25,Not detected
 Pesticide,Kellerwald,L94,Male,Summer 2024,C. elaphus,Subadult,2024-08-01,7.45158246422742,Fully quantified,7.45158246422742,7.45158246422742,Quantified
 Pesticide,Kellerwald,L95,Female,Summer 2024,C. elaphus,Calf,2024-08-05,0,Left censored,1e-06,1,Detected
-Pesticide,Kellerwald,L96,Female,Summer 2024,C. elaphus,Subadult,2024-08-14,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Kellerwald,L96,Female,Summer 2024,C. elaphus,Subadult,2024-08-14,0,True zero,1e-06,25,Not detected
 Pesticide,Kellerwald,L97,Female,Summer 2024,C. elaphus,Calf,2024-08-12,0,Left censored,1e-06,1,Detected
-Pesticide,Kellerwald,L98,Male,Summer 2024,C. elaphus,Subadult,2024-08-09,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Kellerwald,L99,Female,Summer 2024,C. elaphus,Calf,2024-08-10,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Kellerwald,L98,Male,Summer 2024,C. elaphus,Subadult,2024-08-09,0,True zero,1e-06,25,Not detected
+Pesticide,Kellerwald,L99,Female,Summer 2024,C. elaphus,Calf,2024-08-10,0,True zero,1e-06,25,Not detected
 Pesticide,Saechs_Schw,E 11,Female,Summer 2024,C. elaphus,Adult,2024-08-02,0,Left censored,1e-06,1,Detected
-Pesticide,Saechs_Schw,E 12,Female,Winter 2024/25,C. elaphus,Adult,2024-12-17,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Saechs_Schw,E 12,Female,Winter 2024/25,C. elaphus,Adult,2024-12-17,0,True zero,1e-06,25,Not detected
 Pesticide,Saechs_Schw,E 13,Male,Summer 2024,C. elaphus,Subadult,2024-09-05,0,Left censored,1e-06,1,Detected
-Pesticide,Saechs_Schw,E 14,Female,Summer 2024,C. elaphus,Adult,2024-08-07,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 16,Male,Summer 2024,C. elaphus,Calf,2024-08-02,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 17,Female,Winter 2024/25,C. elaphus,Adult,2025-01-24,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 20,Female,Winter 2024/25,C. elaphus,Calf,2025-01-18,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 32,Female,Summer 2024,C. elaphus,Subadult,2024-08-18,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 33,Male,Summer 2024,C. elaphus,Subadult,2024-08-21,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Saechs_Schw,E 14,Female,Summer 2024,C. elaphus,Adult,2024-08-07,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 16,Male,Summer 2024,C. elaphus,Calf,2024-08-02,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 17,Female,Winter 2024/25,C. elaphus,Adult,2025-01-24,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 20,Female,Winter 2024/25,C. elaphus,Calf,2025-01-18,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 32,Female,Summer 2024,C. elaphus,Subadult,2024-08-18,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 33,Male,Summer 2024,C. elaphus,Subadult,2024-08-21,0,True zero,1e-06,25,Not detected
 Pesticide,Saechs_Schw,E 34,Male,Summer 2024,C. elaphus,Calf,2024-08-12,0,Left censored,1e-06,4,Detected
-Pesticide,Saechs_Schw,E 35,Male,Summer 2024,C. elaphus,Calf,2024-08-13,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 36,Male,Summer 2024,C. elaphus,Calf,2024-08-15,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 37,Male,Summer 2024,C. elaphus,Adult,2024-08-02,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 38,Male,Summer 2024,C. elaphus,Subadult,2024-08-07,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 39,Male,Summer 2024,C. elaphus,Adult,2024-08-15,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 40,Female,Summer 2024,C. elaphus,Adult,2024-08-26,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Saechs_Schw,E 35,Male,Summer 2024,C. elaphus,Calf,2024-08-13,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 36,Male,Summer 2024,C. elaphus,Calf,2024-08-15,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 37,Male,Summer 2024,C. elaphus,Adult,2024-08-02,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 38,Male,Summer 2024,C. elaphus,Subadult,2024-08-07,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 39,Male,Summer 2024,C. elaphus,Adult,2024-08-15,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 40,Female,Summer 2024,C. elaphus,Adult,2024-08-26,0,True zero,1e-06,25,Not detected
 Pesticide,Saechs_Schw,E 41,Female,Summer 2024,C. elaphus,Subadult,2024-09-09,0,Left censored,1e-06,1,Detected
-Pesticide,Saechs_Schw,E 42,Male,Summer 2024,C. elaphus,Subadult,2024-09-24,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 43,Male,Summer 2024,C. elaphus,Adult,2024-09-20,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 45,Male,Summer 2024,C. elaphus,Calf,2024-09-17,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Saechs_Schw,E 42,Male,Summer 2024,C. elaphus,Subadult,2024-09-24,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 43,Male,Summer 2024,C. elaphus,Adult,2024-09-20,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 45,Male,Summer 2024,C. elaphus,Calf,2024-09-17,0,True zero,1e-06,25,Not detected
 Pesticide,Saechs_Schw,E 46,Male,Winter 2024/25,C. elaphus,Subadult,2024-10-24,0,Left censored,1e-06,1,Detected
-Pesticide,Saechs_Schw,E 47,Male,Winter 2024/25,C. elaphus,Calf,2024-10-15,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 49,Female,Summer 2024,C. elaphus,Calf,2024-09-20,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 50,Male,Summer 2024,C. elaphus,Adult,2024-09-28,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 51,Male,Winter 2024/25,C. elaphus,Calf,2024-10-24,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 52,Female,Winter 2024/25,C. elaphus,Subadult,2024-11-19,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 53,Male,Winter 2024/25,C. elaphus,Subadult,2024-11-30,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 54,Female,Winter 2024/25,C. elaphus,Adult,2024-12-11,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 55,Female,Winter 2024/25,C. elaphus,Calf,2024-11-06,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 56,Male,Winter 2024/25,C. elaphus,Subadult,2024-11-20,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 57,Male,Winter 2024/25,C. elaphus,Adult,2024-10-29,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Saechs_Schw,E 47,Male,Winter 2024/25,C. elaphus,Calf,2024-10-15,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 49,Female,Summer 2024,C. elaphus,Calf,2024-09-20,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 50,Male,Summer 2024,C. elaphus,Adult,2024-09-28,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 51,Male,Winter 2024/25,C. elaphus,Calf,2024-10-24,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 52,Female,Winter 2024/25,C. elaphus,Subadult,2024-11-19,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 53,Male,Winter 2024/25,C. elaphus,Subadult,2024-11-30,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 54,Female,Winter 2024/25,C. elaphus,Adult,2024-12-11,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 55,Female,Winter 2024/25,C. elaphus,Calf,2024-11-06,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 56,Male,Winter 2024/25,C. elaphus,Subadult,2024-11-20,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 57,Male,Winter 2024/25,C. elaphus,Adult,2024-10-29,0,True zero,1e-06,25,Not detected
 Pesticide,Saechs_Schw,E 58,Female,Winter 2024/25,C. elaphus,Calf,2024-11-08,0,Left censored,1e-06,1,Detected
 Pesticide,Saechs_Schw,E 59,Female,Winter 2024/25,C. elaphus,Subadult,2024-11-21,0,Left censored,1e-06,2,Detected
-Pesticide,Saechs_Schw,E 60,Male,Winter 2024/25,C. elaphus,Subadult,2024-12-18,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 61,Female,Winter 2024/25,C. elaphus,Subadult,2024-12-11,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 62,Male,Winter 2024/25,C. elaphus,Calf,2024-12-11,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 63,Male,Winter 2024/25,C. elaphus,Calf,2024-12-17,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 64,Male,Winter 2024/25,C. elaphus,Calf,2024-12-18,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Saechs_Schw,E 60,Male,Winter 2024/25,C. elaphus,Subadult,2024-12-18,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 61,Female,Winter 2024/25,C. elaphus,Subadult,2024-12-11,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 62,Male,Winter 2024/25,C. elaphus,Calf,2024-12-11,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 63,Male,Winter 2024/25,C. elaphus,Calf,2024-12-17,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 64,Male,Winter 2024/25,C. elaphus,Calf,2024-12-18,0,True zero,1e-06,25,Not detected
 Pesticide,Saechs_Schw,E 65,Male,Winter 2024/25,C. elaphus,Subadult,2024-12-18,0,Left censored,1e-06,1,Detected
-Pesticide,Saechs_Schw,E 66,Male,Winter 2024/25,C. elaphus,Subadult,2025-01-16,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Saechs_Schw,E 66,Male,Winter 2024/25,C. elaphus,Subadult,2025-01-16,0,True zero,1e-06,25,Not detected
 Pesticide,Saechs_Schw,E 67,Male,Winter 2024/25,C. elaphus,Subadult,2025-01-29,0,Left censored,1e-06,2,Detected
 Pesticide,Saechs_Schw,E 68,Male,Winter 2024/25,C. elaphus,Adult,2025-01-30,0,Left censored,1e-06,2,Detected
-Pesticide,Saechs_Schw,E 69,Male,Winter 2024/25,C. elaphus,Adult,2025-01-21,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 70,Male,Winter 2024/25,C. elaphus,Subadult,2025-01-27,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 71,Female,Winter 2024/25,C. elaphus,Adult,2025-01-30,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Saechs_Schw,E 69,Male,Winter 2024/25,C. elaphus,Adult,2025-01-21,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 70,Male,Winter 2024/25,C. elaphus,Subadult,2025-01-27,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 71,Female,Winter 2024/25,C. elaphus,Adult,2025-01-30,0,True zero,1e-06,25,Not detected
 Pesticide,Saechs_Schw,E 72,Female,Winter 2024/25,C. elaphus,Calf,2025-01-30,0,Left censored,1e-06,3,Detected
-Pesticide,Saechs_Schw,E 73,Female,Winter 2024/25,C. elaphus,Adult,2025-01-30,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Saechs_Schw,E 73,Female,Winter 2024/25,C. elaphus,Adult,2025-01-30,0,True zero,1e-06,25,Not detected
 Pesticide,Saechs_Schw,E 74,Female,Winter 2024/25,C. elaphus,Subadult,2025-01-30,0,Left censored,1e-06,2,Detected
-Pesticide,Saechs_Schw,E 75,Female,Winter 2024/25,C. elaphus,Subadult,2025-01-30,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Saechs_Schw,E 75,Female,Winter 2024/25,C. elaphus,Subadult,2025-01-30,0,True zero,1e-06,25,Not detected
 Pesticide,Saechs_Schw,E 76,Female,Winter 2024/25,C. elaphus,Adult,2025-01-30,0,Left censored,1e-06,1,Detected
-Pesticide,Saechs_Schw,E 77,Female,Winter 2024/25,C. elaphus,Subadult,2025-01-30,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 78,Female,Winter 2024/25,C. elaphus,Calf,2025-01-30,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 79,Male,Winter 2024/25,C. elaphus,Subadult,2025-01-30,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 80,Female,Winter 2024/25,C. elaphus,Subadult,2025-01-30,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 81,Female,Winter 2024/25,C. elaphus,Adult,2025-01-30,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 82,Female,Winter 2024/25,C. elaphus,Subadult,2025-01-30,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E 83,Female,Winter 2024/25,C. elaphus,Calf,2025-01-30,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E1,Male,Winter 2023/24,C. elaphus,Adult,2024-01-15,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E15,Female,Winter 2023/24,C. elaphus,Subadult,2023-11-22,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E21,Female,Winter 2023/24,C. elaphus,Adult,2023-12-09,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E22,Female,Winter 2023/24,C. elaphus,Adult,2024-01-16,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Saechs_Schw,E 77,Female,Winter 2024/25,C. elaphus,Subadult,2025-01-30,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 78,Female,Winter 2024/25,C. elaphus,Calf,2025-01-30,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 79,Male,Winter 2024/25,C. elaphus,Subadult,2025-01-30,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 80,Female,Winter 2024/25,C. elaphus,Subadult,2025-01-30,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 81,Female,Winter 2024/25,C. elaphus,Adult,2025-01-30,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 82,Female,Winter 2024/25,C. elaphus,Subadult,2025-01-30,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E 83,Female,Winter 2024/25,C. elaphus,Calf,2025-01-30,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E1,Male,Winter 2023/24,C. elaphus,Adult,2024-01-15,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E15,Female,Winter 2023/24,C. elaphus,Subadult,2023-11-22,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E21,Female,Winter 2023/24,C. elaphus,Adult,2023-12-09,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E22,Female,Winter 2023/24,C. elaphus,Adult,2024-01-16,0,True zero,1e-06,25,Not detected
 Pesticide,Saechs_Schw,E23,Female,Winter 2023/24,C. elaphus,Calf,2023-12-19,0,Left censored,1e-06,3,Detected
-Pesticide,Saechs_Schw,E24,Female,Winter 2023/24,C. elaphus,Adult,2024-01-30,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E26,Female,Winter 2023/24,C. elaphus,Subadult,2024-01-19,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E28,Female,Winter 2023/24,C. elaphus,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E29,Female,Winter 2023/24,C. elaphus,Adult,2024-01-29,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E30,Male,Winter 2023/24,C. elaphus,Adult,2024-01-19,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Saechs_Schw,E31,Male,Winter 2023/24,C. elaphus,Adult,2023-12-06,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F01,Female,Winter 2023/24,C. elaphus,Adult,2023-12-28,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F02,Male,Winter 2023/24,C. elaphus,Calf,2023-12-28,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F03,Female,Winter 2023/24,D. dama,Adult,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F04,Female,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F05,Male,Winter 2023/24,C. elaphus,Calf,2023-12-28,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F06,Female,Winter 2023/24,C. elaphus,Adult,2023-12-28,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F07,Male,Winter 2023/24,C. elaphus,Calf,2024-01-11,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F08,Male,Winter 2023/24,C. elaphus,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F09,Male,Winter 2023/24,C. elaphus,Calf,2023-11-24,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F10,Male,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F11,Female,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F12,Female,Winter 2023/24,C. elaphus,Subadult,2024-01-11,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F13,Female,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F14,Female,Winter 2023/24,C. elaphus,Adult,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F15,Female,Winter 2023/24,C. elaphus,Calf,2023-11-30,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F16,Male,Winter 2023/24,C. elaphus,Calf,2023-11-30,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F17,Male,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F18,Female,Winter 2023/24,C. elaphus,Calf,2023-12-01,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F19a,Male,Winter 2023/24,C. elaphus,Subadult,2024-01-11,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F20a,Female,Winter 2023/24,C. elaphus,Calf,2023-12-28,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F21,Male,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F22,Female,Winter 2023/24,D. dama,Adult,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F23,Female,Winter 2023/24,C. elaphus,Subadult,2024-01-11,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F24,Female,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F25,Female,Winter 2023/24,C. elaphus,Adult,2024-01-11,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F26,Female,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F27,Female,Winter 2023/24,C. elaphus,Adult,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F28,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F29,Female,Winter 2023/24,C. elaphus,Subadult,2023-11-24,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F30,Female,Winter 2023/24,C. elaphus,Calf,2023-11-24,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F31,Female,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F32,Male,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F33,Female,Winter 2023/24,D. dama,Subadult,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F34,Female,Winter 2023/24,C. elaphus,Adult,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F35,Female,Winter 2023/24,C. elaphus,Adult,2023-12-28,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Saechs_Schw,E24,Female,Winter 2023/24,C. elaphus,Adult,2024-01-30,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E26,Female,Winter 2023/24,C. elaphus,Subadult,2024-01-19,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E28,Female,Winter 2023/24,C. elaphus,Calf,2023-12-08,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E29,Female,Winter 2023/24,C. elaphus,Adult,2024-01-29,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E30,Male,Winter 2023/24,C. elaphus,Adult,2024-01-19,0,True zero,1e-06,25,Not detected
+Pesticide,Saechs_Schw,E31,Male,Winter 2023/24,C. elaphus,Adult,2023-12-06,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F01,Female,Winter 2023/24,C. elaphus,Adult,2023-12-28,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F02,Male,Winter 2023/24,C. elaphus,Calf,2023-12-28,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F03,Female,Winter 2023/24,D. dama,Adult,2023-12-08,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F04,Female,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F05,Male,Winter 2023/24,C. elaphus,Calf,2023-12-28,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F06,Female,Winter 2023/24,C. elaphus,Adult,2023-12-28,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F07,Male,Winter 2023/24,C. elaphus,Calf,2024-01-11,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F08,Male,Winter 2023/24,C. elaphus,Calf,2023-12-08,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F09,Male,Winter 2023/24,C. elaphus,Calf,2023-11-24,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F10,Male,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F11,Female,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F12,Female,Winter 2023/24,C. elaphus,Subadult,2024-01-11,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F13,Female,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F14,Female,Winter 2023/24,C. elaphus,Adult,2023-12-08,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F15,Female,Winter 2023/24,C. elaphus,Calf,2023-11-30,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F16,Male,Winter 2023/24,C. elaphus,Calf,2023-11-30,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F17,Male,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F18,Female,Winter 2023/24,C. elaphus,Calf,2023-12-01,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F19a,Male,Winter 2023/24,C. elaphus,Subadult,2024-01-11,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F20a,Female,Winter 2023/24,C. elaphus,Calf,2023-12-28,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F21,Male,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F22,Female,Winter 2023/24,D. dama,Adult,2023-12-08,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F23,Female,Winter 2023/24,C. elaphus,Subadult,2024-01-11,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F24,Female,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F25,Female,Winter 2023/24,C. elaphus,Adult,2024-01-11,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F26,Female,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F27,Female,Winter 2023/24,C. elaphus,Adult,2023-12-08,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F28,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F29,Female,Winter 2023/24,C. elaphus,Subadult,2023-11-24,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F30,Female,Winter 2023/24,C. elaphus,Calf,2023-11-24,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F31,Female,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F32,Male,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F33,Female,Winter 2023/24,D. dama,Subadult,2023-12-08,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F34,Female,Winter 2023/24,C. elaphus,Adult,2023-12-08,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F35,Female,Winter 2023/24,C. elaphus,Adult,2023-12-28,0,True zero,1e-06,25,Not detected
 Pesticide,Vorpomm,F36,Female,Winter 2023/24,C. elaphus,Subadult,2023-12-28,0,Left censored,1e-06,1,Detected
-Pesticide,Vorpomm,F37,Male,Winter 2023/24,C. elaphus,Calf,2023-11-24,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F38,Female,Winter 2023/24,C. elaphus,Adult,2023-11-24,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F39,Male,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F40,Female,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F41,Female,Winter 2023/24,C. elaphus,Calf,2023-11-24,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F42,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F43,Female,Winter 2023/24,C. elaphus,Calf,2023-12-01,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F44,Female,Winter 2023/24,C. elaphus,Calf,2023-11-24,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F45,Female,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F46,Male,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F47,Female,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F48,Female,Winter 2023/24,D. dama,Adult,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F49,Female,Winter 2023/24,D. dama,Adult,2023-12-08,0,True zero,1e-06,1e-06,Not detected
-Pesticide,Vorpomm,F50,Female,Winter 2023/24,C. elaphus,Adult,2023-11-24,0,True zero,1e-06,1e-06,Not detected
+Pesticide,Vorpomm,F37,Male,Winter 2023/24,C. elaphus,Calf,2023-11-24,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F38,Female,Winter 2023/24,C. elaphus,Adult,2023-11-24,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F39,Male,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F40,Female,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F41,Female,Winter 2023/24,C. elaphus,Calf,2023-11-24,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F42,Male,Winter 2023/24,C. elaphus,Calf,2023-12-07,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F43,Female,Winter 2023/24,C. elaphus,Calf,2023-12-01,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F44,Female,Winter 2023/24,C. elaphus,Calf,2023-11-24,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F45,Female,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F46,Male,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F47,Female,Winter 2023/24,D. dama,Calf,2023-12-08,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F48,Female,Winter 2023/24,D. dama,Adult,2023-12-08,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F49,Female,Winter 2023/24,D. dama,Adult,2023-12-08,0,True zero,1e-06,25,Not detected
+Pesticide,Vorpomm,F50,Female,Winter 2023/24,C. elaphus,Adult,2023-11-24,0,True zero,1e-06,25,Not detected
 Plasticizer,Bay_Wald,A01,Male,Winter 2023/24,C. elaphus,Adult,2023-12-11,0,Left censored,1e-06,30,Detected
 Plasticizer,Bay_Wald,A03,Male,Winter 2023/24,C. elaphus,Subadult,2024-01-30,20.5,Left censored,20.5,34.5,Quantified
 Plasticizer,Bay_Wald,A05,Male,Winter 2023/24,C. elaphus,Subadult,2024-01-31,0,Left censored,1e-06,30,Detected
