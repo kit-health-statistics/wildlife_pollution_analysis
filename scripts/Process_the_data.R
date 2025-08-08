@@ -6,7 +6,7 @@ source("functions/helper_functions.R")
 chem_categories <- read_csv("data/chemical_categories.csv")
 dat <- read_csv("data/clean_data.csv") %>%
   # Convert the measurements to character to avoid problems when pivoting
-  mutate_at(vars(-Age, -Species, -Sex, -Season), as.character)
+  mutate(across(-"Age", as.character))
 
 # Reshape the data to the long format ==========================================
 
@@ -25,7 +25,7 @@ dat_long <- dat %>%
     values_to = "Value"
   ) %>%
   mutate(
-    # Throws warnings, because we use as.numeric() on NA values, but it is OK
+    # Throws 2 warnings, because we use as.numeric() on NA values, but it is OK
     Detected = case_when(
       # When a cell is empty, the chemical was not detected
       is.na(Value) ~ "Not detected",
@@ -55,7 +55,7 @@ df_detected_by_category <- dat_long %>%
   ) %>%
   summarise(
     # For plotting the descriptive concentration plot
-    Value_sum_by_category = sum(Value, na.rm = TRUE),
+    Value_sum_quantified_by_category = sum(Value, na.rm = TRUE),
     # For the regression model fitting
     Value_sum_by_category_left_censored = list(
       summarise_censoring(Detected, Value, Detection_threshold)

@@ -319,7 +319,7 @@ barplot_quantified <- ggplot(
 boxplot_quantified <- ggplot(
   df_quantified_by_category,
   aes(
-    x = Value_sum_by_category,
+    x = Value_sum_quantified_by_category,
     y = Park,
     fill = Park,
     color = Park

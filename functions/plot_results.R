@@ -146,7 +146,7 @@ plot_results <- function(
     ) |>
     ggplot(
       aes(
-        y = Value_sum_by_category,
+        y = Value_sum_quantified_by_category,
         x = Park,
         fill = Park,
         color = Park
