@@ -3,9 +3,7 @@ library("tidyverse")
 theme_set(theme_bw())
 source("functions/custom_mosaic_plot_function.R")
 source("functions/ggplot_box_legend.R")
-source("scripts/plot_elements.R")
-
-# Functions for nice plotting ==================================================
+source("functions/plot_elements.R")
 
 # Function converting the rgb color codes to hex for the color choice
 # Can be deleted as soon as all colors are determined
@@ -17,6 +15,15 @@ rgb2hex <- function(rgbmat) {
   # Apply the function
   sapply(1:ncol(rgbmat), process_column)
 }
+
+# Get the plot elements ========================================================
+primary_category_labels <- get_primary_category_labels()
+park_labels <- get_park_labels()
+park_colors <- get_park_colors()
+barplot_colors <- get_barplot_colors()
+sex_mosaic_colors <- get_sex_mosaic_colors()
+age_mosaic_colors <- get_age_mosaic_colors()
+species_mosaic_colors <- get_species_mosaic_colors()
 
 # Read the cleaned data and convert categories to factors ======================
 
@@ -136,14 +143,14 @@ for (covariate in names(barplots_covariates)) {
     ) +
     scale_x_discrete(labels = park_labels) +
     labs(y = "", title = covariate) +
-    barplot_desciptive_theme
+    get_barplot_descriptive_theme()
 }
 barplot_season <- ggplot(dat, aes(x = Park, fill = Season)) +
   geom_bar(position = position_stack(), width = 0.90) +
   scale_fill_manual(values = barplot_colors$Season) +
   scale_x_discrete(labels = park_labels) +
   labs(y = "", title = "Season of sample collection") +
-  barplot_desciptive_theme
+  get_barplot_descriptive_theme()
 
 barplots <- barplot_season +
   barplots_covariates$Sex +
@@ -194,7 +201,7 @@ mosaic_sex <- ggplot(
       override.aes = list(fill = sex_mosaic_colors$Female)
     )
   ) +
-  mosaicplot_theme
+  get_mosaicplot_theme()
 ggsave("figure/mosaic_sex.pdf", mosaic_sex, width = 12, height = 8)
 
 
@@ -231,7 +238,7 @@ mosaic_species <- ggplot(
       override.aes = list(fill = species_mosaic_colors$`D. dama`)
     )
   ) +
-  mosaicplot_theme
+  get_mosaicplot_theme()
 ggsave("figure/mosaic_species.pdf", mosaic_species, width = 10, height = 8)
 
 # Mosaic plot by age
@@ -276,7 +283,7 @@ mosaic_age <- ggplot(
       override.aes = list(fill = age_mosaic_colors$Adult)
     )
   ) +
-  mosaicplot_theme
+  get_mosaicplot_theme()
 ggsave("figure/mosaic_age.pdf", mosaic_age, width = 12, height = 8)
 
 # Detection box- and barplots ==================================================
@@ -314,7 +321,7 @@ barplot_quantified <- ggplot(
     title = "Occurence",
     x = "\nProportion exactly quantified\nor qualitatively detected"
   ) +
-  barplot_detection_theme
+  get_barplot_detect_theme()
 
 boxplot_quantified <- ggplot(
   df_quantified_by_category,
@@ -355,7 +362,7 @@ boxplot_quantified <- ggplot(
     title = "Distribution of quantifiable concentrations",
     x = bquote("Concentration in" ~ mu * "g" ~ kg^-1)
   ) +
-  boxplot_quantification_theme
+  get_boxplot_quant_theme()
 
 source("functions/ggplot_box_legend.R")
 boxplot_legend <- ggplot_box_legend()

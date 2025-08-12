@@ -4,6 +4,11 @@
 # by Laura DeCicco
 # https://waterdata.usgs.gov/blog/boxplots/
 ggplot_box_legend <- function(family = "sans") {
+
+  # Get the predefined plot elements ===========================================
+  park_colors <- get_park_colors()
+  park_labels <- get_park_labels()
+
   # Set up the parameters guiding the size, position and distance ==============
 
   # The text label positions need some fiddling to get them just right.

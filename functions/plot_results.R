@@ -3,7 +3,8 @@ plot_results <- function(
   df_filtered,
   fitted_survreg_model,
   pollutant_category,
-  all_plots = FALSE
+  all_plots = FALSE,
+  non_park_comparison = FALSE
 ) {
   # List to store the plots
   plt <- vector("list", 6)
@@ -13,7 +14,13 @@ plot_results <- function(
   coeffs <- coefficients(fitted_survreg_model)
   summ <- summary(fitted_survreg_model)
 
-  # For displaying the fitted spline curve
+  # Get the plot elements ======================================================
+  park_labels <- get_park_labels(non_park_comparison)
+  park_colors <- get_park_colors(non_park_comparison)
+
+  # Display the spline =========================================================
+
+  # For calculating the fitted spline curve
   newdata <- data.frame(
     Date_numeric = seq(
       from = min(df_filtered$Date_numeric),
@@ -37,40 +44,45 @@ plot_results <- function(
       upper = fit + se.fit
     )
 
-  # Number of empty tiles between the times for parks and age categories
-  empty_tiles <- 1
+  # Elements of the plot of the categorical coefficients =======================
+  x_labels_coeffs <- park_labels
+  names(x_labels_coeffs) <- names(park_labels)
+
   df_park <- extract_reg_coeffs(
     "Park",
     levels(df_filtered$Park),
     coeffs,
     summ
   )
-  df_age <- extract_reg_coeffs(
-    "Age",
-    levels(df_filtered$Age),
-    coeffs,
-    summ
-  )
-  df_empty <- data.frame(
-    Vals = NA,
-    p_val = NA,
-    p_val_cat = -1,
-    formatted_label = NA,
-    coeff = paste0("Empty_", 1:empty_tiles),
-    # a y value to plot the tiles in the ggplot coordinates
-    dummy_value = 1,
-    empty = "empty"
-  )
-  df_coeffs <- rbind(df_park, df_empty, df_age)
 
-  x_labels_coeffs <- c(
-    park_labels,
-    levels(df_filtered$Age)
-  )
-  names(x_labels_coeffs) <- c(
-    names(park_labels),
-    levels(df_filtered$Age)
-  )
+  # If we compare with the roe deer data from non-park localities, we have to
+  # drop the age covariate
+  if (non_park_comparison) {
+    df_coeffs <- df_park
+  } else {
+    # Number of empty tiles between the times for parks and age categories
+    empty_tiles <- 1
+    df_age <- extract_reg_coeffs(
+      "Age",
+      levels(df_filtered$Age),
+      coeffs,
+      summ
+    )
+    df_empty <- data.frame(
+      Vals = NA,
+      p_val = NA,
+      p_val_cat = -1,
+      formatted_label = NA,
+      coeff = paste0("Empty_", 1:empty_tiles),
+      # a y value to plot the tiles in the ggplot coordinates
+      dummy_value = 1,
+      empty = "empty"
+    )
+    df_coeffs <- rbind(df_park, df_empty, df_age)
+
+    x_labels_coeffs <- c(x_labels_coeffs, levels(df_filtered$Age))
+    names(x_labels_coeffs) <- c(names(park_labels), levels(df_filtered$Age))
+  }
 
   # Plot results ===============================================================
   plt$spline <- ggplot() +
@@ -125,7 +137,7 @@ plot_results <- function(
       labels = x_labels_coeffs
     ) +
     # `p_val_cat_linewidth` from the "plot_elements.R" file
-    scale_linewidth_manual(values = p_val_cat_linewidth, guide = "none") +
+    scale_linewidth_manual(values = get_p_val_cat_linewidth(), guide = "none") +
     scale_color_manual(
       values = c("non-empty" = "black", "empty" = alpha("white", 0)),
       guide = "none"
