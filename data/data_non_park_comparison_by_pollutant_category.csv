@@ -1,0 +1,1003 @@
+primary_category,Park,Sample_number,Date_of_sample_collection,Value_sum_quantified_by_category,censored,Value_min,Value_max,Detected_by_category
+POP,Bay_Wald,A01,2023-12-11,0,Left censored,1e-06,5,Detected
+POP,Bay_Wald,A03,2024-01-30,0,Left censored,1e-06,5,Detected
+POP,Bay_Wald,A05,2024-01-31,0,Left censored,1e-06,5,Detected
+POP,Bay_Wald,A06,2023-12-27,0,Left censored,1e-06,5,Detected
+POP,Bay_Wald,A07,2024-01-25,0,Left censored,1e-06,1,Detected
+POP,Bay_Wald,A08,2024-01-30,0,Left censored,1e-06,4,Detected
+POP,Bay_Wald,A09,2023-12-05,0,Left censored,1e-06,6,Detected
+POP,Bay_Wald,A100,2024-12-09,0,Left censored,1e-06,4,Detected
+POP,Bay_Wald,A13,2024-01-25,0,Left censored,1e-06,4,Detected
+POP,Bay_Wald,A19,2024-01-30,0,Left censored,1e-06,4,Detected
+POP,Bay_Wald,A20,2023-12-29,0,Left censored,1e-06,2,Detected
+POP,Bay_Wald,A23,2024-01-28,4.2,Left censored,4.2,8.2,Quantified
+POP,Bay_Wald,A39,2024-01-31,0,Left censored,1e-06,4,Detected
+POP,Bay_Wald,A40,2024-01-30,0,Left censored,1e-06,4,Detected
+POP,Bay_Wald,A54,2024-12-02,0,Left censored,1e-06,4,Detected
+POP,Bay_Wald,A55,2025-01-04,0,Left censored,1e-06,4,Detected
+POP,Bay_Wald,A59,2024-10-16,0,Left censored,1e-06,3,Detected
+POP,Bay_Wald,A60,NA,1.34607247634269,Left censored,1.34607247634269,4.34607247634269,Quantified
+POP,Bay_Wald,A62,2024-11-13,6.8801031785123,Left censored,6.8801031785123,8.8801031785123,Quantified
+POP,Bay_Wald,A63,2024-11-19,0,Left censored,1e-06,4,Detected
+POP,Bay_Wald,A64,2024-10-22,1.25804325010195,Left censored,1.25804325010195,4.25804325010195,Quantified
+POP,Bay_Wald,A65,2024-11-24,0,Left censored,1e-06,4,Detected
+POP,Bay_Wald,A67,2024-10-31,0,Left censored,1e-06,4,Detected
+POP,Bay_Wald,A68,2024-10-13,0,Left censored,1e-06,4,Detected
+POP,Bay_Wald,A72,2024-12-29,0,Left censored,1e-06,4,Detected
+POP,Bay_Wald,A73,2024-10-27,5.6014121288374,Left censored,5.6014121288374,7.6014121288374,Quantified
+POP,Bay_Wald,A76,2024-12-19,0,Left censored,1e-06,4,Detected
+POP,Bay_Wald,A77,2024-11-25,0,Left censored,1e-06,5,Detected
+POP,Bay_Wald,A80,2025-01-27,1.22736795188998,Left censored,1.22736795188998,4.22736795188998,Quantified
+POP,Bay_Wald,A83,2025-01-14,1.15782108115671,Left censored,1.15782108115671,4.15782108115671,Quantified
+POP,Bay_Wald,A85,2024-11-25,0,Left censored,1e-06,4,Detected
+POP,Bay_Wald,A89,2024-12-19,0,Left censored,1e-06,4,Detected
+POP,Bay_Wald,A91,2024-09-27,5.1956315970421,Left censored,5.1956315970421,7.1956315970421,Quantified
+POP,Bay_Wald,A92,2024-12-18,0,Left censored,1e-06,4,Detected
+POP,Bay_Wald,A94,2024-12-19,0,Left censored,1e-06,5,Detected
+POP,Bay_Wald,A95,2024-12-18,1.34560890369253,Left censored,1.34560890369253,4.34560890369253,Quantified
+POP,Bay_Wald,A96,2024-12-13,0,Left censored,1e-06,5,Detected
+POP,Bay_Wald,A99,2024-12-19,0,Left censored,1e-06,4,Detected
+POP,Eiffel,Z01,2023-11-29,0,Left censored,1e-06,6,Detected
+POP,Eiffel,Z02,2023-11-21,3.928717203612064,Left censored,3.92871720361206,5.92871720361206,Quantified
+POP,Eiffel,Z03,2023-11-21,60.34738165416982,Left censored,60.3473816541698,62.3473816541698,Quantified
+POP,Eiffel,Z04,2023-11-29,0,Left censored,1e-06,3,Detected
+POP,Eiffel,Z05,2023-11-29,3.53646010963776,Left censored,3.53646010963776,7.53646010963776,Quantified
+POP,Eiffel,Z06,2023-11-29,0,Left censored,1e-06,4,Detected
+POP,Eiffel,Z07,2023-11-21,1.35557882058264,Left censored,1.35557882058264,6.35557882058264,Quantified
+POP,Eiffel,Z08,2023-11-29,0,Left censored,1e-06,3,Detected
+POP,Eiffel,Z09,2023-11-23,5.94575275631926,Left censored,5.94575275631926,8.94575275631926,Quantified
+POP,Eiffel,Z10,2023-11-23,5.545496592021609,Left censored,5.54549659202161,7.54549659202161,Quantified
+POP,Eiffel,Z100,2024-09-04,10.99508757520291,Left censored,10.9950875752029,12.9950875752029,Quantified
+POP,Eiffel,Z11,2023-11-23,3.030854527206984,Left censored,3.03085452720698,8.03085452720698,Quantified
+POP,Eiffel,Z12,2023-11-29,0,Left censored,1e-06,4,Detected
+POP,Eiffel,Z13,2023-11-21,6.18839797422604,Left censored,6.18839797422604,9.18839797422604,Quantified
+POP,Eiffel,Z14,2023-11-29,0,Left censored,1e-06,6,Detected
+POP,Eiffel,Z15,2023-11-29,0,Left censored,1e-06,6,Detected
+POP,Eiffel,Z16,2023-11-29,4.362597990011946,Left censored,4.36259799001195,7.36259799001195,Quantified
+POP,Eiffel,Z17,2023-11-29,0,Left censored,1e-06,6,Detected
+POP,Eiffel,Z18,2023-11-29,1.297543994746892,Left censored,1.29754399474689,8.29754399474689,Quantified
+POP,Eiffel,Z19,2023-12-07,6.9637062278797,Left censored,6.9637062278797,9.9637062278797,Quantified
+POP,Eiffel,Z20,2023-11-29,3.21971067143201,Left censored,3.21971067143201,8.21971067143201,Quantified
+POP,Eiffel,Z21,2023-11-29,0,Left censored,1e-06,3,Detected
+POP,Eiffel,Z22,2023-12-07,0,Left censored,1e-06,6,Detected
+POP,Eiffel,Z23,2023-11-23,1.096797610191862,Left censored,1.09679761019186,7.09679761019186,Quantified
+POP,Eiffel,Z24,2023-12-07,22.192879382411515,Left censored,22.1928793824115,23.1928793824115,Quantified
+POP,Eiffel,Z25,2023-12-07,3.745956966870012,Left censored,3.74595696687001,5.74595696687001,Quantified
+POP,Eiffel,Z26,2023-12-07,0,Left censored,1e-06,4,Detected
+POP,Eiffel,Z27,2023-12-07,3.886755266972046,Left censored,3.88675526697205,6.88675526697205,Quantified
+POP,Eiffel,Z28,2023-12-07,3.991297874984532,Left censored,3.99129787498453,6.99129787498453,Quantified
+POP,Eiffel,Z29,2023-12-16,4.180112813046402,Left censored,4.1801128130464,7.1801128130464,Quantified
+POP,Eiffel,Z30,2023-12-07,6.97184380348086,Left censored,6.97184380348086,9.97184380348086,Quantified
+POP,Eiffel,Z31,2023-10-26,5.70966798645462,Left censored,5.70966798645462,8.70966798645462,Quantified
+POP,Eiffel,Z32,2023-10-26,8.83283992860286,Left censored,8.83283992860286,11.8328399286029,Quantified
+POP,Eiffel,Z33,2023-11-29,0,Left censored,1e-06,4,Detected
+POP,Eiffel,Z34,2023-12-07,3.605652320312842,Left censored,3.60565232031284,6.60565232031284,Quantified
+POP,Eiffel,Z35,2023-11-29,3.473598411097374,Left censored,3.47359841109737,6.47359841109737,Quantified
+POP,Eiffel,Z36,2023-12-07,0,Left censored,1e-06,4,Detected
+POP,Eiffel,Z37,2023-11-29,0,Left censored,1e-06,4,Detected
+POP,Eiffel,Z38,2023-11-29,3.7233553055844277,Left censored,3.72335530558443,8.72335530558443,Quantified
+POP,Eiffel,Z39,2023-11-23,0,Left censored,1e-06,4,Detected
+POP,Eiffel,Z40,2023-11-23,3.69310413119734,Left censored,3.69310413119734,5.69310413119734,Quantified
+POP,Eiffel,Z41,2023-11-23,1.062873093181672,Left censored,1.06287309318167,5.06287309318167,Quantified
+POP,Eiffel,Z42,2023-11-23,2.27926368148402,Left censored,2.27926368148402,7.27926368148402,Quantified
+POP,Eiffel,Z43,2023-11-23,3.161964944657244,Left censored,3.16196494465724,6.16196494465724,Quantified
+POP,Eiffel,Z44,2023-11-23,1.167466887743914,Left censored,1.16746688774391,6.16746688774391,Quantified
+POP,Eiffel,Z45,2023-10-26,26.836317664005758,Left censored,26.8363176640058,28.8363176640058,Quantified
+POP,Eiffel,Z46,2023-10-26,3.9703547766507,Left censored,3.9703547766507,4.9703547766507,Quantified
+POP,Eiffel,Z47,2023-10-26,5.65857067986511,Left censored,5.65857067986511,8.65857067986511,Quantified
+POP,Eiffel,Z48,2023-10-26,0,Left censored,1e-06,4,Detected
+POP,Eiffel,Z49,2023-10-26,4.587492049189979,Left censored,4.58749204918998,7.58749204918998,Quantified
+POP,Eiffel,Z50,2023-11-23,4.213741587682576,Left censored,4.21374158768258,7.21374158768258,Quantified
+POP,Eiffel,Z51,2024-09-07,7.294582925589671,Left censored,7.29458292558967,10.2945829255897,Quantified
+POP,Eiffel,Z52,2024-08-29,9.320665188564,Left censored,9.320665188564,13.320665188564,Quantified
+POP,Eiffel,Z53,2024-08-27,0,Left censored,1e-06,6,Detected
+POP,Eiffel,Z54,2024-09-10,1.3003840000193,Left censored,1.3003840000193,5.3003840000193,Quantified
+POP,Eiffel,Z55,2024-08-23,8.68949637554093,Left censored,8.68949637554093,10.6894963755409,Quantified
+POP,Eiffel,Z56,2024-08-28,0,Left censored,1e-06,8,Detected
+POP,Eiffel,Z57,2024-09-12,0,Left censored,1e-06,4,Detected
+POP,Eiffel,Z59,2024-09-13,4.89772631878819,Left censored,4.89772631878819,6.89772631878819,Quantified
+POP,Eiffel,Z61,2024-08-19,0,Left censored,1e-06,4,Detected
+POP,Eiffel,Z62,2024-08-18,5.69784454038583,Left censored,5.69784454038583,7.69784454038583,Quantified
+POP,Eiffel,Z63,2024-08-22,3.73851855244403,Left censored,3.73851855244403,8.73851855244403,Quantified
+POP,Eiffel,Z64,2024-08-09,1.54004721619083,Left censored,1.54004721619083,6.54004721619083,Quantified
+POP,Eiffel,Z65,2024-08-20,1.07095938350202,Left censored,1.07095938350202,6.07095938350202,Quantified
+POP,Eiffel,Z66,2024-08-05,6.83489805423951,Left censored,6.83489805423951,9.83489805423951,Quantified
+POP,Eiffel,Z67,2024-08-09,3.69058418234271,Left censored,3.69058418234271,5.69058418234271,Quantified
+POP,Eiffel,Z68,2024-08-18,0,Left censored,1e-06,8,Detected
+POP,Eiffel,Z69,2024-08-09,1.51612520210196,Left censored,1.51612520210196,7.51612520210196,Quantified
+POP,Eiffel,Z70,2024-08-06,1.82408612513252,Left censored,1.82408612513252,5.82408612513252,Quantified
+POP,Eiffel,Z71,2024-08-03,1.74573643643822,Left censored,1.74573643643822,5.74573643643822,Quantified
+POP,Eiffel,Z73,2024-08-03,0,Left censored,1e-06,4,Detected
+POP,Eiffel,Z76,2024-08-07,0,Left censored,1e-06,4,Detected
+POP,Eiffel,Z78,2024-08-02,4.81826715259975,Left censored,4.81826715259975,6.81826715259975,Quantified
+POP,Eiffel,Z79,2024-08-03,1.14596023629509,Left censored,1.14596023629509,5.14596023629509,Quantified
+POP,Eiffel,Z80,2024-08-07,8.25499119773931,Left censored,8.25499119773931,10.2549911977393,Quantified
+POP,Eiffel,Z91,2024-05-29,1.99647419132624,Left censored,1.99647419132624,6.99647419132624,Quantified
+POP,Eiffel,Z92,2024-08-19,6.58485955444369,Left censored,6.58485955444369,8.58485955444369,Quantified
+POP,Eiffel,Z96,2024-09-04,0,Left censored,1e-06,6,Detected
+POP,Eiffel,Z97,2024-09-11,6.57010144254719,Left censored,6.57010144254719,8.57010144254719,Quantified
+POP,Eiffel,Z99,2024-08-08,12.00583795658103,Left censored,12.005837956581,14.005837956581,Quantified
+POP,Hainich,C01,2023-12-09,0,Left censored,1e-06,4,Detected
+POP,Hainich,C02,2023-12-12,0.974019169068429,Left censored,0.974019169068429,4.97401916906843,Quantified
+POP,Hainich,C03,2023-12-05,1.0242220775984,Left censored,1.0242220775984,4.0242220775984,Quantified
+POP,Hainich,C04,2023-11-28,1.03238274169935,Left censored,1.03238274169935,5.03238274169935,Quantified
+POP,Hainich,C05,2024-01-15,0,Left censored,1e-06,4,Detected
+POP,Hainich,C06,2023-12-05,0,Left censored,1e-06,5,Detected
+POP,Hainich,C07,2023-12-12,0,Left censored,1e-06,3,Detected
+POP,Hainich,C08,2023-11-18,0,Left censored,1e-06,4,Detected
+POP,Hainich,C09,2024-01-13,0,Left censored,1e-06,4,Detected
+POP,Hainich,C10,2023-12-05,1.16729582620613,Left censored,1.16729582620613,5.16729582620613,Quantified
+POP,Hainich,C100,2024-09-25,0,Left censored,1e-06,5,Detected
+POP,Hainich,C11,2023-12-05,1.11757661071519,Left censored,1.11757661071519,5.11757661071519,Quantified
+POP,Hainich,C12,2023-11-28,0,Left censored,1e-06,4,Detected
+POP,Hainich,C13,2023-12-05,1.21601224567928,Left censored,1.21601224567928,6.21601224567928,Quantified
+POP,Hainich,C14,2023-12-05,0,Left censored,1e-06,4,Detected
+POP,Hainich,C15,2023-11-14,0,Left censored,1e-06,4,Detected
+POP,Hainich,C16,2023-11-14,0,Left censored,1e-06,4,Detected
+POP,Hainich,C17,2023-11-28,0,Left censored,1e-06,4,Detected
+POP,Hainich,C18,2023-12-05,0,Left censored,1e-06,4,Detected
+POP,Hainich,C19,2023-11-14,2.34586988568121,Left censored,2.34586988568121,5.34586988568121,Quantified
+POP,Hainich,C20,2023-12-05,0,Left censored,1e-06,4,Detected
+POP,Hainich,C21,2023-12-12,0,Left censored,1e-06,4,Detected
+POP,Hainich,C22,2023-11-28,0,Left censored,1e-06,4,Detected
+POP,Hainich,C23,2023-11-28,0,Left censored,1e-06,4,Detected
+POP,Hainich,C24,2023-12-12,1.25645205383467,Left censored,1.25645205383467,5.25645205383467,Quantified
+POP,Hainich,C25,2023-12-12,0,Left censored,1e-06,4,Detected
+POP,Hainich,C26,2023-12-12,0,Left censored,1e-06,4,Detected
+POP,Hainich,C27,2023-12-05,0,Left censored,1e-06,6,Detected
+POP,Hainich,C28,2023-11-28,0,Left censored,1e-06,4,Detected
+POP,Hainich,C29,2023-11-18,1.11379333262741,Left censored,1.11379333262741,5.11379333262741,Quantified
+POP,Hainich,C30,2023-12-05,1.28363820445182,Left censored,1.28363820445182,5.28363820445182,Quantified
+POP,Hainich,C31,2023-11-04,0,Left censored,1e-06,4,Detected
+POP,Hainich,C32,2023-11-28,0,Left censored,1e-06,4,Detected
+POP,Hainich,C33,2023-12-05,0,Left censored,1e-06,4,Detected
+POP,Hainich,C34,2023-11-04,0,Left censored,1e-06,4,Detected
+POP,Hainich,C35,2023-12-09,0,Left censored,1e-06,4,Detected
+POP,Hainich,C36,2024-01-15,0,Left censored,1e-06,5,Detected
+POP,Hainich,C37,2023-12-09,4.078621306347831,Left censored,4.07862130634783,7.07862130634783,Quantified
+POP,Hainich,C38,2023-11-14,0,Left censored,1e-06,4,Detected
+POP,Hainich,C39,2023-11-18,0,Left censored,1e-06,4,Detected
+POP,Hainich,C40,2023-12-12,0,Left censored,1e-06,4,Detected
+POP,Hainich,C41,2023-11-28,1.15850829771571,Left censored,1.15850829771571,4.15850829771571,Quantified
+POP,Hainich,C42,2023-12-09,1.06312161620882,Left censored,1.06312161620882,4.06312161620882,Quantified
+POP,Hainich,C43,2023-11-18,0,Left censored,1e-06,3,Detected
+POP,Hainich,C44,2023-12-09,0,Left censored,1e-06,4,Detected
+POP,Hainich,C45,2023-11-07,0,Left censored,1e-06,4,Detected
+POP,Hainich,C46,2023-11-18,0,Left censored,1e-06,4,Detected
+POP,Hainich,C47,2023-12-12,0,Left censored,1e-06,4,Detected
+POP,Hainich,C48,2023-11-18,0,Left censored,1e-06,5,Detected
+POP,Hainich,C49,2023-11-07,0,Left censored,1e-06,4,Detected
+POP,Hainich,C50,2023-12-12,0,Left censored,1e-06,4,Detected
+POP,Hainich,C87,2024-10-02,4.55781303922678,Left censored,4.55781303922678,6.55781303922678,Quantified
+POP,Hainich,C91,2024-09-18,3.840053604855,Left censored,3.840053604855,6.840053604855,Quantified
+POP,Hainich,C94,2024-09-25,0,Left censored,1e-06,4,Detected
+POP,Hainich,C96,2024-09-18,0,Left censored,1e-06,4,Detected
+POP,Hunsrueck,D01,2024-08-22,1.01056796828937,Left censored,1.01056796828937,5.01056796828937,Quantified
+POP,Hunsrueck,D02,2024-08-13,0,Left censored,1e-06,5,Detected
+POP,Hunsrueck,D03,2024-08-19,7.940983382946239,Left censored,7.94098338294624,10.9409833829462,Quantified
+POP,Hunsrueck,D04,2024-08-14,5.803013576673999,Left censored,5.803013576674,7.803013576674,Quantified
+POP,Hunsrueck,D05,2024-08-14,0,Left censored,1e-06,5,Detected
+POP,Hunsrueck,D06,2024-08-22,5.82038132874183,Left censored,5.82038132874183,8.82038132874183,Quantified
+POP,Hunsrueck,D07,2024-08-08,0,Left censored,1e-06,5,Detected
+POP,Hunsrueck,D08,2024-08-14,1.57577423808802,Left censored,1.57577423808802,6.57577423808802,Quantified
+POP,Hunsrueck,D09,2024-08-23,8.03622184648367,Left censored,8.03622184648367,11.0362218464837,Quantified
+POP,Hunsrueck,D10,2024-08-13,7.64367363331049,Left censored,7.64367363331049,10.6436736333105,Quantified
+POP,Hunsrueck,D11,2023-11-17,4.62369379680639,Left censored,4.62369379680639,7.62369379680639,Quantified
+POP,Hunsrueck,D13,2023-11-17,7.9390677916189105,Left censored,7.93906779161891,12.9390677916189,Quantified
+POP,Hunsrueck,D14,2023-12-08,0,Left censored,1e-06,8,Detected
+POP,Hunsrueck,D18,2023-11-17,1.73879097354245,Left censored,1.73879097354245,6.73879097354245,Quantified
+POP,Hunsrueck,D19,2023-11-17,8.06658478380062,Left censored,8.06658478380062,13.0665847838006,Quantified
+POP,Hunsrueck,D20,2023-11-25,2.06222815897131,Left censored,2.06222815897131,7.06222815897131,Quantified
+POP,Hunsrueck,D21,2024-12-05,4.4789974808806,Left censored,4.4789974808806,7.4789974808806,Quantified
+POP,Hunsrueck,D22,2024-12-12,4.05558307363707,Left censored,4.05558307363707,7.05558307363707,Quantified
+POP,Hunsrueck,D24,2024-12-05,7.71656022140676,Left censored,7.71656022140676,10.7165602214068,Quantified
+POP,Hunsrueck,D25,2024-12-12,3.66889918712552,Left censored,3.66889918712552,10.6688991871255,Quantified
+POP,Hunsrueck,D27,2024-11-21,7.91737356425412,Left censored,7.91737356425412,10.9173735642541,Quantified
+POP,Hunsrueck,D28,2024-12-05,8.26314990176556,Left censored,8.26314990176556,11.2631499017656,Quantified
+POP,Hunsrueck,D29,2024-12-05,6.4910425642986596,Left censored,6.49104256429866,11.4910425642987,Quantified
+POP,Hunsrueck,D41,2024-08-03,5.64635464559652,Left censored,5.64635464559652,7.64635464559652,Quantified
+POP,Hunsrueck,D42,2024-08-03,4.59627593212035,Left censored,4.59627593212035,8.59627593212035,Quantified
+POP,Hunsrueck,D43,2024-08-11,6.906895940593779,Left censored,6.90689594059378,9.90689594059378,Quantified
+POP,Hunsrueck,D45,2024-08-04,3.92775392548618,Left censored,3.92775392548618,6.92775392548618,Quantified
+POP,Hunsrueck,D46,2024-08-05,6.1531944158337,Left censored,6.1531944158337,9.1531944158337,Quantified
+POP,Hunsrueck,D47,2024-08-11,11.27755984330304,Left censored,11.277559843303,14.277559843303,Quantified
+POP,Hunsrueck,D48,2024-08-04,2.55994577037769,Left censored,2.55994577037769,7.55994577037769,Quantified
+POP,Hunsrueck,D49,2024-08-08,8.03795125124841,Left censored,8.03795125124841,10.0379512512484,Quantified
+POP,Hunsrueck,D50,2024-08-13,4.78711535955402,Left censored,4.78711535955402,7.78711535955402,Quantified
+POP,Hunsrueck,D51,2024-12-05,4.73448136274503,Left censored,4.73448136274503,7.73448136274503,Quantified
+POP,Hunsrueck,D52,2024-12-05,1.4860308197492,Left censored,1.4860308197492,6.4860308197492,Quantified
+POP,Hunsrueck,D53,2024-12-12,6.11592713820111,Left censored,6.11592713820111,11.1159271382011,Quantified
+POP,Hunsrueck,D54,2024-10-17,6.90279194527883,Left censored,6.90279194527883,9.90279194527883,Quantified
+POP,Hunsrueck,D55,2024-12-05,4.73758719542645,Left censored,4.73758719542645,9.73758719542645,Quantified
+POP,Hunsrueck,D58,2024-10-17,1.7691780524835,Left censored,1.7691780524835,5.7691780524835,Quantified
+POP,Hunsrueck,D59,2024-10-17,4.42996718537393,Left censored,4.42996718537393,9.42996718537393,Quantified
+POP,Hunsrueck,D62,2024-10-23,4.428082618487069,Left censored,4.42808261848707,7.42808261848707,Quantified
+POP,Hunsrueck,D63,2024-10-23,1.31368649818816,Left censored,1.31368649818816,4.31368649818816,Quantified
+POP,Hunsrueck,D64,2024-10-17,4.94154332345631,Left censored,4.94154332345631,7.94154332345631,Quantified
+POP,Hunsrueck,D67,2024-10-23,4.55404523345454,Left censored,4.55404523345454,7.55404523345454,Quantified
+POP,Hunsrueck,D68,2024-10-17,7.36627922008333,Left censored,7.36627922008333,10.3662792200833,Quantified
+POP,Hunsrueck,D70,2024-12-05,7.84496664154272,Left censored,7.84496664154272,12.8449666415427,Quantified
+POP,Hunsrueck,D71,2024-12-12,4.63543231805595,Left censored,4.63543231805595,7.63543231805595,Quantified
+POP,Hunsrueck,D72,2024-10-23,4.17780144417872,Left censored,4.17780144417872,7.17780144417872,Quantified
+POP,Hunsrueck,D73,2024-10-17,0,Left censored,1e-06,1,Detected
+POP,Hunsrueck,D74,2024-12-12,6.94244628348576,Left censored,6.94244628348576,9.94244628348576,Quantified
+POP,Hunsrueck,D76,2024-10-23,6.1766345329539,Left censored,6.1766345329539,9.1766345329539,Quantified
+POP,Hunsrueck,D77,2024-10-17,9.04252382343922,Left censored,9.04252382343922,12.0425238234392,Quantified
+POP,Hunsrueck,D78,2024-10-17,7.8389975703514,Left censored,7.8389975703514,10.8389975703514,Quantified
+POP,Hunsrueck,D80,2024-10-17,12.13674311178978,Left censored,12.1367431117898,14.1367431117898,Quantified
+POP,Jasmund,G01,2024-01-08,3.0818000000000003,Left censored,3.0818,6.0818,Quantified
+POP,Jasmund,G02,2023-11-25,0,Left censored,1e-06,5,Detected
+POP,Jasmund,G03,2023-11-14,0,Left censored,1e-06,1,Detected
+POP,Jasmund,G04,2023-11-18,0,Left censored,1e-06,3,Detected
+POP,Jasmund,G05,2023-11-18,0,Left censored,1e-06,1,Detected
+POP,Jasmund,G06,2023-12-05,0,Left censored,1e-06,3,Detected
+POP,Jasmund,G07,2024-01-08,0,Left censored,1e-06,6,Detected
+POP,Jasmund,G08,2023-11-18,0,Left censored,1e-06,1,Detected
+POP,Jasmund,G09,2023-11-25,1.3456,Left censored,1.3456,7.3456,Quantified
+POP,Jasmund,G10,2023-12-19,0,Left censored,1e-06,2,Detected
+POP,Jasmund,G11,2023-12-11,0,Left censored,1e-06,4,Detected
+POP,Jasmund,G12,2023-11-17,0,Left censored,1e-06,1,Detected
+POP,Jasmund,G13,2023-12-19,0,Left censored,1e-06,1,Detected
+POP,Jasmund,G14,2023-11-18,0,Left censored,1e-06,4,Detected
+POP,Jasmund,G15,2023-11-18,0,Left censored,1e-06,4,Detected
+POP,Jasmund,G16,2023-11-18,0,Left censored,1e-06,1,Detected
+POP,Jasmund,G17,2024-01-26,0,Left censored,1e-06,4,Detected
+POP,Jasmund,G18,2023-11-18,0,Left censored,1e-06,2,Detected
+POP,Jasmund,G19,2023-11-18,0,Left censored,1e-06,4,Detected
+POP,Jasmund,G20,2024-01-02,0,Left censored,1e-06,1,Detected
+POP,Jasmund,G22,2023-11-17,0,Left censored,1e-06,5,Detected
+POP,Jasmund,G23,2023-11-17,0,Left censored,1e-06,4,Detected
+POP,Jasmund,G24,2023-12-19,0,Left censored,1e-06,2,Detected
+POP,Jasmund,G25,2023-11-17,0,Left censored,1e-06,4,Detected
+POP,Jasmund,G26,2023-11-17,0,Left censored,1e-06,1,Detected
+POP,Jasmund,G27,2023-11-17,0,Left censored,1e-06,3,Detected
+POP,Jasmund,G28,2023-11-17,0,Left censored,1e-06,4,Detected
+POP,Jasmund,G29,2023-11-17,0,Left censored,1e-06,1,Detected
+POP,Jasmund,G30,2023-11-17,0,Left censored,1e-06,1,Detected
+POP,Jasmund,G31,2023-11-18,0,Left censored,1e-06,5,Detected
+POP,Jasmund,G32,2023-11-18,0,Left censored,1e-06,1,Detected
+POP,Jasmund,G33,2024-01-28,0,Left censored,1e-06,2,Detected
+POP,Jasmund,G34,2023-11-17,0,Left censored,1e-06,4,Detected
+POP,Jasmund,G35,2023-11-18,0,Left censored,1e-06,1,Detected
+POP,Jasmund,G36,2023-11-22,0,Left censored,1e-06,3,Detected
+POP,Jasmund,G37,2024-01-31,1.89649802172186,Left censored,1.89649802172186,4.89649802172186,Quantified
+POP,Jasmund,G38,2023-11-17,0,Left censored,1e-06,3,Detected
+POP,Jasmund,G39,2023-11-17,0,Left censored,1e-06,4,Detected
+POP,Jasmund,G40,2023-11-17,0,Left censored,1e-06,1,Detected
+POP,Jasmund,G41,2023-12-02,0,Left censored,1e-06,4,Detected
+POP,Jasmund,G42,2024-01-31,0,Left censored,1e-06,4,Detected
+POP,Jasmund,G43,2023-11-25,1.5656,Left censored,1.5656,6.5656,Quantified
+POP,Jasmund,G44,2023-12-19,0,Left censored,1e-06,1,Detected
+POP,Jasmund,G45,2023-12-19,0,Left censored,1e-06,6,Detected
+POP,Jasmund,G46,2023-11-18,0,Left censored,1e-06,1,Detected
+POP,Jasmund,G47,2023-11-17,0,Left censored,1e-06,1,Detected
+POP,Jasmund,G48,2023-12-19,0,Left censored,1e-06,4,Detected
+POP,Jasmund,G49,2024-01-31,0,Left censored,1e-06,4,Detected
+POP,Jasmund,G50,2023-11-17,0,Left censored,1e-06,4,Detected
+POP,Kellerwald,L100,2024-08-09,4.400808175182609,Left censored,4.40080817518261,9.40080817518261,Quantified
+POP,Kellerwald,L51,2024-08-05,0,Left censored,1e-06,5,Detected
+POP,Kellerwald,L52,2024-09-01,4.37760211092517,Left censored,4.37760211092517,7.37760211092517,Quantified
+POP,Kellerwald,L53,2024-08-02,13.309629488654249,Left censored,13.3096294886542,15.3096294886542,Quantified
+POP,Kellerwald,L54,2024-08-16,0,Left censored,1e-06,6,Detected
+POP,Kellerwald,L55,2024-08-05,8.08880552062681,Left censored,8.08880552062681,11.0888055206268,Quantified
+POP,Kellerwald,L56,2024-08-02,0,Left censored,1e-06,4,Detected
+POP,Kellerwald,L57,2024-08-16,4.54470953273458,Left censored,4.54470953273458,6.54470953273458,Quantified
+POP,Kellerwald,L58,2024-08-17,8.993342354242401,Left censored,8.9933423542424,11.9933423542424,Quantified
+POP,Kellerwald,L59,2024-08-16,9.92970932121625,Left censored,9.92970932121625,12.9297093212163,Quantified
+POP,Kellerwald,L60,2024-09-01,0,Left censored,1e-06,4,Detected
+POP,Kellerwald,L61,2024-09-01,1.54714229640002,Left censored,1.54714229640002,5.54714229640002,Quantified
+POP,Kellerwald,L62,2024-09-02,0,Left censored,1e-06,4,Detected
+POP,Kellerwald,L63,2024-08-17,2.8044592716855803,Left censored,2.80445927168558,5.80445927168558,Quantified
+POP,Kellerwald,L64,2024-09-01,10.88150791772902,Left censored,10.881507917729,13.881507917729,Quantified
+POP,Kellerwald,L65,2024-09-01,0,Left censored,1e-06,8,Detected
+POP,Kellerwald,L66,2024-09-01,4.89208535742138,Left censored,4.89208535742138,6.89208535742138,Quantified
+POP,Kellerwald,L67,2024-08-05,1.14305860820134,Left censored,1.14305860820134,6.14305860820134,Quantified
+POP,Kellerwald,L68,2024-08-05,18.59500485590106,Left censored,18.5950048559011,20.5950048559011,Quantified
+POP,Kellerwald,L69,2024-08-06,0,Left censored,1e-06,5,Detected
+POP,Kellerwald,L70,2024-08-08,0,Left censored,1e-06,5,Detected
+POP,Kellerwald,L71,2024-08-04,0,Left censored,1e-06,4,Detected
+POP,Kellerwald,L72,2024-08-15,0,Left censored,1e-06,6,Detected
+POP,Kellerwald,L73,2024-08-02,4.39490750748539,Left censored,4.39490750748539,7.39490750748539,Quantified
+POP,Kellerwald,L74,2024-08-06,8.14425248825988,Left censored,8.14425248825988,11.1442524882599,Quantified
+POP,Kellerwald,L75,2024-08-05,14.85727748065311,Left censored,14.8572774806531,15.8572774806531,Quantified
+POP,Kellerwald,L76,2024-08-07,4.64608752868355,Left censored,4.64608752868355,7.64608752868355,Quantified
+POP,Kellerwald,L77,2024-09-01,0,Left censored,1e-06,5,Detected
+POP,Kellerwald,L78,2024-08-15,5.9673058402286,Left censored,5.9673058402286,8.9673058402286,Quantified
+POP,Kellerwald,L79,2024-08-09,1.08404011683256,Left censored,1.08404011683256,5.08404011683256,Quantified
+POP,Kellerwald,L80,2024-08-14,10.48836163515335,Left censored,10.4883616351533,13.4883616351533,Quantified
+POP,Kellerwald,L81,2024-08-04,5.57597444513362,Left censored,5.57597444513362,8.57597444513362,Quantified
+POP,Kellerwald,L82,2024-08-10,0,Left censored,1e-06,5,Detected
+POP,Kellerwald,L83,2024-08-14,1.45318524979847,Left censored,1.45318524979847,6.45318524979847,Quantified
+POP,Kellerwald,L84,2024-08-04,7.96866094471319,Left censored,7.96866094471319,9.96866094471319,Quantified
+POP,Kellerwald,L85,2024-08-09,0,Left censored,1e-06,5,Detected
+POP,Kellerwald,L86,2024-08-10,10.68852384434094,Left censored,10.6885238443409,13.6885238443409,Quantified
+POP,Kellerwald,L87,2024-08-09,9.69104699942691,Left censored,9.69104699942691,12.6910469994269,Quantified
+POP,Kellerwald,L88,2024-08-17,0,Left censored,1e-06,6,Detected
+POP,Kellerwald,L89,2024-08-02,1.83054853975416,Left censored,1.83054853975416,5.83054853975416,Quantified
+POP,Kellerwald,L90,2024-08-04,5.125291243431191,Left censored,5.12529124343119,7.12529124343119,Quantified
+POP,Kellerwald,L91,2024-08-10,3.9048419578959397,Left censored,3.90484195789594,6.90484195789594,Quantified
+POP,Kellerwald,L92,2024-08-03,8.410797323651511,Left censored,8.41079732365151,10.4107973236515,Quantified
+POP,Kellerwald,L93,2024-08-13,8.69688299653958,Left censored,8.69688299653958,10.6968829965396,Quantified
+POP,Kellerwald,L94,2024-08-01,11.073739884747411,Left censored,11.0737398847474,14.0737398847474,Quantified
+POP,Kellerwald,L95,2024-08-05,7.64839901929242,Left censored,7.64839901929242,10.6483990192924,Quantified
+POP,Kellerwald,L96,2024-08-14,4.05263198249145,Left censored,4.05263198249145,7.05263198249145,Quantified
+POP,Kellerwald,L97,2024-08-12,4.49489596440319,Left censored,4.49489596440319,6.49489596440319,Quantified
+POP,Kellerwald,L98,2024-08-09,4.945194024606041,Left censored,4.94519402460604,6.94519402460604,Quantified
+POP,Kellerwald,L99,2024-08-10,6.3973478048546095,Left censored,6.39734780485461,9.39734780485461,Quantified
+POP,Non-Park,CC1,2021-01-24,0,Left censored,1e-06,10,Detected
+POP,Non-Park,CC10,2021-04-16,2,Left censored,2,11,Quantified
+POP,Non-Park,CC11,2021-04-18,1,Left censored,1,10,Quantified
+POP,Non-Park,CC12,2021-04-18,4,Left censored,4,11,Quantified
+POP,Non-Park,CC13,2021-04-19,1,Left censored,1,8,Quantified
+POP,Non-Park,CC14,2021-04-19,3,Left censored,3,12,Quantified
+POP,Non-Park,CC15,2021-04-21,2,Left censored,2,11,Quantified
+POP,Non-Park,CC16,2021-04-24,1,Left censored,1,8,Quantified
+POP,Non-Park,CC17,2021-04-24,4,Left censored,4,11,Quantified
+POP,Non-Park,CC18,2021-04-23,2,Left censored,2,11,Quantified
+POP,Non-Park,CC19,2021-04-23,2,Left censored,2,11,Quantified
+POP,Non-Park,CC2,2021-05-27,0,Left censored,1e-06,6,Detected
+POP,Non-Park,CC20,2021-04-21,2,Left censored,2,9,Quantified
+POP,Non-Park,CC21,2021-04-19,0,Left censored,1e-06,13,Detected
+POP,Non-Park,CC22,2021-04-17,1,Left censored,1,10,Quantified
+POP,Non-Park,CC23,2021-04-25,2,Left censored,2,14,Quantified
+POP,Non-Park,CC24,2021-04-18,3,Left censored,3,11,Quantified
+POP,Non-Park,CC25,2021-02-24,10,Left censored,10,20,Quantified
+POP,Non-Park,CC26,2021-04-20,0,Left censored,1e-06,12,Detected
+POP,Non-Park,CC27,2021-04-22,0,Left censored,1e-06,12,Detected
+POP,Non-Park,CC28,2021-04-22,2,Left censored,2,11,Quantified
+POP,Non-Park,CC29,2021-04-24,1,Left censored,1,12,Quantified
+POP,Non-Park,CC3,2021-05-29,16,Left censored,16,22,Quantified
+POP,Non-Park,CC30,2021-04-28,1,Left censored,1,10,Quantified
+POP,Non-Park,CC31,2021-05-03,4,Left censored,4,10,Quantified
+POP,Non-Park,CC32,2021-06-07,2,Left censored,2,11,Quantified
+POP,Non-Park,CC33,2021-05-16,3,Left censored,3,10,Quantified
+POP,Non-Park,CC34,2021-05-18,5,Left censored,5,16,Quantified
+POP,Non-Park,CC35,2021-05-16,1,Left censored,1,10,Quantified
+POP,Non-Park,CC36,2021-05-17,1,Left censored,1,8,Quantified
+POP,Non-Park,CC37,2021-05-30,3,Left censored,3,10,Quantified
+POP,Non-Park,CC38,2021-05-12,2,Left censored,2,9,Quantified
+POP,Non-Park,CC39,2021-05-14,2,Left censored,2,9,Quantified
+POP,Non-Park,CC4,2021-05-02,1,Left censored,1,8,Quantified
+POP,Non-Park,CC40,2021-05-17,0,Left censored,1e-06,10,Detected
+POP,Non-Park,CC41,2021-05-17,0,Left censored,1e-06,8,Detected
+POP,Non-Park,CC42,2021-05-18,1,Left censored,1,10,Quantified
+POP,Non-Park,CC43,2021-05-18,1,Left censored,1,8,Quantified
+POP,Non-Park,CC44,2021-06-29,0,Left censored,1e-06,7,Detected
+POP,Non-Park,CC45,2021-04-17,2,Left censored,2,11,Quantified
+POP,Non-Park,CC46,2021-04-19,0,Left censored,1e-06,10,Detected
+POP,Non-Park,CC47,2021-04-18,5,Left censored,5,12,Quantified
+POP,Non-Park,CC48,2021-04-21,4,Left censored,4,10,Quantified
+POP,Non-Park,CC49,2021-04-21,2,Left censored,2,8,Quantified
+POP,Non-Park,CC5,2021-06-27,1,Left censored,1,8,Quantified
+POP,Non-Park,CC50,2021-04-27,2,Left censored,2,9,Quantified
+POP,Non-Park,CC51,2021-05-01,2,Left censored,2,8,Quantified
+POP,Non-Park,CC52,2021-07-04,0,Left censored,1e-06,8,Detected
+POP,Non-Park,CC53,2021-07-05,0,Left censored,1e-06,8,Detected
+POP,Non-Park,CC54,2021-07-09,3,Left censored,3,9,Quantified
+POP,Non-Park,CC55,2021-05-16,2,Left censored,2,8,Quantified
+POP,Non-Park,CC56,2021-04-30,1,Left censored,1,6,Quantified
+POP,Non-Park,CC57,2021-04-29,5,Left censored,5,12,Quantified
+POP,Non-Park,CC58,2021-05-07,2,Left censored,2,7,Quantified
+POP,Non-Park,CC6,2021-05-14,1,Left censored,1,7,Quantified
+POP,Non-Park,CC7,2021-05-15,3,Left censored,3,10,Quantified
+POP,Non-Park,CC8,2021-05-14,0,Left censored,1e-06,10,Detected
+POP,Non-Park,CC9,2021-04-16,1,Left censored,1,10,Quantified
+POP,Saechs_Schw,E 11,2024-08-02,5.2156200945282905,Left censored,5.21562009452829,8.21562009452829,Quantified
+POP,Saechs_Schw,E 12,2024-12-17,0,Left censored,1e-06,5,Detected
+POP,Saechs_Schw,E 13,2024-09-05,2.9897823746919,Left censored,2.9897823746919,6.9897823746919,Quantified
+POP,Saechs_Schw,E 14,2024-08-07,0,Left censored,1e-06,4,Detected
+POP,Saechs_Schw,E 16,2024-08-02,0,Left censored,1e-06,5,Detected
+POP,Saechs_Schw,E 17,2025-01-24,0,Left censored,1e-06,5,Detected
+POP,Saechs_Schw,E 20,2025-01-18,0,Left censored,1e-06,5,Detected
+POP,Saechs_Schw,E 32,2024-08-18,1.07225919138787,Left censored,1.07225919138787,5.07225919138787,Quantified
+POP,Saechs_Schw,E 33,2024-08-21,2.70138541216483,Left censored,2.70138541216483,5.70138541216483,Quantified
+POP,Saechs_Schw,E 34,2024-08-12,5.98045799270141,Left censored,5.98045799270141,8.98045799270141,Quantified
+POP,Saechs_Schw,E 35,2024-08-13,10.052296631847149,Left censored,10.0522966318471,12.0522966318471,Quantified
+POP,Saechs_Schw,E 36,2024-08-15,8.32874389421545,Left censored,8.32874389421545,10.3287438942154,Quantified
+POP,Saechs_Schw,E 37,2024-08-02,0,Left censored,1e-06,4,Detected
+POP,Saechs_Schw,E 38,2024-08-07,1.62562842350718,Left censored,1.62562842350718,5.62562842350718,Quantified
+POP,Saechs_Schw,E 39,2024-08-15,0,Left censored,1e-06,5,Detected
+POP,Saechs_Schw,E 40,2024-08-26,0,Left censored,1e-06,4,Detected
+POP,Saechs_Schw,E 41,2024-09-09,0,Left censored,1e-06,5,Detected
+POP,Saechs_Schw,E 42,2024-09-24,1.45824398596044,Left censored,1.45824398596044,5.45824398596044,Quantified
+POP,Saechs_Schw,E 43,2024-09-20,1.26670665752907,Left censored,1.26670665752907,4.26670665752907,Quantified
+POP,Saechs_Schw,E 45,2024-09-17,2.7808532583598,Left censored,2.7808532583598,5.7808532583598,Quantified
+POP,Saechs_Schw,E 46,2024-10-24,1.09277631848622,Left censored,1.09277631848622,5.09277631848622,Quantified
+POP,Saechs_Schw,E 47,2024-10-15,1.45808232316645,Left censored,1.45808232316645,5.45808232316645,Quantified
+POP,Saechs_Schw,E 49,2024-09-20,4.16765834241503,Left censored,4.16765834241503,7.16765834241503,Quantified
+POP,Saechs_Schw,E 50,2024-09-28,6.36920622507739,Left censored,6.36920622507739,8.36920622507739,Quantified
+POP,Saechs_Schw,E 51,2024-10-24,0,Left censored,1e-06,4,Detected
+POP,Saechs_Schw,E 52,2024-11-19,2.20448668583879,Left censored,2.20448668583879,7.20448668583879,Quantified
+POP,Saechs_Schw,E 53,2024-11-30,1.02606715785878,Left censored,1.02606715785878,2.02606715785878,Quantified
+POP,Saechs_Schw,E 54,2024-12-11,1.41970366101055,Left censored,1.41970366101055,4.41970366101055,Quantified
+POP,Saechs_Schw,E 55,2024-11-06,0,Left censored,1e-06,5,Detected
+POP,Saechs_Schw,E 56,2024-11-20,1.16871325013924,Left censored,1.16871325013924,5.16871325013924,Quantified
+POP,Saechs_Schw,E 57,2024-10-29,5.856246808364251,Left censored,5.85624680836425,8.85624680836425,Quantified
+POP,Saechs_Schw,E 58,2024-11-08,1.28196001702171,Left censored,1.28196001702171,5.28196001702171,Quantified
+POP,Saechs_Schw,E 59,2024-11-21,6.43184640600657,Left censored,6.43184640600657,8.43184640600657,Quantified
+POP,Saechs_Schw,E 60,2024-12-18,1.34419194267576,Left censored,1.34419194267576,5.34419194267576,Quantified
+POP,Saechs_Schw,E 61,2024-12-11,5.05584900694561,Fully quantified,5.05584900694561,5.05584900694561,Quantified
+POP,Saechs_Schw,E 62,2024-12-11,1.50785769417224,Left censored,1.50785769417224,4.50785769417224,Quantified
+POP,Saechs_Schw,E 63,2024-12-17,1.15996465274939,Left censored,1.15996465274939,4.15996465274939,Quantified
+POP,Saechs_Schw,E 64,2024-12-18,1.2702525081915,Left censored,1.2702525081915,5.2702525081915,Quantified
+POP,Saechs_Schw,E 65,2024-12-18,1.05141534025236,Left censored,1.05141534025236,4.05141534025236,Quantified
+POP,Saechs_Schw,E 66,2025-01-16,5.33423611765295,Fully quantified,5.33423611765295,5.33423611765295,Quantified
+POP,Saechs_Schw,E 67,2025-01-29,1.22518976765906,Left censored,1.22518976765906,5.22518976765906,Quantified
+POP,Saechs_Schw,E 68,2025-01-30,3.72360113864285,Left censored,3.72360113864285,5.72360113864285,Quantified
+POP,Saechs_Schw,E 69,2025-01-21,4.32703038036545,Left censored,4.32703038036545,6.32703038036545,Quantified
+POP,Saechs_Schw,E 70,2025-01-27,4.86017259079705,Left censored,4.86017259079705,6.86017259079705,Quantified
+POP,Saechs_Schw,E 71,2025-01-30,1.02070783923699,Left censored,1.02070783923699,4.02070783923699,Quantified
+POP,Saechs_Schw,E 72,2025-01-30,2.94304700564585,Left censored,2.94304700564585,4.94304700564585,Quantified
+POP,Saechs_Schw,E 73,2025-01-30,1.16485173039873,Left censored,1.16485173039873,5.16485173039873,Quantified
+POP,Saechs_Schw,E 74,2025-01-30,1.13153462293717,Left censored,1.13153462293717,5.13153462293717,Quantified
+POP,Saechs_Schw,E 75,2025-01-30,9.06539696498517,Left censored,9.06539696498517,12.0653969649852,Quantified
+POP,Saechs_Schw,E 76,2025-01-30,1.1181387117852,Left censored,1.1181387117852,4.1181387117852,Quantified
+POP,Saechs_Schw,E 77,2025-01-30,0,Left censored,1e-06,4,Detected
+POP,Saechs_Schw,E 78,2025-01-30,4.03554712098862,Left censored,4.03554712098862,6.03554712098862,Quantified
+POP,Saechs_Schw,E 79,2025-01-30,1.34340713394742,Left censored,1.34340713394742,4.34340713394742,Quantified
+POP,Saechs_Schw,E 80,2025-01-30,0,Left censored,1e-06,4,Detected
+POP,Saechs_Schw,E 81,2025-01-30,4.51701804421615,Left censored,4.51701804421615,6.51701804421615,Quantified
+POP,Saechs_Schw,E 82,2025-01-30,5.44873076562175,Left censored,5.44873076562175,7.44873076562175,Quantified
+POP,Saechs_Schw,E 83,2025-01-30,4.56406189715847,Left censored,4.56406189715847,6.56406189715847,Quantified
+POP,Saechs_Schw,E1,2024-01-15,1.251537623167058,Left censored,1.25153762316706,4.25153762316706,Quantified
+POP,Saechs_Schw,E15,2023-11-22,0,Left censored,1e-06,5,Detected
+POP,Saechs_Schw,E21,2023-12-09,2.1197293230863457,Left censored,2.11972932308635,4.11972932308635,Quantified
+POP,Saechs_Schw,E22,2024-01-16,4.31093386092596,Left censored,4.31093386092596,6.31093386092596,Quantified
+POP,Saechs_Schw,E23,2023-12-19,2.284900518322734,Left censored,2.28490051832273,4.28490051832273,Quantified
+POP,Saechs_Schw,E24,2024-01-30,2.9580722055586204,Left censored,2.95807220555862,4.95807220555862,Quantified
+POP,Saechs_Schw,E26,2024-01-19,0,Left censored,1e-06,5,Detected
+POP,Saechs_Schw,E28,2023-12-08,0,Left censored,1e-06,4,Detected
+POP,Saechs_Schw,E29,2024-01-29,0,Left censored,1e-06,4,Detected
+POP,Saechs_Schw,E30,2024-01-19,1.164048960300222,Left censored,1.16404896030022,5.16404896030022,Quantified
+POP,Saechs_Schw,E31,2023-12-06,1.081967799670664,Left censored,1.08196779967066,4.08196779967066,Quantified
+POP,Vorpomm,F01,2023-12-28,1.0868,Left censored,1.0868,5.0868,Quantified
+POP,Vorpomm,F02,2023-12-28,0,Left censored,1e-06,4,Detected
+POP,Vorpomm,F03,2023-12-08,0,Left censored,1e-06,1,Detected
+POP,Vorpomm,F04,2023-12-07,0,Left censored,1e-06,4,Detected
+POP,Vorpomm,F05,2023-12-28,0,Left censored,1e-06,4,Detected
+POP,Vorpomm,F06,2023-12-28,0,Left censored,1e-06,4,Detected
+POP,Vorpomm,F07,2024-01-11,0,Left censored,1e-06,4,Detected
+POP,Vorpomm,F08,2023-12-08,1.4824,Left censored,1.4824,7.4824,Quantified
+POP,Vorpomm,F09,2023-11-24,1.1684,Left censored,1.1684,8.1684,Quantified
+POP,Vorpomm,F10,2023-12-08,0,Left censored,1e-06,3,Detected
+POP,Vorpomm,F11,2023-12-08,0,Left censored,1e-06,1,Detected
+POP,Vorpomm,F12,2024-01-11,0,Left censored,1e-06,4,Detected
+POP,Vorpomm,F13,2023-12-08,0,Left censored,1e-06,1,Detected
+POP,Vorpomm,F14,2023-12-08,0,Left censored,1e-06,5,Detected
+POP,Vorpomm,F15,2023-11-30,0,Left censored,1e-06,4,Detected
+POP,Vorpomm,F16,2023-11-30,2.7800000000000002,Left censored,2.78,5.78,Quantified
+POP,Vorpomm,F17,2023-12-08,0,Left censored,1e-06,1,Detected
+POP,Vorpomm,F18,2023-12-01,0,Left censored,1e-06,6,Detected
+POP,Vorpomm,F19a,2024-01-11,0,Left censored,1e-06,4,Detected
+POP,Vorpomm,F20a,2023-12-28,0,Left censored,1e-06,4,Detected
+POP,Vorpomm,F21,2023-12-08,0,Left censored,1e-06,3,Detected
+POP,Vorpomm,F22,2023-12-08,0,Left censored,1e-06,5,Detected
+POP,Vorpomm,F23,2024-01-11,0,Left censored,1e-06,4,Detected
+POP,Vorpomm,F24,2023-12-08,0,Left censored,1e-06,1,Detected
+POP,Vorpomm,F25,2024-01-11,0,Left censored,1e-06,3,Detected
+POP,Vorpomm,F26,2023-12-08,0,Left censored,1e-06,4,Detected
+POP,Vorpomm,F27,2023-12-08,0,Left censored,1e-06,4,Detected
+POP,Vorpomm,F28,2023-12-07,1.0402,Left censored,1.0402,7.0402,Quantified
+POP,Vorpomm,F29,2023-11-24,1.8926,Left censored,1.8926,6.8926,Quantified
+POP,Vorpomm,F30,2023-11-24,1.222,Left censored,1.222,6.222,Quantified
+POP,Vorpomm,F31,2023-12-07,3.1702,Left censored,3.1702,6.1702,Quantified
+POP,Vorpomm,F32,2023-12-08,0,Left censored,1e-06,2,Detected
+POP,Vorpomm,F33,2023-12-08,0,Left censored,1e-06,1,Detected
+POP,Vorpomm,F34,2023-12-08,0,Left censored,1e-06,4,Detected
+POP,Vorpomm,F35,2023-12-28,0,Left censored,1e-06,4,Detected
+POP,Vorpomm,F36,2023-12-28,0,Left censored,1e-06,6,Detected
+POP,Vorpomm,F37,2023-11-24,1.07,Left censored,1.07,7.07,Quantified
+POP,Vorpomm,F38,2023-11-24,0,Left censored,1e-06,7,Detected
+POP,Vorpomm,F39,2023-12-08,0,Left censored,1e-06,1,Detected
+POP,Vorpomm,F40,2023-12-07,1.8316,Left censored,1.8316,5.8316,Quantified
+POP,Vorpomm,F41,2023-11-24,0,Left censored,1e-06,4,Detected
+POP,Vorpomm,F42,2023-12-07,0,Left censored,1e-06,5,Detected
+POP,Vorpomm,F43,2023-12-01,1.1628,Left censored,1.1628,6.1628,Quantified
+POP,Vorpomm,F44,2023-11-24,0,Left censored,1e-06,4,Detected
+POP,Vorpomm,F45,2023-12-08,0,Left censored,1e-06,1,Detected
+POP,Vorpomm,F46,2023-12-08,0,Left censored,1e-06,1,Detected
+POP,Vorpomm,F47,2023-12-08,0,Left censored,1e-06,3,Detected
+POP,Vorpomm,F48,2023-12-08,0,Left censored,1e-06,1,Detected
+POP,Vorpomm,F49,2023-12-08,0,Left censored,1e-06,4,Detected
+POP,Vorpomm,F50,2023-11-24,2.3738,Left censored,2.3738,8.3738,Quantified
+Pesticide,Bay_Wald,A01,2023-12-11,0,Non-detect,1e-06,9,Not detected
+Pesticide,Bay_Wald,A03,2024-01-30,1.5,Fully quantified,1.5,1.5,Quantified
+Pesticide,Bay_Wald,A05,2024-01-31,0,Left censored,1e-06,1,Detected
+Pesticide,Bay_Wald,A06,2023-12-27,0,Non-detect,1e-06,9,Not detected
+Pesticide,Bay_Wald,A07,2024-01-25,0,Non-detect,1e-06,9,Not detected
+Pesticide,Bay_Wald,A08,2024-01-30,1.3,Left censored,1.3,2.3,Quantified
+Pesticide,Bay_Wald,A09,2023-12-05,0,Left censored,1e-06,1,Detected
+Pesticide,Bay_Wald,A100,2024-12-09,0,Left censored,1e-06,1,Detected
+Pesticide,Bay_Wald,A13,2024-01-25,2,Left censored,2,3,Quantified
+Pesticide,Bay_Wald,A19,2024-01-30,1.9,Fully quantified,1.9,1.9,Quantified
+Pesticide,Bay_Wald,A20,2023-12-29,0,Non-detect,1e-06,9,Not detected
+Pesticide,Bay_Wald,A23,2024-01-28,0,Non-detect,1e-06,9,Not detected
+Pesticide,Bay_Wald,A39,2024-01-31,0,Non-detect,1e-06,9,Not detected
+Pesticide,Bay_Wald,A40,2024-01-30,0,Left censored,1e-06,2,Detected
+Pesticide,Bay_Wald,A54,2024-12-02,0,Left censored,1e-06,1,Detected
+Pesticide,Bay_Wald,A55,2025-01-04,0,Left censored,1e-06,1,Detected
+Pesticide,Bay_Wald,A59,2024-10-16,0,Non-detect,1e-06,9,Not detected
+Pesticide,Bay_Wald,A60,NA,0,Left censored,1e-06,2,Detected
+Pesticide,Bay_Wald,A62,2024-11-13,0,Non-detect,1e-06,9,Not detected
+Pesticide,Bay_Wald,A63,2024-11-19,0,Left censored,1e-06,2,Detected
+Pesticide,Bay_Wald,A64,2024-10-22,1.02718441344343,Left censored,1.02718441344343,3.02718441344343,Quantified
+Pesticide,Bay_Wald,A65,2024-11-24,0,Non-detect,1e-06,9,Not detected
+Pesticide,Bay_Wald,A67,2024-10-31,0,Non-detect,1e-06,9,Not detected
+Pesticide,Bay_Wald,A68,2024-10-13,0,Left censored,1e-06,4,Detected
+Pesticide,Bay_Wald,A72,2024-12-29,0,Left censored,1e-06,2,Detected
+Pesticide,Bay_Wald,A73,2024-10-27,0,Left censored,1e-06,1,Detected
+Pesticide,Bay_Wald,A76,2024-12-19,0,Left censored,1e-06,2,Detected
+Pesticide,Bay_Wald,A77,2024-11-25,0,Non-detect,1e-06,9,Not detected
+Pesticide,Bay_Wald,A80,2025-01-27,0,Left censored,1e-06,1,Detected
+Pesticide,Bay_Wald,A83,2025-01-14,0,Left censored,1e-06,1,Detected
+Pesticide,Bay_Wald,A85,2024-11-25,0,Non-detect,1e-06,9,Not detected
+Pesticide,Bay_Wald,A89,2024-12-19,0,Left censored,1e-06,1,Detected
+Pesticide,Bay_Wald,A91,2024-09-27,0,Non-detect,1e-06,9,Not detected
+Pesticide,Bay_Wald,A92,2024-12-18,0,Left censored,1e-06,1,Detected
+Pesticide,Bay_Wald,A94,2024-12-19,0,Left censored,1e-06,3,Detected
+Pesticide,Bay_Wald,A95,2024-12-18,1.23683430399488,Left censored,1.23683430399488,2.23683430399488,Quantified
+Pesticide,Bay_Wald,A96,2024-12-13,0,Left censored,1e-06,4,Detected
+Pesticide,Bay_Wald,A99,2024-12-19,0,Left censored,1e-06,1,Detected
+Pesticide,Eiffel,Z01,2023-11-29,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z02,2023-11-21,0,Left censored,1e-06,1,Detected
+Pesticide,Eiffel,Z03,2023-11-21,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z04,2023-11-29,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z05,2023-11-29,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z06,2023-11-29,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z07,2023-11-21,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z08,2023-11-29,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z09,2023-11-23,0,Left censored,1e-06,1,Detected
+Pesticide,Eiffel,Z10,2023-11-23,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z100,2024-09-04,0,Left censored,1e-06,1,Detected
+Pesticide,Eiffel,Z11,2023-11-23,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z12,2023-11-29,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z13,2023-11-21,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z14,2023-11-29,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z15,2023-11-29,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z16,2023-11-29,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z17,2023-11-29,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z18,2023-11-29,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z19,2023-12-07,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z20,2023-11-29,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z21,2023-11-29,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z22,2023-12-07,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z23,2023-11-23,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z24,2023-12-07,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z25,2023-12-07,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z26,2023-12-07,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z27,2023-12-07,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z28,2023-12-07,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z29,2023-12-16,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z30,2023-12-07,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z31,2023-10-26,0,Left censored,1e-06,1,Detected
+Pesticide,Eiffel,Z32,2023-10-26,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z33,2023-11-29,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z34,2023-12-07,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z35,2023-11-29,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z36,2023-12-07,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z37,2023-11-29,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z38,2023-11-29,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z39,2023-11-23,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z40,2023-11-23,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z41,2023-11-23,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z42,2023-11-23,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z43,2023-11-23,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z44,2023-11-23,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z45,2023-10-26,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z46,2023-10-26,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z47,2023-10-26,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z48,2023-10-26,0,Left censored,1e-06,1,Detected
+Pesticide,Eiffel,Z49,2023-10-26,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z50,2023-11-23,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z51,2024-09-07,0,Left censored,1e-06,1,Detected
+Pesticide,Eiffel,Z52,2024-08-29,0,Left censored,1e-06,1,Detected
+Pesticide,Eiffel,Z53,2024-08-27,0,Left censored,1e-06,1,Detected
+Pesticide,Eiffel,Z54,2024-09-10,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z55,2024-08-23,0,Left censored,1e-06,1,Detected
+Pesticide,Eiffel,Z56,2024-08-28,0,Left censored,1e-06,1,Detected
+Pesticide,Eiffel,Z57,2024-09-12,0,Left censored,1e-06,1,Detected
+Pesticide,Eiffel,Z59,2024-09-13,0,Left censored,1e-06,1,Detected
+Pesticide,Eiffel,Z61,2024-08-19,0,Left censored,1e-06,1,Detected
+Pesticide,Eiffel,Z62,2024-08-18,0,Left censored,1e-06,1,Detected
+Pesticide,Eiffel,Z63,2024-08-22,0,Left censored,1e-06,1,Detected
+Pesticide,Eiffel,Z64,2024-08-09,0,Left censored,1e-06,4,Detected
+Pesticide,Eiffel,Z65,2024-08-20,0,Left censored,1e-06,1,Detected
+Pesticide,Eiffel,Z66,2024-08-05,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z67,2024-08-09,0,Left censored,1e-06,1,Detected
+Pesticide,Eiffel,Z68,2024-08-18,0,Left censored,1e-06,1,Detected
+Pesticide,Eiffel,Z69,2024-08-09,0,Left censored,1e-06,1,Detected
+Pesticide,Eiffel,Z70,2024-08-06,0,Left censored,1e-06,5,Detected
+Pesticide,Eiffel,Z71,2024-08-03,0,Left censored,1e-06,2,Detected
+Pesticide,Eiffel,Z73,2024-08-03,0,Left censored,1e-06,2,Detected
+Pesticide,Eiffel,Z76,2024-08-07,0,Left censored,1e-06,3,Detected
+Pesticide,Eiffel,Z78,2024-08-02,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z79,2024-08-03,0,Left censored,1e-06,1,Detected
+Pesticide,Eiffel,Z80,2024-08-07,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z91,2024-05-29,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z92,2024-08-19,0,Non-detect,1e-06,9,Not detected
+Pesticide,Eiffel,Z96,2024-09-04,0,Left censored,1e-06,1,Detected
+Pesticide,Eiffel,Z97,2024-09-11,0,Left censored,1e-06,2,Detected
+Pesticide,Eiffel,Z99,2024-08-08,0,Left censored,1e-06,1,Detected
+Pesticide,Hainich,C01,2023-12-09,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C02,2023-12-12,0,Left censored,1e-06,1,Detected
+Pesticide,Hainich,C03,2023-12-05,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C04,2023-11-28,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C05,2024-01-15,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C06,2023-12-05,0,Left censored,1e-06,2,Detected
+Pesticide,Hainich,C07,2023-12-12,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C08,2023-11-18,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C09,2024-01-13,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C10,2023-12-05,0,Left censored,1e-06,2,Detected
+Pesticide,Hainich,C100,2024-09-25,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C11,2023-12-05,2.4893,Fully quantified,2.4893,2.4893,Quantified
+Pesticide,Hainich,C12,2023-11-28,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C13,2023-12-05,0,Left censored,1e-06,2,Detected
+Pesticide,Hainich,C14,2023-12-05,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C15,2023-11-14,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C16,2023-11-14,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C17,2023-11-28,28.8448,Fully quantified,28.8448,28.8448,Quantified
+Pesticide,Hainich,C18,2023-12-05,14.6398,Fully quantified,14.6398,14.6398,Quantified
+Pesticide,Hainich,C19,2023-11-14,0,Left censored,1e-06,1,Detected
+Pesticide,Hainich,C20,2023-12-05,0,Left censored,1e-06,2,Detected
+Pesticide,Hainich,C21,2023-12-12,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C22,2023-11-28,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C23,2023-11-28,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C24,2023-12-12,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C25,2023-12-12,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C26,2023-12-12,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C27,2023-12-05,0,Left censored,1e-06,2,Detected
+Pesticide,Hainich,C28,2023-11-28,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C29,2023-11-18,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C30,2023-12-05,0,Left censored,1e-06,3,Detected
+Pesticide,Hainich,C31,2023-11-04,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C32,2023-11-28,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C33,2023-12-05,0,Left censored,1e-06,2,Detected
+Pesticide,Hainich,C34,2023-11-04,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C35,2023-12-09,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C36,2024-01-15,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C37,2023-12-09,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C38,2023-11-14,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C39,2023-11-18,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C40,2023-12-12,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C41,2023-11-28,0,Left censored,1e-06,2,Detected
+Pesticide,Hainich,C42,2023-12-09,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C43,2023-11-18,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C44,2023-12-09,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C45,2023-11-07,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C46,2023-11-18,0,Left censored,1e-06,2,Detected
+Pesticide,Hainich,C47,2023-12-12,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C48,2023-11-18,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C49,2023-11-07,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C50,2023-12-12,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C87,2024-10-02,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C91,2024-09-18,0,Left censored,1e-06,1,Detected
+Pesticide,Hainich,C94,2024-09-25,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hainich,C96,2024-09-18,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D01,2024-08-22,0,Left censored,1e-06,1,Detected
+Pesticide,Hunsrueck,D02,2024-08-13,0,Left censored,1e-06,1,Detected
+Pesticide,Hunsrueck,D03,2024-08-19,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D04,2024-08-14,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D05,2024-08-14,0,Left censored,1e-06,1,Detected
+Pesticide,Hunsrueck,D06,2024-08-22,0,Left censored,1e-06,1,Detected
+Pesticide,Hunsrueck,D07,2024-08-08,0,Left censored,1e-06,1,Detected
+Pesticide,Hunsrueck,D08,2024-08-14,0,Left censored,1e-06,1,Detected
+Pesticide,Hunsrueck,D09,2024-08-23,0,Left censored,1e-06,1,Detected
+Pesticide,Hunsrueck,D10,2024-08-13,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D11,2023-11-17,0,Left censored,1e-06,1,Detected
+Pesticide,Hunsrueck,D13,2023-11-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D14,2023-12-08,0,Left censored,1e-06,1,Detected
+Pesticide,Hunsrueck,D18,2023-11-17,0,Left censored,1e-06,1,Detected
+Pesticide,Hunsrueck,D19,2023-11-17,0,Left censored,1e-06,1,Detected
+Pesticide,Hunsrueck,D20,2023-11-25,0,Left censored,1e-06,1,Detected
+Pesticide,Hunsrueck,D21,2024-12-05,0,Left censored,1e-06,1,Detected
+Pesticide,Hunsrueck,D22,2024-12-12,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D24,2024-12-05,0,Left censored,1e-06,1,Detected
+Pesticide,Hunsrueck,D25,2024-12-12,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D27,2024-11-21,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D28,2024-12-05,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D29,2024-12-05,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D41,2024-08-03,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D42,2024-08-03,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D43,2024-08-11,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D45,2024-08-04,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D46,2024-08-05,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D47,2024-08-11,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D48,2024-08-04,0,Left censored,1e-06,1,Detected
+Pesticide,Hunsrueck,D49,2024-08-08,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D50,2024-08-13,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D51,2024-12-05,0,Left censored,1e-06,1,Detected
+Pesticide,Hunsrueck,D52,2024-12-05,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D53,2024-12-12,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D54,2024-10-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D55,2024-12-05,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D58,2024-10-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D59,2024-10-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D62,2024-10-23,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D63,2024-10-23,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D64,2024-10-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D67,2024-10-23,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D68,2024-10-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D70,2024-12-05,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D71,2024-12-12,0,Left censored,1e-06,4,Detected
+Pesticide,Hunsrueck,D72,2024-10-23,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D73,2024-10-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D74,2024-12-12,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D76,2024-10-23,0,Left censored,1e-06,1,Detected
+Pesticide,Hunsrueck,D77,2024-10-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D78,2024-10-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Hunsrueck,D80,2024-10-17,0,Left censored,1e-06,1,Detected
+Pesticide,Jasmund,G01,2024-01-08,0,Left censored,1e-06,2,Detected
+Pesticide,Jasmund,G02,2023-11-25,0,Left censored,1e-06,3,Detected
+Pesticide,Jasmund,G03,2023-11-14,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G04,2023-11-18,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G05,2023-11-18,0,Left censored,1e-06,2,Detected
+Pesticide,Jasmund,G06,2023-12-05,0,Left censored,1e-06,1,Detected
+Pesticide,Jasmund,G07,2024-01-08,14.8162,Fully quantified,14.8162,14.8162,Quantified
+Pesticide,Jasmund,G08,2023-11-18,0,Left censored,1e-06,2,Detected
+Pesticide,Jasmund,G09,2023-11-25,0,Left censored,1e-06,1,Detected
+Pesticide,Jasmund,G10,2023-12-19,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G11,2023-12-11,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G12,2023-11-17,0,Left censored,1e-06,2,Detected
+Pesticide,Jasmund,G13,2023-12-19,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G14,2023-11-18,0,Left censored,1e-06,2,Detected
+Pesticide,Jasmund,G15,2023-11-18,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G16,2023-11-18,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G17,2024-01-26,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G18,2023-11-18,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G19,2023-11-18,0,Left censored,1e-06,2,Detected
+Pesticide,Jasmund,G20,2024-01-02,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G22,2023-11-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G23,2023-11-17,0,Left censored,1e-06,3,Detected
+Pesticide,Jasmund,G24,2023-12-19,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G25,2023-11-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G26,2023-11-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G27,2023-11-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G28,2023-11-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G29,2023-11-17,0,Left censored,1e-06,2,Detected
+Pesticide,Jasmund,G30,2023-11-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G31,2023-11-18,0,Left censored,1e-06,1,Detected
+Pesticide,Jasmund,G32,2023-11-18,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G33,2024-01-28,5.644,Fully quantified,5.644,5.644,Quantified
+Pesticide,Jasmund,G34,2023-11-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G35,2023-11-18,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G36,2023-11-22,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G37,2024-01-31,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G38,2023-11-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G39,2023-11-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G40,2023-11-17,0,Left censored,1e-06,2,Detected
+Pesticide,Jasmund,G41,2023-12-02,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G42,2024-01-31,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G43,2023-11-25,6.221,Left censored,6.221,7.221,Quantified
+Pesticide,Jasmund,G44,2023-12-19,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G45,2023-12-19,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G46,2023-11-18,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G47,2023-11-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G48,2023-12-19,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G49,2024-01-31,0,Non-detect,1e-06,9,Not detected
+Pesticide,Jasmund,G50,2023-11-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L100,2024-08-09,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L51,2024-08-05,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L52,2024-09-01,0,Left censored,1e-06,1,Detected
+Pesticide,Kellerwald,L53,2024-08-02,0,Left censored,1e-06,1,Detected
+Pesticide,Kellerwald,L54,2024-08-16,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L55,2024-08-05,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L56,2024-08-02,0,Left censored,1e-06,1,Detected
+Pesticide,Kellerwald,L57,2024-08-16,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L58,2024-08-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L59,2024-08-16,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L60,2024-09-01,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L61,2024-09-01,0,Left censored,1e-06,1,Detected
+Pesticide,Kellerwald,L62,2024-09-02,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L63,2024-08-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L64,2024-09-01,0,Left censored,1e-06,1,Detected
+Pesticide,Kellerwald,L65,2024-09-01,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L66,2024-09-01,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L67,2024-08-05,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L68,2024-08-05,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L69,2024-08-06,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L70,2024-08-08,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L71,2024-08-04,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L72,2024-08-15,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L73,2024-08-02,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L74,2024-08-06,0,Left censored,1e-06,1,Detected
+Pesticide,Kellerwald,L75,2024-08-05,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L76,2024-08-07,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L77,2024-09-01,0,Left censored,1e-06,1,Detected
+Pesticide,Kellerwald,L78,2024-08-15,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L79,2024-08-09,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L80,2024-08-14,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L81,2024-08-04,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L82,2024-08-10,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L83,2024-08-14,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L84,2024-08-04,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L85,2024-08-09,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L86,2024-08-10,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L87,2024-08-09,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L88,2024-08-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L89,2024-08-02,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L90,2024-08-04,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L91,2024-08-10,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L92,2024-08-03,0,Left censored,1e-06,1,Detected
+Pesticide,Kellerwald,L93,2024-08-13,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L94,2024-08-01,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L95,2024-08-05,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L96,2024-08-14,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L97,2024-08-12,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L98,2024-08-09,0,Non-detect,1e-06,9,Not detected
+Pesticide,Kellerwald,L99,2024-08-10,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC1,2021-01-24,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC10,2021-04-16,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC11,2021-04-18,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC12,2021-04-18,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC13,2021-04-19,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC14,2021-04-19,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC15,2021-04-21,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC16,2021-04-24,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC17,2021-04-24,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC18,2021-04-23,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC19,2021-04-23,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC2,2021-05-27,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC20,2021-04-21,3,Fully quantified,3,3,Quantified
+Pesticide,Non-Park,CC21,2021-04-19,4,Fully quantified,4,4,Quantified
+Pesticide,Non-Park,CC22,2021-04-17,0,Left censored,1e-06,4,Detected
+Pesticide,Non-Park,CC23,2021-04-25,0,Left censored,1e-06,4,Detected
+Pesticide,Non-Park,CC24,2021-04-18,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC25,2021-02-24,0,Left censored,1e-06,4,Detected
+Pesticide,Non-Park,CC26,2021-04-20,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC27,2021-04-22,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC28,2021-04-22,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC29,2021-04-24,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC3,2021-05-29,0,Left censored,1e-06,2,Detected
+Pesticide,Non-Park,CC30,2021-04-28,0,Left censored,1e-06,2,Detected
+Pesticide,Non-Park,CC31,2021-05-03,0,Left censored,1e-06,1,Detected
+Pesticide,Non-Park,CC32,2021-06-07,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC33,2021-05-16,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC34,2021-05-18,0,Left censored,1e-06,4,Detected
+Pesticide,Non-Park,CC35,2021-05-16,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC36,2021-05-17,0,Left censored,1e-06,1,Detected
+Pesticide,Non-Park,CC37,2021-05-30,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC38,2021-05-12,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC39,2021-05-14,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC4,2021-05-02,0,Left censored,1e-06,2,Detected
+Pesticide,Non-Park,CC40,2021-05-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC41,2021-05-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC42,2021-05-18,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC43,2021-05-18,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC44,2021-06-29,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC45,2021-04-17,0,Left censored,1e-06,2,Detected
+Pesticide,Non-Park,CC46,2021-04-19,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC47,2021-04-18,0,Left censored,1e-06,4,Detected
+Pesticide,Non-Park,CC48,2021-04-21,0,Left censored,1e-06,4,Detected
+Pesticide,Non-Park,CC49,2021-04-21,0,Left censored,1e-06,4,Detected
+Pesticide,Non-Park,CC5,2021-06-27,0,Left censored,1e-06,2,Detected
+Pesticide,Non-Park,CC50,2021-04-27,0,Left censored,1e-06,5,Detected
+Pesticide,Non-Park,CC51,2021-05-01,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC52,2021-07-04,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC53,2021-07-05,0,Left censored,1e-06,2,Detected
+Pesticide,Non-Park,CC54,2021-07-09,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC55,2021-05-16,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC56,2021-04-30,0,Left censored,1e-06,1,Detected
+Pesticide,Non-Park,CC57,2021-04-29,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC58,2021-05-07,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC6,2021-05-14,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC7,2021-05-15,0,Non-detect,1e-06,9,Not detected
+Pesticide,Non-Park,CC8,2021-05-14,0,Left censored,1e-06,4,Detected
+Pesticide,Non-Park,CC9,2021-04-16,8,Fully quantified,8,8,Quantified
+Pesticide,Saechs_Schw,E 11,2024-08-02,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 12,2024-12-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 13,2024-09-05,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 14,2024-08-07,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 16,2024-08-02,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 17,2025-01-24,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 20,2025-01-18,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 32,2024-08-18,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 33,2024-08-21,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 34,2024-08-12,0,Left censored,1e-06,3,Detected
+Pesticide,Saechs_Schw,E 35,2024-08-13,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 36,2024-08-15,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 37,2024-08-02,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 38,2024-08-07,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 39,2024-08-15,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 40,2024-08-26,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 41,2024-09-09,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 42,2024-09-24,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 43,2024-09-20,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 45,2024-09-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 46,2024-10-24,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 47,2024-10-15,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 49,2024-09-20,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 50,2024-09-28,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 51,2024-10-24,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 52,2024-11-19,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 53,2024-11-30,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 54,2024-12-11,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 55,2024-11-06,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 56,2024-11-20,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 57,2024-10-29,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 58,2024-11-08,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 59,2024-11-21,0,Left censored,1e-06,2,Detected
+Pesticide,Saechs_Schw,E 60,2024-12-18,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 61,2024-12-11,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 62,2024-12-11,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 63,2024-12-17,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 64,2024-12-18,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 65,2024-12-18,0,Left censored,1e-06,1,Detected
+Pesticide,Saechs_Schw,E 66,2025-01-16,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 67,2025-01-29,0,Left censored,1e-06,2,Detected
+Pesticide,Saechs_Schw,E 68,2025-01-30,0,Left censored,1e-06,2,Detected
+Pesticide,Saechs_Schw,E 69,2025-01-21,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 70,2025-01-27,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 71,2025-01-30,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 72,2025-01-30,0,Left censored,1e-06,3,Detected
+Pesticide,Saechs_Schw,E 73,2025-01-30,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 74,2025-01-30,0,Left censored,1e-06,2,Detected
+Pesticide,Saechs_Schw,E 75,2025-01-30,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 76,2025-01-30,0,Left censored,1e-06,1,Detected
+Pesticide,Saechs_Schw,E 77,2025-01-30,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 78,2025-01-30,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 79,2025-01-30,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 80,2025-01-30,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 81,2025-01-30,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 82,2025-01-30,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E 83,2025-01-30,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E1,2024-01-15,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E15,2023-11-22,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E21,2023-12-09,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E22,2024-01-16,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E23,2023-12-19,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E24,2024-01-30,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E26,2024-01-19,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E28,2023-12-08,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E29,2024-01-29,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E30,2024-01-19,0,Non-detect,1e-06,9,Not detected
+Pesticide,Saechs_Schw,E31,2023-12-06,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F01,2023-12-28,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F02,2023-12-28,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F03,2023-12-08,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F04,2023-12-07,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F05,2023-12-28,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F06,2023-12-28,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F07,2024-01-11,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F08,2023-12-08,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F09,2023-11-24,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F10,2023-12-08,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F11,2023-12-08,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F12,2024-01-11,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F13,2023-12-08,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F14,2023-12-08,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F15,2023-11-30,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F16,2023-11-30,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F17,2023-12-08,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F18,2023-12-01,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F19a,2024-01-11,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F20a,2023-12-28,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F21,2023-12-08,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F22,2023-12-08,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F23,2024-01-11,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F24,2023-12-08,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F25,2024-01-11,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F26,2023-12-08,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F27,2023-12-08,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F28,2023-12-07,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F29,2023-11-24,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F30,2023-11-24,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F31,2023-12-07,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F32,2023-12-08,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F33,2023-12-08,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F34,2023-12-08,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F35,2023-12-28,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F36,2023-12-28,0,Left censored,1e-06,1,Detected
+Pesticide,Vorpomm,F37,2023-11-24,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F38,2023-11-24,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F39,2023-12-08,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F40,2023-12-07,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F41,2023-11-24,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F42,2023-12-07,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F43,2023-12-01,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F44,2023-11-24,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F45,2023-12-08,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F46,2023-12-08,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F47,2023-12-08,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F48,2023-12-08,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F49,2023-12-08,0,Non-detect,1e-06,9,Not detected
+Pesticide,Vorpomm,F50,2023-11-24,0,Non-detect,1e-06,9,Not detected

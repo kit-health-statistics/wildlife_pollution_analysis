@@ -1,70 +1,48 @@
 library("tidyverse")
 source("functions/helper_functions.R")
+source("functions/process_data.R")
 
-# Read the cleaned data ========================================================
+# Process the main deer data ===================================================
 
 chem_categories <- read_csv("data/chemical_categories.csv")
-dat <- read_csv("data/clean_data.csv") %>%
-  # Convert the measurements to character to avoid problems when pivoting
-  mutate(across(-"Age", as.character))
+dat_deer <- read_csv("data/clean_data.csv")
+df_detected_by_category <- process_data(dat_deer, chem_categories)
+write_csv(df_detected_by_category, file = "data/data_by_pollutant_category.csv")
 
-# Reshape the data to the long format ==========================================
+# Process the roe deer data ====================================================
 
-dat_long <- dat %>%
-  pivot_longer(
-    -c(
-      Park,
-      Sample_number,
-      Species,
-      Sex,
-      Age,
-      Date_of_sample_collection,
-      Season
-    ),
-    names_to = "Chemical",
-    values_to = "Value"
-  ) %>%
-  mutate(
-    # Throws 2 warnings, because we use as.numeric() on NA values, but it is OK
-    Detected = case_when(
-      # When a cell is empty, the chemical was not detected
-      is.na(Value) ~ "Not detected",
-      # Not quantified values contain the "<" character
-      grepl("<", Value) ~ "Detected",
-      # Quantified values are values that can be converted to a numeric
-      !is.na(as.numeric(Value)) ~ "Quantified"
-    ),
-    # Throws warnings, because we use as.numeric() on NA values, but it is OK
-    Value = ifelse(Detected == "Quantified", as.numeric(Value), NA)
+dat_roe <- read_csv("data/clean_roe_deer_data.csv") |>
+  mutate(Park = "Non-Park")
+
+# Find a subset of the measured chemicals
+chem_categories_deer <- chem_categories |>
+  filter(Chemical %in% colnames(dat_roe))
+
+# Chemicals measured only for the roe deer samples.
+# Let Michelle check that we indeed do not have these in the main data.
+chem_categories_roe <- tibble(
+  Chemical = c("DDT (p,p' and o,p')", "gamma-HCH", "Permethrin"),
+  primary_category = c("POP", "POP", "Pesticide"),
+  Detection_threshold = c(2, 1, 4)
+)
+
+# The subset of chemicals measured for both datasets
+chem_categories_subset <- rbind(chem_categories_deer, chem_categories_roe)
+
+# Combine both datasets
+dat <- bind_rows(dat_deer, dat_roe) |>
+  select(
+    c(
+      "Park",
+      "Sample_number",
+      "Date_of_sample_collection",
+      chem_categories_subset$Chemical
+    )
   )
 
-# Assign the category to the chemicals
-dat_long <- left_join(dat_long, chem_categories, by = "Chemical")
-
-# Handle the detection of chemicals by category
-df_detected_by_category <- dat_long %>%
-  group_by(
-    primary_category,
-    Park,
-    Sample_number,
-    Sex,
-    Season,
-    Species,
-    Age,
-    Date_of_sample_collection
-  ) %>%
-  summarise(
-    # For plotting the descriptive concentration plot
-    Value_sum_quantified_by_category = sum(Value, na.rm = TRUE),
-    # For the regression model fitting
-    Value_sum_by_category_left_censored = list(
-      summarise_censoring(Detected, Value, Detection_threshold)
-    ),
-    Detected_by_category = summarise_detection(Detected)
-  ) %>%
-  ungroup() %>%
-  unnest_wider(Value_sum_by_category_left_censored)
-
-# Save the processed data ======================================================
-
-write_csv(df_detected_by_category, file = "data/data_by_pollutant_category.csv")
+# Process and write
+df_detected_by_category <- process_data(dat, chem_categories_subset)
+write_csv(
+  df_detected_by_category,
+  file = "data/data_non_park_comparison_by_pollutant_category.csv"
+)
