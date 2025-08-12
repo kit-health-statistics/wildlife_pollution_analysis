@@ -216,13 +216,29 @@ save_results_as_xls <- function(fitted_model_list) {
   # Loop through models and add each summary to a sheet
   for (k in seq_along(fitted_model_list)) {
     model_summary <- summary(fitted_model_list[[k]])
-    coef_table <- as.data.frame(model_summary$table) |> select(-z)
-    # Calculate p-values
+    coef_table <- as.data.frame(model_summary$table) |>
+      select(-tidyselect::any_of("z")) |>
+      mutate(
+        across(c("Value", "Std. Error", "p"), function(x) round(x, digits = 4))
+      )
     sheet_name <- names(fitted_model_list)[k]
     openxlsx::addWorksheet(wb, sheet_name)
     openxlsx::writeData(wb, sheet = sheet_name, coef_table, rowNames = TRUE)
   }
   wb
+}
+
+save_results_as_csv <- function(fitted_model_list) {
+  fitted_model_list |>
+    lapply(summary) |>
+    lapply(function(x) x$table) |>
+    lapply(as.data.frame) |>
+    lapply(tibble::rownames_to_column, var = "Coefficient") |>
+    bind_rows(.id = "category") |>
+    mutate(
+      across(c("Value", "Std. Error", "p"), function(x) round(x, digits = 4))
+    ) |>
+    select(-tidyselect::any_of("z"))
 }
 
 save_results_as_image <- function(plot_list, non_park_comparison = FALSE) {
