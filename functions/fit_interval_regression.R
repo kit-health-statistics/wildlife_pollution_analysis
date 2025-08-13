@@ -1,6 +1,20 @@
-# Function fitting the interval regression model for all available pollutant
-# categories. (This should be 8 for the deer data, 2 for the comparison with the
-# roe data.)
+#' Fit interval censored regression model by category
+#'
+#' @description
+#' This function fits the interval regression model for all available pollutant
+#' categories. (This should be 8 for the deer data, 2 for the comparison with
+#' the roe deer data.)
+#'
+#' @param df_detected_by_category A data frame with with the interval bounds of
+#'    the measurements required columns `Value_min` and `Value_max`. Required
+#'    covariate columns are `Park` and `Date_of_sample_collection`. For the main
+#'    analysis, covariate `Age` is also required. Metadata columns are
+#'    `Sample_number`, `primary_category` and `Detected_by_category`
+#' @param non_park_comparison A logical flag indicating, whether the function
+#'    should perform the main analysis, or the secondary analysis using the roe
+#'    deer data from outside of national parks (`non_park_comparison = TRUE`)
+#' @return A list with 2 components: list of the fitted models and list of the
+#'    plots
 fit_interval_reg <- function(
   df_detected_by_category,
   non_park_comparison = FALSE
@@ -15,6 +29,7 @@ fit_interval_reg <- function(
     )
   }
   required_cols <- c(
+    "Sample_number",
     "Date_of_sample_collection",
     "Park",
     "Detected_by_category",
@@ -30,17 +45,12 @@ fit_interval_reg <- function(
     )
   }
 
-  # Load the cleaned data ======================================================
-
-  # We remove certain observations inside this function, when though the task is
+  # We remove certain observations inside this function, even though the task is
   # quite specific, because it's done for both the main analysis and the
   # comparison with the roe deer data.
   df_detected_by_category <- df_detected_by_category |>
     # Filter out observations, where we have no date. This should be only A60.
-    filter(!is.na(Date_of_sample_collection)) |>
-    # Filter out the first observation in time, which is too far away from the
-    # others. This is Z91.
-    filter(Date_of_sample_collection != as.Date("2024-05-29")) |>
+    filter(Sample_number != "A60") |>
     mutate(
       # Convert the categorical variables to factors to keep the levels in the
       # correct order everywhere
@@ -49,28 +59,26 @@ fit_interval_reg <- function(
         Detected_by_category,
         levels = c("Quantified", "Detected", "Not detected")
       ),
-      # Push the dates from 2024 one year back to close the gap between the data
-      # points. 1. April seems to be a good cutoff point. The roe deer data from
-      # 2021 will be pushed forward by 2 years.
+      # Place the dates from different years into a single year cycle.
       # This normalization helps align seasonal patterns across different years
       # for more consistent model fitting.
-      Date_of_sample_collection = as.Date(
-        case_when(
-          Date_of_sample_collection > as.Date("2024-04-01") ~
-            Date_of_sample_collection - 366,  # 2024 was a leap year
-          Date_of_sample_collection <= as.Date("2021-07-09") ~
-            Date_of_sample_collection + 2 * 365,  # For the roe deer data only
-          .default = Date_of_sample_collection
-        )
-      ),
+      Date_of_sample_collection = unify_year(Date_of_sample_collection),
       # Convert dates to numeric values
       Date_numeric = as.numeric(Date_of_sample_collection) -
         min(as.numeric(Date_of_sample_collection))
     ) |>
-    group_by(Park, primary_category) %>%
-    mutate(nobs = n()) %>%
-    ungroup() %>%
+    group_by(Park, primary_category) |>
+    mutate(nobs = n()) |>
+    ungroup() |>
     mutate(Boxplot = nobs >= 5)
+
+  # Check for unexpected NA dates after removing known problematic samples
+  if (any(is.na(df_detected_by_category$Date_of_sample_collection))) {
+    warning(
+      "Unexpected NA values found in Date_of_sample_collection after filtering known samples. Dataset may need re-examination."  # nolint
+    )
+  }
+
   if (!non_park_comparison) {
     # For the main deer data convert also the age variable to factor.
     df_detected_by_category <- df_detected_by_category |>
@@ -99,8 +107,8 @@ fit_interval_reg <- function(
       df_detected_by_category,
       primary_category == category_names[k]
     )
-    response_boundaries <- df_filtered %>%
-      dplyr::select(Value_min, Value_max) %>%
+    response_boundaries <- df_filtered |>
+      dplyr::select(Value_min, Value_max) |>
       as.matrix()
     response_surv <- Surv(
       time = response_boundaries[, 1],

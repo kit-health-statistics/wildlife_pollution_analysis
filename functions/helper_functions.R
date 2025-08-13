@@ -168,6 +168,23 @@ summarise_censoring <- function(detected, value, threshold) {
   ret
 }
 
+# Function for removing the information on year from a date by unifying it to
+# an (almost) arbitrary year 2022/2023. The only non-arbitrary thing is that
+# 2023 was not a leap year. We will have to think about it again, if we ever
+# get samples from 29.02.
+unify_year <- function(date_vec) {
+  str_m_d <- paste(
+    stringr::str_pad(month(date_vec), pad = "0", side = "left", width = 2),
+    stringr::str_pad(day(date_vec), pad = "0", side = "left", width = 2),
+    sep = "-"
+  )
+  # Cut off at the 3th month, so that we have the beginning in spring and the
+  # end in winter for both the deer and roe deer data.
+  str_y <- ifelse(month(date_vec) < 3, "2023", "2022")
+
+  as.Date(paste(str_y, str_m_d, sep = "-"))
+}
+
 # Functions for plotting the regression results ================================
 
 # Function for creating the tiles displaying the age and park regression

@@ -47,7 +47,7 @@ process_data <- function(dat, chem_categories) {
   # Assign the category to the chemicals. `chem_categories` contain everything
   # needed.
   dat_long <- left_join(dat_long, chem_categories, by = "Chemical")
-  
+
   # Check for unmatched chemicals
   unmatched <- dat_long |>
     filter(is.na(primary_category)) |>
@@ -59,7 +59,7 @@ process_data <- function(dat, chem_categories) {
       paste(unmatched, collapse = ", ")
     ))
   }
-  
+
   # Handle the detection of chemicals by category
   df_detected_by_category <- dat_long |>
     group_by(
