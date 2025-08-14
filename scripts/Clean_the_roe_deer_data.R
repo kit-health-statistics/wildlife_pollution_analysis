@@ -101,9 +101,9 @@ raw_data <- purrr::reduce(
     "Propiconazole" = "Propiconazole* [µg kg-1]",
     "Tebuconazole" = "Tebuconazole [µg kg-1]",
     "Tetraconazole" = "Tetraconazole [µg kg-1]",
-    # IMPORTANT
     # The following chemicals are not in the overview of the original data.
-    # Does it mean that they were not discovered, or not measured at all?
+    # It means that they were measured there too, but not discovered in a single
+    # sample.
     "gamma-HCH" = "gamma-HCH (Lindane) [µg kg-1]",
     "Permethrin" = "Permethrin [µg kg-1]",
     "DDT (p,p' and o,p')" = "DDT (p,p' and o,p') [µg kg-1]",

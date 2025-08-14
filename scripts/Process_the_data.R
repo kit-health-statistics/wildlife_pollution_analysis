@@ -18,8 +18,8 @@ dat_roe <- read_csv("data/clean_roe_deer_data.csv") |>
 chem_categories_deer <- chem_categories |>
   filter(Chemical %in% colnames(dat_roe))
 
-# Chemicals measured only for the roe deer samples.
-# Let Michelle check that we indeed do not have these in the main data.
+# Chemicals discovered only for the roe deer samples. They were not discovered
+# in any samples in the main deer data, but they were indeed looked for.
 chem_categories_roe <- tibble(
   Chemical = c("DDT (p,p' and o,p')", "gamma-HCH", "Permethrin"),
   primary_category = c("POP", "POP", "Pesticide"),
@@ -29,7 +29,9 @@ chem_categories_roe <- tibble(
 # The subset of chemicals measured for both datasets
 chem_categories_subset <- rbind(chem_categories_deer, chem_categories_roe)
 
-# Combine both datasets
+# Combine both datasets. bind_rows() introduces NA values for columns, that
+# does not appear in both data frames. This is exactly what we want, because the
+# NA values represent substances, that were not discovered in a sample.
 dat <- bind_rows(dat_deer, dat_roe) |>
   select(
     c(
