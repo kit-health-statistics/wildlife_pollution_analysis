@@ -80,9 +80,9 @@ df_quantified_by_category <- filter(
   Detected_by_category == "Quantified"
 ) %>%
   group_by(Park, primary_category) %>%
-  mutate(nobs = n()) %>%
+  mutate(n_quantified = n()) %>%
   ungroup() %>%
-  mutate(Boxplot = nobs >= 5, placeholder = "placeholder")
+  mutate(Boxplot = n_quantified >= 5)
 
 # Create the data frames for the mosaic plots ==================================
 

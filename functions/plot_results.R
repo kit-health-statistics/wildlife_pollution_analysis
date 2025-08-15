@@ -14,6 +14,14 @@ plot_results <- function(
   coeffs <- coefficients(fitted_survreg_model)
   summ <- summary(fitted_survreg_model)
 
+  # For the descriptive boxplot, indicate, whether to draw individual
+  # observations
+  df_filtered <- df_filtered |>
+    group_by(Park) |>
+    mutate(n_quantified = sum(Detected_by_category == "Quantified")) |>
+    ungroup() |>
+    mutate(Boxplot = n_quantified >= 5)
+
   # Get the plot elements ======================================================
   park_labels <- get_park_labels(non_park_comparison)
   park_colors <- get_park_colors(non_park_comparison)
@@ -167,7 +175,7 @@ plot_results <- function(
     geom_point(
       # Points for n < 5
       data = ~ subset(., !Boxplot),
-      size = 1,
+      size = 2,
       shape = 1
     ) +
     geom_boxplot(
@@ -180,12 +188,17 @@ plot_results <- function(
     ) +
     scale_color_manual(values = park_colors, guide = "none") +
     scale_x_discrete(labels = park_labels, drop = FALSE) +
+    scale_y_continuous(
+      trans = "log10",
+      breaks = c(1, 10, 100, 1000)
+    ) +
     scale_fill_manual(values = park_colors, guide = "none") +
     labs(
       x = NULL,
       y = bquote("Concentration in" ~ mu * "g" ~ kg^-1),
       title = "Quantified concentrations"
-    )
+    ) +
+    coord_cartesian(ylim = c(1, 1000))
 
   plt$barplot <- ggplot(
     df_filtered,

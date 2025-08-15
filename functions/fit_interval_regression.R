@@ -66,11 +66,7 @@ fit_interval_reg <- function(
       # Convert dates to numeric values
       Date_numeric = as.numeric(Date_of_sample_collection) -
         min(as.numeric(Date_of_sample_collection))
-    ) |>
-    group_by(Park, primary_category) |>
-    mutate(nobs = n()) |>
-    ungroup() |>
-    mutate(Boxplot = nobs >= 5)
+    )
 
   # Check for unexpected NA dates after removing known problematic samples
   if (any(is.na(df_detected_by_category$Date_of_sample_collection))) {
