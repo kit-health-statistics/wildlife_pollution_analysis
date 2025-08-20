@@ -126,45 +126,17 @@ summarise_detection <- function(x) {
 
 # This function creates a range per a chemical category, where the sum of all
 # observed values lie. This accounts for the censoring when a chemical is
-# detected only qualitatively.
-# IMPORTANT: When a chemical was not detected, we consider these observations as
-# zeros, but set them to a small value close to zero, e.g. 1e-4 in order to be
-# able to fit a lognormal model. When a chemical was detected only
-# qualitatively, we assume these to lie anywhere between 0 and their detection
-# threshold.
+# detected only qualitatively, or not detected at all.
+# IMPORTANT: When a chemical was not detected, or not quantified, we assume
+# these to lie anywhere between 0 and their detection threshold. For a
+# log-normal to be fitted, we set the lower bound to be a small value close to
+# 0, e.g. 1e-6.
 summarise_censoring <- function(detected, value, threshold) {
-  vals_sum <- sum(value, na.rm = TRUE)
-  if (all(detected == "Not detected")) {
-    # The aggregated minimum value is set as (near) zero, the max value is the
-    # sum of LOQs (the worst scenario)
-    ret <- c(
-      censored = "Non-detect",
-      Value_min = 1e-6,
-      # Treat the non-detects just like the non-quantified values, because we
-      # do not have the limits of detection. As it stands, the model is not able
-      # to estimate some coefficients for the Industrial chemical category.
-      Value_max = sum(threshold)
-    )
-  } else if (
-    all(detected == "Quantified" | detected == "Not detected") &&
-      !all(detected == "Not detected")
-  ) {
-    # The aggregated value is a sum of the quantified values with no
-    # uncertainty. Not detected values are treated as zeros.
-    ret <- c(
-      censored = "Fully quantified",
-      Value_min = vals_sum,
-      Value_max = vals_sum
-    )
-  } else if (any(detected == "Detected")) {
-    # The aggregated value of the detected part lies between 0 and the sum of
-    # thresholds. Then the quantified part is added.
-    ret <- c(
-      censored = "Left censored",
-      Value_min = ifelse(vals_sum == 0, 1e-6, vals_sum),
-      Value_max = vals_sum + sum(threshold[detected == "Detected"])
-    )
-  }
+  vals_sum <- sum(value[detected == "Quantified"], na.rm = TRUE)
+  ret <- c(
+    Value_min = ifelse(vals_sum == 0, 1e-6, vals_sum),
+    Value_max = vals_sum + sum(threshold[detected != "Quantified"])
+  )
   ret
 }
 
