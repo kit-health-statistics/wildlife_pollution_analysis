@@ -104,9 +104,21 @@ rename_columns <- function(x) {
 
 # Functions for data processing ================================================
 
-# Function determining, whether a pollutant category was quantified, detected,
-# or not detected. Input is a character vector of detection indicators for
-# individual chemical.
+#' Function determining the overall detection status of a chemical category
+#'
+#' @param x A character vector of possible values "Not detected", "Detected",
+#'   "Quantified" for individual chemicals
+#' @return A string indicating the aggregated status of "Not detected",
+#'   "Detected" and "Quantified" for the whole category of chemical substances
+#' @details Overall detection status:
+#'    \begin{itemize}
+#'      \item "Quantified": At least one sample in a category contains a
+#'      quantified value.
+#'      \item "Detected": No sample contains a quantified value and at least one
+#'      sample in a category contains a detected value under the quantification
+#'      limit.
+#'      \item "Not detected": All samples are non-detects.
+#'    \end{itemize}
 summarise_detection <- function(x) {
   if (all(x == "Not detected")) {
     # Category was not detected, when no chemicals from the category were
@@ -124,13 +136,36 @@ summarise_detection <- function(x) {
   ret
 }
 
-# This function creates a range per a chemical category, where the sum of all
-# observed values lie. This accounts for the censoring when a chemical is
-# detected only qualitatively, or not detected at all.
-# IMPORTANT: When a chemical was not detected, or not quantified, we assume
-# these to lie anywhere between 0 and their detection threshold. For a
-# log-normal to be fitted, we set the lower bound to be a small value close to
-# 0, e.g. 1e-6.
+#' Function creating a range for the aggregate concentration value per chemical
+#' category
+#'
+#' @description This function creates a range per chemical category, where the
+#'    sum of all observed values lie. This accounts for the censoring when a
+#'    chemical is detected only qualitatively, or not detected at all.
+#' @param detected A character vector indicating detection with possible values
+#'    "Not detected", "Detected", "Quantified" for individual chemicals
+#' @param value A numeric vector containing the concentration values for the
+#'    quantified measurements and NA for the rest
+#' @param threshold A numeric vector containing the quantification thresholds of
+#'    individual chemicals
+#' @return A named numeric vector of length 2 with elements:
+#'    \code{Value_min} and \code{Value_max} defining the lower and upper bounds
+#'    (best and worst case values) for the aggregated concentration in the
+#'    category
+#' @details When a chemical was not detected, or not quantified we consider
+#'    these observations to be anywhere between zero and the quantification
+#'    threshold, but set the lower bound to a small value close to zero, e.g.
+#'    1e-6 in order to be able to fit a lognormal model.
+#'    Definition of the aggregated value range:
+#'    \begin{itemize}
+#'      \item For all samples containing only non-detects or non-quantifiable
+#'      values, the best case is a (near) 0 value and the worst case is the sum
+#'      of the quantification thresholds (LOQ).
+#'      \item When at least one value is quantified, the best value is the sum
+#'      of all quantified values and than the sum of the quantification
+#'      thresholds is added to account for non-detects and non-quantifiable
+#'      values.
+#'    \end{itemize}
 summarise_censoring <- function(detected, value, threshold) {
   vals_sum <- sum(value[detected == "Quantified"], na.rm = TRUE)
   ret <- c(
@@ -140,10 +175,15 @@ summarise_censoring <- function(detected, value, threshold) {
   ret
 }
 
-# Function for removing the information on year from a date by unifying it to
-# an (almost) arbitrary year 2022/2023. The only non-arbitrary thing is that
-# 2023 was not a leap year. We will have to think about it again, if we ever
-# get samples from 29.02.
+#' Function for removing information on year
+#'
+#' @description This function sets the year component of a date to an (almost)
+#'    arbitrary year 2022/2023 (2023 for January and February, 2022 for the
+#'    rest). The only non-arbitrary aspect is that 2023 was not a leap year.
+#'    This is not a concern, since we never get observations from 29 February.
+#' @param date_vec A vector of values in a date format
+#' @return A vector of values in a date format with the year set to 2022, or
+#'    2023
 unify_year <- function(date_vec) {
   str_m_d <- paste(
     stringr::str_pad(month(date_vec), pad = "0", side = "left", width = 2),

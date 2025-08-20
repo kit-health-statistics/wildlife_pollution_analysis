@@ -23,7 +23,7 @@ chem_categories_deer <- chem_categories |>
 chem_categories_roe <- tibble(
   Chemical = c("DDT (p,p' and o,p')", "gamma-HCH", "Permethrin"),
   primary_category = c("POP", "POP", "Pesticide"),
-  Detection_threshold = c(2, 1, 4)
+  Quantification_threshold = c(2, 1, 4)
 )
 
 # The subset of chemicals measured for both datasets

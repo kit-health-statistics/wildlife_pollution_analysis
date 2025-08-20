@@ -3,13 +3,29 @@
 #' @param dat A data frame containing concentration measurements with metadata
 #'   columns `Park`, `Sample_number`, `Species`, `Sex`, `Age`,
 #'   `Date_of_sample_collection` and `Season`
-#' @param chem_categories A data frame with columns 'Chemical',
-#'   'primary_category', and 'Detection_threshold'
+#' @param chem_categories A data frame with columns `Chemical`,
+#'   `primary_category`, and `Quantification_threshold`
 #' @return A data frame with aggregated measurements by category including
-#'    detection status
-#' @details Main outputs include overall detection status ("Quantified",
-#'    "Detected", "Not detected") and interval bounds for best/worst-case
+#'    detection status and interval bounds for best/worst-case
 #'    scenarios
+#' @details Overall detection status:
+#'    \begin{itemize}
+#'      \item "Quantified": At least one sample in a category contains a
+#'      quantified value.
+#'      \item "Detected": No sample contains a quantified value and at least one
+#'      sample in a category contains a detected value under the quantification
+#'      limit.
+#'      \item "Not detected": All samples are non-detects.
+#'    \end{itemize}
+#'    Definition of the best/worst-cases:
+#'    \begin{itemize}
+#'      \item For all samples containing only non-detects or non-quantifiable
+#'      values, the best case is a (near) 0 value and the worst case is the sum
+#'      of the detection thresholds.
+#'      \item When at least value is quantified, the non-detects and
+#'      non-quantifiable ones are resolved as above and then the sum of all
+#'      quantifiable values is added to the both best and worst case values.
+#'    \end{itemize}
 process_data <- function(dat, chem_categories) {
   # Reshape the data to a long format
   dat_long <- dat |>
@@ -83,7 +99,7 @@ process_data <- function(dat, chem_categories) {
       Value_sum_quantified_by_category = sum(Value, na.rm = TRUE),
       # For the regression model fitting
       Value_sum_by_category_left_censored = list(
-        summarise_censoring(Detected, Value, Detection_threshold)
+        summarise_censoring(Detected, Value, Quantification_threshold)
       ),
       Detected_by_category = summarise_detection(Detected)
     ) |>

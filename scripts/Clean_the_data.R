@@ -136,15 +136,15 @@ chem_categories <- read_excel(
     # Localize to English
     Chemical = Name,
     primary_category = "primäre Kategorie",
-    Detection_threshold = "LOQ (µg/kg)"
+    Quantification_threshold = "LOQ (µg/kg)"
   ) %>%
   dplyr::select(
     Chemical,
     primary_category,
-    Detection_threshold
+    Quantification_threshold
   ) %>%
   mutate(
-    Detection_threshold = as.numeric(Detection_threshold),
+    Quantification_threshold = as.numeric(Quantification_threshold),
     primary_category = factor(
       primary_category,
       labels = c(
