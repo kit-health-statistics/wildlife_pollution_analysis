@@ -1,14 +1,25 @@
 #' Process concentration measurements into values by category
 #'
+#' @description This function aggregates the concentration values of individual
+#'    substances into sums by chemical category. The act of defining the
+#'    aggregated values takes place in the \code{summarise_censoring} function.
+#'    In addition, this function drops the chemicals, for which the values are
+#'    too uninformative.
 #' @param dat A data frame containing concentration measurements with metadata
-#'   columns `Park`, `Sample_number`, `Species`, `Sex`, `Age`,
-#'   `Date_of_sample_collection` and `Season`
+#'    columns `Park`, `Sample_number`, `Species`, `Sex`, `Age`,
+#'    `Date_of_sample_collection` and `Season`
 #' @param chem_categories A data frame with columns `Chemical`,
-#'   `primary_category`, and `Quantification_threshold`
+#'    `primary_category`, and `Quantification_threshold`
 #' @return A data frame with aggregated measurements by category including
 #'    detection status and interval bounds for best/worst-case
 #'    scenarios
-#' @details Overall detection status:
+#' @details All chemicals are dropped from the analysis, for which:
+#'    \begin{itemize}
+#'      \item no "Quantified" value was found and at the same time
+#'      \item the proportion of the "Detected" values is less than 5 %
+#'    \end{itemize}
+#'
+#'    Overall detection status:
 #'    \begin{itemize}
 #'      \item "Quantified": At least one sample in a category contains a
 #'      quantified value.
@@ -75,6 +86,17 @@ process_data <- function(dat, chem_categories) {
       paste(unmatched, collapse = ", ")
     ))
   }
+
+  # Remove chemicals, where we have too little information. This means dropping
+  # all chemicals, where we have no quantified values and the proportion of
+  # detected values is less than 5 %.
+  threshold_to_keep <- 0.05
+  informative_chemicals <- dat_long |>
+    count(Chemical, Detected, name = "n") |>
+    pivot_wider(names_from = Detected, values_from = n, values_fill = 0) |>
+    filter(Quantified > 0 | Detected >= nrow(dat) * threshold_to_keep) |>
+    pull(Chemical)
+  dat_long <- dat_long |> filter(Chemical %in% informative_chemicals)
 
   # Handle the detection of chemicals by category
   df_detected_by_category <- dat_long |>
