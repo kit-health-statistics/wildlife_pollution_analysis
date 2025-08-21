@@ -41,7 +41,7 @@ plot_results <- function(
       by = 1
     ),
     Park = "Bay_Wald",  # Reference category
-    Age = "Calf"  # Reference category
+    Age = "Fawn"  # Reference category
   )
   spline_curve <- as.data.frame(
     predict(fitted_survreg_model, newdata = newdata, se = TRUE)
@@ -108,9 +108,12 @@ plot_results <- function(
       x = "Date",
       title = "Penalized spline for the date variable (intercept included)",
       y = bquote("Concentration in" ~ mu * "g" ~ kg^-1)
-    )
+    ) +
+    coord_cartesian(ylim = c(0, NA))
 
-  colorbar_breaks <- c(0.005, 0.07, 1, 9, 80)
+  # Breaks of the color gradient for the categorical coefficients. Needs to be
+  # determined manually.
+  colorbar_breaks <- c(0.0015, 0.5, 1, 1.65, 2.3)
   plt$reg_coeffs <- ggplot(
     df_coeffs,
     aes(
@@ -131,14 +134,13 @@ plot_results <- function(
       title = "Park and age regression coefficients"
     ) +
     scale_fill_gradient2(
-      low = "firebrick2",
+      low = "royalblue",
       midpoint = 1,
-      high = "royalblue",
+      high = "firebrick2",
       na.value = alpha("white", 0),
       breaks = colorbar_breaks,
       labels = colorbar_breaks,
-      limits = range(colorbar_breaks),
-      transform = "log"
+      limits = range(colorbar_breaks)
     ) +
     scale_x_discrete(
       breaks = names(x_labels_coeffs),

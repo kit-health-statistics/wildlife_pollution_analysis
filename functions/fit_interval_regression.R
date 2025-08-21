@@ -79,7 +79,7 @@ fit_interval_reg <- function(
     # For the main deer data convert also the age variable to factor.
     df_detected_by_category <- df_detected_by_category |>
       mutate(
-        Age = factor(Age, levels = c("Calf", "Subadult", "Adult"))
+        Age = factor(Age, levels = c("Fawn", "Subadult", "Adult"))
       )
   }
 

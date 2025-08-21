@@ -7,6 +7,12 @@ source("functions/helper_functions.R")
 source("functions/plot_results.R")
 theme_set(theme_bw())
 
+# Set locale to English for displaying the month names correctly
+# (with fallbacks recommended by the CodeRabbit)
+loc <- Sys.setlocale("LC_TIME", "English")
+if (is.na(loc)) loc <- Sys.setlocale("LC_TIME", "en_US.UTF-8")
+if (is.na(loc)) loc <- Sys.setlocale("LC_TIME", "English_United States.1252")
+
 # Model the main deer data =====================================================
 
 # Load and filter the data. We remove observation Z91 that was collected on
