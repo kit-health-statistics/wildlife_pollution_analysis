@@ -5,6 +5,12 @@ source("functions/custom_mosaic_plot_function.R")
 source("functions/ggplot_box_legend.R")
 source("functions/plot_elements.R")
 
+# Set locale to English for displaying the month names correctly
+# (with fallbacks recommended by the CodeRabbit)
+loc <- Sys.setlocale("LC_TIME", "English")
+if (is.na(loc)) loc <- Sys.setlocale("LC_TIME", "en_US.UTF-8")
+if (is.na(loc)) loc <- Sys.setlocale("LC_TIME", "English_United States.1252")
+
 # Function converting the rgb color codes to hex for the color choice
 # Can be deleted as soon as all colors are determined
 rgb2hex <- function(rgbmat) {
@@ -43,7 +49,7 @@ df_detected_by_category <- read_csv("data/data_by_pollutant_category.csv") %>%
       ordered = TRUE
     ),
     Sex = factor(Sex, levels = c("Male", "Female")),
-    Age = factor(Age, levels = c("Adult", "Subadult", "Calf"), ordered = TRUE),
+    Age = factor(Age, levels = c("Adult", "Subadult", "Fawn"), ordered = TRUE),
     Species = factor(Species, levels = c("D. dama", "C. elaphus")),
     Season = factor(
       Season,
@@ -59,7 +65,7 @@ dat <- read_csv("data/clean_data.csv") %>%
       ordered = TRUE
     ),
     Sex = factor(Sex, levels = c("Male", "Female")),
-    Age = factor(Age, levels = c("Adult", "Subadult", "Calf"), ordered = TRUE),
+    Age = factor(Age, levels = c("Adult", "Subadult", "Fawn"), ordered = TRUE),
     Species = factor(
       Species,
       levels = c("D. dama", "C. elaphus")
@@ -263,10 +269,10 @@ mosaic_age <- ggplot(
   scale_alpha_manual(values = c(1, 1, 1)) +
   scale_linetype_manual(values = c(1, 1, 1)) +
   scale_fill_manual(
-    name = "Calf",
+    name = "Fawn",
     values = unlist(age_mosaic_colors),
-    breaks = names(unlist(age_mosaic_colors["Calf"])),
-    labels = names(age_mosaic_colors$Calf)
+    breaks = names(unlist(age_mosaic_colors["Fawn"])),
+    labels = names(age_mosaic_colors$Fawn)
   ) +
   facet_wrap(~primary_category, nrow = 4, ncol = 2) +
   labs(x = "Park", title = "Pollutant detection by age") +

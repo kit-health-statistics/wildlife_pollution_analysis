@@ -1,11 +1,11 @@
 category,Coefficient,Value,Std. Error,p
 POP,(Intercept),1.5006,0.5203,0.0039
+POP,ParkEifel,0.367,0.1751,0.0361
 POP,ParkHainich,-0.1614,0.3012,0.592
 POP,ParkHunsrueck,0.3008,0.1811,0.0967
-POP,ParkSaechs_Schw,0.14,0.1864,0.4526
 POP,ParkJasmund,-0.3088,0.5905,0.6009
 POP,ParkKellerwald,0.4023,0.1892,0.0335
-POP,ParkEiffel,0.367,0.1751,0.0361
+POP,ParkSaechs_Schw,0.14,0.1864,0.4526
 POP,ParkVorpomm,-0.2809,0.5956,0.6372
 POP,ParkNon-Park,0.3463,0.2742,0.2065
 POP,ps(Date_numeric)3,0.1975,0.2795,0.4798
@@ -22,12 +22,12 @@ POP,ps(Date_numeric)13,0.6117,0.4973,0.2186
 POP,ps(Date_numeric)14,0.7204,0.6068,0.2351
 POP,Log(scale),-1.3215,0.0803,0
 Pesticide,(Intercept),10.8778,12.7466,0.3934
+Pesticide,ParkEifel,NA,0,NA
 Pesticide,ParkHainich,0.4866,0.3391,0.1512
 Pesticide,ParkHunsrueck,NA,0,NA
-Pesticide,ParkSaechs_Schw,NA,0,NA
 Pesticide,ParkJasmund,0.3978,0.3188,0.212
 Pesticide,ParkKellerwald,NA,0,NA
-Pesticide,ParkEiffel,NA,0,NA
+Pesticide,ParkSaechs_Schw,NA,0,NA
 Pesticide,ParkVorpomm,NA,0,NA
 Pesticide,ParkNon-Park,-6.361,10.8758,0.5586
 Pesticide,ps(Date_numeric)3,-2.9097,2.9619,0.3259

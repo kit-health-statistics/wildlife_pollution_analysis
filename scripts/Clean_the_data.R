@@ -18,7 +18,7 @@ data_positions <- list(
   ),
   Jasmund = c(winter = "G - Jasmund!A1:AP51", summer = NA),
   Kellerwald = c(winter = NA, summer = "L - Kellerwald Edersee!A1:AS51"),
-  Eiffel = c(winter = "Z - Eiffel!A1:AL51", summer = "Z - Eiffel!A1:AZ31"),
+  Eifel = c(winter = "Z - Eiffel!A1:AL51", summer = "Z - Eiffel!A1:AZ31"),
   Vorpomm = c(winter = "F - VorpommBoddenlandschaft!A1:AK53", summer = NA)
 )
 

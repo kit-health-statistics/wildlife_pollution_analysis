@@ -20,12 +20,12 @@ get_primary_category_labels <- function() {
 get_park_labels <- function(non_park_comparison = FALSE) {
   labs <- c(
     "Bay_Wald" = "Bayerischer \nWald",
+    "Eifel" = "Eifel",
     "Hainich" = "Hainich",
     "Hunsrueck" = "Hunsrück\nHochwald",
-    "Saechs_Schw" = "Sächsische \nSchweiz",
     "Jasmund" = "Jasmund",
     "Kellerwald" = "Kellerwald\nEdersee",
-    "Eiffel" = "Eiffel",
+    "Saechs_Schw" = "Sächsische \nSchweiz",
     "Vorpomm" = "Vorpomm. \nBoddenlandschaft"
   )
   if (non_park_comparison) {
@@ -40,26 +40,26 @@ get_park_labels <- function(non_park_comparison = FALSE) {
 get_park_colors <- function(non_park_comparison = FALSE) {
   cols <- c(
     "Bay_Wald" = "deepskyblue4",
+    "Eifel" = "#AD7B00",
     "Hainich" = "firebrick3",
-    "Hunsrueck" = "purple3",
-    "Saechs_Schw" = "darkgreen",
-    "Jasmund" = "lightblue3",
-    "Kellerwald" = "palegreen",
-    "Eiffel" = "goldenrod1",
+    "Hunsrueck" = "purple4",
+    "Jasmund" =  "#5E6B7B",
+    "Kellerwald" = "salmon4",
+    "Saechs_Schw" = "#004000",
     "Vorpomm" = "magenta3"
   )
   if (non_park_comparison) {
-    cols <- c(cols, "Non-Park" = "salmon3")
+    cols <- c(cols, "Non-Park" = "seagreen4")
   }
   cols
 }
 
-# Color coding of the covariate categories in desriptive barplots
+# Color coding of the covariate categories in descriptive barplots
 get_barplot_colors <- function() {
   list(
     Sex = c("Male" = "royalblue2", "Female" = "firebrick3"),
     Age = c(
-      "Calf" = "palevioletred2",
+      "Fawn" = "palevioletred2",
       "Subadult" = "#46CD8A",
       "Adult" = "darkorange3"
     ),
@@ -107,7 +107,7 @@ get_species_mosaic_colors <- function() {
 # Color coding for the mosaic plot by age
 get_age_mosaic_colors <- function() {
   list(
-    Calf = c(
+    Fawn = c(
       "Not detected" = "pink",
       "Detected" = "palevioletred2",
       "Quantified" = "hotpink4"

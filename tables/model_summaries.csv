@@ -1,14 +1,14 @@
 category,Coefficient,Value,Std. Error,p
-API,(Intercept),0.4061,31686.6893,1
+API,(Intercept),0.2467,85816.1197,1
 API,AgeSubadult,-0.2594,0.2233,0.2453
 API,AgeAdult,-0.1332,0.1692,0.4313
-API,ParkHainich,1.6647,31686.6893,1
-API,ParkHunsrueck,-0.2284,40824.4892,1
-API,ParkSaechs_Schw,-0.2215,38695.3832,1
-API,ParkJasmund,-0.1344,42715.2131,1
-API,ParkKellerwald,1.19,31686.6893,1
-API,ParkEiffel,1.5852,31686.6893,1
-API,ParkVorpomm,-0.0641,42580.1311,1
+API,ParkEifel,1.7447,85816.1197,1
+API,ParkHainich,1.8242,85816.1197,1
+API,ParkHunsrueck,NA,0,NA
+API,ParkJasmund,NA,0,NA
+API,ParkKellerwald,1.3494,85816.1197,1
+API,ParkSaechs_Schw,NA,0,NA
+API,ParkVorpomm,NA,0,NA
 API,ps(Date_numeric)3,-0.5778,0.6369,0.3643
 API,ps(Date_numeric)4,-1.0665,0.8657,0.218
 API,ps(Date_numeric)5,-1.2398,0.8763,0.1571
@@ -25,12 +25,12 @@ API,Log(scale),-1.225,0.2217,0
 Anthropogenic pollution,(Intercept),2.6353,0.3605,0
 Anthropogenic pollution,AgeSubadult,0.1302,0.0924,0.1586
 Anthropogenic pollution,AgeAdult,0.0416,0.0871,0.6332
+Anthropogenic pollution,ParkEifel,-0.2778,0.1692,0.1006
 Anthropogenic pollution,ParkHainich,0.2237,0.1549,0.1486
 Anthropogenic pollution,ParkHunsrueck,-0.5301,0.2023,0.0088
-Anthropogenic pollution,ParkSaechs_Schw,0.241,0.147,0.1011
 Anthropogenic pollution,ParkJasmund,0.3141,0.1548,0.0424
 Anthropogenic pollution,ParkKellerwald,-0.3997,0.2154,0.0634
-Anthropogenic pollution,ParkEiffel,-0.2778,0.1692,0.1006
+Anthropogenic pollution,ParkSaechs_Schw,0.241,0.147,0.1011
 Anthropogenic pollution,ParkVorpomm,-0.1211,0.1674,0.4696
 Anthropogenic pollution,ps(Date_numeric)3,-0.2446,0.2505,0.3288
 Anthropogenic pollution,ps(Date_numeric)4,-0.4456,0.3584,0.2137
@@ -48,12 +48,12 @@ Anthropogenic pollution,Log(scale),-0.6532,0.0589,0
 Industrial chemical,(Intercept),0.6536,1.1937,0.584
 Industrial chemical,AgeSubadult,-0.2104,0.28,0.4523
 Industrial chemical,AgeAdult,-0.1423,0.2809,0.6125
+Industrial chemical,ParkEifel,0.7964,0.4608,0.0839
 Industrial chemical,ParkHainich,-4.1308,31132.3064,0.9999
 Industrial chemical,ParkHunsrueck,-0.1033,0.5976,0.8627
-Industrial chemical,ParkSaechs_Schw,0.3199,0.4924,0.516
 Industrial chemical,ParkJasmund,-4.2098,33127.983,0.9999
 Industrial chemical,ParkKellerwald,-3.3352,34711.4847,0.9999
-Industrial chemical,ParkEiffel,0.7964,0.4608,0.0839
+Industrial chemical,ParkSaechs_Schw,0.3199,0.4924,0.516
 Industrial chemical,ParkVorpomm,-0.3848,0.6546,0.5567
 Industrial chemical,ps(Date_numeric)3,-0.1796,0.8383,0.8304
 Industrial chemical,ps(Date_numeric)4,-0.3215,1.2172,0.7917
@@ -71,12 +71,12 @@ Industrial chemical,Log(scale),-0.2729,0.1272,0.032
 PAH,(Intercept),2.8062,0.1794,0
 PAH,AgeSubadult,0.0303,0.049,0.5363
 PAH,AgeAdult,0.0409,0.0459,0.3729
+PAH,ParkEifel,0.0062,0.0808,0.9385
 PAH,ParkHainich,-0.0508,0.09,0.5723
 PAH,ParkHunsrueck,0.0425,0.0822,0.6055
-PAH,ParkSaechs_Schw,-0.1305,0.0857,0.128
 PAH,ParkJasmund,-0.0705,0.0929,0.448
 PAH,ParkKellerwald,-0.1751,0.1048,0.0948
-PAH,ParkEiffel,0.0062,0.0808,0.9385
+PAH,ParkSaechs_Schw,-0.1305,0.0857,0.128
 PAH,ParkVorpomm,-0.1154,0.0932,0.2155
 PAH,ps(Date_numeric)3,-0.0717,0.1281,0.5758
 PAH,ps(Date_numeric)4,-0.1335,0.1793,0.4565
@@ -94,12 +94,12 @@ PAH,Log(scale),-1.5118,0.0797,0
 PCP,(Intercept),3.6956,0.5517,0
 PCP,AgeSubadult,0.0617,0.0931,0.5074
 PCP,AgeAdult,-0.0038,0.0992,0.9695
+PCP,ParkEifel,0.5066,0.4029,0.2086
 PCP,ParkHainich,0.2732,0.4071,0.5022
 PCP,ParkHunsrueck,0.3417,0.4097,0.4043
-PCP,ParkSaechs_Schw,0.0394,0.4375,0.9282
 PCP,ParkJasmund,-0.0368,0.508,0.9422
 PCP,ParkKellerwald,0.0543,0.467,0.9074
-PCP,ParkEiffel,0.5066,0.4029,0.2086
+PCP,ParkSaechs_Schw,0.0394,0.4375,0.9282
 PCP,ParkVorpomm,0.2517,0.407,0.5363
 PCP,ps(Date_numeric)3,-0.3645,0.3331,0.2739
 PCP,ps(Date_numeric)4,-0.6841,0.4614,0.1382
@@ -117,12 +117,12 @@ PCP,Log(scale),-1.2996,0.1361,0
 POP,(Intercept),2.315,0.2838,0
 POP,AgeSubadult,-0.2653,0.0817,0.0012
 POP,AgeAdult,-0.3223,0.0884,3e-4
+POP,ParkEifel,0.2152,0.1585,0.1745
 POP,ParkHainich,-0.3065,0.2529,0.2254
 POP,ParkHunsrueck,0.2063,0.1625,0.2041
-POP,ParkSaechs_Schw,0.061,0.1622,0.707
 POP,ParkJasmund,-0.4051,0.342,0.2362
 POP,ParkKellerwald,0.3051,0.1764,0.0836
-POP,ParkEiffel,0.2152,0.1585,0.1745
+POP,ParkSaechs_Schw,0.061,0.1622,0.707
 POP,ParkVorpomm,-0.4734,0.5145,0.3575
 POP,ps(Date_numeric)3,-0.0528,0.1969,0.7886
 POP,ps(Date_numeric)4,-0.0986,0.2659,0.7109
@@ -140,12 +140,12 @@ POP,Log(scale),-1.3513,0.0814,0
 Pesticide,(Intercept),3.3025,1.2803,0.0099
 Pesticide,AgeSubadult,0.5262,0.243,0.0303
 Pesticide,AgeAdult,0.3542,0.233,0.1285
+Pesticide,ParkEifel,0.1365,0.6849,0.842
 Pesticide,ParkHainich,0.607,0.5845,0.299
 Pesticide,ParkHunsrueck,-0.2895,0.7234,0.6891
-Pesticide,ParkSaechs_Schw,-2.0377,2189.6613,0.9993
 Pesticide,ParkJasmund,0.6646,0.5659,0.2402
 Pesticide,ParkKellerwald,-0.4127,0.7752,0.5945
-Pesticide,ParkEiffel,0.1365,0.6849,0.842
+Pesticide,ParkSaechs_Schw,-2.0377,2189.6613,0.9993
 Pesticide,ParkVorpomm,-1.4508,2981.6323,0.9996
 Pesticide,ps(Date_numeric)3,-1.2623,0.9743,0.1951
 Pesticide,ps(Date_numeric)4,-2.3668,1.4649,0.1062
@@ -163,12 +163,12 @@ Pesticide,Log(scale),-0.9765,0.2063,0
 Plasticizer,(Intercept),3.27,0.5094,0
 Plasticizer,AgeSubadult,-0.0697,0.1491,0.64
 Plasticizer,AgeAdult,0.2093,0.1289,0.1044
+Plasticizer,ParkEifel,-0.0263,0.2367,0.9114
 Plasticizer,ParkHainich,-0.1329,0.2392,0.5783
 Plasticizer,ParkHunsrueck,0.0402,0.2417,0.8679
-Plasticizer,ParkSaechs_Schw,-0.7947,0.2635,0.0026
 Plasticizer,ParkJasmund,-0.2888,0.2533,0.2543
 Plasticizer,ParkKellerwald,-0.3181,0.2973,0.2846
-Plasticizer,ParkEiffel,-0.0263,0.2367,0.9114
+Plasticizer,ParkSaechs_Schw,-0.7947,0.2635,0.0026
 Plasticizer,ParkVorpomm,0.1406,0.2384,0.5555
 Plasticizer,ps(Date_numeric)3,-0.1911,0.3592,0.5947
 Plasticizer,ps(Date_numeric)4,-0.3377,0.5081,0.5063
