@@ -237,6 +237,25 @@ extract_reg_coeffs <- function(
     )
 }
 
+# Function for saving the data as an Excel spreadsheet =========================
+
+save_data_as_xls <- function(dat) {
+  # Create a new workbook
+  wb <- openxlsx::createWorkbook()
+
+  # Extract parks
+  park <- unique(dat$Park)
+
+  # Loop through parks and add each summary to a sheet
+  for (k in seq_along(park)) {
+    data_chunk <- dat |> filter(Park == park[k]) |> select(-Park)
+    sheet_name <- as.character(park[k])
+    openxlsx::addWorksheet(wb, sheet_name)
+    openxlsx::writeData(wb, sheet = sheet_name, data_chunk, rowNames = FALSE)
+  }
+  wb
+}
+
 # Functions for saving the regression results ==================================
 
 save_results_as_xls <- function(fitted_model_list) {

@@ -16,7 +16,6 @@ POP,Bay_Wald,A40,2024-01-30,0,1e-6,15,Detected
 POP,Bay_Wald,A54,2024-12-02,0,1e-6,15,Detected
 POP,Bay_Wald,A55,2025-01-04,0,1e-6,15,Detected
 POP,Bay_Wald,A59,2024-10-16,0,1e-6,15,Detected
-POP,Bay_Wald,A60,NA,1.34607247634269,1.34607247634269,15.34607247634269,Quantified
 POP,Bay_Wald,A62,2024-11-13,6.8801031785123,6.8801031785123,16.8801031785123,Quantified
 POP,Bay_Wald,A63,2024-11-19,0,1e-6,15,Detected
 POP,Bay_Wald,A64,2024-10-22,1.25804325010195,1.25804325010195,15.25804325010195,Quantified
@@ -517,7 +516,6 @@ Pesticide,Bay_Wald,A40,2024-01-30,0,1e-6,9,Detected
 Pesticide,Bay_Wald,A54,2024-12-02,0,1e-6,9,Detected
 Pesticide,Bay_Wald,A55,2025-01-04,0,1e-6,9,Detected
 Pesticide,Bay_Wald,A59,2024-10-16,0,1e-6,9,Not detected
-Pesticide,Bay_Wald,A60,NA,0,1e-6,9,Detected
 Pesticide,Bay_Wald,A62,2024-11-13,0,1e-6,9,Not detected
 Pesticide,Bay_Wald,A63,2024-11-19,0,1e-6,9,Detected
 Pesticide,Bay_Wald,A64,2024-10-22,1.02718441344343,1.02718441344343,9.02718441344343,Quantified

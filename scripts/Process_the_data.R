@@ -9,10 +9,17 @@ dat_deer <- read_csv("data/clean_data.csv")
 df_detected_by_category <- process_data(dat_deer, chem_categories)
 write_csv(df_detected_by_category, file = "data/data_by_pollutant_category.csv")
 
+# Save as Excel
+wb <- save_data_as_xls(df_detected_by_category)
+openxlsx::saveWorkbook(
+  wb,
+  "data/data_by_pollutant_category.xlsx",
+  overwrite = TRUE
+)
+
 # Process the roe deer data ====================================================
 
-dat_roe <- read_csv("data/clean_roe_deer_data.csv") |>
-  mutate(Park = "Non-Park")
+dat_roe <- read_csv("data/clean_roe_deer_data.csv")
 
 # Find a subset of the measured chemicals
 chem_categories_deer <- chem_categories |>
@@ -42,9 +49,19 @@ dat <- bind_rows(dat_deer, dat_roe) |>
     )
   )
 
-# Process and write
+# Process
 df_detected_by_category <- process_data(dat, chem_categories_subset)
+
+# Save as .csv
 write_csv(
   df_detected_by_category,
   file = "data/data_non_park_comparison_by_pollutant_category.csv"
+)
+
+# Save as Excel
+wb <- save_data_as_xls(df_detected_by_category)
+openxlsx::saveWorkbook(
+  wb,
+  "data/data_non_park_comparison_by_pollutant_category.xlsx",
+  overwrite = TRUE
 )

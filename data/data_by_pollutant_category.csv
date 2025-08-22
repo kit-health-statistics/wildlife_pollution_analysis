@@ -16,7 +16,6 @@ API,Bay_Wald,A40,C. elaphus,Male,Adult,2024-01-30,Winter 2023/24,0,1e-6,5,Not de
 API,Bay_Wald,A54,C. elaphus,Female,Adult,2024-12-02,Winter 2024/25,0,1e-6,5,Detected
 API,Bay_Wald,A55,C. elaphus,Male,Subadult,2025-01-04,Winter 2024/25,0,1e-6,5,Not detected
 API,Bay_Wald,A59,C. elaphus,Male,Adult,2024-10-16,Winter 2024/25,0,1e-6,5,Not detected
-API,Bay_Wald,A60,C. elaphus,Male,Adult,NA,Winter 2024/25,0,1e-6,5,Not detected
 API,Bay_Wald,A62,C. elaphus,Male,Adult,2024-11-13,Winter 2024/25,0,1e-6,5,Not detected
 API,Bay_Wald,A63,C. elaphus,Male,Adult,2024-11-19,Winter 2024/25,0,1e-6,5,Not detected
 API,Bay_Wald,A64,C. elaphus,Male,Subadult,2024-10-22,Winter 2024/25,0,1e-6,5,Not detected
@@ -459,7 +458,6 @@ Anthropogenic pollution,Bay_Wald,A40,C. elaphus,Male,Adult,2024-01-30,Winter 202
 Anthropogenic pollution,Bay_Wald,A54,C. elaphus,Female,Adult,2024-12-02,Winter 2024/25,0,1e-6,14,Detected
 Anthropogenic pollution,Bay_Wald,A55,C. elaphus,Male,Subadult,2025-01-04,Winter 2024/25,26.338168927771058,26.338168927771058,36.33816892777106,Quantified
 Anthropogenic pollution,Bay_Wald,A59,C. elaphus,Male,Adult,2024-10-16,Winter 2024/25,0,1e-6,14,Detected
-Anthropogenic pollution,Bay_Wald,A60,C. elaphus,Male,Adult,NA,Winter 2024/25,0,1e-6,14,Detected
 Anthropogenic pollution,Bay_Wald,A62,C. elaphus,Male,Adult,2024-11-13,Winter 2024/25,0,1e-6,14,Detected
 Anthropogenic pollution,Bay_Wald,A63,C. elaphus,Male,Adult,2024-11-19,Winter 2024/25,3.84797452861924,3.84797452861924,15.84797452861924,Quantified
 Anthropogenic pollution,Bay_Wald,A64,C. elaphus,Male,Subadult,2024-10-22,Winter 2024/25,3.30628728272278,3.30628728272278,15.30628728272278,Quantified
@@ -902,7 +900,6 @@ Industrial chemical,Bay_Wald,A40,C. elaphus,Male,Adult,2024-01-30,Winter 2023/24
 Industrial chemical,Bay_Wald,A54,C. elaphus,Female,Adult,2024-12-02,Winter 2024/25,0,1e-6,13,Detected
 Industrial chemical,Bay_Wald,A55,C. elaphus,Male,Subadult,2025-01-04,Winter 2024/25,0,1e-6,13,Detected
 Industrial chemical,Bay_Wald,A59,C. elaphus,Male,Adult,2024-10-16,Winter 2024/25,0,1e-6,13,Detected
-Industrial chemical,Bay_Wald,A60,C. elaphus,Male,Adult,NA,Winter 2024/25,0,1e-6,13,Detected
 Industrial chemical,Bay_Wald,A62,C. elaphus,Male,Adult,2024-11-13,Winter 2024/25,0,1e-6,13,Detected
 Industrial chemical,Bay_Wald,A63,C. elaphus,Male,Adult,2024-11-19,Winter 2024/25,0,1e-6,13,Detected
 Industrial chemical,Bay_Wald,A64,C. elaphus,Male,Subadult,2024-10-22,Winter 2024/25,0,1e-6,13,Detected
@@ -1345,7 +1342,6 @@ PAH,Bay_Wald,A40,C. elaphus,Male,Adult,2024-01-30,Winter 2023/24,0,1e-6,18,Detec
 PAH,Bay_Wald,A54,C. elaphus,Female,Adult,2024-12-02,Winter 2024/25,0,1e-6,18,Detected
 PAH,Bay_Wald,A55,C. elaphus,Male,Subadult,2025-01-04,Winter 2024/25,0,1e-6,18,Detected
 PAH,Bay_Wald,A59,C. elaphus,Male,Adult,2024-10-16,Winter 2024/25,0,1e-6,18,Detected
-PAH,Bay_Wald,A60,C. elaphus,Male,Adult,NA,Winter 2024/25,0,1e-6,18,Detected
 PAH,Bay_Wald,A62,C. elaphus,Male,Adult,2024-11-13,Winter 2024/25,4.99297124899645,4.99297124899645,18.99297124899645,Quantified
 PAH,Bay_Wald,A63,C. elaphus,Male,Adult,2024-11-19,Winter 2024/25,0,1e-6,18,Detected
 PAH,Bay_Wald,A64,C. elaphus,Male,Subadult,2024-10-22,Winter 2024/25,6.3868750441727,6.3868750441727,20.3868750441727,Quantified
@@ -1788,7 +1784,6 @@ PCP,Bay_Wald,A40,C. elaphus,Male,Adult,2024-01-30,Winter 2023/24,0,1e-6,58,Detec
 PCP,Bay_Wald,A54,C. elaphus,Female,Adult,2024-12-02,Winter 2024/25,0,1e-6,58,Detected
 PCP,Bay_Wald,A55,C. elaphus,Male,Subadult,2025-01-04,Winter 2024/25,0,1e-6,58,Detected
 PCP,Bay_Wald,A59,C. elaphus,Male,Adult,2024-10-16,Winter 2024/25,0,1e-6,58,Detected
-PCP,Bay_Wald,A60,C. elaphus,Male,Adult,NA,Winter 2024/25,0,1e-6,58,Detected
 PCP,Bay_Wald,A62,C. elaphus,Male,Adult,2024-11-13,Winter 2024/25,3.44216209429393,3.44216209429393,59.44216209429393,Quantified
 PCP,Bay_Wald,A63,C. elaphus,Male,Adult,2024-11-19,Winter 2024/25,0,1e-6,58,Detected
 PCP,Bay_Wald,A64,C. elaphus,Male,Subadult,2024-10-22,Winter 2024/25,0,1e-6,58,Detected
@@ -2231,7 +2226,6 @@ POP,Bay_Wald,A40,C. elaphus,Male,Adult,2024-01-30,Winter 2023/24,0,1e-6,14,Detec
 POP,Bay_Wald,A54,C. elaphus,Female,Adult,2024-12-02,Winter 2024/25,0,1e-6,14,Detected
 POP,Bay_Wald,A55,C. elaphus,Male,Subadult,2025-01-04,Winter 2024/25,0,1e-6,14,Detected
 POP,Bay_Wald,A59,C. elaphus,Male,Adult,2024-10-16,Winter 2024/25,0,1e-6,14,Detected
-POP,Bay_Wald,A60,C. elaphus,Male,Adult,NA,Winter 2024/25,1.34607247634269,1.34607247634269,14.34607247634269,Quantified
 POP,Bay_Wald,A62,C. elaphus,Male,Adult,2024-11-13,Winter 2024/25,6.8801031785123,6.8801031785123,15.8801031785123,Quantified
 POP,Bay_Wald,A63,C. elaphus,Male,Adult,2024-11-19,Winter 2024/25,0,1e-6,14,Detected
 POP,Bay_Wald,A64,C. elaphus,Male,Subadult,2024-10-22,Winter 2024/25,1.25804325010195,1.25804325010195,14.25804325010195,Quantified
@@ -2674,7 +2668,6 @@ Pesticide,Bay_Wald,A40,C. elaphus,Male,Adult,2024-01-30,Winter 2023/24,0,1e-6,14
 Pesticide,Bay_Wald,A54,C. elaphus,Female,Adult,2024-12-02,Winter 2024/25,0,1e-6,14,Detected
 Pesticide,Bay_Wald,A55,C. elaphus,Male,Subadult,2025-01-04,Winter 2024/25,0,1e-6,14,Detected
 Pesticide,Bay_Wald,A59,C. elaphus,Male,Adult,2024-10-16,Winter 2024/25,0,1e-6,14,Not detected
-Pesticide,Bay_Wald,A60,C. elaphus,Male,Adult,NA,Winter 2024/25,0,1e-6,14,Detected
 Pesticide,Bay_Wald,A62,C. elaphus,Male,Adult,2024-11-13,Winter 2024/25,0,1e-6,14,Not detected
 Pesticide,Bay_Wald,A63,C. elaphus,Male,Adult,2024-11-19,Winter 2024/25,0,1e-6,14,Detected
 Pesticide,Bay_Wald,A64,C. elaphus,Male,Subadult,2024-10-22,Winter 2024/25,1.02718441344343,1.02718441344343,14.02718441344343,Quantified
@@ -3117,7 +3110,6 @@ Plasticizer,Bay_Wald,A40,C. elaphus,Male,Adult,2024-01-30,Winter 2023/24,26,26,4
 Plasticizer,Bay_Wald,A54,C. elaphus,Female,Adult,2024-12-02,Winter 2024/25,16.1955416328512,16.1955416328512,40.1955416328512,Quantified
 Plasticizer,Bay_Wald,A55,C. elaphus,Male,Subadult,2025-01-04,Winter 2024/25,0,1e-6,34,Detected
 Plasticizer,Bay_Wald,A59,C. elaphus,Male,Adult,2024-10-16,Winter 2024/25,0,1e-6,34,Detected
-Plasticizer,Bay_Wald,A60,C. elaphus,Male,Adult,NA,Winter 2024/25,0,1e-6,34,Detected
 Plasticizer,Bay_Wald,A62,C. elaphus,Male,Adult,2024-11-13,Winter 2024/25,0,1e-6,34,Detected
 Plasticizer,Bay_Wald,A63,C. elaphus,Male,Adult,2024-11-19,Winter 2024/25,0,1e-6,34,Detected
 Plasticizer,Bay_Wald,A64,C. elaphus,Male,Subadult,2024-10-22,Winter 2024/25,0,1e-6,34,Detected
