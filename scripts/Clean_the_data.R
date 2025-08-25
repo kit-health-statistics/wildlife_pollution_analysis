@@ -82,6 +82,8 @@ clean_data <- raw_data |>
   filter(!(Sample_number %in% c("F19b", "F20b"))) |>
   # Drop the only C. capreolus
   filter(Sample_number != "G21") |>
+  # Filter out observations, where we have no date. This should be only A60.
+  filter(Sample_number != "A60") |>
   dplyr::select(
     # Filter out  unnecessary information
     -c(
@@ -111,10 +113,6 @@ clean_data[clean_data$Sample_number == "Z73", "Season"] <- "Summer 2024"
 # Change the seasons manually for Bay Wald, which had some early winter samples
 # in 2024/25, which got classified as from the summer.
 clean_data[clean_data$Sample_number == "A91", "Season"] <- "Winter 2024/25"
-
-# Impute the season from Bay. Wald. This is Winter 2024/25, as this data
-# is in the second data batch.
-clean_data[clean_data$Sample_number == "A60", "Season"] <- "Winter 2024/25"
 
 # Fix the incorrect age category
 clean_data[clean_data$Sample_number == "F35", "Age"] <- "Adult"
@@ -182,5 +180,14 @@ check_measured_vs_overview(
 )
 
 # Save the cleaned data and classification of the chemicals ====================
+# Save as .csv
 write_csv(clean_data, file = "data/clean_data.csv")
 write_csv(chem_categories, file = "data/chemical_categories.csv")
+
+# Save as Excel
+wb <- save_data_as_xls(clean_data)
+openxlsx::saveWorkbook(
+  wb,
+  "data/clean_data.xlsx",
+  overwrite = TRUE
+)

@@ -26,7 +26,7 @@ get_park_labels <- function(non_park_comparison = FALSE) {
     "Jasmund" = "Jasmund",
     "Kellerwald" = "Kellerwald\nEdersee",
     "Saechs_Schw" = "Sächsische \nSchweiz",
-    "Vorpomm" = "Vorpomm. \nBoddenlandschaft"
+    "Vorpomm" = "Vorpomm. \nBoddenldsch."
   )
   if (non_park_comparison) {
     labs <- c(labs, "Non-Park" = "Non-Park")

@@ -1,5 +1,6 @@
 library("readxl")
 library("tidyverse")
+source("functions/helper_functions.R")
 
 # Where to read from the Excel spreadsheets ===================================
 
@@ -119,7 +120,16 @@ clean_data <- raw_data |>
         ifelse(x == 0, NA, x)
       }
     )
-  )
+  ) |>
+  mutate(Park = "Non-Park")
 
-# Save the cleaned data
+# Save the cleaned data as .csv
 write_csv(clean_data, file = "data/clean_roe_deer_data.csv")
+
+# Save as Excel
+wb <- save_data_as_xls(clean_data)
+openxlsx::saveWorkbook(
+  wb,
+  "data/clean_roe_deer_data.xlsx",
+  overwrite = TRUE
+)

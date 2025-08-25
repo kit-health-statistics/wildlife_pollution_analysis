@@ -208,7 +208,7 @@ unify_year <- function(date_vec) {
   )
   # Cut off at the 3th month, so that we have the beginning in spring and the
   # end in winter for both the deer and roe deer data.
-  str_y <- ifelse(month(date_vec) < 3, "2023", "2022")
+  str_y <- ifelse(month(date_vec) < 8, "2023", "2022")
 
   as.Date(paste(str_y, str_m_d, sep = "-"))
 }
@@ -227,6 +227,20 @@ extract_reg_coeffs <- function(
   df_coeffs <- data.frame(
     # Transform the coefficients to the response scale
     Vals = exp(c(0, coeffs[where_coeffs])),
+    lower = exp(
+      c(
+        NA,
+        coeffs[where_coeffs] -
+          qnorm(0.975) * summ$table[where_coeffs, "Std. Error"]
+      )
+    ),
+    upper = exp(
+      c(
+        NA,
+        coeffs[where_coeffs] +
+          qnorm(0.975) * summ$table[where_coeffs, "Std. Error"]
+      )
+    ),
     p_val = c(NA, summ$table[where_coeffs, "p"]),
     coeff = factor(covariate_levels, levels = covariate_levels),
     # an x, or y value to plot the tiles in the ggplot coordinates
@@ -235,10 +249,29 @@ extract_reg_coeffs <- function(
     empty = "non-empty"
   ) |>
     mutate(
-      formatted_label = paste0(
+      p_val_label = ifelse(
+        p_val < 0.01,
+        "p < 0.01",
+        paste0("p = ", format(round(p_val, 2), nsmall = 2)
+        )
+      ),
+      # Format the label, which will have 2 lines - the coefficient and the
+      # confidence interval
+      formatted_coeff_label = paste0(
         format(round(Vals, 2), nsmall = 2),
-        "\np = ",
-        format(round(p_val, 2), nsmall = 2)
+        "\n",
+        # For referential categories, we do not display the confidence intervals
+        ifelse(
+          is.na(p_val),
+          "",
+          paste0(
+            "(",
+            format(round(lower, 2), nsmall = 2),
+            ",",
+            format(round(upper, 2), nsmall = 2),
+            ")"
+          )
+        )
       ),
       # Categorize the p-value to display different levels of significance
       p_val_cat = factor(
@@ -251,6 +284,25 @@ extract_reg_coeffs <- function(
         levels = names(get_p_val_cat_linewidth())
       )
     )
+}
+
+# Function for saving the data as an Excel spreadsheet =========================
+
+save_data_as_xls <- function(dat) {
+  # Create a new workbook
+  wb <- openxlsx::createWorkbook()
+
+  # Extract parks
+  park <- unique(dat$Park)
+
+  # Loop through parks and add each summary to a sheet
+  for (k in seq_along(park)) {
+    data_chunk <- dat |> filter(Park == park[k]) |> select(-Park)
+    sheet_name <- as.character(park[k])
+    openxlsx::addWorksheet(wb, sheet_name)
+    openxlsx::writeData(wb, sheet = sheet_name, data_chunk, rowNames = FALSE)
+  }
+  wb
 }
 
 # Functions for saving the regression results ==================================
@@ -302,11 +354,6 @@ save_results_as_image <- function(plot_list, non_park_comparison = FALSE) {
         ".pdf"
       )
     }
-    ggsave(
-      file_name,
-      plot_list[[k]],
-      width = 10,
-      height = 9
-    )
+    suppressWarnings(ggsave(file_name, plot_list[[k]], width = 11, height = 9))
   }
 }
