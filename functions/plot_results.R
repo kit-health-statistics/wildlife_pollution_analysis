@@ -77,8 +77,11 @@ plot_results <- function(
     df_empty <- data.frame(
       Vals = NA,
       p_val = NA,
+      p_val_label = NA,
       p_val_cat = -1,
-      formatted_label = NA,
+      lower = NA,
+      upper = NA,
+      formatted_coeff_label = NA,
       coeff = paste0("Empty_", 1:empty_tiles),
       # a y value to plot the tiles in the ggplot coordinates
       dummy_value = 1,
@@ -144,19 +147,31 @@ plot_results <- function(
   # Breaks of the color gradient for the categorical coefficients. Needs to be
   # determined manually.
   colorbar_breaks <- c(0.0015, 0.5, 1, 1.65, 2.3)
-  plt$reg_coeffs <- ggplot(
-    df_coeffs,
-    aes(
-      x = coeff,
-      y = dummy_value,
-      fill = Vals,
-      label = formatted_label,
-      linewidth = p_val_cat,
-      color = empty
-    )
-  ) +
-    geom_tile() +
-    geom_text(size = 3) +
+  plt$reg_coeffs <- ggplot() +
+    geom_tile(
+      data = df_coeffs,
+      mapping = aes(
+        x = coeff,
+        y = dummy_value,
+        fill = Vals,
+        linewidth = p_val_cat,
+        color = empty
+      )
+    ) +
+    geom_text(
+      data = subset(df_coeffs, p_val_cat != "reference"),
+      mapping = aes(
+        x = coeff,
+        y = dummy_value + 0.75,  # Add a value to be just above the boxes/tiles
+        label = p_val_label
+      ),
+      size = 3
+    ) +
+    geom_text(
+      data = df_coeffs,
+      mapping = aes(x = coeff, y = dummy_value, label = formatted_coeff_label),
+      size = 3
+    ) +
     labs(
       x = NULL,
       y = NULL,
