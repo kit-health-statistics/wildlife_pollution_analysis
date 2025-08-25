@@ -192,7 +192,7 @@ unify_year <- function(date_vec) {
   )
   # Cut off at the 3th month, so that we have the beginning in spring and the
   # end in winter for both the deer and roe deer data.
-  str_y <- ifelse(month(date_vec) < 3, "2023", "2022")
+  str_y <- ifelse(month(date_vec) < 8, "2023", "2022")
 
   as.Date(paste(str_y, str_m_d, sep = "-"))
 }
