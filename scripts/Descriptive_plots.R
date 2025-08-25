@@ -257,7 +257,7 @@ mosaic_age <- ggplot(
     ymax = ymax,
     fill = interaction(split, sec_split),
     alpha = sec_split,
-    linetype = sec_split  # Placeholder aestetic to create the legend
+    linetype = sec_split  # Placeholder aesthetic to create the legend
   )
 ) +
   geom_rect() +
@@ -299,7 +299,7 @@ barplot_quantified <- ggplot(
   aes(
     y = Park,
     fill = Park,
-    alpha = fct_relevel(Detected_by_category, rev),
+    alpha = fct_rev(Detected_by_category),
     color = Detected_by_category
   )
 ) +
@@ -324,7 +324,7 @@ barplot_quantified <- ggplot(
   ) +
   labs(
     y = "",
-    title = "Occurence",
+    title = "Occurrence",
     x = "\nProportion exactly quantified\nor qualitatively detected"
   ) +
   get_barplot_detect_theme()
@@ -370,7 +370,6 @@ boxplot_quantified <- ggplot(
   ) +
   get_boxplot_quant_theme()
 
-source("functions/ggplot_box_legend.R")
 boxplot_legend <- ggplot_box_legend()
 
 concentrations <- barplot_quantified +
