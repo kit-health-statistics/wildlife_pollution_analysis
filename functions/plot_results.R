@@ -97,7 +97,7 @@ plot_results <- function(
     x_labels_coeffs <- c(x_labels_coeffs, levels(df_filtered$Age))
     names(x_labels_coeffs) <- c(names(park_labels), levels(df_filtered$Age))
     coeff_plot_title <- "Park regression coefficients"
-    
+
     # For the descriptive box- and barplot, concatenate the Park and Age
     # covariates
     df_boxbar <- df_filtered |>

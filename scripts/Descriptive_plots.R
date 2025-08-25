@@ -33,7 +33,7 @@ species_mosaic_colors <- get_species_mosaic_colors()
 
 # Read the cleaned data and convert categories to factors ======================
 
-df_detected_by_category <- read_csv("data/data_by_pollutant_category.csv") %>%
+df_detected_by_category <- read_csv("data/data_by_pollutant_category.csv") |>
   mutate(
     # It will be ordered as Quantified < Detected < Not detected, to display
     # correctly in the mosaic plot
@@ -55,8 +55,10 @@ df_detected_by_category <- read_csv("data/data_by_pollutant_category.csv") %>%
       Season,
       levels = c("Summer 2024", "Winter 2024/25", "Winter 2023/24")
     )
-  )
-dat <- read_csv("data/clean_data.csv") %>%
+  ) |>
+  # Filter out the A60 observation, which is excluded also during the analysis
+  filter(Sample_number != "A60")
+dat <- read_csv("data/clean_data.csv") |>
   mutate(
     Park = factor(
       Park,
@@ -73,10 +75,14 @@ dat <- read_csv("data/clean_data.csv") %>%
     Season = factor(
       Season,
       levels = c("Summer 2024", "Winter 2024/25", "Winter 2023/24")
-    )
-  ) %>%
+    ),
+    # First day of the month to plot the number of samples in time
+    Month = floor_date(as.Date(Date_of_sample_collection), "month")
+  ) |>
+  # Filter out the A60 observation, which is excluded also during the analysis
+  filter(Sample_number != "A60") |>
   # Convert the measurements to character to avoid problems when pivoting
-  mutate_at(vars(-Age, -Species, -Sex, -Season, -Park), as.character)
+  mutate(across(-c(Age, Species, Sex, Season, Park, Month), as.character))
 
 # Prepare the data frame for the boxplots ======================================
 
@@ -84,10 +90,8 @@ dat <- read_csv("data/clean_data.csv") %>%
 df_quantified_by_category <- filter(
   df_detected_by_category,
   Detected_by_category == "Quantified"
-) %>%
-  group_by(Park, primary_category) %>%
-  mutate(n_quantified = n()) %>%
-  ungroup() %>%
+) |>
+  add_count(Park, primary_category, name = "n_quantified") |>
   mutate(Boxplot = n_quantified >= 5)
 
 # Create the data frames for the mosaic plots ==================================
@@ -101,7 +105,7 @@ df_mosaic <- vector(mode = "list", 3)
 names(df_rectangles) <- names(df_mosaic) <- c("Sex", "Age", "Species")
 
 for (k in seq_along(primary_category_labels)) {
-  temp_filtered <- df_detected_by_category %>%
+  temp_filtered <- df_detected_by_category |>
     filter(primary_category == names(primary_category_labels)[k])
   for (covariate in names(df_rectangles)) {
     df_rectangles[[covariate]][[k]] <- rectangles_for_mosaic_plots(
@@ -117,7 +121,7 @@ for (covariate in names(df_rectangles)) {
   df_mosaic[[covariate]] <- bind_rows(
     df_rectangles[[covariate]],
     .id = "primary_category"
-  ) %>%
+  ) |>
     mutate(
       bar = factor(bar, levels = levels(dat$Park)),
       primary_category = factor(
@@ -141,28 +145,28 @@ for (covariate in names(barplots_covariates)) {
     dat,
     aes(x = Park, fill = .data[[covariate]])
   ) +
-    geom_bar(position = "fill", width = 0.90) +
-    scale_fill_manual(values = barplot_colors[[covariate]]) +
-    scale_y_continuous(
-      breaks = seq(0, 1, by = 0.2),
-      labels = paste0(seq(0, 100, by = 20), "%")
+    geom_bar(
+      width = 0.90,
+      linewidth = 0.2,
+      color = "gray10"
     ) +
+    scale_fill_manual(values = barplot_colors[[covariate]]) +
     scale_x_discrete(labels = park_labels) +
-    labs(y = "", title = covariate) +
+    labs(title = covariate, y = "Number of observations") +
     get_barplot_descriptive_theme()
 }
-barplot_season <- ggplot(dat, aes(x = Park, fill = Season)) +
-  geom_bar(position = position_stack(), width = 0.90) +
-  scale_fill_manual(values = barplot_colors$Season) +
-  scale_x_discrete(labels = park_labels) +
-  labs(y = "", title = "Season of sample collection") +
+barplot_month <- ggplot(dat, aes(x = Month, fill = Park)) +
+  geom_bar(position = position_stack(), linewidth = 0.2, color = "gray10") +
+  scale_fill_manual(values = park_colors) +
+  scale_x_date(date_breaks = "2 months", date_labels = "%b %Y") +
+  labs(title = "Month of sample collection", y = "Number of observations") +
   get_barplot_descriptive_theme()
 
-barplots <- barplot_season +
+barplots <- barplot_month +
   barplots_covariates$Sex +
   barplots_covariates$Age +
   barplots_covariates$Species +
-  plot_layout(nrow = 2, ncol = 2)
+  plot_layout(nrow = 2, ncol = 2, axis_titles = "collect_y")
 
 ggsave("figure/descriptive_barplots.pdf", barplots, width = 10, height = 6.5)
 
