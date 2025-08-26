@@ -126,49 +126,19 @@ plot_results <- function(
     mutate(Boxplot = n_quantified >= 5)
 
   # Plot results ===============================================================
-  plt$spline <- ggplot() +
-    geom_line(
-      data = spline_curve,
-      aes(x = Date_of_sample_collection, y = fit)
-    ) +
-    geom_ribbon(
-      data = spline_curve,
-      aes(x = Date_of_sample_collection, ymin = lower, ymax = upper),
-      alpha = 0.5
-    ) +
-    # Points for quantified observations
-    geom_point(
-      data = subset(df_filtered, Detected_by_category == "Quantified"),
-      aes(
-        x = Date_of_sample_collection,
-        y = Value_sum_quantified_by_category,
-        color = Park
-      ),
-      alpha = 0.75
-    ) +
+  plt$spline <- ggplot(
+    spline_curve,
+    aes(x = Date_of_sample_collection, y = fit, ymin = lower, ymax = upper)
+  ) +
+    geom_line() +
+    geom_ribbon(alpha = 0.5) +
     scale_x_date(date_breaks = "1 month", date_labels = "%d %b") +
-    scale_color_manual(
-      values = get_park_colors(non_park_comparison),
-      guide = "none"
-    ) +
     labs(
       x = "Date",
-      title = "Penalized spline for the date variable (intercept included)",
+      title = "Penalized spline for the date variable",
       y = bquote("Concentration in" ~ mu * "g" ~ kg^-1)
     ) +
-    coord_cartesian(
-      ylim = c(
-        0,
-        max(
-          quantile(
-            df_filtered$Value_sum_quantified_by_category,
-            0.95,
-            na.rm = TRUE
-          ),
-          spline_curve$upper + 1
-        )
-      )
-    )
+    coord_cartesian(ylim = c(0, NA))
 
   # Breaks of the color gradient for the categorical coefficients. Needs to be
   # determined manually.
