@@ -338,6 +338,6 @@ save_results_as_image <- function(plot_list, non_park_comparison = FALSE) {
         ".pdf"
       )
     }
-    suppressWarnings(ggsave(file_name, plot_list[[k]], width = 11, height = 9))
+    suppressWarnings(ggsave(file_name, plot_list[[k]], width = 13, height = 9))
   }
 }

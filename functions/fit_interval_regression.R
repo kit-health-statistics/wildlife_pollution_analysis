@@ -77,7 +77,8 @@ fit_interval_reg <- function(
     # For the main deer data convert also the age variable to factor.
     df_detected_by_category <- df_detected_by_category |>
       mutate(
-        Age = factor(Age, levels = c("Fawn", "Subadult", "Adult"))
+        Age = factor(Age, levels = c("Fawn", "Subadult", "Adult")),
+        Sex = factor(Sex, levels = c("Female", "Male"))
       )
   }
 
@@ -87,7 +88,9 @@ fit_interval_reg <- function(
     model_formula <- formula(response_surv ~ Park + pspline(Date_numeric))
   } else {
     # For the main deer data we have all covariates.
-    model_formula <- formula(response_surv ~ Age + Park + pspline(Date_numeric))
+    model_formula <- formula(
+      response_surv ~ Age + Park + Sex + pspline(Date_numeric)
+    )
   }
 
   category_names <- unique(df_detected_by_category$primary_category)
