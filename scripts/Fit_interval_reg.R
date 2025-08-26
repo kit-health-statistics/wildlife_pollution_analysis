@@ -19,10 +19,14 @@ if (is.na(loc)) loc <- Sys.setlocale("LC_TIME", "English_United States.1252")
 # 29.05.2024, which is approx. 2 months before all other observations. This
 # creates a gap in the time covariate, better continue without it.
 df_detected_by_category <- read_csv("data/data_by_pollutant_category.csv") |>
-  filter(Sample_number != "Z91")
+  filter(Sample_number != "Z91") |> 
+  filter(Park %in% c("Hainich", "Jasmund", "Vorpomm"))
 
 # Fit the model
 results <- fit_interval_reg(df_detected_by_category)
+
+bad_fitting <- which(lapply(results$plt, class) == "try-error")
+results$plt[bad_fitting] <- list(rep(NULL, length(bad_fitting)))
 
 # Save the plots
 save_results_as_image(results$plt)

@@ -33,7 +33,8 @@ plot_results <- function(
       by = 1
     ),
     Park = "Bay_Wald",  # Reference category
-    Age = "Fawn"  # Reference category
+    Age = "Fawn",  # Reference category
+    Species = "C. elaphus"  # Reference category
   )
   spline_curve <- as.data.frame(
     predict(fitted_survreg_model, newdata = newdata, se = TRUE)
@@ -74,7 +75,13 @@ plot_results <- function(
       coeffs,
       summ
     )
-    df_empty <- data.frame(
+    df_species <- extract_reg_coeffs(
+      "Species",
+      levels(df_filtered$Species),
+      coeffs,
+      summ
+    )
+    df_empty1 <- data.frame(
       Vals = NA,
       p_val = NA,
       p_val_label = NA,
@@ -87,7 +94,9 @@ plot_results <- function(
       dummy_value = 1,
       empty = "empty"
     )
-    df_coeffs <- rbind(df_park, df_empty, df_age)
+    df_empty2 <- df_empty1 |>
+      mutate(coeff = paste0("Empty_", 1:empty_tiles + empty_tiles))
+    df_coeffs <- rbind(df_park, df_empty1, df_age, df_empty2, df_species)
 
     covcat_colors <- c(
       park_colors,
@@ -96,9 +105,17 @@ plot_results <- function(
         lapply(function(x) unname(x["Quantified"])) |>
         unlist()
     )
-    names(covcat_colors) <- df_coeffs$coeff
-    x_labels_coeffs <- c(x_labels_coeffs, levels(df_filtered$Age))
-    names(x_labels_coeffs) <- c(names(park_labels), levels(df_filtered$Age))
+    names(covcat_colors) <- df_coeffs$coeff[1:12]
+    x_labels_coeffs <- c(
+      x_labels_coeffs,
+      levels(df_filtered$Age),
+      levels(df_filtered$Species)
+    )
+    names(x_labels_coeffs) <- c(
+      names(park_labels),
+      levels(df_filtered$Age),
+      levels(df_filtered$Species)
+    )
     coeff_plot_title <- "Park regression coefficients"
 
     # For the descriptive box- and barplot, concatenate the Park and Age

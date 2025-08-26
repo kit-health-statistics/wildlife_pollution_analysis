@@ -77,7 +77,8 @@ fit_interval_reg <- function(
     # For the main deer data convert also the age variable to factor.
     df_detected_by_category <- df_detected_by_category |>
       mutate(
-        Age = factor(Age, levels = c("Fawn", "Subadult", "Adult"))
+        Age = factor(Age, levels = c("Fawn", "Subadult", "Adult")),
+        Species = factor(Species, levels = c("C. elaphus", "D. dama"))
       )
   }
 
@@ -87,7 +88,9 @@ fit_interval_reg <- function(
     model_formula <- formula(response_surv ~ Park + pspline(Date_numeric))
   } else {
     # For the main deer data we have all covariates.
-    model_formula <- formula(response_surv ~ Age + Park + pspline(Date_numeric))
+    model_formula <- formula(
+      response_surv ~ Age + Park + Species + pspline(Date_numeric)
+    )
   }
 
   category_names <- unique(df_detected_by_category$primary_category)
@@ -111,21 +114,21 @@ fit_interval_reg <- function(
     )
 
     # Fit
-    mods_by_category[[k]] <- survreg(
+    mods_by_category[[k]] <- try(survreg(
       model_formula,
       data = df_filtered,
       dist = "lognormal",
       control = list(iter = 500)
-    )
+    ))
 
     # Plot results (If throws one warning
     # "Removed 1 row containing missing values"), everything is fine.
-    plt_by_category[[k]] <- plot_results(
+    plt_by_category[[k]] <- try(plot_results(
       df_filtered,
       mods_by_category[[k]],
       category_names[k],
       non_park_comparison = non_park_comparison
-    )
+    ))
   }
   ret <- list(fitted_mods = mods_by_category, plt = plt_by_category)
   ret
