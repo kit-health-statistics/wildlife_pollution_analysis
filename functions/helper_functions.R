@@ -312,21 +312,30 @@ save_results_as_xls <- function(fitted_model_list) {
   wb <- openxlsx::createWorkbook()
   # Loop through models and add each summary to a sheet
   for (k in seq_along(fitted_model_list)) {
-    model_summary <- summary(fitted_model_list[[k]])
-    coef_table <- as.data.frame(model_summary$table) |>
-      select(-tidyselect::any_of("z")) |>
-      mutate(
-        across(c("Value", "Std. Error", "p"), function(x) round(x, digits = 4))
-      )
-    sheet_name <- names(fitted_model_list)[k]
-    openxlsx::addWorksheet(wb, sheet_name)
-    openxlsx::writeData(wb, sheet = sheet_name, coef_table, rowNames = TRUE)
+    if (!is.null(fitted_model_list[[k]])) {
+      model_summary <- summary(fitted_model_list[[k]])
+      coef_table <- as.data.frame(model_summary$table) |>
+        select(-tidyselect::any_of("z")) |>
+        mutate(
+          across(
+            c("Value", "Std. Error", "p"),
+            function(x) round(x, digits = 4)
+          )
+        )
+      sheet_name <- names(fitted_model_list)[k]
+      openxlsx::addWorksheet(wb, sheet_name)
+      openxlsx::writeData(wb, sheet = sheet_name, coef_table, rowNames = TRUE)
+    }
   }
   wb
 }
 
 save_results_as_csv <- function(fitted_model_list) {
-  fitted_model_list |>
+  good_fitting <- fitted_model_list |>
+    lapply(function(x) !is.null(x)) |>
+    unlist() |>
+    which()
+  fitted_model_list[good_fitting] |>
     lapply(summary) |>
     lapply(function(x) x$table) |>
     lapply(as.data.frame) |>
