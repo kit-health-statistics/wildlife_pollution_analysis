@@ -90,6 +90,15 @@ fit_interval_reg <- function(
     model_formula <- formula(response_surv ~ Age + Park + pspline(Date_numeric))
   }
 
+  # Categories, that we decided not to include in the analysis, because we have
+  # too little data, the model is too sensitive to the assumptions etc.
+  excluded_categories <- c(
+    "API",
+    "Industrial chemical",
+    "PCP",
+    "Pesticide"
+  )
+
   category_names <- unique(df_detected_by_category$primary_category)
   mods_by_category <- plt_by_category <-
     vector(mode = "list", length = length(category_names))
@@ -111,21 +120,40 @@ fit_interval_reg <- function(
     )
 
     # Fit
-    mods_by_category[[k]] <- survreg(
-      model_formula,
-      data = df_filtered,
       dist = "lognormal",
-      control = list(iter = 500)
+    fit <- try(
+      survreg(
+        model_formula,
+        data = df_filtered,
+        control = list(iter = 500)
+      ),
+      silent = TRUE
     )
 
-    # Plot results (If throws one warning
-    # "Removed 1 row containing missing values"), everything is fine.
-    plt_by_category[[k]] <- plot_results(
-      df_filtered,
-      mods_by_category[[k]],
-      category_names[k],
-      non_park_comparison = non_park_comparison
-    )
+    # Catch errors. If a model was impossible to fit for one of the excluded
+    # categories, we are fine. If the fitting failed for at least one "good"
+    # category we proceed anyway to get results at least for other categories.
+    if (inherits(fit, "try-error")) {
+      if (category_names[k] %in% excluded_categories) {
+        message(paste0(category_names[k], " category was not possible to fit."))
+      } else {
+        warning(
+          paste0(category_names[k], " category was not possible to fit.")
+        )
+      }
+      mods_by_category[[k]] <- list()
+      plt_by_category[[k]] <- list()
+    } else {
+      mods_by_category[[k]] <- fit
+      # Plot results (If throws one warning
+      # "Removed 1 row containing missing values"), everything is fine.
+      plt_by_category[[k]] <- plot_results(
+        df_filtered,
+        mods_by_category[[k]],
+        category_names[k],
+        non_park_comparison = non_park_comparison
+      )
+    }
   }
   ret <- list(fitted_mods = mods_by_category, plt = plt_by_category)
   ret

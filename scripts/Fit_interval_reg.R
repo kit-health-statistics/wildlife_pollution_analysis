@@ -24,6 +24,11 @@ df_detected_by_category <- read_csv("data/data_by_pollutant_category.csv") |>
 # Fit the model
 results <- fit_interval_reg(df_detected_by_category)
 
+# Put NULL everywhere, where fitting was unsuccessful
+bad_fitting <- results$plt |> lapply(is_empty) |> unlist() |> which()
+results$plt[bad_fitting] <- list(rep(NULL, length(bad_fitting)))
+results$fitted_mods[bad_fitting] <- list(rep(NULL, length(bad_fitting)))
+
 # Save the plots
 save_results_as_image(results$plt)
 
