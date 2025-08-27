@@ -120,11 +120,11 @@ fit_interval_reg <- function(
     )
 
     # Fit
-      dist = "lognormal",
     fit <- try(
       survreg(
         model_formula,
         data = df_filtered,
+        dist = "weibull",
         control = list(iter = 500)
       ),
       silent = TRUE
