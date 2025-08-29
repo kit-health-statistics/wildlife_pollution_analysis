@@ -331,22 +331,37 @@ save_results_as_csv <- function(fitted_model_list) {
     select(-tidyselect::any_of("z"))
 }
 
-save_results_as_image <- function(plot_list, non_park_comparison = FALSE) {
+save_results_as_image <- function(
+  plot_list,
+  format = "pdf",
+  non_park_comparison = FALSE
+) {
   # Loop through models and add each summary to a sheet
   for (k in seq_along(plot_list)) {
     if (non_park_comparison) {
       file_name <- paste0(
         "figure/Results_visualization_non_park_comparison_",
         names(plot_list)[k],
-        ".pdf"
+        ".",
+        format
       )
     } else {
       file_name <- paste0(
         "figure/Results_visualization_",
         names(plot_list)[k],
-        ".pdf"
+        ".",
+        format
       )
     }
-    suppressWarnings(ggsave(file_name, plot_list[[k]], width = 11, height = 9))
+    suppressWarnings(
+      ggsave(
+        file_name,
+        plot_list[[k]],
+        width = 11,
+        height = 9,
+        dpi = 400,
+        bg = "white"
+      )
+    )
   }
 }
