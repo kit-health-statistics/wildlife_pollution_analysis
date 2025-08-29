@@ -1,12 +1,12 @@
 category,Coefficient,Value,Std. Error,p,Estimate_on_the_response_scale,lwr_on_the_response_scale,uppr_on_the_response_scale
-API,(Intercept),0.2467,85816.1197,1,1.2798,0,Inf
+API,(Intercept),0.2467,85835.7724,1,1.2798,0,Inf
 API,AgeSubadult,-0.2594,0.2233,0.2453,0.7715,0.498,1.1951
 API,AgeAdult,-0.1332,0.1692,0.4313,0.8753,0.6283,1.2195
-API,ParkEifel,1.7447,85816.1197,1,5.7239,0,Inf
-API,ParkHainich,1.8242,85816.1197,1,6.1975,0,Inf
+API,ParkEifel,1.7446,85835.7724,1,5.7236,0,Inf
+API,ParkHainich,1.8241,85835.7724,1,6.1972,0,Inf
 API,ParkHunsrueck,NA,0,NA,NA,NA,NA
 API,ParkJasmund,NA,0,NA,NA,NA,NA
-API,ParkKellerwald,1.3494,85816.1197,1,3.8551,0,Inf
+API,ParkKellerwald,1.3493,85835.7724,1,3.8549,0,Inf
 API,ParkSaechs_Schw,NA,0,NA,NA,NA,NA
 API,ParkVorpomm,NA,0,NA,NA,NA,NA
 API,ps(Date_numeric)3,-0.5778,0.6369,0.3643,0.5611,0.161,1.9553
