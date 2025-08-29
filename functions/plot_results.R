@@ -93,7 +93,7 @@ plot_results <- function(
       park_colors,
       rep(NA, empty_tiles),
       get_age_mosaic_colors() |>
-        lapply(function(x) unname(x["Quantified"])) |>
+        lapply(function(x) unname(x["quantified"])) |>
         unlist()
     )
     names(covcat_colors) <- df_coeffs$coeff
@@ -202,7 +202,6 @@ plot_results <- function(
       axis.text.y = element_blank(),
       axis.text.x = element_text(size = 8)
     )
-
   plt$boxplot <- df_boxbar |>
     filter(
       Detected_by_category == "Quantified"
