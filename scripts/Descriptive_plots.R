@@ -38,8 +38,8 @@ df_detected_by_category <- read_csv("data/data_by_pollutant_category.csv") |>
     # It will be ordered as Quantified < Detected < Not detected, to display
     # correctly in the mosaic plot
     Detected_by_category = factor(
-      Detected_by_category,
-      levels = c("Quantified", "Detected", "Not detected"),
+      tolower(Detected_by_category),
+      levels = c("quantified", "detected", "not detected"),
       ordered = TRUE
     ),
     Park = factor(
@@ -48,8 +48,12 @@ df_detected_by_category <- read_csv("data/data_by_pollutant_category.csv") |>
       # ordered = TRUE for displaying in a correct order in the mosaic plots
       ordered = TRUE
     ),
-    Sex = factor(Sex, levels = c("Male", "Female")),
-    Age = factor(Age, levels = c("Adult", "Subadult", "Fawn"), ordered = TRUE),
+    Sex = fct_relevel(factor(tolower(Sex), levels = c("male", "female"))),
+    Age = factor(
+      tolower(Age),
+      levels = c("adult", "subadult", "fawn"),
+      ordered = TRUE
+    ),
     Species = factor(Species, levels = c("D. dama", "C. elaphus")),
     Season = factor(
       Season,
@@ -66,8 +70,12 @@ dat <- read_csv("data/clean_data.csv") |>
       # ordered = TRUE for displaying in a correct order in the boxplots
       ordered = TRUE
     ),
-    Sex = factor(Sex, levels = c("Male", "Female")),
-    Age = factor(Age, levels = c("Adult", "Subadult", "Fawn"), ordered = TRUE),
+    Sex = factor(tolower(Sex), levels = c("male", "female")),
+    Age = factor(
+      tolower(Age),
+      levels = c("adult", "subadult", "fawn"),
+      ordered = TRUE
+    ),
     Species = factor(
       Species,
       levels = c("D. dama", "C. elaphus")
@@ -89,7 +97,7 @@ dat <- read_csv("data/clean_data.csv") |>
 # Reshape the quantified observations separately
 df_quantified_by_category <- filter(
   df_detected_by_category,
-  Detected_by_category == "Quantified"
+  Detected_by_category == "quantified"
 ) |>
   add_count(Park, primary_category, name = "n_quantified") |>
   mutate(Boxplot = n_quantified >= 5)
@@ -130,7 +138,7 @@ for (covariate in names(df_rectangles)) {
       ),
       sec_split = factor(
         sec_split,
-        levels = c("Not detected", "Detected", "Quantified"),
+        levels = c("not detected", "detected", "quantified"),
         ordered = TRUE
       )
     )
@@ -152,14 +160,18 @@ for (covariate in names(barplots_covariates)) {
     ) +
     scale_fill_manual(values = barplot_colors[[covariate]]) +
     scale_x_discrete(labels = park_labels) +
-    labs(title = covariate, y = "Number of observations") +
+    labs(title = covariate, y = "number of observations", x = "park") +
     get_barplot_descriptive_theme()
 }
 barplot_month <- ggplot(dat, aes(x = Month, fill = Park)) +
   geom_bar(position = position_stack(), linewidth = 0.2, color = "gray10") +
   scale_fill_manual(values = park_colors) +
   scale_x_date(date_breaks = "2 months", date_labels = "%b %Y") +
-  labs(title = "Month of sample collection", y = "Number of observations") +
+  labs(
+    title = "Month of sample collection",
+    y = "number of observations",
+    x = "month"
+  ) +
   get_barplot_descriptive_theme()
 
 barplots <- barplot_month +
@@ -196,19 +208,19 @@ mosaic_sex <- ggplot(
   ) +
   scale_alpha_manual(values = c(1, 1, 1)) +
   scale_fill_manual(
-    name = "Male",
+    name = "male",
     values = unlist(sex_mosaic_colors),
-    breaks = names(unlist(sex_mosaic_colors["Male"])),
-    labels = names(sex_mosaic_colors$Male)
+    breaks = names(unlist(sex_mosaic_colors["male"])),
+    labels = names(sex_mosaic_colors$male)
   ) +
   facet_wrap(~primary_category, nrow = 4, ncol = 2) +
-  labs(x = "Park", title = "Pollutant detection by sex") +
+  labs(x = "park", title = "Pollutant detection by sex") +
   guides(
     fill = guide_legend(order = 1),
     alpha = guide_legend(
       order = 2,
-      title = "Female",
-      override.aes = list(fill = sex_mosaic_colors$Female)
+      title = "female",
+      override.aes = list(fill = sex_mosaic_colors$female)
     )
   ) +
   get_mosaicplot_theme()
@@ -241,7 +253,7 @@ mosaic_species <- ggplot(
     labels = names(species_mosaic_colors$`C. elaphus`)
   ) +
   facet_wrap(~primary_category, nrow = 4, ncol = 2) +
-  labs(x = "Park", y = "Species", title = "Pollutant detection by species") +
+  labs(x = "park", title = "Pollutant detection by species") +
   guides(
     alpha = guide_legend(
       title = "D. dama",
@@ -273,24 +285,24 @@ mosaic_age <- ggplot(
   scale_alpha_manual(values = c(1, 1, 1)) +
   scale_linetype_manual(values = c(1, 1, 1)) +
   scale_fill_manual(
-    name = "Fawn",
+    name = "fawn",
     values = unlist(age_mosaic_colors),
-    breaks = names(unlist(age_mosaic_colors["Fawn"])),
-    labels = names(age_mosaic_colors$Fawn)
+    breaks = names(unlist(age_mosaic_colors["fawn"])),
+    labels = names(age_mosaic_colors$fawn)
   ) +
   facet_wrap(~primary_category, nrow = 4, ncol = 2) +
-  labs(x = "Park", title = "Pollutant detection by age") +
+  labs(x = "park", title = "Pollutant detection by age") +
   guides(
     fill = guide_legend(order = 1),
     alpha = guide_legend(
       order = 2,
-      title = "Subadult",
-      override.aes = list(fill = age_mosaic_colors$Subadult)
+      title = "subadult",
+      override.aes = list(fill = age_mosaic_colors$subadult)
     ),
     linetype = guide_legend(
       order = 3,
-      title = "Adult",
-      override.aes = list(fill = age_mosaic_colors$Adult)
+      title = "adult",
+      override.aes = list(fill = age_mosaic_colors$adult)
     )
   ) +
   get_mosaicplot_theme()
@@ -317,19 +329,19 @@ barplot_quantified <- ggplot(
   ) +
   scale_color_manual(
     values = c(
-      "Quantified" = "gray10",
-      "Detected" = "gray10",
-      "Not detected" = alpha("white", 0)
+      "quantified" = "gray10",
+      "detected" = "gray10",
+      "not detected" = alpha("white", 0)
     )
   ) +
   scale_fill_manual(values = park_colors) +
   scale_alpha_manual(
-    values = c("Quantified" = 1, "Detected" = 0.5, "Not detected" = 0)
+    values = c("quantified" = 1, "detected" = 0.5, "not detected" = 0)
   ) +
   labs(
     y = "",
     title = "Occurrence",
-    x = "\nProportion exactly quantified\nor qualitatively detected"
+    x = "\nproportion exactly quantified\nor qualitatively detected"
   ) +
   get_barplot_detect_theme()
 
@@ -370,7 +382,7 @@ boxplot_quantified <- ggplot(
   labs(
     y = "",
     title = "Distribution of quantifiable concentrations",
-    x = bquote("Concentration in" ~ mu * "g" ~ kg^-1)
+    x = bquote("concentration in" ~ mu * "g" ~ kg^-1)
   ) +
   get_boxplot_quant_theme()
 
@@ -421,7 +433,7 @@ ggplot(
   labs(
     title = "LOQ only",
     x = NULL,
-    y = bquote("Concentration in" ~ mu * "g" ~ kg^-1)
+    y = bquote("concentration in" ~ mu * "g" ~ kg^-1)
   ) +
   guides(
     color = guide_legend(override.aes = list(linewidth = 2))

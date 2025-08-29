@@ -29,9 +29,14 @@ get_park_labels <- function(non_park_comparison = FALSE) {
     "Vorpomm" = "Vorpomm. \nBoddenldsch."
   )
   if (non_park_comparison) {
-    labs <- c(labs, "Non-Park" = "Non-Park")
+    labs <- c(labs, "Non-Park" = "non-Park")
   }
   labs
+}
+
+# Age category names to display. We transform everything to lower case
+get_age_labels <- function() {
+  c("Fawn" = "fawn", "Subadult" = "subadult", "Adult" = "adult")
 }
 
 # Define colors ================================================================
@@ -57,11 +62,11 @@ get_park_colors <- function(non_park_comparison = FALSE) {
 # Color coding of the covariate categories in descriptive barplots
 get_barplot_colors <- function() {
   list(
-    Sex = c("Male" = "royalblue2", "Female" = "firebrick3"),
+    Sex = c("male" = "royalblue2", "female" = "firebrick3"),
     Age = c(
-      "Fawn" = "palevioletred2",
-      "Subadult" = "#46CD8A",
-      "Adult" = "darkorange3"
+      "fawn" = "palevioletred2",
+      "subadult" = "#46CD8A",
+      "adult" = "darkorange3"
     ),
     Species = c("C. elaphus" = "orangered4", "D. dama" = "goldenrod2"),
     Season = c(
@@ -75,15 +80,15 @@ get_barplot_colors <- function() {
 # Color coding for the mosaic plot by sex
 get_sex_mosaic_colors <- function() {
   list(
-    Male = c(
-      "Not detected" = "skyblue1",
-      "Detected" = "royalblue2",
-      "Quantified" = "navyblue"
+    male = c(
+      "not detected" = "skyblue1",
+      "detected" = "royalblue2",
+      "quantified" = "navyblue"
     ),
-    Female = c(
-      "Not detected" = "#FF9999",
-      "Detected" = "firebrick2",
-      "Quantified" = "firebrick4"
+    female = c(
+      "not detected" = "#FF9999",
+      "detected" = "firebrick2",
+      "quantified" = "firebrick4"
     )
   )
 }
@@ -92,14 +97,14 @@ get_sex_mosaic_colors <- function() {
 get_species_mosaic_colors <- function() {
   list(
     `C. elaphus` = c(
-      "Not detected" = "lightcoral",
-      "Detected" = "brown3",
-      "Quantified" = "orangered4"
+      "not detected" = "lightcoral",
+      "detected" = "brown3",
+      "quantified" = "orangered4"
     ),
     `D. dama` = c(
-      "Not detected" = "khaki2",
-      "Detected" = "goldenrod2",
-      "Quantified" = "darkgoldenrod4"
+      "not detected" = "khaki2",
+      "detected" = "goldenrod2",
+      "quantified" = "darkgoldenrod4"
     )
   )
 }
@@ -107,20 +112,20 @@ get_species_mosaic_colors <- function() {
 # Color coding for the mosaic plot by age
 get_age_mosaic_colors <- function() {
   list(
-    Fawn = c(
-      "Not detected" = "pink",
-      "Detected" = "palevioletred2",
-      "Quantified" = "hotpink4"
+    fawn = c(
+      "not detected" = "pink",
+      "detected" = "palevioletred2",
+      "quantified" = "hotpink4"
     ),
-    Subadult = c(
-      "Not detected" = "palegreen",
-      "Detected" = "#46CD8A",
-      "Quantified" = "darkgreen"
+    subadult = c(
+      "not detected" = "palegreen",
+      "detected" = "#46CD8A",
+      "quantified" = "darkgreen"
     ),
-    Adult = c(
-      "Not detected" = "#FFBA80",
-      "Detected" = "darkorange2",
-      "Quantified" = "sienna4"
+    adult = c(
+      "not detected" = "#FFBA80",
+      "detected" = "darkorange2",
+      "quantified" = "sienna4"
     )
   )
 }

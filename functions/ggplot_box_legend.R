@@ -90,12 +90,12 @@ ggplot_box_legend <- function(family = "sans") {
     ),
     Labels = c(
       "25th percentile",
-      "Median",
+      "median",
       "75th percentile",
-      "Largest value within\n1.5 x IQR above\n75th percentile",  # Whisker
-      "Smallest value within\n1.5 x IQR below\n25th percentile",  # Whisker
-      "Outliers",
-      "Individual values\nif n < 5",
+      "largest value within\n1.5 x IQR above\n75th percentile",  # Whisker
+      "smallest value within\n1.5 x IQR below\n25th percentile",  # Whisker
+      "outliers",
+      "individual values\nif n < 5",
       "IQR",
       "Concentration \n(right panel):"  # Title
     ),
@@ -115,10 +115,10 @@ ggplot_box_legend <- function(family = "sans") {
     y = c(df_rect$y, labels_position_y$Park, labels_position_y$Detection),
     Labels = c(
       unname(park_labels),
-      "Quantified",
-      "Detected only\nqualitatively",
+      "quantified",
+      "detected only\nqualitatively",
       "National park",  # Title
-      "Occurence\nof pollutants\n(left panel):"  # Title
+      "Occurrence\nof pollutants\n(left panel):"  # Title
     ),
     Size = c(rep("Label_text", length(park_labels) + 2), rep("Title", 2))
   )

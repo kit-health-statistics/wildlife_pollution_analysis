@@ -97,7 +97,7 @@ plot_results <- function(
         unlist()
     )
     names(covcat_colors) <- df_coeffs$coeff
-    x_labels_coeffs <- c(x_labels_coeffs, levels(df_filtered$Age))
+    x_labels_coeffs <- c(x_labels_coeffs, get_age_labels())
     names(x_labels_coeffs) <- c(names(park_labels), levels(df_filtered$Age))
     coeff_plot_title <- "Park regression coefficients"
 
@@ -134,9 +134,9 @@ plot_results <- function(
     geom_ribbon(alpha = 0.5) +
     scale_x_date(date_breaks = "1 month", date_labels = "%d %b") +
     labs(
-      x = "Date",
+      x = "date",
       title = "Penalized spline for the date variable",
-      y = bquote("Concentration in" ~ mu * "g" ~ kg^-1)
+      y = bquote("concentration in" ~ mu * "g" ~ kg^-1)
     ) +
     coord_cartesian(ylim = c(0, NA))
 
@@ -242,7 +242,7 @@ plot_results <- function(
     scale_fill_manual(values = covcat_colors, guide = "none") +
     labs(
       x = NULL,
-      y = bquote("Concentration in" ~ mu * "g" ~ kg^-1),
+      y = bquote("concentration in" ~ mu * "g" ~ kg^-1),
       title = "Quantified concentrations"
     ) +
     coord_cartesian(ylim = c(1, 1000)) +
@@ -278,6 +278,7 @@ plot_results <- function(
     ) +
     scale_alpha_manual(
       breaks = c("Quantified", "Detected"),
+      labels = c("Quantified" = "quantified", "Detected" = "detected"),
       values = c("Quantified" = 1, "Detected" = 0.5, "Not detected" = 0),
       name = "Occurrence\nof pollutants"
     ) +
