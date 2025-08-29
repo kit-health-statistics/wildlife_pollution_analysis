@@ -301,8 +301,20 @@ save_results_as_xls <- function(fitted_model_list) {
       coef_table <- as.data.frame(model_summary$table) |>
         select(-tidyselect::any_of("z")) |>
         mutate(
+          Estimate_on_the_response_scale = exp(Value),
+          lwr_on_the_response_scale = exp(Value - qnorm(0.975) * `Std. Error`),
+          uppr_on_the_response_scale = exp(Value + qnorm(0.975) * `Std. Error`)
+        ) |>
+        mutate(
           across(
-            c("Value", "Std. Error", "p"),
+            c(
+              "Value",
+              "Std. Error",
+              "p",
+              "Estimate_on_the_response_scale",
+              "lwr_on_the_response_scale",
+              "uppr_on_the_response_scale"
+            ),
             function(x) round(x, digits = 4)
           )
         )
@@ -326,7 +338,22 @@ save_results_as_csv <- function(fitted_model_list) {
     lapply(tibble::rownames_to_column, var = "Coefficient") |>
     bind_rows(.id = "category") |>
     mutate(
-      across(c("Value", "Std. Error", "p"), function(x) round(x, digits = 4))
+      Estimate_on_the_response_scale = exp(Value),
+      lwr_on_the_response_scale = exp(Value - qnorm(0.975) * `Std. Error`),
+      uppr_on_the_response_scale = exp(Value + qnorm(0.975) * `Std. Error`)
+    ) |>
+    mutate(
+      across(
+        c(
+          "Value",
+          "Std. Error",
+          "p",
+          "Estimate_on_the_response_scale",
+          "lwr_on_the_response_scale",
+          "uppr_on_the_response_scale"
+        ),
+        function(x) round(x, digits = 4)
+      )
     ) |>
     select(-tidyselect::any_of("z"))
 }
