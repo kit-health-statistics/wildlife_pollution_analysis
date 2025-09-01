@@ -359,10 +359,12 @@ save_results_as_csv <- function(fitted_model_list) {
 
 save_results_as_image <- function(
   plot_list,
-  format = "pdf",
+  format = c("png", "pdf"),
   non_park_comparison = FALSE
 ) {
-  # Loop through models and add each summary to a sheet
+  format <- match.arg(format)
+
+  # Loop through models and save each in a desired format
   for (k in seq_along(plot_list)) {
     if (non_park_comparison) {
       file_name <- paste0(

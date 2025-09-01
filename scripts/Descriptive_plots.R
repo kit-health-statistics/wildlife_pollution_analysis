@@ -172,7 +172,6 @@ barplots <- barplot_month +
   barplots_covariates$Species +
   plot_layout(nrow = 2, ncol = 2, axis_titles = "collect_y")
 
-ggsave("figure/descriptive_barplots.pdf", barplots, width = 10, height = 6.5)
 ggsave(
   "figure/descriptive_barplots.png",
   barplots,
@@ -224,7 +223,6 @@ mosaic_sex <- ggplot(
     )
   ) +
   get_mosaicplot_theme()
-ggsave("figure/mosaic_sex.pdf", mosaic_sex, width = 12, height = 8)
 ggsave(
   "figure/mosaic_sex.png",
   mosaic_sex,
@@ -269,7 +267,6 @@ mosaic_species <- ggplot(
     )
   ) +
   get_mosaicplot_theme()
-ggsave("figure/mosaic_species.pdf", mosaic_species, width = 10, height = 8)
 ggsave(
   "figure/mosaic_species.png",
   mosaic_species,
@@ -322,7 +319,6 @@ mosaic_age <- ggplot(
     )
   ) +
   get_mosaicplot_theme()
-ggsave("figure/mosaic_age.pdf", mosaic_age, width = 12, height = 8)
 ggsave(
   "figure/mosaic_age.png",
   mosaic_age,
@@ -422,12 +418,6 @@ concentrations <- barplot_quantified +
   ) &
   theme(plot.background = element_blank(), legend.position = "none")
 
-ggsave(
-  "figure/substances_quantified.pdf",
-  concentrations,
-  width = 8,
-  height = 8
-)
 ggsave(
   "figure/substances_quantified.png",
   concentrations,
