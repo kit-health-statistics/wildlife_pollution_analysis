@@ -39,7 +39,7 @@ check_age_categories <- function(data) {
 check_complete_entries <- function(data) {
   entries_incomplete <- data |>
     dplyr::select(
-      c("Sample_number", "Species", "Sex", "Age", "Park", "Season")
+      c("Sample_number", "Species", "Sex", "Age", "Park")
     ) |>
     anyNA()
 
@@ -59,7 +59,6 @@ check_measured_vs_overview <- function(data, chemicals) {
         "Sex",
         "Age",
         "Park",
-        "Season",
         "Date_of_sample_collection"
       )
     ) |>

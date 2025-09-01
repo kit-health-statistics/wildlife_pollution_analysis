@@ -6,8 +6,8 @@
 #'    In addition, this function drops the chemicals, for which the values are
 #'    too uninformative.
 #' @param dat A data frame containing concentration measurements with metadata
-#'    columns `Park`, `Sample_number`, `Species`, `Sex`, `Age`,
-#'    `Date_of_sample_collection` and `Season`
+#'    columns `Park`, `Sample_number`, `Species`, `Sex`, `Age` and
+#'    `Date_of_sample_collection`
 #' @param chem_categories A data frame with columns `Chemical`,
 #'    `primary_category`, and `Quantification_threshold`
 #' @return A data frame with aggregated measurements by category including
@@ -50,8 +50,7 @@ process_data <- function(dat, chem_categories) {
           "Species",
           "Sex",
           "Age",
-          "Date_of_sample_collection",
-          "Season"
+          "Date_of_sample_collection"
         )
       ),
       names_to = "Chemical",
@@ -110,8 +109,7 @@ process_data <- function(dat, chem_categories) {
             "Species",
             "Sex",
             "Age",
-            "Date_of_sample_collection",
-            "Season"
+            "Date_of_sample_collection"
           )
         )
       )

@@ -54,11 +54,7 @@ df_detected_by_category <- read_csv("data/data_by_pollutant_category.csv") |>
       levels = c("adult", "subadult", "fawn"),
       ordered = TRUE
     ),
-    Species = factor(Species, levels = c("D. dama", "C. elaphus")),
-    Season = factor(
-      Season,
-      levels = c("Summer 2024", "Winter 2024/25", "Winter 2023/24")
-    )
+    Species = factor(Species, levels = c("D. dama", "C. elaphus"))
   ) |>
   # Filter out the A60 observation, which is excluded also during the analysis
   filter(Sample_number != "A60")
@@ -80,17 +76,13 @@ dat <- read_csv("data/clean_data.csv") |>
       Species,
       levels = c("D. dama", "C. elaphus")
     ),
-    Season = factor(
-      Season,
-      levels = c("Summer 2024", "Winter 2024/25", "Winter 2023/24")
-    ),
     # First day of the month to plot the number of samples in time
     Month = floor_date(as.Date(Date_of_sample_collection), "month")
   ) |>
   # Filter out the A60 observation, which is excluded also during the analysis
   filter(Sample_number != "A60") |>
   # Convert the measurements to character to avoid problems when pivoting
-  mutate(across(-c(Age, Species, Sex, Season, Park, Month), as.character))
+  mutate(across(-c(Age, Species, Sex, Park, Month), as.character))
 
 # Prepare the data frame for the boxplots ======================================
 

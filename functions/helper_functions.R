@@ -29,17 +29,6 @@ relabel_age <- function(x) {
   )
 }
 
-# Sorting samples into seasons by the sample date. The cut-off points are
-# orientational based on which dataset corresponds to which season. Input is the
-# character date of the sample collection vector.
-season_from_date <- function(x) {
-  case_when(
-    x < as.Date("2024-05-01") ~ "Winter 2023/24",
-    x > as.Date("2024-10-02") ~ "Winter 2024/25",
-    x <= as.Date("2024-10-02") & x >= as.Date("2024-05-01") ~ "Summer 2024"
-  )
-}
-
 # Function to create the age category from a value indicated by the parks.
 # Values indicated by the parks are either numeric (Jasmund and
 # Vorpomm. Boddenlandshaft), or character strings (Sächsische Schweiz).

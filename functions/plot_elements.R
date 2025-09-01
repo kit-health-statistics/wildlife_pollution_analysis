@@ -68,12 +68,7 @@ get_barplot_colors <- function() {
       "subadult" = "#46CD8A",
       "adult" = "darkorange3"
     ),
-    Species = c("C. elaphus" = "orangered4", "D. dama" = "goldenrod2"),
-    Season = c(
-      "Summer 2024" = "coral",
-      "Winter 2024/25" = "skyblue2",
-      "Winter 2023/24" = "steelblue4"
-    )
+    Species = c("C. elaphus" = "orangered4", "D. dama" = "goldenrod2")
   )
 }
 
