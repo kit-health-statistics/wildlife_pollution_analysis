@@ -55,7 +55,7 @@ fit_interval_reg <- function(
       Park = factor(Park, levels = names(get_park_colors(non_park_comparison))),
       Detected_by_category = factor(
         Detected_by_category,
-        levels = c("Quantified", "Detected", "Not detected")
+        levels = c("quantified", "detected", "not detected")
       ),
       # Place the dates from different years into a single year cycle.
       # This normalization helps align seasonal patterns across different years
@@ -66,18 +66,11 @@ fit_interval_reg <- function(
         min(as.numeric(Date_of_sample_collection))
     )
 
-  # Check for unexpected NA dates after removing known problematic samples
-  if (any(is.na(df_detected_by_category$Date_of_sample_collection))) {
-    warning(
-      "Unexpected NA values found in Date_of_sample_collection after filtering known samples. Dataset may need re-examination."  # nolint
-    )
-  }
-
   if (!non_park_comparison) {
     # For the main deer data convert also the age variable to factor.
     df_detected_by_category <- df_detected_by_category |>
       mutate(
-        Age = factor(Age, levels = c("Fawn", "Subadult", "Adult"))
+        Age = factor(Age, levels = c("fawn", "subadult", "adult"))
       )
   }
 

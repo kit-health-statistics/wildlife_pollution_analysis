@@ -34,11 +34,6 @@ get_park_labels <- function(non_park_comparison = FALSE) {
   labs
 }
 
-# Age category names to display. We transform everything to lower case
-get_age_labels <- function() {
-  c("Fawn" = "fawn", "Subadult" = "subadult", "Adult" = "adult")
-}
-
 # Define colors ================================================================
 
 # Color coding of parks in the concentrations plot

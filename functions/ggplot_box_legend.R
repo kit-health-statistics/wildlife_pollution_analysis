@@ -66,7 +66,7 @@ ggplot_box_legend <- function(family = "sans") {
         (seq(1:2) * square_distance) -
         0.5 * square_distance
     ),
-    fill_color = c(names(park_colors), c("Quantified", "Detected"))
+    fill_color = c(names(park_colors), c("quantified", "detected"))
   )
 
   # Set the coordinates of the text labels =====================================
@@ -161,7 +161,7 @@ ggplot_box_legend <- function(family = "sans") {
     scale_size_manual(values = c("Label_text" = 2.8, "Title" = 3.8)) +
     # Fill colors for the square legend items
     scale_fill_manual(
-      values = c(park_colors, "Quantified" = "gray10", "Detected" = "gray60")
+      values = c(park_colors, "quantified" = "gray10", "detected" = "gray60")
     ) +
     theme_void(base_family = family) +
     theme(

@@ -1,5 +1,5 @@
-# Check that the age category was matches the data indicated by parks, where
-# this extra column is available.
+# Check that the age category matches the data indicated by parks, where this
+# extra column is available.
 check_age_categories <- function(data) {
   parks_with_extra_age_column <- list(
     numeric = c("Jasmund", "Vorpomm"),  # Here is the age as a numeric value
@@ -37,14 +37,22 @@ check_age_categories <- function(data) {
 # Check that we have complete covariates. For the date of sample collection we
 # know that it's missing for sample A60
 check_complete_entries <- function(data) {
-  entries_incomplete <- data |>
-    dplyr::select(
-      c("Sample_number", "Species", "Sex", "Age", "Park")
-    ) |>
-    anyNA()
-
-  if (entries_incomplete) {
-    warning("Some entries of the cleaned data are incomplete.")
+  required <- c(
+    "Sample_number",
+    "Species",
+    "Sex",
+    "Age",
+    "Park",
+    "Date_of_sample_collection"
+  )
+  selected <- data |> dplyr::select(dplyr::all_of(required))
+  incomplete_idx <- which(!complete.cases(selected))
+  if (length(incomplete_idx) > 0) {
+    samples <- selected$Sample_number[incomplete_idx]
+    warning(sprintf(
+      "Incomplete entries in required fields for Sample_number(s): %s",
+      paste(samples, collapse = ", ")
+    ))
   }
 }
 

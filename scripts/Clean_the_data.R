@@ -107,7 +107,7 @@ clean_data[clean_data$Sample_number == "Z73", "Date_of_sample_collection"] <-
   as.Date("2024-08-03")
 
 # Fix the incorrect age category
-clean_data[clean_data$Sample_number == "F35", "Age"] <- "Adult"
+clean_data[clean_data$Sample_number == "F35", "Age"] <- "adult"
 
 # Fix confirmed incorrect values
 clean_data[clean_data$Sample_number == "G02", "OC (Octocrylene)"] <- "<10"

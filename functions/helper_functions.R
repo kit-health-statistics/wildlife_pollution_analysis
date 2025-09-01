@@ -14,8 +14,8 @@ relabel_species <- function(x) {
 # indicators.
 relabel_sex <- function(x) {
   case_when(
-    x %in% c("männlich", "männlich\r\n") ~ "Male",
-    x %in% c("weiblich", "weiblich\r\n") ~ "Female"
+    x %in% c("männlich", "männlich\r\n") ~ "male",
+    x %in% c("weiblich", "weiblich\r\n") ~ "female"
   )
 }
 
@@ -23,9 +23,9 @@ relabel_sex <- function(x) {
 # vector of the age category names.
 relabel_age <- function(x) {
   case_when(
-    x == "adult" ~ "Adult",
-    x == "subadult" ~ "Subadult",
-    x == "Kalb" ~ "Fawn"
+    x == "adult" ~ "adult",
+    x == "subadult" ~ "subadult",
+    x == "Kalb" ~ "fawn"
   )
 }
 
@@ -41,15 +41,15 @@ age_category_from_extra_column <- function(age, age_numeric = TRUE) {
   if (age_numeric) {
     age <- as.numeric(age)
     case_when(
-      age == 0.5 ~ "Fawn",
-      age > 0.5 & age <= 1.5 ~ "Subadult",
-      age > 1.5 ~ "Adult"
+      age == 0.5 ~ "fawn",
+      age > 0.5 & age <= 1.5 ~ "subadult",
+      age > 1.5 ~ "adult"
     )
   } else {
     case_when(
-      age %in% c("Altersklasse 0", "Altersklasse 0\r\n") ~ "Fawn",
-      age %in% c("Altersklasse 1", "Altersklasse 1\r\n") ~ "Subadult",
-      age %in% c("Altersklasse 2", "Altersklasse 2\r\n") ~ "Adult"
+      age %in% c("Altersklasse 0", "Altersklasse 0\r\n") ~ "fawn",
+      age %in% c("Altersklasse 1", "Altersklasse 1\r\n") ~ "subadult",
+      age %in% c("Altersklasse 2", "Altersklasse 2\r\n") ~ "adult"
     )
   }
 }
@@ -95,32 +95,32 @@ rename_columns <- function(x) {
 
 #' Function determining the overall detection status of a chemical category
 #'
-#' @param x A character vector of possible values "Not detected", "Detected",
-#'   "Quantified" for individual chemicals
-#' @return A string indicating the aggregated status of "Not detected",
-#'   "Detected" and "Quantified" for the whole category of chemical substances
+#' @param x A character vector of possible values "not detected", "detected",
+#'   "quantified" for individual chemicals
+#' @return A string indicating the aggregated status of "not detected",
+#'   "detected" and "quantified" for the whole category of chemical substances
 #' @details Overall detection status:
 #'    \begin{itemize}
-#'      \item "Quantified": At least one sample in a category contains a
+#'      \item "quantified": At least one sample in a category contains a
 #'      quantified value.
-#'      \item "Detected": No sample contains a quantified value and at least one
+#'      \item "detected": No sample contains a quantified value and at least one
 #'      sample in a category contains a detected value under the quantification
 #'      limit.
-#'      \item "Not detected": All samples are non-detects.
+#'      \item "not detected": All samples are non-detects.
 #'    \end{itemize}
 summarise_detection <- function(x) {
-  if (all(x == "Not detected")) {
+  if (all(x == "not detected")) {
     # Category was not detected, when no chemicals from the category were
     # detected
-    ret <- "Not detected"
-  } else if (any(x == "Quantified")) {
+    ret <- "not detected"
+  } else if (any(x == "quantified")) {
     # Category was quantified, when at least one chemical from the category was
     # quantified
-    ret <- "Quantified"
+    ret <- "quantified"
   } else {
     # Category was detected, when at least one chemicals from the category was
     # qualitatively detected and no chemicals from the category were quantified
-    ret <- "Detected"
+    ret <- "detected"
   }
   ret
 }
@@ -155,10 +155,10 @@ summarise_detection <- function(x) {
 #'      values.
 #'    \end{itemize}
 summarise_censoring <- function(detected, value, threshold) {
-  vals_sum <- sum(value[detected == "Quantified"], na.rm = TRUE)
+  vals_sum <- sum(value[detected == "quantified"], na.rm = TRUE)
   ret <- c(
     Value_min = vals_sum,
-    Value_max = vals_sum + sum(threshold[detected != "Quantified"])
+    Value_max = vals_sum + sum(threshold[detected != "quantified"])
   )
   ret
 }

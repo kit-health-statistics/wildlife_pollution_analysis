@@ -35,10 +35,10 @@ species_mosaic_colors <- get_species_mosaic_colors()
 
 df_detected_by_category <- read_csv("data/data_by_pollutant_category.csv") |>
   mutate(
-    # It will be ordered as Quantified < Detected < Not detected, to display
+    # It will be ordered as quantified < detected < not detected, to display
     # correctly in the mosaic plot
     Detected_by_category = factor(
-      tolower(Detected_by_category),
+      Detected_by_category,
       levels = c("quantified", "detected", "not detected"),
       ordered = TRUE
     ),
@@ -48,12 +48,8 @@ df_detected_by_category <- read_csv("data/data_by_pollutant_category.csv") |>
       # ordered = TRUE for displaying in a correct order in the mosaic plots
       ordered = TRUE
     ),
-    Sex = fct_relevel(factor(tolower(Sex), levels = c("male", "female"))),
-    Age = factor(
-      tolower(Age),
-      levels = c("adult", "subadult", "fawn"),
-      ordered = TRUE
-    ),
+    Sex = factor(Sex, levels = c("male", "female")),
+    Age = factor(Age, levels = c("adult", "subadult", "fawn"), ordered = TRUE),
     Species = factor(Species, levels = c("D. dama", "C. elaphus"))
   ) |>
   # Filter out the A60 observation, which is excluded also during the analysis
@@ -66,12 +62,8 @@ dat <- read_csv("data/clean_data.csv") |>
       # ordered = TRUE for displaying in a correct order in the boxplots
       ordered = TRUE
     ),
-    Sex = factor(tolower(Sex), levels = c("male", "female")),
-    Age = factor(
-      tolower(Age),
-      levels = c("adult", "subadult", "fawn"),
-      ordered = TRUE
-    ),
+    Sex = factor(Sex, levels = c("male", "female")),
+    Age = factor(Age, levels = c("adult", "subadult", "fawn"), ordered = TRUE),
     Species = factor(
       Species,
       levels = c("D. dama", "C. elaphus")

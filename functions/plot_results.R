@@ -33,7 +33,7 @@ plot_results <- function(
       by = 1
     ),
     Park = "Bay_Wald",  # Reference category
-    Age = "Fawn"  # Reference category
+    Age = "fawn"  # Reference category
   )
   spline_curve <- as.data.frame(
     predict(fitted_survreg_model, newdata = newdata, se = TRUE)
@@ -97,7 +97,7 @@ plot_results <- function(
         unlist()
     )
     names(covcat_colors) <- df_coeffs$coeff
-    x_labels_coeffs <- c(x_labels_coeffs, get_age_labels())
+    x_labels_coeffs <- c(x_labels_coeffs, levels(df_filtered$Age))
     names(x_labels_coeffs) <- c(names(park_labels), levels(df_filtered$Age))
     coeff_plot_title <- "Park regression coefficients"
 
@@ -121,7 +121,7 @@ plot_results <- function(
     ) |>
     # Indicate, whether we have enough observations to draw a boxplot
     group_by(Covariate_category) |>
-    mutate(n_quantified = sum(Detected_by_category == "Quantified")) |>
+    mutate(n_quantified = sum(Detected_by_category == "quantified")) |>
     ungroup() |>
     mutate(Boxplot = n_quantified >= 5)
 
@@ -204,7 +204,7 @@ plot_results <- function(
     )
   plt$boxplot <- df_boxbar |>
     filter(
-      Detected_by_category == "Quantified"
+      Detected_by_category == "quantified"
     ) |>
     ggplot(
       aes(
@@ -265,9 +265,9 @@ plot_results <- function(
     ) +
     scale_color_manual(
       values = c(
-        "Quantified" = "gray10",
-        "Detected" = "gray10",
-        "Not detected" = alpha("white", 0)
+        "quantified" = "gray10",
+        "detected" = "gray10",
+        "not detected" = alpha("white", 0)
       ),
       guide = "none"
     ) +
@@ -276,9 +276,8 @@ plot_results <- function(
       guide = "none"
     ) +
     scale_alpha_manual(
-      breaks = c("Quantified", "Detected"),
-      labels = c("Quantified" = "quantified", "Detected" = "detected"),
-      values = c("Quantified" = 1, "Detected" = 0.5, "Not detected" = 0),
+      breaks = c("quantified", "detected"),
+      values = c("quantified" = 1, "detected" = 0.5, "not detected" = 0),
       name = "Occurrence\nof pollutants"
     ) +
     labs(
