@@ -293,6 +293,11 @@ plot_results <- function(
     )
 
   # Compose the figures using patchwork
+  if (pollutant_category %in% get_excluded_categories()) {
+    annotation_title <- paste0(pollutant_category, " (not applicable)")
+  } else {
+    annotation_title <- pollutant_category
+  }
   plt$composite <-
     (plt$spline / plt$reg_coeffs / plt$boxplot / plt$barplot) +
     plot_layout(
@@ -300,7 +305,7 @@ plot_results <- function(
     ) &
     theme(legend.position = "right") &
     plot_annotation(
-      title = pollutant_category,
+      title = annotation_title,
       theme = theme(
         plot.title = element_text(
           size = 16,

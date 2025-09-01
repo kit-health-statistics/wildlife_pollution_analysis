@@ -198,6 +198,17 @@ unify_year <- function(date_vec) {
 
 # Functions for plotting the regression results ================================
 
+# Categories, that we decided not to include in the analysis, because we have
+# too little data, the model is too sensitive to the assumptions etc.
+get_excluded_categories <- function() {
+  c(
+    "API",
+    "Industrial chemical",
+    "PCP",
+    "Pesticide"
+  )
+}
+
 # Function for creating the tiles displaying the age and park regression
 # coefficients. It creates a data frame for plotting the tiles
 extract_reg_coeffs <- function(

@@ -92,12 +92,7 @@ fit_interval_reg <- function(
 
   # Categories, that we decided not to include in the analysis, because we have
   # too little data, the model is too sensitive to the assumptions etc.
-  excluded_categories <- c(
-    "API",
-    "Industrial chemical",
-    "PCP",
-    "Pesticide"
-  )
+  excluded_categories <- get_excluded_categories()
 
   category_names <- unique(df_detected_by_category$primary_category)
   mods_by_category <- plt_by_category <-
