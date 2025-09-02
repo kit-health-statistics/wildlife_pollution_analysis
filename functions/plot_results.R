@@ -40,8 +40,8 @@ plot_results <- function(
   ) |>
     mutate(
       Date_of_sample_collection = newdata$Date_of_sample_collection,
-      lower = fit - se.fit,
-      upper = fit + se.fit
+      lower = fit - qnorm(0.975) * se.fit,
+      upper = fit + qnorm(0.975) * se.fit
     )
 
   # Data frames for the rest of the plots (coefficient tiles, boxplots and
