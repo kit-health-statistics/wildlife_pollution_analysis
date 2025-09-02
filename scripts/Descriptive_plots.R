@@ -52,8 +52,9 @@ df_detected_by_category <- read_csv("data/data_by_pollutant_category.csv") |>
     Age = factor(Age, levels = c("adult", "subadult", "fawn"), ordered = TRUE),
     Species = factor(Species, levels = c("D. dama", "C. elaphus"))
   ) |>
-  # Filter out the A60 observation, which is excluded also during the analysis
-  filter(Sample_number != "A60")
+  # Filter out the Z91 observation, which is excluded also during the analysis.
+  # It is the one far from the bulk of the observations.
+  filter(Sample_number != "Z91")
 dat <- read_csv("data/clean_data.csv") |>
   mutate(
     Park = factor(
@@ -71,8 +72,9 @@ dat <- read_csv("data/clean_data.csv") |>
     # First day of the month to plot the number of samples in time
     Month = floor_date(as.Date(Date_of_sample_collection), "month")
   ) |>
-  # Filter out the A60 observation, which is excluded also during the analysis
-  filter(Sample_number != "A60") |>
+  # Filter out the Z91 observation, which is excluded also during the analysis.
+  # It is the one far from the bulk of the observations.
+  filter(Sample_number != "Z91") |>
   # Convert the measurements to character to avoid problems when pivoting
   mutate(across(-c(Age, Species, Sex, Park, Month), as.character))
 
