@@ -17,7 +17,8 @@
 #'    plots
 fit_interval_reg <- function(
   df_detected_by_category,
-  non_park_comparison = FALSE
+  non_park_comparison = FALSE,
+  return_plots = TRUE
 ) {
   # Validate input (suggested by CodeRabbit) ===================================
   if (
@@ -135,12 +136,16 @@ fit_interval_reg <- function(
       mods_by_category[[k]] <- fit
       # Plot results (If throws one warning
       # "Removed 1 row containing missing values"), everything is fine.
-      plt_by_category[[k]] <- plot_results(
-        df_filtered,
-        mods_by_category[[k]],
-        category_names[k],
-        non_park_comparison = non_park_comparison
-      )
+      if (return_plots) {
+        plt_by_category[[k]] <- plot_results(
+          df_filtered,
+          mods_by_category[[k]],
+          category_names[k],
+          non_park_comparison = non_park_comparison
+        )
+      } else {
+        plt_by_category[[k]] <- list()
+      }
     }
   }
   ret <- list(fitted_mods = mods_by_category, plt = plt_by_category)

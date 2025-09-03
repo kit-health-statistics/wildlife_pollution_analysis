@@ -59,11 +59,11 @@ ggplot_box_legend <- function(family = "sans") {
     x = glyphs_position_x,
     y = c(
       # Draw from the title downwards
-      labels_position_y$Park - (seq(1:length(park_labels)) * square_distance),
+      labels_position_y$Park - (seq_along(park_labels) * square_distance),
       # Draw from the title downwards and add some space between the title and
       # the legend items, as the title for the detection has multiple lines
       labels_position_y$Detection -
-        (seq(1:2) * square_distance) -
+        (seq_len(2) * square_distance) -
         0.5 * square_distance
     ),
     fill_color = c(names(park_colors), c("quantified", "detected"))

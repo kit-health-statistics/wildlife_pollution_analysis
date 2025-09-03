@@ -20,29 +20,21 @@ plot_results <- function(
 
   # Display the spline =========================================================
 
-  # For calculating the fitted spline curve
-  newdata <- data.frame(
-    Date_numeric = seq(
-      from = min(df_filtered$Date_numeric),
-      to = max(df_filtered$Date_numeric),
-      by = 1
-    ),
+  # Calculate the spline fit and its CIs. We do it in a custom function, because
+  # the `predict` function returns the fit including intercept, but we are more
+  # interested in the effects (i.e. whether the fit is above, or below 1), than
+  # in the exact value.
+  spline_curve <- calculate_spline_ci(
+    fitted_survreg_model,
+    max(df_filtered$Date_numeric),
+    intercept = FALSE
+  ) |> mutate(
     Date_of_sample_collection = seq(
-      from = min(df_filtered$Date_of_sample_collection),
-      to = max(df_filtered$Date_of_sample_collection),
+      min(df_filtered$Date_of_sample_collection),
+      max(df_filtered$Date_of_sample_collection),
       by = 1
-    ),
-    Park = "Bay_Wald",  # Reference category
-    Age = "fawn"  # Reference category
-  )
-  spline_curve <- as.data.frame(
-    predict(fitted_survreg_model, newdata = newdata, se = TRUE)
-  ) |>
-    mutate(
-      Date_of_sample_collection = newdata$Date_of_sample_collection,
-      lower = fit - qnorm(0.975) * se.fit,
-      upper = fit + qnorm(0.975) * se.fit
     )
+  )
 
   # Data frames for the rest of the plots (coefficient tiles, boxplots and
   # barplots) ==================================================================
@@ -135,8 +127,8 @@ plot_results <- function(
     scale_x_date(date_breaks = "1 month", date_labels = "%d %b") +
     labs(
       x = "date",
-      title = "Penalized spline for the date variable",
-      y = bquote("concentration in" ~ mu * "g" ~ kg^-1)
+      y = NULL,
+      title = "Penalized spline for the date variable"
     ) +
     coord_cartesian(ylim = c(0, NA))
 

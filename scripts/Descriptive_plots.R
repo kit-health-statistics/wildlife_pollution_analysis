@@ -19,7 +19,7 @@ rgb2hex <- function(rgbmat) {
     rgb(rgbmat[1, col], rgbmat[2, col], rgbmat[3, col], maxColorValue = 255)
   }
   # Apply the function
-  sapply(1:ncol(rgbmat), process_column)
+  sapply(seq_len(ncol(rgbmat)), process_column)
 }
 
 # Get the plot elements ========================================================
@@ -426,7 +426,7 @@ df_segments <- df_detected_by_category |>
   mutate(Park = factor(Park, levels = names(park_colors))) |>
   group_by(primary_category, Park) |>
   mutate(
-    ordering = 1:n() + 0.08 * as.numeric(Park)
+    ordering = seq_len(n()) + 0.08 * as.numeric(Park)
   ) |>
   # Eliminate 4 outliers that skew the picture, in particular Z18 for the
   # Industrial chemical category and Z79, G32 and F11 for the Plasticizer

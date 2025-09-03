@@ -198,6 +198,56 @@ get_excluded_categories <- function() {
   )
 }
 
+# Functions for the construction of confidence intervals =======================
+
+calculate_spline_ci <- function(
+  fitted_survreg_model,
+  timeline_length,
+  intercept = FALSE
+) {
+  # Prepare the time sequence of the spline. We always start from 0.
+  # 'timeline_length' is the highest value of the `Date_numeric` column of our
+  # data corresponding to the latest observation.
+  spline_curve <- data.frame(
+    Date_numeric = seq(
+      from = 0,
+      to = timeline_length,
+      by = 1
+    )
+  )
+
+  # Extract the coefficients and the variance-covariance matrix
+  coeffs <- coefficients(fitted_survreg_model)
+  vcov_fitted <- fitted_survreg_model$var
+
+  # Build the P-spline basis
+  basis_ps <- pspline(spline_curve$Date_numeric) |> as.matrix()
+
+  # Locate the coefficients corresponding to the spline.
+  where_ps_coeffs <- grep("ps", names(coeffs))
+  if (intercept) {
+    # Add the intercept to the calculations, if required
+    where_ps_coeffs <- c(1, where_ps_coeffs)
+    basis_ps <- cbind(1, basis_ps)
+  }
+  vcov_fitted_ps <- vcov_fitted[where_ps_coeffs, where_ps_coeffs]
+  coeffs_ps <- coeffs[where_ps_coeffs]
+
+  # Calculate the fit on the response scale
+  fit_ps <- exp(basis_ps %*% coeffs_ps)
+
+  # Calculate the standard errors on the response scale using the delta method
+  se_ps <- fit_ps * sqrt(diag(basis_ps %*% vcov_fitted_ps %*% t(basis_ps)))
+
+  spline_curve <- spline_curve |> mutate(
+    fit = fit_ps,
+    se = se_ps,
+    lower = fit_ps - qnorm(0.975) * se_ps,
+    upper = fit_ps + qnorm(0.975) * se_ps
+  )
+  spline_curve
+}
+
 # Function for creating the tiles displaying the age and park regression
 # coefficients. It creates a data frame for plotting the tiles
 extract_reg_coeffs <- function(

@@ -33,7 +33,7 @@ sheets <- expand.grid(
   Data_version = c("winter", "summer")
 )
 raw_data_list <- list()
-for (k in 1:nrow(sheets)) {
+for (k in seq_len(nrow(sheets))) {
   park_to_load <- sheets[k, "Park"]
   data_version_to_load <- sheets[k, "Data_version"]
   if (!is.na(data_positions[[park_to_load]][data_version_to_load])) {
