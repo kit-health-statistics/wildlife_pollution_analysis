@@ -4,7 +4,9 @@ plot_results <- function(
   fitted_survreg_model,
   pollutant_category,
   all_plots = FALSE,
-  non_park_comparison = FALSE
+  non_park_comparison = FALSE,
+  intercept = FALSE,
+  centered = TRUE
 ) {
   # List to store the plots
   plt <- vector("list", 5)
@@ -27,7 +29,8 @@ plot_results <- function(
   spline_curve <- calculate_spline_ci(
     fitted_survreg_model,
     max(df_filtered$Date_numeric),
-    intercept = FALSE
+    intercept = intercept,
+    centered = centered
   ) |> mutate(
     Date_of_sample_collection = seq(
       min(df_filtered$Date_of_sample_collection),
@@ -122,8 +125,8 @@ plot_results <- function(
     spline_curve,
     aes(x = Date_of_sample_collection, y = fit, ymin = lower, ymax = upper)
   ) +
-    geom_line() +
     geom_ribbon(alpha = 0.5) +
+    geom_line() +
     scale_x_date(date_breaks = "1 month", date_labels = "%d %b") +
     labs(
       x = "date",
@@ -131,6 +134,11 @@ plot_results <- function(
       title = "Penalized spline for the date variable"
     ) +
     coord_cartesian(ylim = c(0, NA))
+
+  # If we center the curve, plot a horizontal line going through 1
+  if (centered) {
+    plt$spline <- plt$spline + geom_hline(yintercept = 1, linetype = "dotted")
+  }
 
   # Breaks of the color gradient for the categorical coefficients. Needs to be
   # determined manually.
