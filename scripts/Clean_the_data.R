@@ -33,7 +33,7 @@ sheets <- expand.grid(
   Data_version = c("winter", "summer")
 )
 raw_data_list <- list()
-for (k in 1:nrow(sheets)) {
+for (k in seq_len(nrow(sheets))) {
   park_to_load <- sheets[k, "Park"]
   data_version_to_load <- sheets[k, "Data_version"]
   if (!is.na(data_positions[[park_to_load]][data_version_to_load])) {
@@ -68,8 +68,7 @@ raw_data <- bind_rows(raw_data_list) |>
     ),
     Sex = relabel_sex(Sex),
     Species = relabel_species(Species),
-    Age = relabel_age(Age),
-    Season = season_from_date(Date_of_sample_collection)
+    Age = relabel_age(Age)
   ) |>
   rename(
     "Age_as_indicated_by_Parks" = "Alter (vom Park angegeben)"
@@ -106,16 +105,9 @@ clean_data[clean_data$Sample_number == "F37", "Date_of_sample_collection"] <-
   as.Date("2023-11-24")
 clean_data[clean_data$Sample_number == "Z73", "Date_of_sample_collection"] <-
   as.Date("2024-08-03")
-clean_data[clean_data$Sample_number == "F15", "Season"] <- "Winter 2023/24"
-clean_data[clean_data$Sample_number == "F37", "Season"] <- "Winter 2023/24"
-clean_data[clean_data$Sample_number == "Z73", "Season"] <- "Summer 2024"
-
-# Change the seasons manually for Bay Wald, which had some early winter samples
-# in 2024/25, which got classified as from the summer.
-clean_data[clean_data$Sample_number == "A91", "Season"] <- "Winter 2024/25"
 
 # Fix the incorrect age category
-clean_data[clean_data$Sample_number == "F35", "Age"] <- "Adult"
+clean_data[clean_data$Sample_number == "F35", "Age"] <- "adult"
 
 # Fix confirmed incorrect values
 clean_data[clean_data$Sample_number == "G02", "OC (Octocrylene)"] <- "<10"

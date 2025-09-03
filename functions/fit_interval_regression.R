@@ -13,11 +13,20 @@
 #' @param non_park_comparison A logical flag indicating, whether the function
 #'    should perform the main analysis, or the secondary analysis using the roe
 #'    deer data from outside of national parks (`non_park_comparison = TRUE`)
+#' @param return_plots A logical flag indicating, whether the plots should be
+#'    generated
+#' @param intercept A logical flag indicating, whether to include the intercept
+#'    in the graphical display of the spline curve
+#' @param centered A logical flag indicating, whether to center the spline
+#'    curve in the graphical display
 #' @return A list with 2 components: list of the fitted models and list of the
 #'    plots
 fit_interval_reg <- function(
   df_detected_by_category,
-  non_park_comparison = FALSE
+  non_park_comparison = FALSE,
+  return_plots = TRUE,
+  intercept = FALSE,
+  centered = TRUE
 ) {
   # Validate input (suggested by CodeRabbit) ===================================
   if (
@@ -55,7 +64,7 @@ fit_interval_reg <- function(
       Park = factor(Park, levels = names(get_park_colors(non_park_comparison))),
       Detected_by_category = factor(
         Detected_by_category,
-        levels = c("Quantified", "Detected", "Not detected")
+        levels = c("quantified", "detected", "not detected")
       ),
       # Place the dates from different years into a single year cycle.
       # This normalization helps align seasonal patterns across different years
@@ -66,18 +75,11 @@ fit_interval_reg <- function(
         min(as.numeric(Date_of_sample_collection))
     )
 
-  # Check for unexpected NA dates after removing known problematic samples
-  if (any(is.na(df_detected_by_category$Date_of_sample_collection))) {
-    warning(
-      "Unexpected NA values found in Date_of_sample_collection after filtering known samples. Dataset may need re-examination."  # nolint
-    )
-  }
-
   if (!non_park_comparison) {
     # For the main deer data convert also the age variable to factor.
     df_detected_by_category <- df_detected_by_category |>
       mutate(
-        Age = factor(Age, levels = c("Fawn", "Subadult", "Adult"))
+        Age = factor(Age, levels = c("fawn", "subadult", "adult"))
       )
   }
 
@@ -92,12 +94,7 @@ fit_interval_reg <- function(
 
   # Categories, that we decided not to include in the analysis, because we have
   # too little data, the model is too sensitive to the assumptions etc.
-  excluded_categories <- c(
-    "API",
-    "Industrial chemical",
-    "PCP",
-    "Pesticide"
-  )
+  excluded_categories <- get_excluded_categories()
 
   category_names <- unique(df_detected_by_category$primary_category)
   mods_by_category <- plt_by_category <-
@@ -147,12 +144,18 @@ fit_interval_reg <- function(
       mods_by_category[[k]] <- fit
       # Plot results (If throws one warning
       # "Removed 1 row containing missing values"), everything is fine.
-      plt_by_category[[k]] <- plot_results(
-        df_filtered,
-        mods_by_category[[k]],
-        category_names[k],
-        non_park_comparison = non_park_comparison
-      )
+      if (return_plots) {
+        plt_by_category[[k]] <- plot_results(
+          df_filtered,
+          mods_by_category[[k]],
+          category_names[k],
+          non_park_comparison = non_park_comparison,
+          intercept = intercept,
+          centered = centered
+        )
+      } else {
+        plt_by_category[[k]] <- list()
+      }
     }
   }
   ret <- list(fitted_mods = mods_by_category, plt = plt_by_category)

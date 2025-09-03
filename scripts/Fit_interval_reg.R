@@ -22,7 +22,7 @@ df_detected_by_category <- read_csv("data/data_by_pollutant_category.csv") |>
   filter(Sample_number != "Z91")
 
 # Fit the model
-results <- fit_interval_reg(df_detected_by_category)
+results <- fit_interval_reg(df_detected_by_category, intercept = TRUE)
 
 # Put NULL everywhere, where fitting was unsuccessful
 bad_fitting <- results$plt |> lapply(is_empty) |> unlist() |> which()
@@ -30,7 +30,7 @@ results$plt[bad_fitting] <- list(rep(NULL, length(bad_fitting)))
 results$fitted_mods[bad_fitting] <- list(rep(NULL, length(bad_fitting)))
 
 # Save the plots
-save_results_as_image(results$plt)
+save_results_as_image(results$plt, format = "png")
 
 # Save the results into an Excel file
 wb <- save_results_as_xls(results$fitted_mods)
@@ -56,7 +56,11 @@ results_roe <- fit_interval_reg(
 )
 
 # Save the plots
-save_results_as_image(results_roe$plt, non_park_comparison = TRUE)
+save_results_as_image(
+  results_roe$plt,
+  format = "png",
+  non_park_comparison = TRUE
+)
 
 # Save the results into a .csv file
 results_csv_roe <- save_results_as_csv(results_roe$fitted_mods)

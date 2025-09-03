@@ -59,14 +59,14 @@ ggplot_box_legend <- function(family = "sans") {
     x = glyphs_position_x,
     y = c(
       # Draw from the title downwards
-      labels_position_y$Park - (seq(1:length(park_labels)) * square_distance),
+      labels_position_y$Park - (seq_along(park_labels) * square_distance),
       # Draw from the title downwards and add some space between the title and
       # the legend items, as the title for the detection has multiple lines
       labels_position_y$Detection -
-        (seq(1:2) * square_distance) -
+        (seq_len(2) * square_distance) -
         0.5 * square_distance
     ),
-    fill_color = c(names(park_colors), c("Quantified", "Detected"))
+    fill_color = c(names(park_colors), c("quantified", "detected"))
   )
 
   # Set the coordinates of the text labels =====================================
@@ -90,12 +90,12 @@ ggplot_box_legend <- function(family = "sans") {
     ),
     Labels = c(
       "25th percentile",
-      "Median",
+      "median",
       "75th percentile",
-      "Largest value within\n1.5 x IQR above\n75th percentile",  # Whisker
-      "Smallest value within\n1.5 x IQR below\n25th percentile",  # Whisker
-      "Outliers",
-      "Individual values\nif n < 5",
+      "largest value within\n1.5 x IQR above\n75th percentile",  # Whisker
+      "smallest value within\n1.5 x IQR below\n25th percentile",  # Whisker
+      "outliers",
+      "individual values\nif n < 5",
       "IQR",
       "Concentration \n(right panel):"  # Title
     ),
@@ -115,10 +115,10 @@ ggplot_box_legend <- function(family = "sans") {
     y = c(df_rect$y, labels_position_y$Park, labels_position_y$Detection),
     Labels = c(
       unname(park_labels),
-      "Quantified",
-      "Detected only\nqualitatively",
+      "quantified",
+      "detected only\nqualitatively",
       "National park",  # Title
-      "Occurence\nof pollutants\n(left panel):"  # Title
+      "Occurrence\nof pollutants\n(left panel):"  # Title
     ),
     Size = c(rep("Label_text", length(park_labels) + 2), rep("Title", 2))
   )
@@ -161,7 +161,7 @@ ggplot_box_legend <- function(family = "sans") {
     scale_size_manual(values = c("Label_text" = 2.8, "Title" = 3.8)) +
     # Fill colors for the square legend items
     scale_fill_manual(
-      values = c(park_colors, "Quantified" = "gray10", "Detected" = "gray60")
+      values = c(park_colors, "quantified" = "gray10", "detected" = "gray60")
     ) +
     theme_void(base_family = family) +
     theme(
