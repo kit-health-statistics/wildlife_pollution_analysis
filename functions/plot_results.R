@@ -278,7 +278,7 @@ plot_results <- function(
     scale_alpha_manual(
       breaks = c("quantified", "detected"),
       values = c("quantified" = 1, "detected" = 0.5, "not detected" = 0),
-      name = "Occurrence\nof pollutants"
+      name = "Occurrence of pollutants"
     ) +
     labs(
       title = "Proportion quantified or qualitatively detected",
@@ -291,18 +291,40 @@ plot_results <- function(
       axis.text.x = element_text(size = 8)
     )
 
-  # Compose the figures using patchwork
+  # Compose the figures using patchwork ========================================
+
+  # Extract the legends. Suppress warnings, because the empty tile is in fact an
+  # NA value, which creates warnings.
+  reg_coeffs_legend <- suppressWarnings(ggpubr::get_legend(plt$reg_coeffs))
+  barplot_legend <- suppressWarnings(ggpubr::get_legend(plt$barplot))
+  plt$reg_coeffs <- plt$reg_coeffs + theme(legend.position = "none")
+  plt$barplot <- plt$barplot + theme(legend.position = "none")
+  # Create an empty plot to fill the grid
+  boxplot_legend <- ggplot_box_legend(boxplot_only = TRUE)
+
+  # Add a "not applicable" label to the categories, where we do not want to
+  # present the results
   if (pollutant_category %in% get_excluded_categories()) {
     annotation_title <- paste0(pollutant_category, " (not applicable)")
   } else {
     annotation_title <- pollutant_category
   }
-  plt$composite <-
-    (plt$spline / plt$reg_coeffs / plt$boxplot / plt$barplot) +
+
+  # Compose the plots into a 4x2 grid
+  plt$composite <- (
+    plt$spline +
+      plot_spacer() +
+      plt$reg_coeffs +
+      reg_coeffs_legend +
+      plt$boxplot +
+      boxplot_legend +
+      plt$barplot +
+      barplot_legend
+  ) +
     plot_layout(
-      guides = "collect"
+      design = "AB\nCD\nEF\nGH",
+      widths = c(5, 1)
     ) &
-    theme(legend.position = "right") &
     plot_annotation(
       title = annotation_title,
       theme = theme(
