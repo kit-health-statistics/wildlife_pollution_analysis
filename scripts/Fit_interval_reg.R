@@ -4,6 +4,7 @@ library("patchwork")
 source("functions/fit_interval_regression.R")
 source("functions/ggplot_box_legend.R")
 source("functions/plot_elements.R")
+source("functions/process_data.R")
 source("functions/helper_functions.R")
 source("functions/plot_results.R")
 theme_set(theme_bw())
@@ -16,14 +17,24 @@ if (is.na(loc)) loc <- Sys.setlocale("LC_TIME", "English_United States.1252")
 
 # Model the main deer data =====================================================
 
-# Load and filter the data. We remove observation Z91 that was collected on
-# 29.05.2024, which is approx. 2 months before all other observations. This
+# Load and filter the model data. We remove observation Z91 that was collected
+# on 29.05.2024, which is approx. 2 months before all other observations. This
 # creates a gap in the time covariate, better continue without it.
 df_detected_by_category <- read_csv("data/data_by_pollutant_category.csv") |>
   filter(Sample_number != "Z91")
 
+# Load and process the descriptive data, that shall be used for displaying the
+# bar- and boxplot part.
+chem_categories <- read_csv("data/chemical_categories.csv")
+
+dat <- read_csv("data/clean_data.csv") |>
+  # Filter out the Z91 observation.
+  filter(Sample_number != "Z91")
+df_descriptive <- dat |>
+  process_data(chem_categories, exclude_uninformative = FALSE)
+
 # Fit the model
-results <- fit_interval_reg(df_detected_by_category)
+results <- fit_interval_reg(df_detected_by_category, df_descriptive)
 
 # Put NULL everywhere, where fitting was unsuccessful
 bad_fitting <- results$plt |> lapply(is_empty) |> unlist() |> which()
@@ -53,6 +64,7 @@ df_roe_detected_by_category <- read_csv(
 
 results_roe <- fit_interval_reg(
   df_roe_detected_by_category,
+  df_descriptive,
   non_park_comparison = TRUE
 )
 

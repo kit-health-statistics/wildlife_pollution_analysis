@@ -1,6 +1,7 @@
 # Function plotting the overview of the regression fit
 plot_results <- function(
   df_filtered,
+  df_descriptive,
   fitted_survreg_model,
   pollutant_category,
   all_plots = FALSE,
@@ -98,7 +99,11 @@ plot_results <- function(
 
     # For the descriptive box- and barplot, concatenate the Park and Age
     # covariates
-    df_boxbar <- df_filtered |>
+    df_boxbar <- df_descriptive |>
+      filter(primary_category == pollutant_category) |>
+      # `Age` is an ordered factor. Convert it to character to avoid problems
+      # while pivoting
+      mutate(Age = as.character(Age)) |>
       pivot_longer(
         c(Park, Age),
         names_to = "Covariate",
@@ -114,7 +119,9 @@ plot_results <- function(
         levels = names(covcat_colors)
       )
     ) |>
-    # Indicate, whether we have enough observations to draw a boxplot
+    # Indicate, whether we have enough observations to draw a boxplot. The
+    # information is already present, when it comes to the `Park` covariate,
+    # However, we have to redo it for the age covariate too.
     group_by(Covariate_category) |>
     mutate(n_quantified = sum(Detected_by_category == "quantified")) |>
     ungroup() |>

@@ -10,6 +10,8 @@
 #'    covariate columns are `Park` and `Date_of_sample_collection`. For the main
 #'    analysis, covariate `Age` is also required. Metadata columns are
 #'    `Sample_number`, `primary_category` and `Detected_by_category`
+#' @param df_descriptive Data for descriptive plots (incl. substances excluded
+#'   from modeling), e.g. from process_data(..., exclude_uninformative = FALSE).
 #' @param non_park_comparison A logical flag indicating, whether the function
 #'    should perform the main analysis, or the secondary analysis using the roe
 #'    deer data from outside of national parks (`non_park_comparison = TRUE`)
@@ -23,6 +25,7 @@
 #'    plots
 fit_interval_reg <- function(
   df_detected_by_category,
+  df_descriptive,
   non_park_comparison = FALSE,
   return_plots = TRUE,
   intercept = FALSE,
@@ -54,9 +57,7 @@ fit_interval_reg <- function(
     )
   }
 
-  # We remove certain observations inside this function, even though the task is
-  # quite specific, because it's done for both the main analysis and the
-  # comparison with the roe deer data.
+  # Prepare the data for fitting ===============================================
   df_detected_by_category <- df_detected_by_category |>
     mutate(
       # Convert the categorical variables to factors to keep the levels in the
@@ -147,6 +148,7 @@ fit_interval_reg <- function(
       if (return_plots) {
         plt_by_category[[k]] <- plot_results(
           df_filtered,
+          df_descriptive,
           mods_by_category[[k]],
           category_names[k],
           non_park_comparison = non_park_comparison,

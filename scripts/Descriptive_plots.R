@@ -3,7 +3,9 @@ library("tidyverse")
 theme_set(theme_bw())
 source("functions/custom_mosaic_plot_function.R")
 source("functions/ggplot_box_legend.R")
+source("functions/helper_functions.R")
 source("functions/plot_elements.R")
+source("functions/process_data.R")
 
 # Set locale to English for displaying the month names correctly
 # (with fallbacks recommended by the CodeRabbit)
@@ -33,28 +35,8 @@ species_mosaic_colors <- get_species_mosaic_colors()
 
 # Read the cleaned data and convert categories to factors ======================
 
-df_detected_by_category <- read_csv("data/data_by_pollutant_category.csv") |>
-  mutate(
-    # It will be ordered as quantified < detected < not detected, to display
-    # correctly in the mosaic plot
-    Detected_by_category = factor(
-      Detected_by_category,
-      levels = c("quantified", "detected", "not detected"),
-      ordered = TRUE
-    ),
-    Park = factor(
-      Park,
-      levels = names(park_labels),
-      # ordered = TRUE for displaying in a correct order in the mosaic plots
-      ordered = TRUE
-    ),
-    Sex = factor(Sex, levels = c("male", "female")),
-    Age = factor(Age, levels = c("adult", "subadult", "fawn"), ordered = TRUE),
-    Species = factor(Species, levels = c("D. dama", "C. elaphus"))
-  ) |>
-  # Filter out the Z91 observation, which is excluded also during the analysis.
-  # It is the one far from the bulk of the observations.
-  filter(Sample_number != "Z91")
+chem_categories <- read_csv("data/chemical_categories.csv")
+
 dat <- read_csv("data/clean_data.csv") |>
   mutate(
     Park = factor(
@@ -74,19 +56,11 @@ dat <- read_csv("data/clean_data.csv") |>
   ) |>
   # Filter out the Z91 observation, which is excluded also during the analysis.
   # It is the one far from the bulk of the observations.
-  filter(Sample_number != "Z91") |>
-  # Convert the measurements to character to avoid problems when pivoting
-  mutate(across(-c(Age, Species, Sex, Park, Month), as.character))
+  filter(Sample_number != "Z91")
 
-# Prepare the data frame for the boxplots ======================================
-
-# Reshape the quantified observations separately
-df_quantified_by_category <- filter(
-  df_detected_by_category,
-  Detected_by_category == "quantified"
-) |>
-  add_count(Park, primary_category, name = "n_quantified") |>
-  mutate(Boxplot = n_quantified >= 5)
+df_detected_by_category <- dat |>
+  select(-"Month") |>
+  process_data(chem_categories, exclude_uninformative = FALSE)
 
 # Create the data frames for the mosaic plots ==================================
 
@@ -359,15 +333,16 @@ barplot_quantified <- ggplot(
   ) +
   get_barplot_detect_theme()
 
-boxplot_quantified <- ggplot(
-  df_quantified_by_category,
-  aes(
-    x = Value_sum_quantified_by_category,
-    y = Park,
-    fill = Park,
-    color = Park
-  )
-) +
+boxplot_quantified <- df_detected_by_category |>
+  filter(Detected_by_category == "quantified") |>
+  ggplot(
+    mapping = aes(
+      x = Value_sum_quantified_by_category,
+      y = Park,
+      fill = Park,
+      color = Park
+    )
+  ) +
   geom_point(
     # Points for n < 5
     data = ~ subset(., !Boxplot),
