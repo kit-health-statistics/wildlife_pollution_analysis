@@ -4,7 +4,7 @@ source(here::here("functions", "fit_interval_regression.R"))
 source(here::here("functions", "helper_functions.R"))
 source(here::here("functions", "plot_elements.R"))
 
-test_that("Manual calculation of the spline fit is correct", {
+test_that("Manual calculation of the spline is correct", {
 
   # Load the data
   df_detected_by_category <- read_csv(
@@ -36,18 +36,31 @@ test_that("Manual calculation of the spline fit is correct", {
   )
   for (k in seq_along(results$fitted_mods)) {
     fit_auto <- predict(results$fitted_mods[[k]], newdata = newdata, se = TRUE)
+    fit_auto_endpoint <- predict(
+      results$fitted_mods[[k]],
+      newdata = newdata,
+      se = TRUE,
+      type = "link"
+    )
+    fit_auto_centered <- exp(log(fit_auto$fit) - mean(log(fit_auto$fit)))
     fit_manual <- calculate_spline_ci(
       results$fitted_mods[[k]],
       timeline_length,
-      intercept = TRUE
+      centered = FALSE,
+      endpoint_transformation = FALSE
+    )
+    fit_manual_endpoint <- calculate_spline_ci(
+      results$fitted_mods[[k]],
+      timeline_length,
+      centered = FALSE,
+      endpoint_transformation = TRUE
     )
     fit_manual_centered <- calculate_spline_ci(
       results$fitted_mods[[k]],
       timeline_length,
-      intercept = FALSE
+      centered = TRUE,
+      endpoint_transformation = FALSE
     )$fit
-    fit_auto_centered <- fit_auto$fit /
-      exp(coefficients(results$fitted_mods[[k]])["(Intercept)"])
 
     # Skip tests, if fitting not possible
     if (!anyNA(fit_auto$fit)) {
@@ -55,6 +68,16 @@ test_that("Manual calculation of the spline fit is correct", {
       # SEs
       expect_lt(max(abs(fit_auto$fit - fit_manual$fit)), 1e-11)
       expect_lt(max(abs(fit_auto$se.fit - fit_manual$se)), 1e-11)
+
+      # Check the version obtained by the endpoint transformation
+      expect_lt(
+        max(abs(exp(fit_auto_endpoint$fit) - fit_manual_endpoint$fit)),
+        1e-11
+      )
+      expect_lt(
+        max(abs(fit_auto_endpoint$se.fit - fit_manual_endpoint$se)),
+        1e-11
+      )
 
       # Check the centering using the centered version, fits only
       expect_lt(max(abs(fit_auto_centered - fit_manual_centered)), 1e-11)

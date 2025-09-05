@@ -6,8 +6,8 @@ plot_results <- function(
   pollutant_category,
   all_plots = FALSE,
   non_park_comparison = FALSE,
-  intercept = FALSE,
-  centered = TRUE
+  centered = TRUE,
+  endpoint_transformation = TRUE
 ) {
   # List to store the plots
   plt <- vector("list", 5)
@@ -23,15 +23,13 @@ plot_results <- function(
 
   # Display the spline =========================================================
 
-  # Calculate the spline fit and its CIs. We do it in a custom function, because
-  # the `predict` function returns the fit including intercept, but we are more
-  # interested in the effects (i.e. whether the fit is above, or below 1), than
-  # in the exact value.
+  # We compute the possibly centered spline and draw asymmetric CIs (by endpoint
+  # transformation) as requested for plotting.
   spline_curve <- calculate_spline_ci(
     fitted_survreg_model,
     max(df_filtered$Date_numeric),
-    intercept = intercept,
-    centered = centered
+    centered = centered,
+    endpoint_transformation = endpoint_transformation
   ) |> mutate(
     Date_of_sample_collection = seq(
       min(df_filtered$Date_of_sample_collection),
@@ -132,8 +130,18 @@ plot_results <- function(
     spline_curve,
     aes(x = Date_of_sample_collection, y = fit, ymin = lower, ymax = upper)
   ) +
-    geom_ribbon(alpha = 0.5) +
-    geom_line() +
+    geom_ribbon(aes(alpha = "CI")) +
+    geom_line(aes(color = "Fit")) +
+    scale_alpha_manual(
+      values = c("CI" = 0.5),
+      labels = c("CI" = "95% confidence interval"),
+      name = NULL
+    ) +
+    scale_color_manual(
+      values = c("Fit" = "black"),
+      labels = c("Fit" = "fit"),
+      name = NULL
+    ) +
     scale_x_date(date_breaks = "1 month", date_labels = "%d %b") +
     labs(
       x = "date",
@@ -302,8 +310,10 @@ plot_results <- function(
 
   # Extract the legends. Suppress warnings, because the empty tile is in fact an
   # NA value, which creates warnings.
+  spline_legend <- suppressWarnings(ggpubr::get_legend(plt$spline))
   reg_coeffs_legend <- suppressWarnings(ggpubr::get_legend(plt$reg_coeffs))
   barplot_legend <- suppressWarnings(ggpubr::get_legend(plt$barplot))
+  plt$spline <- plt$spline + theme(legend.position = "none")
   plt$reg_coeffs <- plt$reg_coeffs + theme(legend.position = "none")
   plt$barplot <- plt$barplot + theme(legend.position = "none")
   # Create an empty plot to fill the grid
@@ -320,7 +330,7 @@ plot_results <- function(
   # Compose the plots into a 4x2 grid
   plt$composite <- (
     plt$spline +
-      plot_spacer() +
+      spline_legend +
       plt$reg_coeffs +
       reg_coeffs_legend +
       plt$boxplot +

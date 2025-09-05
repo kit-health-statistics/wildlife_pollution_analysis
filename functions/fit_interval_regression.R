@@ -17,10 +17,12 @@
 #'    deer data from outside of national parks (`non_park_comparison = TRUE`)
 #' @param return_plots A logical flag indicating, whether the plots should be
 #'    generated
-#' @param intercept A logical flag indicating, whether to include the intercept
-#'    in the graphical display of the spline curve
 #' @param centered A logical flag indicating, whether to center the spline
 #'    curve in the graphical display
+#' @param endpoint_transformation A logical flag indicating whether to compute
+#'    spline confidence intervals as Wald intervals on the link scale and then
+#'    transform the interval endpoints to the response scale. If `FALSE`,
+#'    compute Wald intervals directly on the response scale.
 #' @return A list with 2 components: list of the fitted models and list of the
 #'    plots
 fit_interval_reg <- function(
@@ -28,8 +30,8 @@ fit_interval_reg <- function(
   df_descriptive,
   non_park_comparison = FALSE,
   return_plots = TRUE,
-  intercept = FALSE,
-  centered = TRUE
+  centered = TRUE,
+  endpoint_transformation = TRUE
 ) {
   # Validate input (suggested by CodeRabbit) ===================================
   if (
@@ -152,8 +154,8 @@ fit_interval_reg <- function(
           mods_by_category[[k]],
           category_names[k],
           non_park_comparison = non_park_comparison,
-          intercept = intercept,
-          centered = centered
+          centered = centered,
+          endpoint_transformation = endpoint_transformation
         )
       } else {
         plt_by_category[[k]] <- list()
