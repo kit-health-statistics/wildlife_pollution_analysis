@@ -52,7 +52,7 @@ fit_interval_reg <- function(
     mutate(
       # Convert the categorical variables to factors to keep the levels in the
       # correct order everywhere
-      Park = factor(Park, levels = names(get_park_colors(non_park_comparison))),
+      Park = factor(Park, levels = c("Hainich", "Jasmund", "Vorpomm")),
       Detected_by_category = factor(
         Detected_by_category,
         levels = c("Quantified", "Detected", "Not detected")

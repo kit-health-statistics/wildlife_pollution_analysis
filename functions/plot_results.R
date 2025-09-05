@@ -32,7 +32,7 @@ plot_results <- function(
       to = max(df_filtered$Date_of_sample_collection),
       by = 1
     ),
-    Park = "Bay_Wald",  # Reference category
+    Park = "Hainich",  # Reference category
     Age = "Fawn",  # Reference category
     Species = "C. elaphus"  # Reference category
   )
