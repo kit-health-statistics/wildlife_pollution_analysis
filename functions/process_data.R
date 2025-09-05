@@ -77,6 +77,16 @@ process_data <- function(dat, chem_categories, exclude_uninformative = TRUE) {
         # a warning, even though everything is fine.
         !is.na(suppressWarnings(as.numeric(Value))) ~ "quantified"
       ),
+      # If not detected, the cell contains value in a format "<LOQ". We extract
+      # these stated LOQs from here, so that we can compare them later with
+      # those contained in the list of substances and discover discrepancies.
+      Stated_threshold = ifelse(
+        detected == "detected",
+        as.numeric(str_sub(Value, start = 2)),
+        NA_real_
+      ),
+      # Convert the character values to numeric values for the quantified
+      # measurements.
       Value = ifelse(
         detected == "quantified",
         suppressWarnings(as.numeric(Value)),
@@ -98,6 +108,39 @@ process_data <- function(dat, chem_categories, exclude_uninformative = TRUE) {
       "Unmatched chemicals found:",
       paste(unmatched, collapse = ", ")
     ))
+  }
+
+  # Check that all the quantified values are above the LOQ. If there is a
+  # quantified measurement below the LOQ, it indicates an error in the data.
+  below_LOQ <- dat_long |>  # nolint
+    mutate(
+      below_LOQ = (detected == "quantified" & Value < Quantification_threshold)
+    ) |>
+    pull(below_LOQ)
+  if (any(below_LOQ)) {
+    sample_string <- str_c(dat_long$Sample_number[below_LOQ], collapse = ", ")
+    substance_string <- str_c(dat_long$Chemical[below_LOQ], collapse = ", ")
+    warning(paste0("There are quantified measurements below the LOQ. In particular for samples " , sample_string, " and substances ", substance_string, ".\n"))  # nolint
+  }
+
+  # Check that the LOQs stated in the individual measurements match with those
+  # in the list of substances
+  threshold_mismatch <- dat_long |>
+    mutate(
+      threshold_mismatch = detected == "detected" &
+        Stated_threshold != Quantification_threshold
+    ) |>
+    pull(threshold_mismatch)
+  if (any(threshold_mismatch)) {
+    sample_string <- str_c(
+      dat_long$Sample_number[threshold_mismatch],
+      collapse = ", "
+    )
+    substance_string <- str_c(
+      dat_long$Chemical[threshold_mismatch],
+      collapse = ", "
+    )
+    warning(paste0("There are mismatches between the LOQs in the data and in the list of the substances. In particular for samples " , sample_string, " and substances ", substance_string, ".\n"))  # nolint
   }
 
   # Remove chemicals, where we have too little information. This means dropping

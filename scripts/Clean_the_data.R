@@ -109,9 +109,39 @@ clean_data[clean_data$Sample_number == "Z73", "Date_of_sample_collection"] <-
 # Fix the incorrect age category
 clean_data[clean_data$Sample_number == "F35", "Age"] <- "adult"
 
+# Fix a missing number
+clean_data[clean_data$Sample_number == "L72", "Fipronil sulfone"] <- "<1"
+
 # Fix confirmed incorrect values
 clean_data[clean_data$Sample_number == "G02", "OC (Octocrylene)"] <- "<10"
+clean_data[clean_data$Sample_number == "G19", "Caffeine"] <- "6.8"
 clean_data[clean_data$Sample_number == "D71", "Clopidogrel"] <- "<1"
+clean_data[
+  clean_data$Sample_number == "C02",
+  "2,2',3,4,4',5'-Hexachlorobiphenyl (PCB #138)"
+] <- "<1"
+clean_data[clean_data$Sample_number == "L95", "(-)-Cotinine"] <- "<2"
+clean_data[clean_data$Sample_number == "Z73", "(-)-Cotinine"] <- "<2"
+clean_data[clean_data$Sample_number == "A55", "(-)-Cotinine"] <- "6.6"
+clean_data[clean_data$Sample_number == "A68", "(-)-Cotinine"] <- "6.0"
+clean_data[clean_data$Sample_number == "A77", "(-)-Cotinine"] <- "2.4"
+clean_data[clean_data$Sample_number == "A85", "(-)-Cotinine"] <- "9.7"
+clean_data[clean_data$Sample_number == "E11", "(-)-Cotinine"] <- "4.6"
+clean_data[clean_data$Sample_number == "E13", "(-)-Cotinine"] <- "5.9"
+clean_data[clean_data$Sample_number == "E16", "(-)-Cotinine"] <- "5.3"
+clean_data[clean_data$Sample_number == "E37", "(-)-Cotinine"] <- "2.7"
+clean_data[clean_data$Sample_number == "E66", "(-)-Cotinine"] <- "15.4"
+clean_data[clean_data$Sample_number == "E83", "(-)-Cotinine"] <- "6.9"
+
+# Fix the confirmed incorrect thresholds for whole columns
+clean_data[grepl("<", clean_data$`(-)-Cotinine`), "(-)-Cotinine"] <- "<2"
+clean_data[grepl("<", clean_data$TDCPP), "TDCPP"] <- "<2"
+clean_data[grepl("<", clean_data$Picolinafen), "Picolinafen"] <- "<2"
+clean_data[grepl("<", clean_data$Fenpropidin), "Fenpropidin"] <- "<2"
+clean_data[
+  grepl("<", clean_data$`2,2',4,4'-tetrabromodiphenyl ether (BDE-47)`),
+  "2,2',4,4'-tetrabromodiphenyl ether (BDE-47)"
+] <- "<1"
 
 # Load the list of measured chemicals ==========================================
 

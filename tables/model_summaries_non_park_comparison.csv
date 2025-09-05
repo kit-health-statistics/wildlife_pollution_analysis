@@ -1,7 +1,7 @@
 category,Coefficient,Value,Std. Error,p,Estimate_on_the_response_scale,lwr_on_the_response_scale,uppr_on_the_response_scale
 POP,(Intercept),2.1328,0.3086,0,8.4387,4.6088,15.4514
 POP,ParkEifel,0.3513,0.1754,0.0452,1.4208,1.0076,2.0036
-POP,ParkHainich,-0.1743,0.2995,0.5607,0.8401,0.467,1.5111
+POP,ParkHainich,-0.1743,0.2996,0.5607,0.8401,0.467,1.5111
 POP,ParkHunsrueck,0.2866,0.1815,0.1144,1.3319,0.9331,1.901
 POP,ParkJasmund,-0.315,0.5718,0.5817,0.7298,0.2379,2.2382
 POP,ParkKellerwald,0.3802,0.1914,0.0469,1.4626,1.0052,2.1282
