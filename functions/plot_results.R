@@ -1,10 +1,13 @@
 # Function plotting the overview of the regression fit
 plot_results <- function(
   df_filtered,
+  df_descriptive,
   fitted_survreg_model,
   pollutant_category,
   all_plots = FALSE,
-  non_park_comparison = FALSE
+  non_park_comparison = FALSE,
+  centered = TRUE,
+  endpoint_transformation = TRUE
 ) {
   # List to store the plots
   plt <- vector("list", 5)
@@ -20,29 +23,20 @@ plot_results <- function(
 
   # Display the spline =========================================================
 
-  # For calculating the fitted spline curve
-  newdata <- data.frame(
-    Date_numeric = seq(
-      from = min(df_filtered$Date_numeric),
-      to = max(df_filtered$Date_numeric),
-      by = 1
-    ),
+  # We compute the possibly centered spline and draw asymmetric CIs (by endpoint
+  # transformation) as requested for plotting.
+  spline_curve <- calculate_spline_ci(
+    fitted_survreg_model,
+    max(df_filtered$Date_numeric),
+    centered = centered,
+    endpoint_transformation = endpoint_transformation
+  ) |> mutate(
     Date_of_sample_collection = seq(
-      from = min(df_filtered$Date_of_sample_collection),
-      to = max(df_filtered$Date_of_sample_collection),
+      min(df_filtered$Date_of_sample_collection),
+      max(df_filtered$Date_of_sample_collection),
       by = 1
-    ),
-    Park = "Bay_Wald",  # Reference category
-    Age = "Fawn"  # Reference category
-  )
-  spline_curve <- as.data.frame(
-    predict(fitted_survreg_model, newdata = newdata, se = TRUE)
-  ) |>
-    mutate(
-      Date_of_sample_collection = newdata$Date_of_sample_collection,
-      lower = fit - se.fit,
-      upper = fit + se.fit
     )
+  )
 
   # Data frames for the rest of the plots (coefficient tiles, boxplots and
   # barplots) ==================================================================
@@ -93,7 +87,7 @@ plot_results <- function(
       park_colors,
       rep(NA, empty_tiles),
       get_age_mosaic_colors() |>
-        lapply(function(x) unname(x["Quantified"])) |>
+        lapply(function(x) unname(x["quantified"])) |>
         unlist()
     )
     names(covcat_colors) <- df_coeffs$coeff
@@ -103,7 +97,11 @@ plot_results <- function(
 
     # For the descriptive box- and barplot, concatenate the Park and Age
     # covariates
-    df_boxbar <- df_filtered |>
+    df_boxbar <- df_descriptive |>
+      filter(primary_category == pollutant_category) |>
+      # `Age` is an ordered factor. Convert it to character to avoid problems
+      # while pivoting
+      mutate(Age = as.character(Age)) |>
       pivot_longer(
         c(Park, Age),
         names_to = "Covariate",
@@ -119,9 +117,11 @@ plot_results <- function(
         levels = names(covcat_colors)
       )
     ) |>
-    # Indicate, whether we have enough observations to draw a boxplot
+    # Indicate, whether we have enough observations to draw a boxplot. The
+    # information is already present, when it comes to the `Park` covariate,
+    # However, we have to redo it for the age covariate too.
     group_by(Covariate_category) |>
-    mutate(n_quantified = sum(Detected_by_category == "Quantified")) |>
+    mutate(n_quantified = sum(Detected_by_category == "quantified")) |>
     ungroup() |>
     mutate(Boxplot = n_quantified >= 5)
 
@@ -130,15 +130,30 @@ plot_results <- function(
     spline_curve,
     aes(x = Date_of_sample_collection, y = fit, ymin = lower, ymax = upper)
   ) +
-    geom_line() +
-    geom_ribbon(alpha = 0.5) +
+    geom_ribbon(aes(alpha = "CI")) +
+    geom_line(aes(color = "Fit")) +
+    scale_alpha_manual(
+      values = c("CI" = 0.5),
+      labels = c("CI" = "95% confidence interval"),
+      name = NULL
+    ) +
+    scale_color_manual(
+      values = c("Fit" = "black"),
+      labels = c("Fit" = "fit"),
+      name = NULL
+    ) +
     scale_x_date(date_breaks = "1 month", date_labels = "%d %b") +
     labs(
-      x = "Date",
-      title = "Penalized spline for the date variable",
-      y = bquote("Concentration in" ~ mu * "g" ~ kg^-1)
+      x = "date",
+      y = NULL,
+      title = "Penalized spline for the date variable"
     ) +
     coord_cartesian(ylim = c(0, NA))
+
+  # If we center the curve, plot a horizontal line going through 1
+  if (centered) {
+    plt$spline <- plt$spline + geom_hline(yintercept = 1, linetype = "dotted")
+  }
 
   # Breaks of the color gradient for the categorical coefficients. Needs to be
   # determined manually.
@@ -202,10 +217,9 @@ plot_results <- function(
       axis.text.y = element_blank(),
       axis.text.x = element_text(size = 8)
     )
-
   plt$boxplot <- df_boxbar |>
     filter(
-      Detected_by_category == "Quantified"
+      Detected_by_category == "quantified"
     ) |>
     ggplot(
       aes(
@@ -242,7 +256,7 @@ plot_results <- function(
     scale_fill_manual(values = covcat_colors, guide = "none") +
     labs(
       x = NULL,
-      y = bquote("Concentration in" ~ mu * "g" ~ kg^-1),
+      y = bquote("concentration in" ~ mu * "g" ~ kg^-1),
       title = "Quantified concentrations"
     ) +
     coord_cartesian(ylim = c(1, 1000)) +
@@ -266,9 +280,9 @@ plot_results <- function(
     ) +
     scale_color_manual(
       values = c(
-        "Quantified" = "gray10",
-        "Detected" = "gray10",
-        "Not detected" = alpha("white", 0)
+        "quantified" = "gray10",
+        "detected" = "gray10",
+        "not detected" = alpha("white", 0)
       ),
       guide = "none"
     ) +
@@ -277,9 +291,9 @@ plot_results <- function(
       guide = "none"
     ) +
     scale_alpha_manual(
-      breaks = c("Quantified", "Detected"),
-      values = c("Quantified" = 1, "Detected" = 0.5, "Not detected" = 0),
-      name = "Occurrence\nof pollutants"
+      breaks = c("quantified", "detected"),
+      values = c("quantified" = 1, "detected" = 0.5, "not detected" = 0),
+      name = "Occurrence of pollutants"
     ) +
     labs(
       title = "Proportion quantified or qualitatively detected",
@@ -292,15 +306,44 @@ plot_results <- function(
       axis.text.x = element_text(size = 8)
     )
 
-  # Compose the figures using patchwork
-  plt$composite <-
-    (plt$spline / plt$reg_coeffs / plt$boxplot / plt$barplot) +
+  # Compose the figures using patchwork ========================================
+
+  # Extract the legends. Suppress warnings, because the empty tile is in fact an
+  # NA value, which creates warnings.
+  spline_legend <- suppressWarnings(ggpubr::get_legend(plt$spline))
+  reg_coeffs_legend <- suppressWarnings(ggpubr::get_legend(plt$reg_coeffs))
+  barplot_legend <- suppressWarnings(ggpubr::get_legend(plt$barplot))
+  plt$spline <- plt$spline + theme(legend.position = "none")
+  plt$reg_coeffs <- plt$reg_coeffs + theme(legend.position = "none")
+  plt$barplot <- plt$barplot + theme(legend.position = "none")
+  # Create an empty plot to fill the grid
+  boxplot_legend <- ggplot_box_legend(boxplot_only = TRUE)
+
+  # Add a "not applicable" label to the categories, where we do not want to
+  # present the results
+  if (pollutant_category %in% get_excluded_categories()) {
+    annotation_title <- paste0(pollutant_category, " (not applicable)")
+  } else {
+    annotation_title <- pollutant_category
+  }
+
+  # Compose the plots into a 4x2 grid
+  plt$composite <- (
+    plt$spline +
+      spline_legend +
+      plt$reg_coeffs +
+      reg_coeffs_legend +
+      plt$boxplot +
+      boxplot_legend +
+      plt$barplot +
+      barplot_legend
+  ) +
     plot_layout(
-      guides = "collect"
+      design = "AB\nCD\nEF\nGH",
+      widths = c(5, 1)
     ) &
-    theme(legend.position = "right") &
     plot_annotation(
-      title = pollutant_category,
+      title = annotation_title,
       theme = theme(
         plot.title = element_text(
           size = 16,
