@@ -96,9 +96,14 @@ plot_results <- function(
       rep(NA, empty_tiles),
       get_age_mosaic_colors() |>
         lapply(function(x) unname(x["quantified"])) |>
+        unlist(),
+      rep(NA, empty_tiles),
+      get_sex_mosaic_colors() |>
+        lapply(function(x) unname(x["quantified"])) |>
         unlist()
     )
-    names(covcat_colors) <- df_coeffs$coeff[1:12]
+
+    names(covcat_colors) <- df_coeffs$coeff
     x_labels_coeffs <- c(
       x_labels_coeffs,
       levels(df_filtered$Age),
@@ -119,7 +124,7 @@ plot_results <- function(
       # while pivoting
       mutate(Age = as.character(Age)) |>
       pivot_longer(
-        c(Park, Age),
+        c(Park, Age, Sex),
         names_to = "Covariate",
         values_to = "Covariate_category"
       )

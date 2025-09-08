@@ -83,7 +83,7 @@ fit_interval_reg <- function(
     df_detected_by_category <- df_detected_by_category |>
       mutate(
         Age = factor(Age, levels = c("fawn", "subadult", "adult")),
-        Sex = factor(Sex, levels = c("female", "male"))
+        Sex = factor(Sex, levels = c("male", "female"))
       )
   }
 
