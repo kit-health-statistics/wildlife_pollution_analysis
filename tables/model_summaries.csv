@@ -1,185 +1,115 @@
-category,Coefficient,Value,Std. Error,p
-API,(Intercept),0.2467,85816.1197,1
-API,AgeSubadult,-0.2594,0.2233,0.2453
-API,AgeAdult,-0.1332,0.1692,0.4313
-API,ParkEifel,1.7447,85816.1197,1
-API,ParkHainich,1.8242,85816.1197,1
-API,ParkHunsrueck,NA,0,NA
-API,ParkJasmund,NA,0,NA
-API,ParkKellerwald,1.3494,85816.1197,1
-API,ParkSaechs_Schw,NA,0,NA
-API,ParkVorpomm,NA,0,NA
-API,ps(Date_numeric)3,-0.5778,0.6369,0.3643
-API,ps(Date_numeric)4,-1.0665,0.8657,0.218
-API,ps(Date_numeric)5,-1.2398,0.8763,0.1571
-API,ps(Date_numeric)6,-1.1869,0.8084,0.1421
-API,ps(Date_numeric)7,-1.0491,0.7556,0.165
-API,ps(Date_numeric)8,-0.8321,0.7133,0.2434
-API,ps(Date_numeric)9,-0.7644,0.6983,0.2736
-API,ps(Date_numeric)10,-0.9932,0.6979,0.1547
-API,ps(Date_numeric)11,-1.1157,0.7571,0.1406
-API,ps(Date_numeric)12,-1.1348,0.8509,0.1823
-API,ps(Date_numeric)13,-1.1315,1.151,0.3256
-API,ps(Date_numeric)14,-1.1283,1.7581,0.521
-API,Log(scale),-1.225,0.2217,0
-Anthropogenic pollution,(Intercept),2.6353,0.3605,0
-Anthropogenic pollution,AgeSubadult,0.1302,0.0924,0.1586
-Anthropogenic pollution,AgeAdult,0.0416,0.0871,0.6332
-Anthropogenic pollution,ParkEifel,-0.2778,0.1692,0.1006
-Anthropogenic pollution,ParkHainich,0.2237,0.1549,0.1486
-Anthropogenic pollution,ParkHunsrueck,-0.5301,0.2023,0.0088
-Anthropogenic pollution,ParkJasmund,0.3141,0.1548,0.0424
-Anthropogenic pollution,ParkKellerwald,-0.3997,0.2154,0.0634
-Anthropogenic pollution,ParkSaechs_Schw,0.241,0.147,0.1011
-Anthropogenic pollution,ParkVorpomm,-0.1211,0.1674,0.4696
-Anthropogenic pollution,ps(Date_numeric)3,-0.2446,0.2505,0.3288
-Anthropogenic pollution,ps(Date_numeric)4,-0.4456,0.3584,0.2137
-Anthropogenic pollution,ps(Date_numeric)5,-0.5311,0.3789,0.161
-Anthropogenic pollution,ps(Date_numeric)6,-0.5908,0.3746,0.1148
-Anthropogenic pollution,ps(Date_numeric)7,-0.5513,0.3624,0.1282
-Anthropogenic pollution,ps(Date_numeric)8,-0.4823,0.3485,0.1664
-Anthropogenic pollution,ps(Date_numeric)9,-0.4713,0.3404,0.1661
-Anthropogenic pollution,ps(Date_numeric)10,-0.5076,0.3404,0.1359
-Anthropogenic pollution,ps(Date_numeric)11,-0.4477,0.3486,0.1991
-Anthropogenic pollution,ps(Date_numeric)12,-0.3903,0.3512,0.2663
-Anthropogenic pollution,ps(Date_numeric)13,-0.555,0.3548,0.1178
-Anthropogenic pollution,ps(Date_numeric)14,-0.7725,0.4429,0.0811
-Anthropogenic pollution,Log(scale),-0.6532,0.0589,0
-Industrial chemical,(Intercept),0.6536,1.1937,0.584
-Industrial chemical,AgeSubadult,-0.2104,0.28,0.4523
-Industrial chemical,AgeAdult,-0.1423,0.2809,0.6125
-Industrial chemical,ParkEifel,0.7964,0.4608,0.0839
-Industrial chemical,ParkHainich,-4.1308,31132.3064,0.9999
-Industrial chemical,ParkHunsrueck,-0.1033,0.5976,0.8627
-Industrial chemical,ParkJasmund,-4.2098,33127.983,0.9999
-Industrial chemical,ParkKellerwald,-3.3352,34711.4847,0.9999
-Industrial chemical,ParkSaechs_Schw,0.3199,0.4924,0.516
-Industrial chemical,ParkVorpomm,-0.3848,0.6546,0.5567
-Industrial chemical,ps(Date_numeric)3,-0.1796,0.8383,0.8304
-Industrial chemical,ps(Date_numeric)4,-0.3215,1.2172,0.7917
-Industrial chemical,ps(Date_numeric)5,-0.2983,1.2949,0.8178
-Industrial chemical,ps(Date_numeric)6,-0.0764,1.2655,0.9519
-Industrial chemical,ps(Date_numeric)7,0.2627,1.183,0.8242
-Industrial chemical,ps(Date_numeric)8,0.6006,1.1302,0.5952
-Industrial chemical,ps(Date_numeric)9,0.797,1.1185,0.4761
-Industrial chemical,ps(Date_numeric)10,0.3992,1.119,0.7213
-Industrial chemical,ps(Date_numeric)11,0.0343,1.1592,0.9764
-Industrial chemical,ps(Date_numeric)12,0.0067,1.1774,0.9955
-Industrial chemical,ps(Date_numeric)13,0.2032,1.1655,0.8616
-Industrial chemical,ps(Date_numeric)14,0.4415,1.4466,0.7602
-Industrial chemical,Log(scale),-0.2729,0.1272,0.032
-PAH,(Intercept),2.8062,0.1794,0
-PAH,AgeSubadult,0.0303,0.049,0.5363
-PAH,AgeAdult,0.0409,0.0459,0.3729
-PAH,ParkEifel,0.0062,0.0808,0.9385
-PAH,ParkHainich,-0.0508,0.09,0.5723
-PAH,ParkHunsrueck,0.0425,0.0822,0.6055
-PAH,ParkJasmund,-0.0705,0.0929,0.448
-PAH,ParkKellerwald,-0.1751,0.1048,0.0948
-PAH,ParkSaechs_Schw,-0.1305,0.0857,0.128
-PAH,ParkVorpomm,-0.1154,0.0932,0.2155
-PAH,ps(Date_numeric)3,-0.0717,0.1281,0.5758
-PAH,ps(Date_numeric)4,-0.1335,0.1793,0.4565
-PAH,ps(Date_numeric)5,-0.15,0.1866,0.4216
-PAH,ps(Date_numeric)6,-0.1739,0.183,0.3419
-PAH,ps(Date_numeric)7,-0.2197,0.1755,0.2106
-PAH,ps(Date_numeric)8,-0.2461,0.1704,0.1487
-PAH,ps(Date_numeric)9,-0.2325,0.1667,0.1632
-PAH,ps(Date_numeric)10,-0.1979,0.1663,0.234
-PAH,ps(Date_numeric)11,-0.1916,0.1729,0.2678
-PAH,ps(Date_numeric)12,-0.2,0.177,0.2585
-PAH,ps(Date_numeric)13,-0.1708,0.1814,0.3462
-PAH,ps(Date_numeric)14,-0.1306,0.2335,0.5759
-PAH,Log(scale),-1.5118,0.0797,0
-PCP,(Intercept),3.6956,0.5517,0
-PCP,AgeSubadult,0.0617,0.0931,0.5074
-PCP,AgeAdult,-0.0038,0.0992,0.9695
-PCP,ParkEifel,0.5066,0.4029,0.2086
-PCP,ParkHainich,0.2732,0.4071,0.5022
-PCP,ParkHunsrueck,0.3417,0.4097,0.4043
-PCP,ParkJasmund,-0.0368,0.508,0.9422
-PCP,ParkKellerwald,0.0543,0.467,0.9074
-PCP,ParkSaechs_Schw,0.0394,0.4375,0.9282
-PCP,ParkVorpomm,0.2517,0.407,0.5363
-PCP,ps(Date_numeric)3,-0.3645,0.3331,0.2739
-PCP,ps(Date_numeric)4,-0.6841,0.4614,0.1382
-PCP,ps(Date_numeric)5,-0.7966,0.4828,0.0989
-PCP,ps(Date_numeric)6,-0.7271,0.461,0.1147
-PCP,ps(Date_numeric)7,-0.5878,0.4163,0.158
-PCP,ps(Date_numeric)8,-0.4762,0.3919,0.2243
-PCP,ps(Date_numeric)9,-0.4278,0.3856,0.2673
-PCP,ps(Date_numeric)10,-0.4209,0.3858,0.2753
-PCP,ps(Date_numeric)11,-0.4618,0.4089,0.2587
-PCP,ps(Date_numeric)12,-0.5497,0.4485,0.2203
-PCP,ps(Date_numeric)13,-0.6302,0.5566,0.2575
-PCP,ps(Date_numeric)14,-0.7091,0.8097,0.3812
-PCP,Log(scale),-1.2996,0.1361,0
-POP,(Intercept),2.315,0.2838,0
-POP,AgeSubadult,-0.2653,0.0817,0.0012
-POP,AgeAdult,-0.3223,0.0884,3e-4
-POP,ParkEifel,0.2152,0.1585,0.1745
-POP,ParkHainich,-0.3065,0.2529,0.2254
-POP,ParkHunsrueck,0.2063,0.1625,0.2041
-POP,ParkJasmund,-0.4051,0.342,0.2362
-POP,ParkKellerwald,0.3051,0.1764,0.0836
-POP,ParkSaechs_Schw,0.061,0.1622,0.707
-POP,ParkVorpomm,-0.4734,0.5145,0.3575
-POP,ps(Date_numeric)3,-0.0528,0.1969,0.7886
-POP,ps(Date_numeric)4,-0.0986,0.2659,0.7109
-POP,ps(Date_numeric)5,-0.1032,0.2718,0.7043
-POP,ps(Date_numeric)6,-0.0517,0.2678,0.847
-POP,ps(Date_numeric)7,0.0129,0.2559,0.9599
-POP,ps(Date_numeric)8,0.0513,0.2506,0.8379
-POP,ps(Date_numeric)9,0.0151,0.2487,0.9516
-POP,ps(Date_numeric)10,-0.0803,0.2484,0.7466
-POP,ps(Date_numeric)11,-0.1165,0.2637,0.6586
-POP,ps(Date_numeric)12,-0.0855,0.2735,0.7547
-POP,ps(Date_numeric)13,-0.0216,0.2851,0.9396
-POP,ps(Date_numeric)14,0.048,0.3831,0.9003
-POP,Log(scale),-1.3513,0.0814,0
-Pesticide,(Intercept),3.3025,1.2803,0.0099
-Pesticide,AgeSubadult,0.5262,0.243,0.0303
-Pesticide,AgeAdult,0.3542,0.233,0.1285
-Pesticide,ParkEifel,0.1365,0.6849,0.842
-Pesticide,ParkHainich,0.607,0.5845,0.299
-Pesticide,ParkHunsrueck,-0.2895,0.7234,0.6891
-Pesticide,ParkJasmund,0.6646,0.5659,0.2402
-Pesticide,ParkKellerwald,-0.4127,0.7752,0.5945
-Pesticide,ParkSaechs_Schw,-2.0377,2189.6613,0.9993
-Pesticide,ParkVorpomm,-1.4508,2981.6323,0.9996
-Pesticide,ps(Date_numeric)3,-1.2623,0.9743,0.1951
-Pesticide,ps(Date_numeric)4,-2.3668,1.4649,0.1062
-Pesticide,ps(Date_numeric)5,-2.9957,1.7185,0.0813
-Pesticide,ps(Date_numeric)6,-3.2126,1.744,0.0655
-Pesticide,ps(Date_numeric)7,-3.1079,1.5638,0.0469
-Pesticide,ps(Date_numeric)8,-2.7713,1.3013,0.0332
-Pesticide,ps(Date_numeric)9,-2.2698,1.1417,0.0468
-Pesticide,ps(Date_numeric)10,-2.1592,1.1317,0.0564
-Pesticide,ps(Date_numeric)11,-2.2244,1.1697,0.0572
-Pesticide,ps(Date_numeric)12,-2.0845,1.187,0.0791
-Pesticide,ps(Date_numeric)13,-2.3118,1.2185,0.0578
-Pesticide,ps(Date_numeric)14,-2.6108,1.5281,0.0875
-Pesticide,Log(scale),-0.9765,0.2063,0
-Plasticizer,(Intercept),3.27,0.5094,0
-Plasticizer,AgeSubadult,-0.0697,0.1491,0.64
-Plasticizer,AgeAdult,0.2093,0.1289,0.1044
-Plasticizer,ParkEifel,-0.0263,0.2367,0.9114
-Plasticizer,ParkHainich,-0.1329,0.2392,0.5783
-Plasticizer,ParkHunsrueck,0.0402,0.2417,0.8679
-Plasticizer,ParkJasmund,-0.2888,0.2533,0.2543
-Plasticizer,ParkKellerwald,-0.3181,0.2973,0.2846
-Plasticizer,ParkSaechs_Schw,-0.7947,0.2635,0.0026
-Plasticizer,ParkVorpomm,0.1406,0.2384,0.5555
-Plasticizer,ps(Date_numeric)3,-0.1911,0.3592,0.5947
-Plasticizer,ps(Date_numeric)4,-0.3377,0.5081,0.5063
-Plasticizer,ps(Date_numeric)5,-0.292,0.5321,0.5832
-Plasticizer,ps(Date_numeric)6,-0.2599,0.5222,0.6188
-Plasticizer,ps(Date_numeric)7,-0.3529,0.502,0.4822
-Plasticizer,ps(Date_numeric)8,-0.4626,0.4881,0.3433
-Plasticizer,ps(Date_numeric)9,-0.5216,0.4803,0.2774
-Plasticizer,ps(Date_numeric)10,-0.5281,0.481,0.2722
-Plasticizer,ps(Date_numeric)11,-0.556,0.4993,0.2655
-Plasticizer,ps(Date_numeric)12,-0.4393,0.5104,0.3893
-Plasticizer,ps(Date_numeric)13,-0.2169,0.5292,0.6818
-Plasticizer,ps(Date_numeric)14,0.0068,0.6781,0.992
-Plasticizer,Log(scale),-0.2728,0.073,2e-4
+category,Coefficient,Value,Std. Error,p,Estimate_on_the_response_scale,lwr_on_the_response_scale,uppr_on_the_response_scale
+API,(Intercept),1.8311,0.4547,1e-4,6.2407,2.5596,15.2155
+API,Agesubadult,NA,0,NA,NA,NA,NA
+API,Ageadult,NA,0,NA,NA,NA,NA
+API,ParkJasmund,NA,0,NA,NA,NA,NA
+API,ParkVorpomm,NA,0,NA,NA,NA,NA
+API,SpeciesD. dama,-0.957,0.2087,0,0.384,0.2551,0.5781
+API,ps(Date_numeric)3,-0.1873,21.6431,0.9931,0.8292,0,2194196113572066600
+API,ps(Date_numeric)4,NA,0,NA,NA,NA,NA
+API,ps(Date_numeric)5,-0.6186,413.1909,0.9988,0.5387,0,Inf
+API,ps(Date_numeric)6,-0.3496,6.6868,0.9583,0.7049,0,346720.697
+API,ps(Date_numeric)7,NA,0,NA,NA,NA,NA
+API,ps(Date_numeric)8,NA,0,NA,NA,NA,NA
+API,ps(Date_numeric)9,NA,0,NA,NA,NA,NA
+API,ps(Date_numeric)10,NA,0,NA,NA,NA,NA
+API,ps(Date_numeric)11,NA,0,NA,NA,NA,NA
+API,ps(Date_numeric)12,NA,0,NA,NA,NA,NA
+API,ps(Date_numeric)13,NA,0,NA,NA,NA,NA
+API,ps(Date_numeric)14,NA,0,NA,NA,NA,NA
+API,Log(scale),-3.0607,0,0,0.0469,0.0469,0.0469
+Anthropogenic pollution,(Intercept),0.5512,1.6336,0.7358,1.7353,0.0706,42.6513
+Anthropogenic pollution,Agesubadult,0.0986,0.1562,0.5282,1.1036,0.8125,1.499
+Anthropogenic pollution,Ageadult,0.1255,0.1346,0.3513,1.1337,0.8708,1.4759
+Anthropogenic pollution,ParkJasmund,-0.0408,0.1521,0.7885,0.96,0.7125,1.2935
+Anthropogenic pollution,ParkVorpomm,-0.3198,0.1612,0.0472,0.7263,0.5296,0.996
+Anthropogenic pollution,SpeciesD. dama,0.2317,0.1315,0.078,1.2607,0.9744,1.6313
+Anthropogenic pollution,ps(Date_numeric)3,0.4379,0.7335,0.5505,1.5495,0.368,6.5237
+Anthropogenic pollution,ps(Date_numeric)4,0.8729,1.2224,0.4751,2.3939,0.2181,26.278
+Anthropogenic pollution,ps(Date_numeric)5,1.2805,1.4961,0.392,3.5985,0.1917,67.5447
+Anthropogenic pollution,ps(Date_numeric)6,1.6143,1.6122,0.3167,5.0242000000000004,0.2132,118.4037
+Anthropogenic pollution,ps(Date_numeric)7,1.8127,1.6447,0.2704,6.127,0.2439,153.8976
+Anthropogenic pollution,ps(Date_numeric)8,1.7529,1.6449,0.2866,5.7715,0.2297,145.0224
+Anthropogenic pollution,ps(Date_numeric)9,1.6261,1.6364,0.3204,5.084,0.2057,125.6341
+Anthropogenic pollution,ps(Date_numeric)10,1.6095,1.6431,0.3273,5.0006,0.1997,125.2164
+Anthropogenic pollution,ps(Date_numeric)11,1.8321,1.6482,0.2663,6.2469,0.247,157.9972
+Anthropogenic pollution,ps(Date_numeric)12,1.8222,1.6505,0.2696,6.1855,0.2435,157.1421
+Anthropogenic pollution,ps(Date_numeric)13,1.4551,1.6709,0.3839,4.2847,0.1621,113.2912
+Anthropogenic pollution,ps(Date_numeric)14,1.0358,1.7913,0.5631,2.8173,0.0841,94.3222
+Anthropogenic pollution,Log(scale),-0.6143,0.0884,0,0.541,0.455,0.6434
+PAH,(Intercept),-0.6386,8.3909,0.9393,0.528,0,7328223.2377
+PAH,Agesubadult,-0.0323,0.182,0.859,0.9682,0.6777,1.3831
+PAH,Ageadult,-0.0229,0.1651,0.8897,0.9774,0.7071,1.3509
+PAH,ParkJasmund,-0.0758,0.2075,0.715,0.927,0.6173,1.3922
+PAH,ParkVorpomm,0.0297,0.1754,0.8655,1.0302,0.7304,1.453
+PAH,SpeciesD. dama,0.2174,0.1625,0.1811,1.2428,0.9037,1.709
+PAH,ps(Date_numeric)3,0.5395,2.6708,0.8399,1.7152,0.0091,321.9179
+PAH,ps(Date_numeric)4,1.0791,4.8898,0.8253,2.942,2e-4,42743.6762
+PAH,ps(Date_numeric)5,1.6186,6.6458,0.8076,5.0462,0,2290310.8762
+PAH,ps(Date_numeric)6,2.1582,7.8574,0.7836,8.6553,0,42219309.132
+PAH,ps(Date_numeric)7,2.6914,8.4043,0.7488,14.7525,0,210190645.445
+PAH,ps(Date_numeric)8,2.924,8.4196,0.7284,18.6151,0,273326160.3196
+PAH,ps(Date_numeric)9,2.8533,8.3809,0.7335,17.3441,0,236063483.0152
+PAH,ps(Date_numeric)10,2.678,8.3956,0.7497,14.5556,0,203870318.1307
+PAH,ps(Date_numeric)11,2.7648,8.4038,0.7422,15.876,0,225958750.2602
+PAH,ps(Date_numeric)12,2.7835,8.3991,0.7403,16.1758,0,228148707.7296
+PAH,ps(Date_numeric)13,2.4174,8.4257,0.7742,11.2163,0,166660774.8324
+PAH,ps(Date_numeric)14,2.0075,8.583,0.8151,7.4446,0,150550589.4942
+PAH,Log(scale),-0.9455,0.2065,0,0.3885,0.2592,0.5823
+PCP,(Intercept),3.4998,2.3885,0.1428,33.11,0.3068,3572.8662
+PCP,Agesubadult,0.21,0.2179,0.3352,1.2337,0.8048,1.8912
+PCP,Ageadult,-0.2094,0.3223,0.5159,0.8111,0.4313,1.5254
+PCP,ParkJasmund,-0.0375,0.3667,0.9186,0.9632,0.4695,1.9762
+PCP,ParkVorpomm,0.1126,0.2284,0.6221,1.1192,0.7153,1.7512
+PCP,SpeciesD. dama,-0.0912,0.1756,0.6033,0.9128,0.647,1.2877
+PCP,ps(Date_numeric)3,-0.0251,2.006,0.99,0.9752,0.0191,49.7251
+PCP,ps(Date_numeric)4,-0.0704,2.8346,0.9802,0.9321,0.0036,241.1203
+PCP,ps(Date_numeric)5,-0.1061,3.0919,0.9726,0.8994,0.0021,385.3052
+PCP,ps(Date_numeric)6,-0.1346,2.9004,0.963,0.8741,0.003,257.2327
+PCP,ps(Date_numeric)7,-0.2134,2.5264,0.9327,0.8078,0.0057,114.2376
+PCP,ps(Date_numeric)8,-0.4133,2.4161,0.8642,0.6614,0.0058,75.3525
+PCP,ps(Date_numeric)9,0.1049,2.4088,0.9653,1.1106,0.0099,124.7097
+PCP,ps(Date_numeric)10,0.2305,2.4597,0.9253,1.2593,0.0101,156.2381
+PCP,ps(Date_numeric)11,-0.7205,2.5945,0.7812,0.4865,0.003,78.6158
+PCP,ps(Date_numeric)12,-1.7016,3.5547,0.6322,0.1824,2e-4,193.5614
+PCP,ps(Date_numeric)13,-2.6827,5.4973,0.6256,0.0684,0,3267.5105
+PCP,ps(Date_numeric)14,-3.6637,8.1182,0.6518,0.0256,0,208493.2278
+PCP,Log(scale),-1.2861,0.3059,0,0.2764,0.1517,0.5034
+Pesticide,(Intercept),-5.1481,9.4621,0.5864,0.0058,0,658185.6115
+Pesticide,Agesubadult,0.4685,0.2676,0.08,1.5976,0.9456,2.6994
+Pesticide,Ageadult,0.2018,0.2946,0.4933,1.2237,0.6868,2.18
+Pesticide,ParkJasmund,0.1429,0.2373,0.5472,1.1536,0.7245,1.8366
+Pesticide,ParkVorpomm,-2.0885,41607.1831,1,0.1239,0,Inf
+Pesticide,SpeciesD. dama,0.4208,0.2554,0.0994,1.5232,0.9234,2.5127
+Pesticide,ps(Date_numeric)3,1.1445,2.9731,0.7003,3.1409,0.0093,1066.0671
+Pesticide,ps(Date_numeric)4,2.289,5.4521,0.6746,9.8654,2e-4,431452.6141
+Pesticide,ps(Date_numeric)5,3.4336,7.4261,0.6438,30.9866,0,64904565.7305
+Pesticide,ps(Date_numeric)6,4.5781,8.8088,0.6033,97.3266,0,3063828673.756
+Pesticide,ps(Date_numeric)7,5.7272,9.4674,0.5452,307.1004,0,35148358302.2385
+Pesticide,ps(Date_numeric)8,7.079,9.51,0.4567,1186.7391,0,147654108211.2911
+Pesticide,ps(Date_numeric)9,6.6727,9.4599,0.4806,790.5295,0,89173112485.296
+Pesticide,ps(Date_numeric)10,6.1873,9.462,0.5132,486.5461,0,55100313105.0947
+Pesticide,ps(Date_numeric)11,6.8286,9.4611,0.4704,923.8649,0,104445991621.5365
+Pesticide,ps(Date_numeric)12,6.7397,9.4592,0.4762,845.2727,0,95210760548.7522
+Pesticide,ps(Date_numeric)13,6.1953,9.4817,0.5135,490.4422,0,57736895982.6142
+Pesticide,ps(Date_numeric)14,5.5875,9.6063,0.5608,267.0684,0,40138391420.9445
+Pesticide,Log(scale),-1.1018,0.2814,1e-4,0.3323,0.1914,0.5768
+Plasticizer,(Intercept),2.9865,1.2873000000000001,0.0203,19.8152,1.5896,247.0087
+Plasticizer,Agesubadult,-0.0185,0.3029,0.9513,0.9817,0.5422,1.7774
+Plasticizer,Ageadult,0.1409,0.2429,0.5619,1.1513,0.7152,1.8532
+Plasticizer,ParkJasmund,-0.125,0.3068,0.6836,0.8825,0.4836,1.6101
+Plasticizer,ParkVorpomm,0.4006,0.2717,0.1404,1.4928,0.8764,2.5427
+Plasticizer,SpeciesD. dama,0.3082,0.2252,0.1712,1.3609,0.8752,2.1161
+Plasticizer,ps(Date_numeric)3,0.0139,1.0098,0.989,1.014,0.1401,7.3374
+Plasticizer,ps(Date_numeric)4,-0.0553,1.5101,0.9708,0.9462,0.049,18.2553
+Plasticizer,ps(Date_numeric)5,-0.3682,1.6541,0.8238,0.692,0.027,17.7038
+Plasticizer,ps(Date_numeric)6,-0.6906,1.5354,0.6529,0.5013,0.0247,10.1637
+Plasticizer,ps(Date_numeric)7,-0.7224,1.3528,0.5933,0.4856,0.0343,6.8824
+Plasticizer,ps(Date_numeric)8,-0.56,1.3039,0.6676,0.5712,0.0443,7.3568
+Plasticizer,ps(Date_numeric)9,-0.6034,1.3026,0.6432,0.547,0.0426,7.0263
+Plasticizer,ps(Date_numeric)10,-0.9128,1.3363,0.4946,0.4014,0.0292,5.5089
+Plasticizer,ps(Date_numeric)11,-1.0801,1.3632,0.4282,0.3395,0.0235,4.9122
+Plasticizer,ps(Date_numeric)12,-1.1311,1.3911,0.4162,0.3227,0.0211,4.9305
+Plasticizer,ps(Date_numeric)13,-1.3534,1.5862,0.3935,0.2584,0.0115,5.7866
+Plasticizer,ps(Date_numeric)14,-1.6058,2.1637,0.458,0.2007,0.0029,13.9445
+Plasticizer,Log(scale),-0.1553,0.1155,0.1787,0.8561,0.6827,1.0737

@@ -2,7 +2,9 @@ library("tidyverse")
 library("survival")
 library("patchwork")
 source("functions/fit_interval_regression.R")
+source("functions/ggplot_box_legend.R")
 source("functions/plot_elements.R")
+source("functions/process_data.R")
 source("functions/helper_functions.R")
 source("functions/plot_results.R")
 theme_set(theme_bw())
@@ -15,21 +17,33 @@ if (is.na(loc)) loc <- Sys.setlocale("LC_TIME", "English_United States.1252")
 
 # Model the main deer data =====================================================
 
-# Load and filter the data. We remove observation Z91 that was collected on
-# 29.05.2024, which is approx. 2 months before all other observations. This
+# Load and filter the model data. We remove observation Z91 that was collected
+# on 29.05.2024, which is approx. 2 months before all other observations. This
 # creates a gap in the time covariate, better continue without it.
 df_detected_by_category <- read_csv("data/data_by_pollutant_category.csv") |>
-  filter(Sample_number != "Z91") |> 
+  filter(Sample_number != "Z91") |>
   filter(Park %in% c("Hainich", "Jasmund", "Vorpomm"))
 
-# Fit the model
-results <- fit_interval_reg(df_detected_by_category)
+# Load and process the descriptive data, that shall be used for displaying the
+# bar- and boxplot part.
+chem_categories <- read_csv("data/chemical_categories.csv")
 
-bad_fitting <- which(lapply(results$plt, class) == "try-error")
+dat <- read_csv("data/clean_data.csv") |>
+  # Filter out the Z91 observation.
+  filter(Sample_number != "Z91")
+df_descriptive <- dat |>
+  process_data(chem_categories, exclude_uninformative = FALSE)
+
+# Fit the model
+results <- fit_interval_reg(df_detected_by_category, df_descriptive)
+
+# Put NULL everywhere, where fitting was unsuccessful
+bad_fitting <- results$plt |> lapply(is_empty) |> unlist() |> which()
 results$plt[bad_fitting] <- list(rep(NULL, length(bad_fitting)))
+results$fitted_mods[bad_fitting] <- list(rep(NULL, length(bad_fitting)))
 
 # Save the plots
-save_results_as_image(results$plt)
+save_results_as_image(results$plt, format = "png")
 
 # Save the results into an Excel file
 wb <- save_results_as_xls(results$fitted_mods)
@@ -51,11 +65,21 @@ df_roe_detected_by_category <- read_csv(
 
 results_roe <- fit_interval_reg(
   df_roe_detected_by_category,
+  df_descriptive,
   non_park_comparison = TRUE
 )
 
+# Put NULL everywhere, where fitting was unsuccessful
+bad_fitting <- results_roe$plt |> lapply(is_empty) |> unlist() |> which()
+results_roe$plt[bad_fitting] <- list(rep(NULL, length(bad_fitting)))
+results_roe$fitted_mods[bad_fitting] <- list(rep(NULL, length(bad_fitting)))
+
 # Save the plots
-save_results_as_image(results_roe$plt, non_park_comparison = TRUE)
+save_results_as_image(
+  results_roe$plt,
+  format = "png",
+  non_park_comparison = TRUE
+)
 
 # Save the results into a .csv file
 results_csv_roe <- save_results_as_csv(results_roe$fitted_mods)
