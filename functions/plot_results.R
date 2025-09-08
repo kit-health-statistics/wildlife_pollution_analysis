@@ -126,9 +126,6 @@ plot_results <- function(
       # `Age` is an ordered factor. Convert it to character to avoid problems
       # while pivoting
       mutate(Age = as.character(Age)) |>
-      # # `Park` is a factor with 8 levels, but here we use only 3, which creates
-      # # NAs while pivoting. Convert it to character to avoid problems.
-      # mutate(Park = as.character(Park)) |>
       pivot_longer(
         c(Park, Age, Species),
         names_to = "Covariate",
