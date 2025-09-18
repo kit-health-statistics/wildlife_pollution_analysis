@@ -47,9 +47,9 @@ where y_i denotes the response for the i-th individual, $x_i$ is the vector of t
 The model is fitted using the `survreg` function from the `survival` package in `R`.
 
 ### Response $y_i$
-The response is defined as a sum of observed concentrations per pollutant category. However, not all concentrations were fully quantified. Some samples are detected only qualitatively, and some were not detected. We assume that all non‑quantified values lie between 0 and the limit of quantification (LOQ). When constructing the sum $y_i$, we obtain an interval‑censored value with bounds:
-- sum of quantified individual concentrations,
-- sum of quantified individual concentrations + sum of the LOQs of the non-quantified, or non-detected observations.
+The response is defined as a sum of observed concentrations per pollutant category. However, not all concentrations were fully quantified. Some samples are detected only qualitatively, and some were not detected. We assume that all non-detected values lie between 0 and the limit of detection (LOD). Non‑quantified, but detected values lie between the LOD and the LOQ. The LOD is set to be $1 / 3$ times the LOQ.  When constructing the sum $y_i$, we obtain an interval‑censored value with bounds:
+- sum of quantified individual concentrations + sum of the LODs of the non-quantified, but detected values
+- sum of quantified individual concentrations + sum of the LOQs of the non-quantified, but detected values + sum of the LODs of the non-detected observations.
 
 This step is performed by `summarise_censoring` during data processing (executed by [`Process_the_data.R`](https://github.com/barbora-sobolova/wildlife_pollution_analysis/blob/main/scripts/Process_the_data.R))
 
