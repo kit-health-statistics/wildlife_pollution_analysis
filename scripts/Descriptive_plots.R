@@ -125,14 +125,15 @@ for (covariate in names(barplots_covariates)) {
 }
 barplot_month <- ggplot(dat, aes(x = Month, fill = Park)) +
   geom_bar(position = position_stack(), linewidth = 0.2, color = "gray10") +
-  scale_fill_manual(values = park_colors) +
+  scale_fill_manual(values = park_colors, labels = park_labels) +
   scale_x_date(date_breaks = "2 months", date_labels = "%b %Y") +
   labs(
     title = "Month of sample collection",
     y = "number of observations",
     x = "month"
   ) +
-  get_barplot_descriptive_theme()
+  get_barplot_descriptive_theme() +
+  theme(legend.key.width = unit(1.3, "line"))
 
 barplots <- barplot_month +
   barplots_covariates$Sex +
@@ -238,7 +239,7 @@ mosaic_species <- ggplot(
 ggsave(
   "figure/mosaic_species.png",
   mosaic_species,
-  width = 10,
+  width = 12,
   height = 8,
   dpi = 400,
   bg = "white"

@@ -19,14 +19,14 @@ get_primary_category_labels <- function() {
 # Park names to display
 get_park_labels <- function(non_park_comparison = FALSE) {
   labs <- c(
-    "Bay_Wald" = "Bayerischer \nWald",
+    "Bay_Wald" = "Bavarian\nForest",
     "Eifel" = "Eifel",
     "Hainich" = "Hainich",
-    "Hunsrueck" = "Hunsrück\nHochwald",
+    "Hunsrueck" = "Hunsrück-\nHochwald",
     "Jasmund" = "Jasmund",
-    "Kellerwald" = "Kellerwald\nEdersee",
-    "Saechs_Schw" = "Sächsische \nSchweiz",
-    "Vorpomm" = "Vorpomm. \nBoddenldsch."
+    "Kellerwald" = "Kellerwald-\nEdersee",
+    "Saechs_Schw" = "Saxon\nSwitz.",
+    "Vorpomm" = "West Pomer.\nLagoon Area"
   )
   if (non_park_comparison) {
     labs <- c(labs, "Non-Park" = "non-Park")
