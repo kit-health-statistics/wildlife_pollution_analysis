@@ -51,6 +51,7 @@ The response is defined as a sum of observed concentrations per pollutant catego
 - sum of quantified individual concentrations + sum of the LODs of the non-quantified, but detected values
 - sum of quantified individual concentrations + sum of the LOQs of the non-quantified, but detected values + sum of the LODs of the non-detected observations.
 
+
 This step is performed by `summarise_censoring` during data processing (executed by [`Process_the_data.R`](https://github.com/barbora-sobolova/wildlife_pollution_analysis/blob/main/scripts/Process_the_data.R))
 
 ### Age group
