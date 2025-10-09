@@ -104,6 +104,7 @@ plot_results <- function(
     )
 
     names(covcat_colors) <- df_coeffs$coeff
+
     x_labels_coeffs <- c(
       x_labels_coeffs,
       levels(df_filtered$Age),
@@ -114,7 +115,7 @@ plot_results <- function(
       levels(df_filtered$Age),
       levels(df_filtered$Sex)
     )
-    coeff_plot_title <- "Park regression coefficients"
+    coeff_plot_title <- "Park, sex and age regression coefficients"
 
     # For the descriptive box- and barplot, concatenate the Park and Age
     # covariates
@@ -340,14 +341,6 @@ plot_results <- function(
   # Create an empty plot to fill the grid
   boxplot_legend <- ggplot_box_legend(boxplot_only = TRUE)
 
-  # Add a "not applicable" label to the categories, where we do not want to
-  # present the results
-  if (pollutant_category %in% get_excluded_categories()) {
-    annotation_title <- paste0(pollutant_category, " (not applicable)")
-  } else {
-    annotation_title <- pollutant_category
-  }
-
   # Compose the plots into a 4x2 grid
   plt$composite <- (
     plt$spline +
@@ -364,7 +357,7 @@ plot_results <- function(
       widths = c(5, 1)
     ) &
     plot_annotation(
-      title = annotation_title,
+      title = pollutant_category,
       theme = theme(
         plot.title = element_text(
           size = 16,
