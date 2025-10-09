@@ -158,7 +158,7 @@ ggplot_box_legend <- function(boxplot_only = FALSE, family = "sans") {
       lineheight = 0.9
     ) +
     scale_shape_manual(values = c("outlier" = 2, "individual_val" = 1)) +
-    scale_size_manual(values = c("Label_text" = 2.8, "Title" = 3.8)) +
+    scale_size_manual(values = c("Label_text" = 2.6, "Title" = 3.8)) +
     theme_void(base_family = family) +
     theme(
       legend.position = "none"
