@@ -346,14 +346,14 @@ plot_results <- function(
 
   # Compose the plots into a 4x2 grid
   plt$composite <- (
-    plt$spline +
-      spline_legend +
-      plt$reg_coeffs +
-      reg_coeffs_legend +
+    plt$barplot +
+      barplot_legend +
       plt$boxplot +
       boxplot_legend +
-      plt$barplot +
-      barplot_legend
+      plt$spline +
+      spline_legend +
+      plt$reg_coeffs +
+      reg_coeffs_legend
   ) +
     plot_layout(
       design = "AB\nCD\nEF\nGH",
