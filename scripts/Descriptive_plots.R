@@ -136,9 +136,9 @@ barplot_month <- ggplot(dat, aes(x = Month, fill = Park)) +
   theme(legend.key.width = unit(1.3, "line"))
 
 barplots <- barplot_month +
+  barplots_covariates$Species +
   barplots_covariates$Sex +
   barplots_covariates$Age +
-  barplots_covariates$Species +
   plot_layout(nrow = 2, ncol = 2, axis_titles = "collect_y")
 
 ggsave(
